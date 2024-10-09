@@ -1,0 +1,91 @@
+<template x-component="top-nav">
+    <div class="top-nav bg-white position-fixed top-0 w-100 py-3 border-bottom">
+        <div class="d-flex mx-auto col-11 justify-content-between " x-data="utils()">
+            <img src="./assests/images/casherp logo 2.svg" alt="logo" class="">
+            <div class="d-flex">
+                <button id="hamburger-btn" class="btn d-md-none btn-secondary-custom"
+                    @click="hamburger=!hamburger">☰</button>
+                <div class="d-md-flex nav-items gap-md-5"
+                    :class="{'d-none': !hamburger, 'position-absolute start-0 bg-white mt-5 w-100 d-grid gap-3': hamburger && window.innerWidth < 768}">
+
+                    <div class="d-flex gap-1 gap-md-5 align-items-center">
+                        <button @click="feautureOpen=!feautureOpen"
+                            class="btn-tertiary-custom px-2"><span>Features</span> <img
+                                src="./assests/images/Arrows 2.svg" alt="" class="rotate-90"></button>
+                        <div x-show="feautureOpen" @click.away="feautureOpen=false"
+                            class="features-dropdown position-absolute bg-white col-md-5 rounded-3 p-4">
+                            <div class="row gap-2 justify-content-between">
+                                <div class="col-md-5 feature-item border-bottom">
+                                    <span class="feature-title text-blue-1">Invoicing</span>
+                                    <p class="feature-description text-grey-4 text-xs">Quick, Easy Billing</p>
+                                    <div class="feature-divider"></div>
+                                </div>
+                                <div class="col-md-5 feature-item border-bottom">
+                                    <span class="feature-title text-blue-1">Assets Management</span>
+                                    <p class="feature-description text-grey-4 text-xs">Optimize Asset Utilization
+                                    </p>
+                                    <div class="feature-divider"></div>
+                                </div>
+                                <div class="col-md-5 feature-item border-bottom">
+                                    <span class="feature-title text-blue-1">Accounting</span>
+                                    <p class="feature-description text-grey-4 text-xs">Accurate Financial Tracking
+                                    </p>
+                                    <div class="feature-divider"></div>
+                                </div>
+                                <div class="col-md-5 feature-item border-bottom">
+                                    <span class="feature-title text-blue-1">Purchase Management</span>
+                                    <p class="feature-description text-grey-4 text-xs">Fast, Secure Sharing</p>
+                                    <div class="feature-divider"></div>
+                                </div>
+                                <div class="col-md-5 feature-item border-bottom">
+                                    <span class="feature-title text-blue-1">HR Management</span>
+                                    <p class="feature-description text-grey-4 text-xs">Efficient Talent Acquisition
+                                    </p>
+                                    <div class="feature-divider"></div>
+                                </div>
+                                <div class="col-md-5 feature-item border-bottom">
+                                    <span class="feature-title text-blue-1">Fleet Management</span>
+                                    <p class="feature-description text-grey-4 text-xs">Vehicles Management System
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn-tertiary-custom px-2">Pricing</button>
+                        <button class="btn-tertiary-custom px-2">Blog</button>
+                        <div class="">
+                            <button @click="reasourcesOpen=!reasourcesOpen"
+                                class="btn-tertiary-custom px-2"><span>Reasources</span> <img
+                                    src="./assests/images/Arrows 2.svg" alt="" class="rotate-90"></button>
+                            <div x-show="reasourcesOpen" @click.away="reasourcesOpen=false"
+                                class="resources-dropdown rounded-3 bg-white position-absolute ">
+                                <div class="resource-item p-2 px-3 border-top">
+                                    <span class="resource-title text-blue-1 ">About Us</span>
+                                </div>
+                                <div class="resource-item p-2 px-3  border-top">
+                                    <span class="resource-title text-blue-1 ">Careers</span>
+                                </div>
+                                <div class="resource-item p-2 px-3 border-top">
+                                    <span class="resource-title text-blue-1 ">Knowledge Base</span>
+                                </div>
+                                <div class="resource-item p-2 px-3 border-top">
+                                    <span class="resource-title text-blue-1 ">Become an Affiliate</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex mx-auto gap-4 ml-md-2 ">
+                        <button id="login-button"
+                            class="rounded-3 border-2 text-brand-2 fs-sm-6 bg-transparent border-brand-2 px-3">Log
+                            In</button>
+                        <button id="start-trial-button" class="btn-primary-custom rounded-3 bg-brand-2 px-3">Start
+                            free
+                            trial</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</template>

@@ -1,0 +1,51 @@
+<template x-component="faq">
+    <div class="faq-container p-5" :class="$prop('bg-color')" x-data="$api.faqComponent()">
+        <div class="col-md-9 col-12 mx-auto">
+            <div class="d-flex flex-column gap-4">
+                <span class="p-2 px-3 bg-blue-3 rounded-pill w-fit mx-auto text-white" x-text="$prop('title')"></span>
+                <span class="title-large-font-size col-md-10 col-12 mx-auto" x-text="$prop('description')"></span>
+            </div>
+            <div class="btn-end my-5">
+                <button @click="toggleAllFaqs"
+                    class="border-1 border-brand-2 text-brand-2 rounded-3 body-small-font-size mx-auto bg-transparent p-1 px-3"
+                    x-text="$prop('buttonText')"></button>
+            </div>
+            <template x-for="(faq, index) in faqs" :key="index">
+                <div class="faq-item">
+                    <div class="faq-question py-3 my-1 body-small-font-size position-relative"
+                        @click="toggleFaq(index)">
+                        <span x-text="faq.question"></span>
+                        <img src="./assests/images/Arrows 2.svg" alt="" class="position-absolute end-0"
+                            :class="expandedFaqs.includes(index) ? 'rotate-90' : ''">
+                    </div>
+                    <div class="faq-answer p-2 text-grey-4" x-show="expandedFaqs.includes(index)" x-transition
+                        x-text="faq.answer"></div>
+                </div>
+            </template>
+        </div>
+    </div>
+    <script>
+        return {
+            faqComponent() {
+                return {
+                    faqs: this.$prop('items') || [],
+                    expandedFaqs: [],
+                    toggleFaq(index) {
+                        if (this.expandedFaqs.includes(index)) {
+                            this.expandedFaqs = this.expandedFaqs.filter((i) => i !== index);
+                        } else {
+                            this.expandedFaqs.push(index);
+                        }
+                    },
+                    toggleAllFaqs() {
+                        if (this.expandedFaqs.length === this.faqs.length) {
+                            this.expandedFaqs = [];
+                        } else {
+                            this.expandedFaqs = this.faqs.map((_, index) => index);
+                        }
+                    },
+                };
+            }
+        }
+    </script>
+</template>
