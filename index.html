@@ -88,7 +88,7 @@
     </div>
 
     <div class="bg-green-4 d-flex gap-5 justify-content-center pt-5 ">
-        <img src="./assests/images/portrait-smiley.png" alt="portrait-smiley" class="">
+        <img src="./assests/images/portrait-smiley.png" alt="portrait-smiley" class="d-none d-md-block">
 
         <div class="p-md-0 p-3 my-5">
             <span class="title-large-font-size text-uppercase fw-600">Why Choose US?</span>
@@ -138,8 +138,8 @@
                             <p x-text="tab.description" class="my-4 lh-36 fw-500 text-black col-10"></p>
                         </div>
                         <div class="d-md-flex d-grid gap-md-5 justify-content-cent align-items-center gap-3 ">
-                            <div class="p-4 frame rounded-12" :class="tab.frameColor">
-                                <img :src="tab.img" :alt="tab.title" class="">
+                            <div class="p-4 col-9 col-md-6 mx-md-0 mx-auto rounded-12" :class="tab.frameColor">
+                                <img :src="tab.img" :alt="tab.title" class="w-md-100">
                             </div>
                             <div
                                 class="rounded-12 body-small-font-size content-card my-md-4 bg-white p-3 fw-400 lh-28 py-4 d-flex flex-column gap-3">
