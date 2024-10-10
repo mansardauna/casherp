@@ -34,23 +34,26 @@
 
     <div class="hero d-md-flex p-md-5 p-2 py-5">
         <div class="col-md-11 justify-content-between mx-auto d-md-flex">
-        <div class="col-11 col-md-6 d-flex flex-column gap-5 mx-auto mx-md-none justify-content-center ">
-            <span class="hero-title sd:text-center text-black">Manage Your Business Efficiently At Low Cost</span>
-            <span class="hero-des smd:text-center text-black">Invoicing, Accounting, Purchasing, CRM, HR, Payroll,
-                Marketing,
-                and
-                Inventory Management Software
-                for your growing business</span>
+            <div class="col-11 col-md-6 d-flex flex-column gap-5 mx-auto mx-md-none justify-content-center ">
+                <span class="hero-title sd:text-center text-black">Manage Your Business Efficiently At Low Cost</span>
+                <span class="hero-des smd:text-center text-black">Invoicing, Accounting, Purchasing, CRM, HR, Payroll,
+                    Marketing,
+                    and
+                    Inventory Management Software
+                    for your growing business</span>
                 <div class="d-flex">
-                    <input type="text" placeholder="Enter your email" class="col-7 centered-placeholder rounded-start rounded-end-0 p-2 border-0">
-                    <button id="start-trial-button" class="btn-primary-custom rounded-end rounded-start-0 text-capitalize bg-brand-2 px-md-4 px-2">Start free trial</button>
+                    <input type="text" placeholder="Enter your email"
+                        class="col-7 centered-placeholder rounded-start rounded-end-0 p-2 border-0">
+                    <button id="start-trial-button"
+                        class="btn-primary-custom rounded-end rounded-start-0 text-capitalize bg-brand-2 px-md-4 px-2">Start
+                        free trial</button>
                 </div>
-                
+
+            </div>
+            <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+                <img src="./assests/images/hero.png" alt="" class=" d-none d-md-flex">
+            </div>
         </div>
-        <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
-            <img src="./assests/images/hero.png" alt="" class=" d-none d-md-flex">
-        </div>
-    </div>
     </div>
 
     <div class="my-5 py-4 d-flex flex-column gap-5">
@@ -129,14 +132,15 @@
                             </span>
                             <p x-text="tab.description" class="my-4 col-10"></p>
                         </div>
-                        <div class="d-md-flex d-grid gap-md-5 gap-3">
-                            <div class="p-4 rounded-12" :class="tab.frameColor">
-                                <img :src="tab.img" :alt="tab.title" class="" style="width: 20em;">
+                        <div class="d-md-flex d-grid gap-md-5 justify-content-cent align-items-center gap-3 ">
+                            <div class="p-4 frame rounded-12" :class="tab.frameColor">
+                                <img :src="tab.img" :alt="tab.title" class="">
                             </div>
-                            <div class="rounded-12 .body-small-font-size content-card my-md-4 bg-white p-4 d-flex flex-column gap-4">
+                            <div
+                                class="rounded-12 body-small-font-size content-card my-md-4 bg-white p-3 py-4 d-flex flex-column gap-3">
                                 <span x-text="tab.content"></span>
                                 <button
-                                    class=" border-1 border-brand-2 text-brand-2 rounded-12 body-small-font-size mx-auto bg-transparent p-1 px-3">Learn
+                                    class=" border- border-brand-2 text-brand-2 rounded-12 body-small-font-size mx-auto bg-transparent px-2">Learn
                                     more</button>
                             </div>
                         </div>

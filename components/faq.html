@@ -2,24 +2,26 @@
     <div class="faq-container p-5" :class="$prop('bg-color')" x-data="$api.faqComponent()">
         <div class="col-md-10 col-12 mx-auto">
             <div class="d-flex flex-column gap-4">
-                <span class="p-2 px-3 bg-green-1 rounded-pill w-fit mx-auto font-weight-400 title-medium-font-size text-uppercase text-white" x-text="$prop('title')"></span>
+                <span
+                    class="p-2 px-3 bg-green-1 rounded-24 w-fit mx-auto  title-medium-font-size text-uppercase text-white"
+                    x-text="$prop('title')"></span>
                 <span class="title-large-font-size col-md-10 col-12 mx-auto" x-text="$prop('description')"></span>
             </div>
             <div class="btn-end my-5">
                 <button @click="toggleAllFaqs"
-                    class="border-1 border-brand-2 text-brand-2 rounded-3 body-small-font-size mx-auto bg-transparent p-1 px-3"
+                    class="border-2 border-brand-2 text-brand-2 rounded-3 body-small-font-size mx-auto bg-transparent p-1 px-2"
                     x-text="$prop('buttonText')"></button>
             </div>
             <template x-for="(faq, index) in faqs" :key="index">
                 <div class="faq-item">
-                    <div class="faq-question py-3 my-1 position-relative" :class="expandedFaqs.includes(index) ? '' : 'border-bottom-grey-2'"
-                        @click="toggleFaq(index)">
+                    <div class="faq-question py-3 my-1 position-relative"
+                        :class="expandedFaqs.includes(index) ? '' : 'border-bottom-grey-2'" @click="toggleFaq(index)">
                         <span x-text="faq.question"></span>
                         <img src="./assests/images/Arrows 2.svg" alt="" class="position-absolute end-0"
                             :class="expandedFaqs.includes(index) ? 'rotate-180' : ''">
                     </div>
-                    <div class="faq-answer p-2 text-blue body-medium-font-size" x-show="expandedFaqs.includes(index)" x-transition
-                        x-text="faq.answer"></div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size" x-show="expandedFaqs.includes(index)"
+                        x-transition x-text="faq.answer"></div>
                 </div>
             </template>
         </div>

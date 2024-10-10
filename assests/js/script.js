@@ -322,6 +322,7 @@ function carouselComponent() {
         alt: "Slide 1",
         name: "Kira Boats",
         position: "Founder, KB Tech",
+        bg: "bg-purple",
         content:
           "“Since implementing their CRM solution, we have seen a remarkable improvement in our team's collaboration and productivity.”",
       },
@@ -329,6 +330,7 @@ function carouselComponent() {
         image: "../assests/images/slide2.png",
         alt: "Slide 2",
         name: "Sarah Watts",
+        bg: "bg-green-4",
         position: "Business Owner",
         content:
           "“This app has transformed how we manage our operations. From customer relationships to finances, everything is streamlined and easy to track.”",
@@ -337,6 +339,7 @@ function carouselComponent() {
         image: "../assests/images/slide3.png",
         alt: "Slide 3",
         name: "Robert Kelvin",
+        bg: "bg-blue-5",
         position: "HR Director, Sparks Tech",
         content:
           "“It’s like having multiple management tools in one place! We love how we can handle our HR, marketing, and inventory all from a single platform.”",
@@ -345,6 +348,7 @@ function carouselComponent() {
         image: "../assests/images/slide4.png",
         alt: "Slide 4",
         name: "Mike Dallas",
+        bg: "bg-purple",
         position: "Sales Manager, Business Owner",
         content:
           "“Our company grew fast, and this app helped us keep up. The professional plan gave us the features we needed to stay organized and efficient.”",
@@ -353,6 +357,7 @@ function carouselComponent() {
         image: "../assests/images/slide5.png",
         alt: "Slide 5",
         name: "Karen Taylor",
+        bg: "bg-green-4",
         position: "Logistics Coordinator, Wave-Rider",
         content:
           "“Managing our fleet has never been easier. We can track vehicles in real-time and schedule maintenance without missing a beat.”",
