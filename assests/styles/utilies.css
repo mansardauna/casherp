@@ -12,6 +12,7 @@
     color: black;
 }
 
+
 .hero-title{
 font-size: 52px;
 font-weight: 600;
@@ -34,18 +35,33 @@ input:focus{
     border-radius: 16px;
 }
 .title-large-font-size{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.15000000596046448px;
+   
+}
+.title-large-font-size-bold {
 font-size: 32px;
-font-weight: 500;
-line-height: 40px;
-text-align: center;
+font-weight: 700;
+line-height: 52px;
+letter-spacing: 0.005em;
 }
 .title-medium-font-size{
 font-size: 18px;
-font-weight: 400;
+font-weight: 500;
 line-height: 32px;
 text-align: center;
 
 }
+
+.heading-small-font-size{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    }
 .body-large-font-size{
 font-size: 22px;
 font-weight: 600;
@@ -53,8 +69,18 @@ line-height: 32px;
 text-align: center;
 
 }
+.body-large-font-size-light {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    
+    }
 .body-small-font-size{
     font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.25px;
 }
 .text-xs{
     font-size: 12px;
@@ -63,7 +89,6 @@ text-align: center;
 font-size: 16px;
 font-weight: 400;
 line-height: 22px;
-text-align: center;
 }
 .rounded-12{
     border-radius: 12px;
@@ -119,3 +144,17 @@ text-align: center;
 .features-dropdown, .resources-dropdown{
     top: 4.5em;
 }
+.centered-placeholder {
+    text-align: center;
+  }
+
+  /* Change the placeholder color */
+  .centered-placeholder::placeholder {
+    color: var(--deep-black);
+    font-size: 18px;
+  }
+  .shadow-box{
+    box-shadow: 0px 1px 3px 1px #00000026;
+box-shadow: 0px 1px 2px 0px #0000004D;
+
+  }

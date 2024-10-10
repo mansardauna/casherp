@@ -24,9 +24,7 @@
     --grey-4: #29292B;
 
 }
-.faq-question{
-     border-bottom: 1px solid var(--grey-2);
-}
+
 .text-black{
     color: var(--text-blue);
 }
@@ -57,6 +55,9 @@
 }
 .bg-grey{
     background: var(--grey-BG);
+}
+.border-bottom-grey-2{
+    border-bottom: 1px solid var(--grey-2);
 }
 
 .bg-blue-1{
@@ -204,7 +205,7 @@ width: 24px;
 .sticky-tabs {
     position: -webkit-sticky; /* For Safari */
     position: sticky;
-    top: 4em;
+    top: 0em;
     z-index: 1000;
 }
 
@@ -224,5 +225,19 @@ transition: background-color 0.3s ease; /* Smooth transition */
     background-color: white; /* Background color for the active tab */
     color: black; /* Optional: Change text color for better contrast */
     border: none;
+
+}
+.content-card{
+    width: Hug (400px)px;
+height: Hug (244px)px;
+
+
+}
+.faq-question{
+font-size: 18px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.5px;
+text-align: left;
 
 }

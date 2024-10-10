@@ -32,43 +32,45 @@
     <div class="wrapper" x-import="top-nav"></div>
     <vui-top-nav></vui-top-nav>
 
-    <div class="hero d-md-flex  my-5 p-md-5 p-2 py-5">
-        <div class="col-11 col-md-6 d-flex flex-column gap-4 mx-auto mx-md-none justify-content-center ">
+    <div class="hero d-md-flex p-md-5 p-2 py-5">
+        <div class="col-md-11 justify-content-between mx-auto d-md-flex">
+        <div class="col-11 col-md-6 d-flex flex-column gap-5 mx-auto mx-md-none justify-content-center ">
             <span class="hero-title sd:text-center text-black">Manage Your Business Efficiently At Low Cost</span>
             <span class="hero-des smd:text-center text-black">Invoicing, Accounting, Purchasing, CRM, HR, Payroll,
                 Marketing,
                 and
                 Inventory Management Software
                 for your growing business</span>
-            <div class="d-flex "><input type="text" placeholder="Enter your email" class="col-7 p-2 border-0">
-                <button id="start-trial-button" class="btn-primary-custom text-capitalize bg-brand-2 px-md-4 px-2">Start
-                    free
-                    trial</button>
-            </div>
+                <div class="d-flex">
+                    <input type="text" placeholder="Enter your email" class="col-7 centered-placeholder rounded-start rounded-end-0 p-2 border-0">
+                    <button id="start-trial-button" class="btn-primary-custom rounded-end rounded-start-0 text-capitalize bg-brand-2 px-md-4 px-2">Start free trial</button>
+                </div>
+                
         </div>
-        <div class="col-md-6 col-12 d-none d-md-block">
-            <img src="./assests/images/hero.png" alt="" class="col-12 col-md-12">
+        <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+            <img src="./assests/images/hero.png" alt="" class=" d-none d-md-flex">
         </div>
     </div>
+    </div>
 
-    <div class="my-5 d-flex flex-column">
+    <div class="my-5 py-4 d-flex flex-column gap-5">
         <span class="title-large-font-size col-md-5 col-11 mx-auto">All-in-One Business Hub: Manage Everything,
             Anytime</span>
-        <span class="title-medium-font-size col-md-6 col-11 my-4 mx-auto">Casherp goes beyond customer
+        <span class="title-medium-font-size col-md-6 col-11 mx-auto">Casherp goes beyond customer
             management—handle your
             finances, assets,
             inventory, sales, marketing, HR,
             and more</span>
-        <div class="d-md-flex col-11 mx-auto grid grid-2 gap-4 py-4" x-data="cardData()">
+        <div class="d-md-flex col-10 mx-auto grid grid-2 gap-4" x-data="cardData()">
             <template x-for="item in items" :key="item.title">
-                <div class="d-flex flex-column align-items-center gap-4 mt-4 py-4 p-2 text-white justify-content-center"
+                <div class="d-flex flex-column align-items-center py-5 px-4 my-4 my-md-0 gap-3 text-white justify-content-center"
                     :class="item.bg">
-                    <div class="p-2 bg-white rounded-pill mt-4">
+                    <div class="p-2  bg-white rounded-pill">
                         <img :src="item.img" class="card-img-top" :alt="item.title">
                     </div>
-                    <div class="card-body text-center ">
-                        <span class="card-title body-medium-font-size" x-text="item.title"></span>
-                        <p class="card-text body-small-font-size my-4" x-text="item.description"></p>
+                    <div class="text-center">
+                        <span class="body-large-font-size" x-text="item.title"></span>
+                        <p class="card-text body-small-font-size mt-2" x-text="item.description"></p>
                     </div>
                 </div>
             </template>
@@ -77,7 +79,7 @@
     </div>
 
     <div class="bg-green-4 d-flex pt-5 ">
-        <div class="col-7 d-md-flex position-relative d-none">
+        <div class="col-6 d-md-flex position-relative d-none">
             <img src="./assests/images/portrait-smiley.png" alt="portrait-smiley" class="position-absolute bottom-0">
         </div>
 
@@ -87,11 +89,11 @@
                 <template x-for="item in choose" :key="item.label">
                     <div class="col-11 my-5">
                         <div class="d-flex col-3 gap-4 align-items-center">
-                            <span x-text="item.digit" class="title-large-font-size  text-blue-1"></span>
-                            <span x-text="item.label" class="fs-5 text-blue"></span>
+                            <span x-text="item.digit" class="title-large-font-size-bold text-blue-1"></span>
+                            <span x-text="item.label" class="heading-small-font-size text-blue"></span>
                         </div>
                         <div class="my-2">
-                            <span x-text="item.description" class="body-small-font-size "></span>
+                            <span x-text="item.description" class="body-medium-font-size "></span>
                         </div>
                     </div>
                 </template>
@@ -119,19 +121,19 @@
         </div>
         <div class="tab-wrapper">
             <template x-for="(tab, index) in tabs" :key="index">
-                <div class="tab-content p-5 d-flex justify-content-center align-items-center" :class="tab.bg"
+                <div class="tab-content py-5 d-flex justify-content-center align-items-center" :class="tab.bg"
                     :id="'tab-' + index">
                     <div class="col-md-8 d-grid p-md-0 p-3 gap-3">
                         <div class="gap-3">
                             <span class="p-2 px-3 text-white rounded-pill" :class="tab.frameColor" x-text="tab.title">
                             </span>
-                            <p x-text="tab.content" class="my-4"></p>
+                            <p x-text="tab.description" class="my-4 col-10"></p>
                         </div>
                         <div class="d-md-flex d-grid gap-md-5 gap-3">
                             <div class="p-4 rounded-12" :class="tab.frameColor">
                                 <img :src="tab.img" :alt="tab.title" class="" style="width: 20em;">
                             </div>
-                            <div class="rounded-12 col-md-5 my-md-4 bg-white p-4 d-flex flex-column gap-4">
+                            <div class="rounded-12 .body-small-font-size content-card my-md-4 bg-white p-4 d-flex flex-column gap-4">
                                 <span x-text="tab.content"></span>
                                 <button
                                     class=" border-1 border-brand-2 text-brand-2 rounded-12 body-small-font-size mx-auto bg-transparent p-1 px-3">Learn
