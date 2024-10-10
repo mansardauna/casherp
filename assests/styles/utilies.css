@@ -40,9 +40,6 @@ input:focus{
 .title-large-font-size{
     text-align: center;
     font-size: 32px;
-    font-weight: 600;
-    line-height: 40px;
-    letter-spacing: 0.15000000596046448px;
    
 }
 .text-justify{
@@ -50,13 +47,11 @@ input:focus{
 }
 .title-large-font-size-bold {
 font-size: 32px;
-font-weight: 700;
 line-height: 52px;
 letter-spacing: 0.005em;
 }
 .title-medium-font-size{
 font-size: 18px;
-font-weight: 500;
 line-height: 32px;
 text-align: center;
 
@@ -70,31 +65,53 @@ text-align: center;
     }
 .body-large-font-size{
 font-size: 22px;
-font-weight: 600;
-line-height: 32px;
 text-align: center;
 
 }
 .body-large-font-size-light {
     font-size: 22px;
-    font-weight: 500;
     line-height: 32px;
     text-align: center;
     
     }
 .body-small-font-size{
     font-size: 14px;
-    font-weight: 400;
+}
+.lh-22{
+    line-height: 22px;
+}
+.lh-24{
+    line-height: 24px;
+}
+.lh-28{
     line-height: 28px;
-    letter-spacing: 0.25px;
+}
+.lh-32{
+    line-height: 32px;
+}
+.lh-36{
+    line-height: 36px;
+}
+.lh-49{
+    line-height: 49px;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
 }
 .text-xs{
     font-size: 12px;
 }
 .body-medium-font-size{
 font-size: 16px;
-font-weight: 400;
-line-height: 22px;
 }
 .rounded-12{
     border-radius: 12px;

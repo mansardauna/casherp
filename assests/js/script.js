@@ -169,28 +169,28 @@ function cardData() {
         title: "Management",
         description:
           "Oversee every aspect. Track and follow up with leads, sources, launch campaigns, proposals and lot more",
-        bg: "bg-blue-3 blue-shadow rounded-16",
+        bg: "bg-blue-3 blue-shadow",
       },
       {
         img: "./assests/images/invoice.svg",
         title: "Invocing",
         description:
           "Generate, send, and track invoices with ease. Automate billing and keep your payments organized and on time",
-        bg: "bg-green-5 green-shadow rounded-16",
+        bg: "bg-green-5 green-shadow",
       },
       {
         img: "./assests/images/lead 1.svg",
         title: "Accounting",
         description:
           "Track your income and expenses, generate reports easily and for free, with Casherp's accounting software",
-        bg: "bg-yellow-1 yellow-shadow rounded-16",
+        bg: "bg-yellow-1 yellow-shadow",
       },
       {
         img: "./assests/images/marketing 1.svg",
         title: "Marketing",
         description:
           "Engage customers. Create and track email campaigns, social media engagement, and other marketing initiatives",
-        bg: "bg-green-1 green-shadow rounded-16",
+        bg: "bg-green-1 green-shadow",
       },
     ],
   };

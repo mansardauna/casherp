@@ -3,13 +3,14 @@
         <div class="col-md-10 col-12 mx-auto">
             <div class="d-flex flex-column gap-4">
                 <span
-                    class="p-2 px-3 bg-green-1 rounded-24 w-fit mx-auto  title-medium-font-size text-uppercase text-white"
+                    class="p-2 px-3 bg-green-1 rounded-24 w-fit mx-auto fw-500  title-medium-font-size text-uppercase text-white"
                     x-text="$prop('title')"></span>
-                <span class="title-large-font-size col-md-10 col-12 mx-auto" x-text="$prop('description')"></span>
+                <span class="title-large-font-size fw-500 col-md-10 col-12 mx-auto text-black lh-49"
+                    x-text="$prop('description')"></span>
             </div>
             <div class="btn-end my-5">
                 <button @click="toggleAllFaqs"
-                    class="border-2 border-brand-2 text-brand-2 rounded-3 body-small-font-size mx-auto bg-transparent p-1 px-2"
+                    class="border-2 border-brand-2 text-brand-2 rounded-3 fw-600 body-small-font-size mx-auto bg-transparent p-1 px-2"
                     x-text="$prop('buttonText')"></button>
             </div>
             <template x-for="(faq, index) in faqs" :key="index">

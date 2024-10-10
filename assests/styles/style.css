@@ -23,6 +23,7 @@
     --grey-1:#D3D3D3;
     --grey-2:#959595;
     --grey-4: #29292B;
+    --grey-5:#222729;
 
 }
 
@@ -178,6 +179,9 @@
 }
 .text-grey-4{
     color: var(--grey-4);
+}
+.text-grey-5{
+    color: var(--grey-5);
 }
 .bg-purple{
     background-color: var(--purple);

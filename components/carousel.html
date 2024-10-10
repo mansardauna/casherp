@@ -3,20 +3,21 @@
     <div class="mt-6 bg-white py-5 d-grid gap-5" x-data="carouselComponent()" x-init="startCarousel">
         <div class="d-flex mt-4 flex-column gap-5">
             <span
-                class="p-2 px-3 bg-green-1 rounded-pill w-fit mx-auto font-weight-400 title-medium-font-size text-white">Testimonials</span>
-            <span class="title-large-font-size col-10 mx-auto">What Our Customers Are Saying About Us</span>
+                class="p-2 px-3 bg-green-1 rounded-16 w-fit mx-auto fw-500 title-medium-font-size text-white">Testimonials</span>
+            <span class="title-large-font-size fw-500 col-10 mx-auto text-black">What Our Customers Are Saying About
+                Us</span>
         </div>
         <div class="overflow-hidden position-relative">
             <div class="d-flex transition-transform"
                 :style="`transform: translateX(-${currentIndex * 100}%); transition:ease-in-out`">
                 <template x-for="(slide, index) in slides" :key="index">
                     <div class="d-flex w-100 align-items-center justify-content-center flex-shrink-0  ">
-                        <div class="d-flex position-relative px-5 col-md-8 col-12">
-                            <div class="space-y-6  px-6">
-                                <div class="p-5 rounded-56 w-100 d-flex flex-column gap-3 align-items-center transition-transform justify-content-center position-relative mt-10"
+                        <div class="d-flex position-relative px-5 col-md-9 col-12">
+                            <div class="space-y-6">
+                                <div class="p-5 rounded-56 w-100 d-flex flex-column gap-3 align-items-center transition-transform justify-content-center position-relative"
                                     :class="slide.bg">
                                     <span x-text="slide.content"
-                                        class="text-center max-w-75body-large-font-size-light leading-relaxed"></span>
+                                        class="text-center max-w-75 text-grey-4 body-large-font-size-light fw-400 leading-relaxed"></span>
                                     <div class="d-flex flex-column align-items-center">
                                         <img :src="slide.image" :alt="slide.alt" class="">
                                         <span x-text="slide.name" class="title-medium-font-size capitalize"></span>
