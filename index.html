@@ -17,6 +17,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <script src="https://unpkg.com/@vimesh/ui"></script>
     <script src="https://unpkg.com/alpinejs" defer></script>
 
@@ -29,9 +32,12 @@
 
 <body>
 
-    <div class="wrapper" x-import="top-nav"></div>
-    <vui-top-nav></vui-top-nav>
+    <!-- nav -->
+    <div class="wrapper" x-import="top-nav">
+        <vui-top-nav></vui-top-nav>
+    </div>
 
+    <!-- hero -->
     <div class="hero d-md-flex p-md-5 p-2 py-5">
         <div class="col-md-11 justify-content-between mx-auto d-md-flex">
             <div class="col-11 col-md-6 d-flex flex-column gap-5 mx-auto mx-md-none justify-content-center ">
@@ -56,6 +62,7 @@
         </div>
     </div>
 
+    <!-- all-in-one -->
     <div class="my-5 py-4 d-flex flex-column gap-5">
         <span class="title-large-font-size fw-500 col-md-5 col-11 mx-auto">All-in-One Business Hub: Manage Everything,
             Anytime</span>
@@ -87,6 +94,7 @@
 
     </div>
 
+    <!-- why-choose-us -->
     <div class="bg-green-4 d-flex gap-5 justify-content-center pt-5 ">
         <img src="./assests/images/portrait-smiley.png" alt="portrait-smiley" class="d-none d-md-block">
 
@@ -110,10 +118,11 @@
 
     </div>
 
+    <!-- tabs -->
     <div class="" x-data="tabComponent()" x-init="init()">
         <div class="bg-purple py-4 sticky-tabs">
             <div class="d-flex p-md-0 p-3 flex-column gap-4">
-                <span class="p-2 px-3 bg-blue-3 rounded-pill w-fit mx-auto text-white fw-500">Features</span>
+                <span class="p-2 px-3 bg-blue-3 rounded-16 w-fit mx-auto text-white fw-500">Features</span>
                 <span class="title-large-font-size fw-500">What Makes Us Stand Out</span>
             </div>
             <div class="p-0 mt-4">
@@ -157,23 +166,28 @@
 
     </div>
 
+    <!-- faq -->
     <div class="" x-import="faq" x-data="utils()">
         <vui-faq title="faq" description="Find quick answers to common questions
         and get the help you need to make the most of our features" bg-color="bg-yellow-5" buttonText="Expand All"
             :items="faqsIndex"></vui-faq>
     </div>
 
+    <!-- testimonial -->
     <div class="" x-import="carousel">
         <vui-carousel></vui-carousel>
     </div>
 
+    <!-- trial -->
     <div class="" x-import="trial">
         <vui-trial></vui-trial>
     </div>
 
+    <!-- footer -->
     <div class="" x-import="footer">
         <vui-footer></vui-footer>
     </div>
+
     </div>
 
 
