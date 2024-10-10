@@ -2,7 +2,7 @@
     <div class="top-nav position-relative bg-white top-0 w-100 py-3 border-bottom">
         <div class="d-flex mx-auto col-11 justify-content-between" x-data="utils()">
             <img src="./assests/images/casherp logo 2.svg" alt="logo" class="" />
-            <div class="d-flex position-relative">
+            <div class="d-flex">
                 <button id="hamburger-btn" class="btn d-md-none btn-secondary-custom" @click="hamburger=!hamburger">
                     ☰
                 </button>
@@ -15,7 +15,7 @@
                         </button>
 
                         <div x-show="feautureOpen" @click.away="feautureOpen=false"
-                            class="features-dropdown position-absolute bg-white col-md-7 col-11 rounded-3 px-4">
+                            class="features-dropdown position-absolute bg-white col-md-4 col-11 rounded-3 px-4">
                             <div class="d-grid grid-2 gap-3 justify-content-between pt-3">
                                 <div class="body-medium-font-size fw-500 border-bottom">
                                     <span class="body-medium-font-size fw-500 text-blue-1">Invoicing</span>
