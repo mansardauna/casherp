@@ -15,6 +15,7 @@
     --green-shadow: #00FF48;
     --green-shadow-2: #00E47D;
     --yellow-1: #856300;
+    --yellow-3:#F7DC6F;
     --yellow-4: #F7DC6F;
     --yellow-5: #F6E9BA;
     --yellow-6: #EDD77F;
@@ -60,6 +61,7 @@ input:focus {
 .bg-brand{
     background-color: var(--brand);
 }
+
 .bg-brand-2 {
     background-color: var(--brand-2);
 }
@@ -191,6 +193,10 @@ input:focus {
 
 .text-yellow-1 {
     color: var(--yellow-1);
+}
+
+.bg-yellow-3 {
+    background-color: var(--yellow-3);
 }
 
 

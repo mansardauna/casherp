@@ -250,6 +250,7 @@ function tabComponent() {
       {
         title: "Recruitment  Management",
         bg: "bg-green-4",
+        href: "./hr-management.html",
         frameColor: "bg-green-1",
         description:
           "Streamline your hiring  processes, attract top talents and empower your team to find the right candidates effectively",
@@ -260,6 +261,7 @@ function tabComponent() {
       {
         title: "Assets Management",
         bg: "bg-yellow-6",
+        href: "./resources.html",
         frameColor: "bg-yellow-7",
         description:
           "Track, evaluate, maximize the value of your assets efficiently, and enhance your organization's financial health",

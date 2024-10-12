@@ -31,3 +31,23 @@ function AccountingHero() {
     bg: "bg-brand",
   };
 }
+
+function Management() {
+  return {
+    title: "Manage Your Team with Ease",
+    description:
+      "With Casherp, streamline HR tasks, track employee performance, handle onboarding, and simplify payroll—all in one seamless platform designed to help you manage your workforce effortlessly",
+    img: "./assests/images/invoicing-hero.png",
+    bg: "bg-yellow-3",
+  };
+}
+
+function resources() {
+  return {
+    title: "Take Control of Your Assets With Ease",
+    description:
+      "Track, manage, and optimize all your assets seamlessly in one comprehensive platform, giving you full control, greater visibility, and the tools to maximize efficiency and resource allocation",
+    img: "./assests/images/invoicing-hero.png",
+    bg: "bg-green-3",
+  };
+}
