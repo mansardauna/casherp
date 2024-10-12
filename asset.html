@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR-management</title>
+    <title>Resources</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assests/styles/style.css">
@@ -34,21 +34,21 @@
             <vui-top-nav></vui-top-nav>
         </div>
         <div class="" x-import="hero" x-data="heroData()">
-            <vui-hero :hero-title="data.hrManagement.title" :hero-description="data.hrManagement.description"
-                :hero-img="data.hrManagement.img" :bg="data.hrManagement.bg"></vui-hero>
+            <vui-hero :hero-title="data.assets.title" :hero-description="data.assets.description"
+                :hero-img="data.assets.img" :bg="data.assets.bg"></vui-hero>
         </div>
         <div class="" x-import="features" x-data="featuresComponent()">
-            <vui-features :title="categories.hrManagement.title" :bg="categories.hrManagement.bg"
-                :features="categories.hrManagement.features"></vui-features>
+            <vui-features :title="categories.assets.title" :bg="categories.assets.bg"
+                :features="categories.assets.features"></vui-features>
         </div>
 
         <div class="" x-import="email-option" x-data="emailOptionData()">
-            <vui-email-option :title="data.hrManagement.title" :bg="data.hrManagement.bg"></vui-email-option>
+            <vui-email-option :title="data.assets.title" :bg="data.assets.bg"></vui-email-option>
         </div>
 
         <div class="" x-import="faq" x-data="utils()">
             <vui-faq title="faq" description="Got Questions? We've Got Answers—Let’s Clear the Confusion!"
-                bg-color="bg-grey" :items="faqsHr" buttonText="Expand All"></vui-faq>
+                bg-color="bg-grey" faqs="" buttonText="Expand All"></vui-faq>
         </div>
         <div class="" x-import="carousel">
             <vui-carousel></vui-carousel>

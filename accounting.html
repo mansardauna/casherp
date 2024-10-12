@@ -33,8 +33,17 @@
         <div class="" x-import="top-nav">
             <vui-top-nav></vui-top-nav>
         </div>
-        <div class="" x-import="hero" x-data="AccountingHero()">
-            <vui-hero :hero-title="title" :hero-description="description" :hero-img="img" :bg="bg"></vui-hero>
+        <div class="" x-import="hero" x-data="heroData()">
+            <vui-hero :hero-title="data.accounting.title" :hero-description="data.accounting.description"
+                :hero-img="data.accounting.img" :bg="data.accounting.bg"></vui-hero>
+        </div>
+        <div class="" x-import="features" x-data="featuresComponent()">
+            <vui-features :title="categories.accounting.title" :bg="categories.accounting.bg"
+                :features="categories.accounting.features"></vui-features>
+        </div>
+
+        <div class="" x-import="email-option" x-data="emailOptionData()">
+            <vui-email-option :title="data.accounting.title" :bg="data.accounting.bg"></vui-email-option>
         </div>
 
         <div class="" x-import="faq" x-data="utils()">

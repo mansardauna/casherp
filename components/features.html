@@ -1,0 +1,33 @@
+<template x-component="features">
+    <div class=" p-5" :class="$prop('bg')" x-data="$api.init()">
+        <h2 class="fw-500 fs-32 text-center lh-72 mb-5" x-text="$prop('title')"></h2>
+        <div class="d-flex justify-content-center gap-2 mb-5">
+            <template x-for="(feature, index) in features" :key=" index">
+                <div class="d-flex gap-2 align-items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600" checked>
+                    <span x-text="feature.label" class="ml-2 px-2 py-1 bg-white rounded-pill"></span>
+                </div>
+            </template>
+        </div>
+        <div class="features-grid gap-4 col-11 mx-auto">
+            <template x-for="(feature, index) in features" :key=" index">
+                <div class="p-4 bg-white rounded-3 shadow-md">
+                    <div class="d-flex mb-3">
+                        <img :src="feature.icon" class="w-6 h-6 mr-2" alt="">
+                        <h3 x-text="feature.title" class="body-large-font-size lh-32 fw-400"></h3>
+                    </div>
+                    <p x-text="feature.description" class="body-medium-font-size fw-400 lh-32"></p>
+                </div>
+            </template>
+        </div>
+    </div>
+    <script>
+        return {
+            init() {
+                return {
+                    features: this.$prop('features') || []
+                }
+            }
+        }
+    </script>
+</template>

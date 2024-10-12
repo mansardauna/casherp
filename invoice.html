@@ -33,19 +33,30 @@
         <div class="" x-import="top-nav">
             <vui-top-nav></vui-top-nav>
         </div>
-        <div class="" x-import="hero" x-data="invoicingHero()">
-            <vui-hero :hero-title="title" :hero-description="description" :hero-img="img" :bg="bg"></vui-hero>
+        <div class="" x-import="hero" x-data="heroData()">
+            <vui-hero :hero-title="data.invoice.title" :hero-description="data.invoice.description"
+                :hero-img="data.invoice.img" :bg="data.invoice.bg"></vui-hero>
+        </div>
+
+        <div class="" x-import="features" x-data="featuresComponent()">
+            <vui-features :title="categories.invoice.title" :bg="categories.invoice.bg"
+                :features="categories.invoice.features"></vui-features>
+        </div>
+
+        <div class="" x-import="email-option" x-data="emailOptionData()">
+            <vui-email-option :title="data.invoicing.title" :bg="data.invoicing.bg"></vui-email-option>
         </div>
 
         <div class="" x-import="faq" x-data="utils()">
             <vui-faq title="faq" description="Got Questions? We've Got Answers—Let’s Clear the Confusion!"
-                bg-color="bg-grey" faqs="" buttonText="Expand All"></vui-faq>
+                bg-color="bg-yellow-5" :items="faqsInvoice" buttonText="Expand All"></vui-faq>
         </div>
         <div class="" x-import="carousel">
             <vui-carousel></vui-carousel>
         </div>
-        <div class="" x-import="trial">
-            <vui-trial></vui-trial>
+        <div class="" x-import="trial" x-data="triaIinvoice()">
+            <vui-trial :headline="headline" :description="description" :subheadline="subheadline"
+                :buttonText="buttonText" :mainImage="mainImage"></vui-trial>
         </div>
         <div class="" x-import="footer">
             <vui-footer></vui-footer>

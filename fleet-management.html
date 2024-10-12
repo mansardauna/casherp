@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources</title>
+    <title>Acounting</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assests/styles/style.css">
@@ -33,8 +33,17 @@
         <div class="" x-import="top-nav">
             <vui-top-nav></vui-top-nav>
         </div>
-        <div class="" x-import="hero" x-data="resources()">
-            <vui-hero :hero-title="title" :hero-description="description" :hero-img="img" :bg="bg"></vui-hero>
+        <div class="" x-import="hero" x-data="heroData()">
+            <vui-hero :hero-title="data.fleetManagement.title" :hero-description="data.fleetManagement.description"
+                :hero-img="data.fleetManagement.img" :bg="data.fleetManagement.bg"></vui-hero>
+        </div>
+        <div class="" x-import="features" x-data="featuresComponent()">
+            <vui-features :title="categories.fleetManagement.title" :bg="categories.fleetManagement.bg"
+                :features="categories.fleetManagement.features"></vui-features>
+        </div>
+
+        <div class="" x-import="email-option" x-data="emailOptionData()">
+            <vui-email-option :title="data.fleetManagement.title" :bg="data.fleetManagement.bg"></vui-email-option>
         </div>
 
         <div class="" x-import="faq" x-data="utils()">

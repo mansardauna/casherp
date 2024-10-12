@@ -22,6 +22,7 @@
     --yellow-7: #B48C14;
     --yellow-shadow: #E3AA00;
     --purple: #E3ABED;
+    --purple-2: #FED3F5;
     --deep-black: #09090A;
     --grey-1: #D3D3D3;
     --grey-2: #959595;
@@ -262,6 +263,9 @@ input:focus {
 
 .bg-purple {
     background-color: var(--purple);
+}
+.bg-purple-2 {
+    background-color: var(--purple-2);
 }
 
 .top-nav {

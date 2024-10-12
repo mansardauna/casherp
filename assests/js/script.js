@@ -155,6 +155,91 @@ function utils() {
           "No additional hardware is required. Subscription charges are transparent and include all necessary features.",
       },
     ],
+    faqsInvoice: [
+      {
+        question: "How do I create an invoice?",
+        answer:
+          "Creating an invoice is simple. Just navigate to the invoice section, fill out the required fields, and click 'Create'. You can customize the fields to suit your business needs.",
+      },
+      {
+        question: "Can I customize my invoice?",
+        answer:
+          "Yes, you can customize your invoice to include your logo, specific terms, and other custom fields to meet your business requirements.",
+      },
+      {
+        question: "What payment methods can I include on my invoices?",
+        answer:
+          "You can include various payment methods such as credit cards, bank transfers, and PayPal. The available options can be configured in the payment settings.",
+      },
+      {
+        question: "How can I track the status of my invoices?",
+        answer:
+          "You can track the status of your invoices in the invoice management section. Each invoice will display whether it is sent, viewed, paid, or overdue.",
+      },
+      {
+        question: "Can I set up recurring invoices for regular clients?",
+        answer:
+          "Absolutely. You can set up recurring invoices for regular clients by selecting the recurring option when creating an invoice. This will automatically send invoices at specified intervals.",
+      },
+      {
+        question: "What should I do if a client doesn’t pay on time?",
+        answer:
+          "If a client doesn’t pay on time, you can send them a reminder. You can also set up automatic reminders to be sent before and after the due date.",
+      },
+      {
+        question: "Is there a way to see my invoicing history?",
+        answer:
+          "Yes, you can view your entire invoicing history in the invoice management section. This includes all sent, paid, and overdue invoices.",
+      },
+      {
+        question: "Can I send invoices in multiple currencies?",
+        answer:
+          "Yes, you can send invoices in multiple currencies. This feature allows you to bill clients in their preferred currency, ensuring smooth international transactions.",
+      },
+    ],
+    faqsHr: [
+      {
+        question: "How does the onboarding process work?",
+        answer:
+          "The onboarding process is streamlined through our platform, allowing you to collect necessary documents, assign tasks, and provide training schedules for new hires. This ensures they transition smoothly and are fully prepared from day one.",
+      },
+      {
+        question: "Can I track employee performance over time?",
+        answer:
+          "Yes, our system allows you to monitor employee performance through goal-setting, continuous feedback, and detailed reviews, helping to foster growth and boost productivity.",
+      },
+      {
+        question: "Is attendance tracking automated?",
+        answer:
+          "Absolutely! Our attendance tracking feature automates the recording of employee work hours, ensuring accurate data for payroll calculations and compliance with labor regulations.",
+      },
+      {
+        question: "How do I manage employee leave requests?",
+        answer:
+          "You can manage leave requests seamlessly through our platform. The system allows for easy submission, approvals, and comprehensive tracking of employee leaves, ensuring smooth operations during absences.",
+      },
+      {
+        question: "Does the system integrate with payroll?",
+        answer:
+          "Yes, our HR management system integrates effortlessly with payroll, ensuring accurate and timely payments by synchronizing attendance, leave, and performance data.",
+      },
+      {
+        question: "What compliance features are included?",
+        answer:
+          "Our platform includes features for tracking certifications, contracts, and compliance with local labor laws and industry regulations, helping you maintain HR best practices.",
+      },
+      {
+        question: "Can I customize the HR process for my business?",
+        answer:
+          "Absolutely! The HR management system is highly customizable, allowing you to tailor processes to fit the unique needs of your business.",
+      },
+      {
+        question: "Is there customer support available for HR management?",
+        answer:
+          "Yes, we offer dedicated customer support to assist you with any questions or issues related to HR management. Our team is here to help you maximize the value of our platform.",
+      },
+    ],
+
     feautureOpen: false,
     reasourcesOpen: false,
     hamburger: false,
@@ -232,7 +317,7 @@ function tabComponent() {
         href: "./invoice.html",
         description:
           "Easily create, send, and track invoices to ensure timely payments and maintain organized billing and financial records.",
-        img: "./assests/images/invoice-image.png",
+        img: "./assests/images/invoice.png",
         content:
           "Casherp is the ultimate HRM, CRM and project management solution for  businesses of all sizes. It simplifies your day-to-day operations with  powerful, integrated features such as payroll, invoicing, sales,  marketing, CRM, and purchasing.",
       },

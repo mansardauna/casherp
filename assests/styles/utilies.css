@@ -111,6 +111,9 @@
 .text-xs {
     font-size: 12px;
 }
+.fs-32{
+    font-size: 32px;
+}
 
 /* font-size */
 .title-large-font-size {
@@ -264,7 +267,7 @@
     top: 5rem;
 }
 .hero-footer{
-    height: 15em;
+    height: 23em;
 }
 
 .hero-background-svg{
@@ -272,4 +275,18 @@
     position: absolute;
     top: 2em;
 
+}
+.features-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.hero-bg{
+    margin-top: 4.4rem;
+}
+.hero-image{
+    height: 8rem;
+}
+
+.hero-image img{
+    top:1rem;
 }
