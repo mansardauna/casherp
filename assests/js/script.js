@@ -239,7 +239,7 @@ function tabComponent() {
       {
         title: "Accounting",
         bg: "bg-grey",
-        href: "./pages/invoice.html",
+        href: "./accounting.html",
         frameColor: "bg-blue-3",
         description:
           "Take control and manage your money like a boss, streamline finances, boost efficiency, and keep your budget on track effortlessly",

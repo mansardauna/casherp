@@ -1,21 +1,22 @@
 <template x-component="top-nav">
-    <div class="top-nav position-relative bg-white top-0 w-100 py-3 border-bottom">
+    <div class="top-nav position-fixed bg-white top-0 w-100 py-3 border-bottom">
         <div class="d-flex mx-auto col-11 justify-content-between" x-data="utils()">
             <img src="./assests/images/casherp logo 2.svg" alt="logo" class="" />
             <div class="d-flex">
                 <button id="hamburger-btn" class="btn d-md-none btn-secondary-custom" @click="hamburger=!hamburger">
                     ☰
                 </button>
-                <div class="d-md-flex nav-items gap-md-5"
+                <div class="d-md-flex position-relative nav-items gap-md-5"
                     :class="{'d-none': !hamburger, 'position-absolute start-0 bg-white p-2 justify-content-center align-items-center mt-5 w-100 d-grid gap-3': hamburger && window.innerWidth < 768}">
                     <div class="d-flex gap-1 gap-md-5 align-items-center">
                         <button @click="feautureOpen=!feautureOpen" class="btn-tertiary-custom px-2 fw-500">
                             <span>Features</span>
-                            <img src="./assests/images/Arrows 2.svg" alt="" class="rotate-90" />
+                            <img src="./assests/images/Arrows (1).svg" alt="" class=""
+                                :class="feautureOpen ?'': 'rotate-180' " />
                         </button>
 
                         <div x-show="feautureOpen" @click.away="feautureOpen=false"
-                            class="features-dropdown position-absolute bg-white col-md-4 col-11 rounded-3 px-4">
+                            class="features-dropdown position-absolute bg-white col-md-7 col-11 rounded-3 px-4">
                             <div class="d-grid grid-2 gap-3 justify-content-between pt-3">
                                 <div class="body-medium-font-size fw-500 border-bottom">
                                     <span class="body-medium-font-size fw-500 text-blue-1">Invoicing</span>
@@ -66,7 +67,8 @@
                         <div class="">
                             <button @click="reasourcesOpen=!reasourcesOpen" class="btn-tertiary-custom px-2 fw-500">
                                 <span>Reasources</span>
-                                <img src="./assests/images/Arrows 2.svg" alt="" class="rotate-90" />
+                                <img src="./assests/images/Arrows (1).svg" alt="" class=""
+                                    :class="reasourcesOpen ?'': 'rotate-180' " />
                             </button>
 
                             <div x-show="reasourcesOpen" @click.away="reasourcesOpen=false"

@@ -21,6 +21,7 @@
     opacity: 0px;
     background: var(--linear-3);
     position: relative;
+    top: 60px;
 }
 
 .hero-title {
@@ -86,7 +87,10 @@
 .lh-49 {
     line-height: 49px;
 }
+.lh-72{
+    line-height: 72px;
 
+}
 /* font-weight */
 .fw-400 {
     font-weight: 400;
@@ -129,6 +133,10 @@
     font-size: 18px;
     line-height: 32px;
     text-align: center;
+}
+
+.heading-large-font-size {
+    font-size: 52px;
 }
 
 .heading-small-font-size {
@@ -225,9 +233,11 @@
 .list-unstyled li {
     padding: 8px 0;
 }
-
+.features-dropdown{
+    right: 30em;
+}
 .features-dropdown, .resources-dropdown {
-    top: 4.5em;
+    top: 3.6em;
 }
 
 .centered-placeholder {
@@ -248,4 +258,18 @@
 
 .transition {
     transition: all 0.2s ease-out;
+}
+.invoice-hero{
+    position: relative;
+    top: 5rem;
+}
+.hero-footer{
+    height: 15em;
+}
+
+.hero-background-svg{
+    width: 150px;
+    position: absolute;
+    top: 2em;
+
 }

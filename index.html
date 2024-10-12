@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assests/styles/style.css">
     <link rel="stylesheet" href="./assests/styles/utilies.css">
     <script src="./assests/js/script.js"></script>
-
+    <script src="./assests/js/data.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -63,8 +63,9 @@
     </div>
 
     <!-- all-in-one -->
-    <div class="my-5 py-4 d-flex flex-column gap-5">
-        <span class="title-large-font-size fw-500 col-md-5 col-11 mx-auto">All-in-One Business Hub: Manage Everything,
+    <div class="my-5 py-5 d-flex flex-column gap-5">
+        <span class="title-large-font-size fw-500 mt-4 col-md-5 col-11 mx-auto">All-in-One Business Hub: Manage
+            Everything,
             Anytime</span>
         <span class="title-medium-font-size col-md-6 col-11 mx-auto fw-400">Casherp goes beyond customer
             management—handle your
@@ -179,8 +180,9 @@
     </div>
 
     <!-- trial -->
-    <div class="" x-import="trial">
-        <vui-trial></vui-trial>
+    <div class="" x-import="trial" x-data="trialComponent()">
+        <vui-trial :headline="headline" :description="description" :subheadline="subheadline" :buttonText="buttonText"
+            :mainImage="mainImage" :backgroundImage="backgroundImage"></vui-trial>
     </div>
 
     <!-- footer -->

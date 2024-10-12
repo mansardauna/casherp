@@ -1,5 +1,6 @@
 :root {
     --grey-BG: #E3E5FF;
+    --brand:#76B2FD;
     --brand-2: #147AFD;
     --linear-3: linear-gradient(264.05deg, #0070FD 6.72%, #53B883 49.79%, #D8C256 94.57%);
     --text-blue: #02131C;
@@ -8,6 +9,7 @@
     --blue-5: #ACCEF9;
     --blue-shadow: #00D7FF;
     --green-1: #008550;
+    --green-3:#0BF49A;
     --green-4: #A3FDC2;
     --green-5: #099430;
     --green-shadow: #00FF48;
@@ -55,7 +57,9 @@ input:focus {
 .text-blue {
     color: var(--text-blue);
 }
-
+.bg-brand{
+    background-color: var(--brand);
+}
 .bg-brand-2 {
     background-color: var(--brand-2);
 }
@@ -140,6 +144,17 @@ input:focus {
     color: var(--green-1);
 }
 
+.bg-green-3 {
+    background-color: var(--green-3);
+}
+
+.border-green-3 {
+    border-color: var(--green-3);
+}
+
+.text-green-3 {
+    color: var(--green-3);
+}
 
 .bg-green-4 {
     background-color: var(--green-4);
@@ -244,7 +259,7 @@ input:focus {
 }
 
 .top-nav {
-    z-index: 100;
+    z-index: 1000;
 }
 
 
@@ -262,8 +277,8 @@ input:focus {
     position: -webkit-sticky;
     /* For Safari */
     position: sticky;
-    top: 0em;
-    z-index: 1000;
+    top: 4.4em;
+    z-index: 99;
 }
 
 

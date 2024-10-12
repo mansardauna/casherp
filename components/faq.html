@@ -11,7 +11,7 @@
             <div class="btn-end my-5">
                 <button @click="toggleAllFaqs"
                     class="border-2 border-brand-2 text-brand-2 rounded-3 fw-600 body-small-font-size mx-auto bg-transparent p-1 px-2"
-                    x-text="$prop('buttonText')"></button>
+                    x-text="expandedFaqs.length === faqs.length ? 'Collapse All' : 'Expand All'"></button>
             </div>
             <template x-for="(faq, index) in faqs" :key="index">
                 <div class="faq-item">
