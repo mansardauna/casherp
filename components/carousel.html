@@ -24,11 +24,6 @@
                                     </div>
                                 </div>
                                 <div class="d-flex space-x-2 p-2 w-fit mx-auto">
-                                    <template x-for="(_, dotIndex) in slides" :key="dotIndex">
-                                        <div @click="goToSlide(dotIndex)"
-                                            :class="{'bg-gray-100': currentIndex === dotIndex, 'bg-transparent border border-gray-200': currentIndex !== dotIndex}"
-                                            class="w-2 h-2 rounded-full cursor-pointer"></div>
-                                    </template>
                                 </div>
 
                                 <div x-show="currentIndex > 0" @click="prevSlide"

@@ -1,0 +1,30 @@
+<template x-component="testimonial">
+    <div class="py-5" x-data="$api.init()">
+        <div class="d-flex w-100 align-items-center justify-content-center py-4  ">
+            <div class="d-flex position-relative px-5 col-md-9 col-12">
+                <div class="space-y-6">
+                    <div class="p-5 rounded-56 w-100 d-flex flex-column gap-3 align-items-center transition-transform justify-content-center position-relative"
+                        :class="items.bg">
+                        <span x-text="items.content"
+                            class="text-center max-w-75 text-grey-4 body-large-font-size-light fw-400 leading-relaxed"></span>
+                        <div class="d-flex flex-column align-items-center">
+                            <img :src="items.image" :alt="items.alt" class="">
+                            <span x-text="items.name" class="title-medium-font-size capitalize"></span>
+                            <span x-text="items.position" class="body-medium-font-size text-center"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        return {
+            init() {
+                return {
+                    items: this.$prop('items') || ''
+
+                }
+            }
+        }
+    </script>
+</template>

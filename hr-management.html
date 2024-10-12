@@ -50,8 +50,8 @@
             <vui-faq title="faq" description="Got Questions? We've Got Answers—Let’s Clear the Confusion!"
                 bg-color="bg-grey" :items="faqsHr" buttonText="Expand All"></vui-faq>
         </div>
-        <div class="" x-import="carousel">
-            <vui-carousel></vui-carousel>
+        <div class="" x-import="testimonial" x-data="testimonialData()">
+            <vui-testimonial :items="data.invoice"></vui-testimonial>
         </div>
         <div class="" x-import="trial">
             <vui-trial></vui-trial>

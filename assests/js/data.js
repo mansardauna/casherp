@@ -416,3 +416,64 @@ function emailOptionData() {
     },
   };
 }
+
+function testimonialData() {
+  return {
+    data: {
+      invoice: {
+        image: "../assests/images/slide1.png",
+        alt: "Slide 1",
+        name: "Zarah Amir",
+        position: "Founder, Creative Designs Co",
+        bg: "bg-yellow-3",
+        content:
+          "I’ve been using the invoicing feature for a few months, and it has transformed my billing process! The customizable templates and automated reminders keep everything professional and on track. Plus, the one-click payment option is a game-changer for my clients. Highly recommend it!",
+      },
+      accounting: {
+        image: "../assests/images/slide1.png",
+        alt: "Slide 1",
+        name: "Jayden Rodriguez",
+        position: "Accountant, Business Solutions Inc.",
+        bg: "bg-purple-2",
+        content:
+          "Using the accounting features has completely transformed how I manage my finances. The real-time reporting gives me a clear picture of my business's health, while the expense tracking has helped me identify cost-saving opportunities.",
+      },
+      hrManagement: {
+        image: "../assests/images/slide1.png",
+        alt: "Slide 1",
+        name: "Sarah Thompson",
+        position: "Operations Manager, Tech Innovations Ltd.",
+        bg: "bg-blue-5",
+        content:
+          "Casherp's HR tools have made managing our team incredibly effortless. The onboarding process is simple, and automated attendance tracking saves us valuable time. Their customer support is fantastic! I highly recommend Casherp to any business",
+      },
+      assets: {
+        image: "../assests/images/slide1.png",
+        alt: "Slide 1",
+        name: "Tammy Lee",
+        position: "Operations Manager at TechWorks",
+        bg: "bg-yellow-3",
+        content:
+          "          Casherp’s asset management system has completely streamlined how we track and maintain our resources. The seamless integration with our accounting software has saved us time and made reporting much easier. It’s been a game-changer for our efficiency!",
+      },
+      purchase: {
+        image: "../assests/images/slide1.png",
+        alt: "Slide 1",
+        name: "James Carter",
+        position: "Procurement Director at Global Supplies",
+        bg: "bg-purple-2",
+        content:
+          " Casherp’s purchase management system has transformed how we handle procurement. Tracking orders is a breeze, and supplier management has never been easier. The reporting tools provide invaluable insights that help us make better purchasing decisions. Highly recommend! ",
+      },
+      purchase: {
+        image: "../assests/images/slide1.png",
+        alt: "Slide 1",
+        name: "Jamal Kabir",
+        position: "Fleet Manager at Green Logistics",
+        bg: "bg-blue-5",
+        content:
+          " Casherp has completely transformed how we manage our fleet. The real-time tracking and automated maintenance reminders have made a huge difference in our efficiency. We can now optimize our routes and keep our vehicles running smoothly, which has saved us both time and money. Highly recommend!",
+      },
+    },
+  };
+}
