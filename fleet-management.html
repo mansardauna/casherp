@@ -38,8 +38,9 @@
                 :hero-img="data.fleetManagement.img" :bg="data.fleetManagement.bg"></vui-hero>
         </div>
         <div class="" x-import="features" x-data="featuresComponent()">
-            <vui-features :title="categories.fleetManagement.title" :bg="categories.fleetManagement.bg"
-                :features="categories.fleetManagement.features"></vui-features>
+            <vui-features :fill="categories.fleetManagement.fill" :color="categories.fleetManagement.color"
+                :title="categories.fleetManagement.title" :checkboxBg="categories.fleetManagement.checked"
+                :bg="categories.fleetManagement.bg" :features="categories.fleetManagement.features"></vui-features>
         </div>
 
         <div class="" x-import="email-option" x-data="emailOptionData()">
@@ -48,13 +49,16 @@
 
         <div class="" x-import="faq" x-data="utils()">
             <vui-faq title="faq" description="Got Questions? We've Got Answers—Let’s Clear the Confusion!"
-                bg-color="bg-grey" faqs="" buttonText="Expand All"></vui-faq>
+                :items="faqsFleet" bg-color="bg-green-4" faqs="" buttonText="Expand All"></vui-faq>
         </div>
         <div class="" x-import="testimonial" x-data="testimonialData()">
-            <vui-testimonial :items="data.invoice"></vui-testimonial>
+            <vui-testimonial :items="data.fleetManagement"></vui-testimonial>
         </div>
-        <div class="" x-import="trial">
-            <vui-trial></vui-trial>
+        <div class="" x-import="trial" x-data="trials()">
+            <vui-trial :bg="data.fleetManagement.bg" :headline="data.fleetManagement.headline"
+                :description="data.fleetManagement.description" :buttonImage=" data.fleetManagement.buttonImage"
+                :subheadline="data.fleetManagement.subheadline" :buttonText="data.fleetManagement.buttonText"
+                :mainImage="data.fleetManagement.mainImage"></vui-trial>
         </div>
         <div class="" x-import="footer">
             <vui-footer></vui-footer>

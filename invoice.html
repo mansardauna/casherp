@@ -39,7 +39,9 @@
         </div>
 
         <div class="" x-import="features" x-data="featuresComponent()">
-            <vui-features :title="categories.invoice.title" :bg="categories.invoice.bg"
+            <vui-features :fill="categories.invoice.fill" :color="categories.invoice.color"
+                :checkboxBg="categories.invoice.checked" :title="
+                categories.invoice.title" :bg="categories.invoice.bg"
                 :features="categories.invoice.features"></vui-features>
         </div>
 
@@ -54,9 +56,10 @@
         <div class="" x-import="testimonial" x-data="testimonialData()">
             <vui-testimonial :items="data.invoice"></vui-testimonial>
         </div>
-        <div class="" x-import="trial" x-data="triaIinvoice()">
-            <vui-trial :headline="headline" :description="description" :subheadline="subheadline"
-                :buttonText="buttonText" :mainImage="mainImage"></vui-trial>
+        <div class="" x-import="trial" x-data="trials()">
+            <vui-trial :bg="data.invoice.bg" :headline="data.invoice.headline" :description="data.invoice.description"
+                :subheadline="data.invoice.subheadline" :buttonImage="data.invoice.buttonImage"
+                :buttonText="data.invoice.buttonText" :mainImage="data.invoice.mainImage"></vui-trial>
         </div>
         <div class="" x-import="footer">
             <vui-footer></vui-footer>

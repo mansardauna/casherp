@@ -38,7 +38,8 @@
                 :hero-img="data.assets.img" :bg="data.assets.bg"></vui-hero>
         </div>
         <div class="" x-import="features" x-data="featuresComponent()">
-            <vui-features :title="categories.assets.title" :bg="categories.assets.bg"
+            <vui-features :fill="categories.assets.fill" :color="categories.assets.color"
+                :checkboxBg="categories.assets.checked" :title="categories.assets.title" :bg="categories.assets.bg"
                 :features="categories.assets.features"></vui-features>
         </div>
 
@@ -48,13 +49,15 @@
 
         <div class="" x-import="faq" x-data="utils()">
             <vui-faq title="faq" description="Got Questions? We've Got Answers—Let’s Clear the Confusion!"
-                bg-color="bg-grey" faqs="" buttonText="Expand All"></vui-faq>
+                :items="faqsAssets" bg-color="bg-yellow-5" faqs="" buttonText="Expand All"></vui-faq>
         </div>
         <div class="" x-import="testimonial" x-data="testimonialData()">
-            <vui-testimonial :items="data.invoice"></vui-testimonial>
+            <vui-testimonial :items="data.assets"></vui-testimonial>
         </div>
-        <div class="" x-import="trial">
-            <vui-trial></vui-trial>
+        <div class="" x-import="trial" x-data="trials()">
+            <vui-trial :bg="data.assets.bg" :headline="data.assets.headline" :description="data.assets.description"
+                :buttonImage="data.assets.buttonImage" :subheadline="data.assets.subheadline"
+                :buttonText="data.assets.buttonText" :mainImage="data.assets.mainImage"></vui-trial>
         </div>
         <div class="" x-import="footer">
             <vui-footer></vui-footer>

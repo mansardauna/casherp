@@ -1,15 +1,15 @@
 <template x-component="hero">
     <div class="d-grid gap-4 hero-bg position-relative" x-data="$api.init()" :class="$prop('bg')">
-        <div class="d-flex col-11 flex-column gap-5 mx-auto justify-content-center position-relative mt-5">
-            <span class="heading-large-font-size lh-72 fw-600 text-black text-center"
+        <div class="d-flex col-11 flex-column  mx-auto justify-content-center position-relative mt-5 gap-4">
+            <span class="title-large-font-size-bold lh-72 fw-500 text-black text-center"
                 x-text="$prop('hero-title')"></span>
-            <span class=" title-medium-font-size lh-36 fw-400 smd:text-center text-black col-8 mx-auto"
+            <span class=" title-medium-font-size lh-36 fw-400 smd:text-center text-black col-md-6 col-10 mx-auto"
                 x-text="$prop('hero-description')"></span>
             <img src="../assests/images/hero-background.svg" alt="" class="hero-background-svg end-0">
 
             <img src="../assests/images/hero-background.svg" alt="" class="hero-background-svg start-0">
 
-            <div class="d-flex mx-auto">
+            <div class="d-flex mx-auto mt-4">
                 <input type="text" placeholder="Enter your email"
                     class="centered-plceholder rounded-start rounded-end-0 p-2 border-0">
                 <button id="start-trial-button"

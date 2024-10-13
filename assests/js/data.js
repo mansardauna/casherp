@@ -9,18 +9,79 @@ function trialComponent() {
     buttonImage: "./assests/images/Frame (10).svg",
     mainImage: "./assests/images/Group.png",
     backgroundImage: "./assests/images/trial.svg",
+    bg: "bg-green-4",
   };
 }
-function triaIinvoice() {
+function trials() {
   return {
-    headline: "Fed Up with Chasing Payments?",
-    description:
-      "Streamline your invoicing process and eliminate manual tracking hassles. Our platform ensures timely payments, minimizes errors, and delivers insightful reports to boost your cash flow and billing efficiency",
-    subheadline:
-      "Experience everything our platform has to offer with a 14-day free trial",
-    buttonText: "Start free trial",
-    buttonImage: "./assests/images/Frame (10).svg",
-    mainImage: "./assests/images/invoice-trial.png",
+    data: {
+      invoice: {
+        headline: "Fed Up with Chasing Payments?",
+        description:
+          "Streamline your invoicing process and eliminate manual tracking hassles. Our platform ensures timely payments, minimizes errors, and delivers insightful reports to boost your cash flow and billing efficiency",
+        subheadline:
+          "Experience everything our platform has to offer with a 14-day free trial",
+        buttonText: "Start free trial",
+        buttonImage: "./assests/images/Frame (10).svg",
+        mainImage: "./assests/images/invoice-trial.png",
+        bg: "bg-green-4",
+      },
+      accounting: {
+        headline: "Tired of Manual Data Entry?",
+        description:
+          "Let us ease your burden and minimize common human errors. We're here to support you and your accountants during tax season while providing in-depth reports to give you a clear view of your business's financial health",
+        subheadline:
+          "Experience everything our platform has to offer with a 14-day free trial",
+        buttonText: "Start free trial",
+        buttonImage: "./assests/images/Frame (10).svg",
+        mainImage: "./assests/images/trial-left.svg",
+        bg: "bg-blue-5",
+      },
+      hrManagement: {
+        headline: "Struggling to Track Employee Performance?",
+        description:
+          "From seamless onboarding to automated attendance tracking and performance management, we provide the tools you need to foster a productive work environment and empower your workforce",
+        subheadline:
+          "Experience everything our platform has to offer with a 14-day free trial",
+        buttonText: "Start free trial",
+        buttonImage: "./assests/images/Frame (10).svg",
+        mainImage: "./assests/images/trial-right.svg",
+        bg: "bg-yellow-3",
+      },
+      assets: {
+        headline: "Is Your Asset Tracking Falling Behind?",
+        description:
+          "Stay ahead of the game with our intuitive asset management solutions that simplify tracking, enhance visibility, and ensure optimal utilization of your resources",
+        subheadline:
+          "Experience everything our platform has to offer with a 14-day free trial",
+        buttonText: "Start free trial",
+        buttonImage: "./assests/images/Frame (10).svg",
+        mainImage: "./assests/images/trial-right.svg",
+        bg: "bg-green-4",
+      },
+      purchase: {
+        headline: "Is Your Purchasing Process Slowing You Down?",
+        description:
+          "Take control with our smart purchasing solutions that simplify procurement, improve supplier relationships, and help you manage your budget effectively. Gain better visibility and streamline your entire purchasing process",
+        subheadline:
+          "Experience everything our platform has to offer with a 14-day free trial",
+        buttonText: "Start free trial",
+        buttonImage: "./assests/images/Frame (10).svg",
+        mainImage: "./assests/images/trial-right.svg",
+        bg: "bg-blue-5",
+      },
+      fleetManagement: {
+        headline: "Is Your Fleet Hard to Manage?",
+        description:
+          "Streamline your fleet operations with real-time tracking, automated maintenance, and tools that boost efficiency while lowering costs. Keep your fleet running smoothly and optimize performance with ease",
+        subheadline:
+          "Experience everything our platform has to offer with a 14-day free trial",
+        buttonText: "Start free trial",
+        buttonImage: "./assests/images/Frame (10).svg",
+        mainImage: "./assests/images/trial-right.svg",
+        bg: "bg-yellow-3",
+      },
+    },
   };
 }
 
@@ -86,6 +147,7 @@ function featuresComponent() {
             description:
               "Set up recurring invoices to automatically bill clients at regular intervals. This feature saves time, reduces manual tasks, and ensures you never miss a billing cycle.",
             icon: "./assests/images/automation-icon.svg", // replace with actual path
+            color: "text-brand-2",
           },
           {
             label: "Scheduling",
@@ -124,6 +186,9 @@ function featuresComponent() {
           },
         ],
         bg: "bg-grey",
+        color: "text-brand-2",
+        fill: "fill-brand-2",
+        checked: "bg-brand-2",
       },
       hrManagement: {
         title: "Streamline Your HR Processes",
@@ -172,6 +237,9 @@ function featuresComponent() {
           },
         ],
         bg: "bg-grey",
+        color: "text-blue-1",
+        fill: "fill-blue-1",
+        checked: "bg-blue-1",
       },
       accounting: {
         title: "Simplify Your Financial Operations",
@@ -220,6 +288,9 @@ function featuresComponent() {
           },
         ],
         bg: "bg-green-4",
+        color: "text-green-1",
+        fill: "fill-green-1",
+        checked: "bg-green-1",
       },
       assets: {
         title: "Track. Control. Optimize. Master Your Assets!",
@@ -268,6 +339,9 @@ function featuresComponent() {
           },
         ],
         bg: "bg-grey",
+        color: "text-blue-1",
+        fill: "fill-blue-1",
+        checked: "bg-blue-1",
       },
       fleetManagement: {
         title: "Order. Control. Transform. Revolutionize Your Purchasing!",
@@ -316,6 +390,9 @@ function featuresComponent() {
           },
         ],
         bg: "bg-grey",
+        color: "text-blue-1",
+        fill: "fill-blue-1",
+        checked: "bg-blue-1",
       },
       purchase: {
         title: "Order. Control. Transform. Revolutionize Your Purchasing!",
@@ -366,6 +443,9 @@ function featuresComponent() {
           // Add more Fleet Management features here
         ],
         bg: "bg-green-4",
+        color: "text-green-1",
+        fill: "fill-green-1",
+        checked: "bg-green-1",
       },
     },
   };
@@ -421,56 +501,62 @@ function testimonialData() {
   return {
     data: {
       invoice: {
-        image: "../assests/images/slide1.png",
+        image: "../assests/images/zarah.svg",
         alt: "Slide 1",
         name: "Zarah Amir",
         position: "Founder, Creative Designs Co",
         bg: "bg-yellow-3",
+        color: "fill-yellow-3",
         content:
           "I’ve been using the invoicing feature for a few months, and it has transformed my billing process! The customizable templates and automated reminders keep everything professional and on track. Plus, the one-click payment option is a game-changer for my clients. Highly recommend it!",
       },
       accounting: {
-        image: "../assests/images/slide1.png",
+        image: "../assests/images/jayden.svg",
         alt: "Slide 1",
         name: "Jayden Rodriguez",
         position: "Accountant, Business Solutions Inc.",
         bg: "bg-purple-2",
+        color: "fill-purple-2",
         content:
           "Using the accounting features has completely transformed how I manage my finances. The real-time reporting gives me a clear picture of my business's health, while the expense tracking has helped me identify cost-saving opportunities.",
       },
       hrManagement: {
-        image: "../assests/images/slide1.png",
+        image: "../assests/images/sarah.svg",
         alt: "Slide 1",
         name: "Sarah Thompson",
         position: "Operations Manager, Tech Innovations Ltd.",
         bg: "bg-blue-5",
+        color: "fill-blue-5",
         content:
           "Casherp's HR tools have made managing our team incredibly effortless. The onboarding process is simple, and automated attendance tracking saves us valuable time. Their customer support is fantastic! I highly recommend Casherp to any business",
       },
       assets: {
-        image: "../assests/images/slide1.png",
+        image: "../assests/images/temmy.svg",
         alt: "Slide 1",
         name: "Tammy Lee",
         position: "Operations Manager at TechWorks",
         bg: "bg-yellow-3",
+        color: "fill-yellow-3",
         content:
           "          Casherp’s asset management system has completely streamlined how we track and maintain our resources. The seamless integration with our accounting software has saved us time and made reporting much easier. It’s been a game-changer for our efficiency!",
       },
       purchase: {
-        image: "../assests/images/slide1.png",
+        image: "../assests/images/james.svg",
         alt: "Slide 1",
         name: "James Carter",
         position: "Procurement Director at Global Supplies",
         bg: "bg-purple-2",
+        color: "fill-purple-2",
         content:
           " Casherp’s purchase management system has transformed how we handle procurement. Tracking orders is a breeze, and supplier management has never been easier. The reporting tools provide invaluable insights that help us make better purchasing decisions. Highly recommend! ",
       },
-      purchase: {
-        image: "../assests/images/slide1.png",
+      fleetManagement: {
+        image: "../assests/images/jamal.svg",
         alt: "Slide 1",
         name: "Jamal Kabir",
         position: "Fleet Manager at Green Logistics",
         bg: "bg-blue-5",
+        color: "fill-blue-5",
         content:
           " Casherp has completely transformed how we manage our fleet. The real-time tracking and automated maintenance reminders have made a huge difference in our efficiency. We can now optimize our routes and keep our vehicles running smoothly, which has saved us both time and money. Highly recommend!",
       },

@@ -93,7 +93,15 @@ document.addEventListener("DOMContentLoaded", () => {
 //     cardContainer.appendChild(card);
 //   });
 // });
-
+document.addEventListener("alpine:init", () => {
+  Alpine.data("customCheckboxComponent", () => ({
+    checked: false,
+    bgColor: "#FF0000", // Example background color
+    toggle() {
+      this.checked = !this.checked;
+    },
+  }));
+});
 function utils() {
   return {
     faqsIndex: [
@@ -197,6 +205,48 @@ function utils() {
           "Yes, you can send invoices in multiple currencies. This feature allows you to bill clients in their preferred currency, ensuring smooth international transactions.",
       },
     ],
+    faqsAccount: [
+      {
+        question: "How do I access my financial reports?",
+        answer:
+          "You can access your financial reports through our user-friendly dashboard. Simply navigate to the 'Reports' section, where you can generate and view various financial reports with a few clicks.",
+      },
+      {
+        question: "Can I import my existing financial data?",
+        answer:
+          "Yes, our platform allows you to import your existing financial data seamlessly. You can upload files in supported formats, and our system will integrate the data into your current setup without any hassle.",
+      },
+      {
+        question: "Is my financial data secure?",
+        answer:
+          "Absolutely. We prioritize the security of your financial data with advanced encryption, secure servers, and regular backups. Your data is protected against unauthorized access and breaches.",
+      },
+      {
+        question: "What type of reports can I generate?",
+        answer:
+          "You can generate a wide range of reports, including profit and loss statements, balance sheets, cash flow statements, expense reports, and custom reports tailored to your specific needs.",
+      },
+      {
+        question: "Can I set budget for different departments?",
+        answer:
+          "Yes, you can set and manage budgets for different departments. This feature helps you monitor spending, maintain financial discipline, and quickly identify variances to adjust your strategies accordingly.",
+      },
+      {
+        question: "Is there customer support available?",
+        answer:
+          "Yes, we offer dedicated customer support to assist you with any issues or questions you may have. Our support team is available via phone, email, and chat to ensure you get the help you need promptly.",
+      },
+      {
+        question: "Can I track my expenses in real time?",
+        answer:
+          "Yes, our platform provides real-time expense tracking. You can monitor and categorize all your business expenses as they occur, helping you stay on top of your financial health and identify areas for cost savings.",
+      },
+      {
+        question: "Do you offer multi-currency support?",
+        answer:
+          "Yes, we offer multi-currency support, enabling you to handle international transactions seamlessly. Our system automatically tracks exchange rates and conversions, making it easy to manage global finances.",
+      },
+    ],
     faqsHr: [
       {
         question: "How does the onboarding process work?",
@@ -239,10 +289,137 @@ function utils() {
           "Yes, we offer dedicated customer support to assist you with any questions or issues related to HR management. Our team is here to help you maximize the value of our platform.",
       },
     ],
+    faqsAssets: [
+      {
+        question: "What is asset management, and why is it important?",
+        answer:
+          "Asset management is the process of monitoring and maintaining assets throughout their lifecycle, from acquisition to disposal. It is important because it helps organizations optimize asset performance, reduce costs, ensure compliance, and maximize the value derived from their investments.",
+      },
+      {
+        question: "How can I track the location and condition of my assets?",
+        answer:
+          "You can track the location and condition of your assets using real-time GPS technology and our asset management software. The platform provides a dashboard that displays the current status, location, and maintenance history of each asset.",
+      },
+      {
+        question: "Can I set maintenance reminders for my assets?",
+        answer:
+          "Yes, our platform allows you to set automatic maintenance reminders for your assets. This feature helps ensure timely service and repairs, prolonging asset lifespan and minimizing downtime.",
+      },
+      {
+        question: "Does your system calculate asset depreciation?",
+        answer:
+          "Yes, our system automatically calculates asset depreciation based on the chosen depreciation method. This feature allows you to keep accurate financial records and assess the current value of your assets.",
+      },
+      {
+        question: "Can I categorize my assets by type or location?",
+        answer:
+          "Yes, you can easily categorize your assets by type, location, department, or any other custom criteria. This functionality enhances organization and makes it easier to manage and locate assets within your inventory.",
+      },
+      {
+        question: "How does the platform handle asset audits?",
+        answer:
+          "Our platform simplifies asset audits by providing tools for conducting regular audits and verifying the location, condition, and status of each asset. You can generate audit reports to ensure compliance and maintain accurate records.",
+      },
+      {
+        question: "Does the platform integrate with accounting systems?",
+        answer:
+          "Yes, our asset management platform integrates seamlessly with various accounting systems. This integration ensures accurate financial data synchronization, simplifying budgeting, reporting, and tax preparation.",
+      },
+      {
+        question: "Can I generate reports on asset performance?",
+        answer:
+          "Absolutely! Our platform allows you to generate detailed reports on asset performance, usage patterns, and maintenance history. These insights enable you to make informed decisions and optimize asset management strategies.",
+      },
+    ],
+    faqsPurchase: [
+      {
+        question: "What is purchase management, and why is it important?",
+        answer:
+          "Purchase management is the process of overseeing and controlling the procurement of goods and services within an organization. It is important because it helps organizations optimize their purchasing decisions, control costs, maintain supplier relationships, and ensure timely delivery of products.",
+      },
+      {
+        question: "How can I track my purchase orders?",
+        answer:
+          "You can track your purchase orders in real-time using our purchase management platform. It provides a dashboard that displays the status of all orders, including order confirmation, shipment tracking, and delivery timelines.",
+      },
+      {
+        question: "Can I manage supplier information?",
+        answer:
+          "Yes, our platform allows you to maintain detailed profiles of your suppliers, including contact information, pricing, lead times, and performance metrics. This helps strengthen supplier relationships and negotiate better deals.",
+      },
+      {
+        question: "How does budget control work?",
+        answer:
+          "Budget control allows you to set and manage budgets for different departments or projects. You can monitor spending against these budgets, ensuring that expenditures remain within limits and promoting effective resource allocation.",
+      },
+      {
+        question: "What features do you offer for purchase requests?",
+        answer:
+          "Our platform includes customizable purchase request forms, automated approval workflows, and compliance checks, streamlining the request process and ensuring that all purchases align with company policies.",
+      },
+      {
+        question: "Are reports available for purchase analytics?",
+        answer:
+          "Yes, our system provides comprehensive reporting capabilities that enable you to analyze purchasing trends, supplier performance, and budget usage. These reports facilitate data-driven decision-making.",
+      },
+      {
+        question: "Can I establish approval workflows for purchases?",
+        answer:
+          "Absolutely! Our platform allows you to create customized approval workflows for purchase requests, ensuring that all purchases go through the necessary approvals before being processed.",
+      },
+      {
+        question: "Does the platform integrate with inventory management?",
+        answer:
+          "Yes, our purchase management system integrates seamlessly with inventory management, allowing you to optimize ordering processes, reduce stockouts, and manage excess inventory effectively.",
+      },
+    ],
+    faqsFleet: [
+      {
+        question: "What is fleet management?",
+        answer:
+          "Fleet management is the process of overseeing, organizing, and maintaining a company's vehicle fleet. It includes vehicle acquisition, tracking, maintenance, fuel management, driver management, and regulatory compliance to ensure efficient and cost-effective fleet operations.",
+      },
+      {
+        question: "How can I track my vehicles in real-time?",
+        answer:
+          "You can track your vehicles in real-time using advanced GPS technology integrated into our fleet management system. This provides complete visibility of all vehicles, allowing you to optimize routes, improve efficiency, and reduce travel time.",
+      },
+      {
+        question: "What maintenance features are included?",
+        answer:
+          "Our platform includes automated maintenance schedules and reminders for all vehicles in your fleet. This ensures timely service and repairs, minimizes downtime, enhances safety, and extends the lifespan of your assets.",
+      },
+      {
+        question: "How does fuel management work?",
+        answer:
+          "Fuel management features allow you to track fuel consumption and expenses in detail. You can identify trends and reduce costs by managing fuel efficiency effectively, making informed purchasing decisions, and monitoring fuel usage across your fleet.",
+      },
+      {
+        question: "Can I manage driver information?",
+        answer:
+          "Yes, our system allows you to maintain comprehensive profiles for each driver, including performance metrics, safety records, and training history. This helps ensure compliance, enhance safety, and improve overall fleet operations.",
+      },
+      {
+        question: "What kind of reports can I generate?",
+        answer:
+          "You can generate a variety of reports on fleet performance, maintenance history, fuel usage, and driver behavior. These reports provide valuable insights that empower you to make informed decisions and drive continuous improvement in your fleet management.",
+      },
+      {
+        question: "How do you ensure compliance with regulations?",
+        answer:
+          "Our platform helps ensure compliance with regulations by maintaining accurate records of vehicle maintenance, driver information, and operational activities. This includes automated reminders for regulatory deadlines and comprehensive documentation management.",
+      },
+      {
+        question: "How can I reduce fleet operating costs?",
+        answer:
+          "You can reduce fleet operating costs by using our system to optimize routes, automate maintenance schedules, manage fuel consumption, and analyze cost data. These features help identify savings opportunities and improve operational efficiency, leading to reduced expenses.",
+      },
+    ],
 
     feautureOpen: false,
     reasourcesOpen: false,
     hamburger: false,
+    check: true,
   };
 }
 

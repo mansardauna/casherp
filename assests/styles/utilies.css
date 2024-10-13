@@ -128,8 +128,6 @@
 
 .title-large-font-size-bold {
     font-size: 32px;
-    line-height: 52px;
-    letter-spacing: 0.005em;
 }
 
 .title-medium-font-size {
@@ -289,4 +287,14 @@
 
 .hero-image img{
     top:1rem;
+}
+.flip-horizontal {
+    transform: scaleX(-1);
+}
+.quotation{
+    top: 20px;
+}
+.quotation-flip{
+    left: 70px;
+    bottom: 50px;
 }

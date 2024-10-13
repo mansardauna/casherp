@@ -1,8 +1,7 @@
 <template x-component="trial">
-    <div class="bg-green-4 p-md-4 p-3" x-data="$api.init()">
-        <div class="d-md-flex d-grid justify-content-center align-items-center mt-3 gap-5 col-md-10 col-12 mx-auto ">
-            <div
-                class="position-relative d-flex flex-column gap-4 text-center items-center justify-center col-md-6 col-12">
+    <div class="px-3" :class="$prop('bg')" x-data="$api.init()">
+        <div class="d-md-flex d-grid justify-content-center align-items-center gap-5 col-md-10 col-12 mx-auto ">
+            <div class="d-flex flex-column gap-4 text-center align-items-center justify-content-center col-md-6 col-12">
                 <span x-text="$prop('headline')"
                     class="text-2xl font-medium capitalize fw-500 body-large-font-size text-grey-5 col-11"></span>
                 <span x-text="$prop('description')"
@@ -10,13 +9,13 @@
                 <span x-text="$prop('subheadline')" class="body-medium-font-size fw-500 text-grey-5"></span>
                 <div class="">
                     <button id="start-trial-button"
-                        class="btn btn-primary-custom text-capitalize bg-brand-2 px-md-3 p-2 rounded-3 body-small-font-size">
+                        class="btn btn-primary-custom text-capitalize bg-brand-2 px-md-3 p-2 rounded-3 d-flex gap-2 align-items-center body-small-font-size">
                         <span x-text="$prop('buttonText')"></span>
                         <img :src="$prop('buttonImage')" alt="">
                     </button>
                 </div>
             </div>
-            <div class="position-relative col-md-4 justify-content-end p-5">
+            <div class="position-relative col-md-5 justify-content-end p-5">
                 <img :src="$prop('mainImage')" alt="" class="z-100 my-5">
                 <img :src="$prop('backgroundImage')" alt="" class="position-absolute end-0 top-0">
             </div>

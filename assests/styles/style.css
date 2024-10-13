@@ -38,8 +38,14 @@ body {
 a {
     text-decoration: none;
     color: black;
-}
 
+}
+a:hover{
+    text-decoration: none;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
 
 button {
     padding: 0;
@@ -66,10 +72,13 @@ input:focus {
 .bg-brand-2 {
     background-color: var(--brand-2);
 }
-
+.fill-green-1{
+    fill: var(--green-1);
+}
 .border-brand-2 {
     border-color: var(--brand-2);
 }
+.f
 
 .blue-shadow {
     box-shadow: 8px 8px 0px 0px #00D7FF;
@@ -90,10 +99,14 @@ input:focus {
 .text-brand-2 {
     color: var(--brand-2);
 }
+.fill-brand-2 {
+    fill: var(--brand-2);
+}
 
 .bg-grey {
     background: var(--grey-BG);
 }
+
 
 .border-bottom-grey-2 {
     border-bottom: 1px solid var(--grey-2);
@@ -109,6 +122,9 @@ input:focus {
 
 .text-blue-1 {
     color: var(--blue-1);
+}
+.fill-blue-1{
+    fill: var(--blue-1);
 }
 
 .bg-blue-5 {
@@ -200,7 +216,15 @@ input:focus {
     background-color: var(--yellow-3);
 }
 
-
+.text-yellow-3 {
+    color: var(--yellow-3);
+}
+.fill-yellow-3{
+    fill: var(--yellow-3);
+}
+.fill-blue-5{
+    fill: var(--blue-5);
+}
 .bg-yellow-4 {
     background-color: var(--yellow-4);
 }
@@ -266,6 +290,9 @@ input:focus {
 }
 .bg-purple-2 {
     background-color: var(--purple-2);
+}
+.fill-purple-2{
+    fill: var(--purple-2)
 }
 
 .top-nav {
@@ -353,3 +380,49 @@ input:focus {
         letter-spacing: 0.25px;
     }
 }
+
+
+    .form-checkbox-wrapper {
+        position: relative;
+        width: 20px; /* Width of the custom checkbox */
+        height: 20px; /* Height of the custom checkbox */
+    }
+
+    .form-checkbox {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .custom-checkbox {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px; /* Optional: rounded corners */
+        border: 2px solid #ccc; /* Default border color */
+        position: relative;
+        cursor: pointer;
+        background-color: white;
+    }
+
+    .form-checkbox:checked + .custom-checkbox {
+        background-color: inherit; /* Use the dynamic background color */
+    }
+
+    .custom-checkbox::after {
+        content: '';
+        position: absolute;
+        left: 6px;
+        top: 1px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 2px 2px 0; /* Create the checkmark shape */
+        transform: rotate(45deg);
+        opacity: 0; /* Hide checkmark initially */
+    }
+
+    .form-checkbox:checked + .custom-checkbox::after {
+        opacity: 1; /* Show checkmark when checked */
+    }
