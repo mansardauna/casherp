@@ -536,7 +536,7 @@ function tabComponent() {
         bg: "bg-grey",
         frameColor: "bg-blue-3",
         description:
-          "Assets Management Module provides the ability of managing company's assets inside Casherp's dashboard. You will be able to separate your assets based on groups/locations/units and assign them to staff members. The module helps you gain insights, reduce risks, and make informed decisions",
+          "Manage, and optimize your fleet with real-time insights and automation. Monitor performance, reduce costs, and streamline operations",
         img: "./assests/images/fleet-image.png",
         content:
           "CashERP facilitates the centralized management of your vehicle and driver information through our robust and compliant Fleet Management Software. Stay ahead of issues with proactive fleet management that keeps your operations running smoothly and efficiently.",
@@ -568,6 +568,22 @@ function tabComponent() {
       tab.scrollIntoView({
         behavior: "smooth",
       });
+    },
+    changeTab(index) {
+      this.activeTab = index; // Change tab on click
+      this.scrollToTab(index);
+    },
+    prevTab() {
+      if (this.activeTab > 0) {
+        this.activeTab--;
+        this.scrollToTab(this.activeTab);
+      }
+    },
+    nextTab() {
+      if (this.activeTab < this.tabs.length - 1) {
+        this.activeTab++;
+        this.scrollToTab(this.activeTab);
+      }
     },
   };
 }

@@ -10,6 +10,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assests/styles/style.css">
     <link rel="stylesheet" href="./assests/styles/utilies.css">
+    <link rel="stylesheet" href="./assests/styles/mobile.css">
     <script src="./assests/js/script.js"></script>
     <script src="./assests/js/data.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,17 +42,20 @@
     <div class="hero d-md-flex p-md-5 p-2 py-5">
         <div class="col-md-11 justify-content-between mx-auto d-md-flex">
             <div class="col-11 col-md-6 d-flex flex-column gap-5 mx-auto mx-md-none justify-content-center ">
-                <span class="hero-title sd:text-center text-black">Manage Your Business Efficiently At Low Cost</span>
+                <span class="hero-title sd:text-center text-black  col-md-12 col-10 mx-auto mx-md-auto">Manage Your
+                    Business Efficiently At
+                    Low Cost</span>
+                <img src="./assests/images/hero-mobile.png" alt="" class=" d-flex d-md-none">
                 <span class="hero-des smd:text-center text-black">Invoicing, Accounting, Purchasing, CRM, HR, Payroll,
                     Marketing,
                     and
                     Inventory Management Software
                     for your growing business</span>
-                <div class="d-flex">
+                <div class="d-md-flex d-flex flex-md-row flex-column gap-2 gap-md-0 justify-content-center">
                     <input type="text" placeholder="Enter your email"
-                        class="col-7 centered-placeholder rounded-start rounded-end-0 p-2 border-0">
+                        class="col-md-7 col-12 mx-md-0 mx-auto centered-placeholder rounded-start rounded-end-0 p-2 border-0">
                     <button id="start-trial-button"
-                        class="btn-primary-custom rounded-end rounded-start-0 text-capitalize bg-brand-2 px-md-4 px-2">Start
+                        class="btn-primary-custom rounded-end rounded-start-0 w-fit text-capitalize bg-brand-2 px-5 py-2 py-md-0 mx-auto mx-md-0">Start
                         free trial</button>
                 </div>
 
@@ -63,18 +67,19 @@
     </div>
 
     <!-- all-in-one -->
-    <div class="my-5 py-5 d-flex flex-column gap-5">
-        <span class="title-large-font-size fw-500 mt-4 col-md-5 col-11 mx-auto">All-in-One Business Hub: Manage
+    <div class="my-5 py-5 d-flex flex-column gap-md-5 gap-3">
+        <span class="title-large-font-size fs-sm-18 lh-sm-32 fw-500 mt-4 col-md-5 col-11 mx-auto">All-in-One Business
+            Hub: Manage
             Everything,
             Anytime</span>
-        <span class="title-medium-font-size col-md-6 col-11 mx-auto fw-400">Casherp goes beyond customer
+        <span class="title-medium-font-size fw-sm-14 col-md-6 col-11 mx-auto fw-400">Casherp goes beyond customer
             management—handle your
             finances, assets,
             inventory, sales, marketing, HR,
             and more</span>
         <div class="d-md-flex col-10 justify-content-center mx-auto grid grid-2 gap-4" x-data="cardData()">
             <template x-for="item in items" :key="item.title">
-                <div class="d-flex flex-column align-items-center gap-4 text-white justify-content-center my-5 my-md-0"
+                <div class="d-flex flex-column align-items-center gap-4 text-white justify-content-center my-3 my-md-0"
                     :class="item.bg" style="width: 302px;
                     height: 302px;
                     padding: 45px 30px 45px 30px;
@@ -120,7 +125,7 @@
     </div>
 
     <!-- tabs -->
-    <div class="" x-data="tabComponent()" x-init="init()">
+    <div class="d-none d-md-block" x-data="tabComponent()" x-init="init()">
         <div class="bg-purple py-4 sticky-tabs">
             <div class="d-flex p-md-0 p-3 flex-column gap-4">
                 <span class="p-2 px-3 bg-blue-3 rounded-16 w-fit mx-auto text-white fw-500">Features</span>
@@ -165,6 +170,49 @@
             </template>
         </div>
 
+    </div>
+
+    <div class="" x-data="tabComponent()" x-init="init()">
+        <div class="tab-wrapper position-relative overflow-hidden">
+            <div class="d-flex" :style="{ transform: `translateX(-${activeTab * 100}%)` }">
+                <template x-for="(tab, index) in tabs" :key="index">
+                    <div class="d-flex py-4 flex-column" :class="tab.bg" :id="'tab-' + index"
+                        x-show="activeTab === index">
+                        <div class="d-flex p-md-0 p-3 flex-column gap-4">
+                            <span
+                                class="p-2 px-3 bg-blue-3 rounded-pill w-fit mx-auto fs-sm-16 text-white fw-500">Features</span>
+                            <span class="title-large-font-size fw-500 fs-sm-22 lh-sm-32">What Makes Us Stand Out</span>
+                        </div>
+                        <span class="p-2 px-3 text-white fw-500 rounded-pill fs-sm-14 lh-sm-24 w-fit mx-auto"
+                            :class="tab.frameColor" x-text="tab.title"></span>
+
+                        <div class="col-md-8 d-grid p-md-0 p-3 gap-3">
+                            <div class="">
+                                <p x-text="tab.description"
+                                    class=" lh-36 fw-500 fs-sm-16 lh-sm-28 text-black col-md-10">
+                                </p>
+                            </div>
+                            <div class="d-flex gap-2 justify-content-cent align-items-center">
+                                <img :src="tab.img" :alt="tab.title" class="tab-img">
+                                <div
+                                    class="rounded-12 body-small-font-size content-card my-md-4 fw-400 lh-28 py-4 d-flex flex-column">
+                                    <button
+                                        class="border-2  border-brand-2  text-brand-2 rounded-12 fw-600 body-small-font-size px-2 mx-auto bg-transparent">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div class="d-flex justify-content-between position-absolute px-3 w-100 tab-navigator">
+                <img @click="prevTab()" x-show="activeTab > 0" src="./assests/images/pointer.svg" alt=""
+                    class="rotate-180">
+                <img @click="nextTab()" x-show="activeTab < 4" src="./assests/images/pointer.svg" alt="">
+
+            </div>
+        </div>
     </div>
 
     <!-- faq -->

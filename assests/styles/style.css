@@ -297,6 +297,9 @@ input:focus {
 
 .top-nav {
     z-index: 1000;
+    box-shadow: 0px 1px 3px 1px #00000026;
+box-shadow: 0px 1px 2px 0px #0000004D;
+
 }
 
 
@@ -359,27 +362,7 @@ input:focus {
     letter-spacing: 0.25px;
 }
 
-@media (max-width: 768px) {
 
-    /* You can adjust the max-width value for different screen sizes */
-    .tab-img {
-        width: 100%;
-
-    }
-
-    .tab-frame {
-        width: 100%;
-    }
-
-    .content-card {
-        width: 350px;
-        gap: 24px;
-        border-radius: 12px 0px 0px 0px;
-        opacity: 0px;
-        line-height: 28px;
-        letter-spacing: 0.25px;
-    }
-}
 
 
     .form-checkbox-wrapper {

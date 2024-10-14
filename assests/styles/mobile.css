@@ -1,0 +1,70 @@
+@media (max-width: 768px) {
+
+    /* You can adjust the max-width value for different screen sizes */
+    .tab-img {
+        width: 70%;
+
+    }
+    .tab-content{
+    width: 100vw;
+    }
+    .tab-frame {
+        width: 100%;
+    }
+    .tab-wrapper{
+        height: fit-content;
+    }
+    .content-card {
+        width: 350px;
+        gap: 24px;
+        border-radius: 12px 0px 0px 0px;
+        opacity: 0px;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+    }
+
+    .logo{
+        width: 80px;
+    }
+    .features-dropdown{
+        right: 20px;
+    }
+    .hero-title, .hero-des{
+        text-align: center;
+    }
+    .hero-title{
+        font-size: 32px;
+        line-height: 44px;
+    }
+    .hero-des{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .fs-sm-14{
+        font-size: 14px;
+    }
+    .fs-sm-16{
+        font-size: 16px;
+    }
+    .fs-sm-18{
+        font-size: 18px;
+    }
+    .fs-sm-22{
+        font-size: 22px;
+    }
+    .lh-sm-24{
+        line-height: 24px;
+    }
+    .lh-sm-28{
+        line-height: 28px;
+    }
+    .lh-sm-32{
+        line-height: 32px;
+    }
+    .tab-navigator{
+        top: 10rem;
+    }
+}
+.w-fit{
+    width: fit-content;
+}
