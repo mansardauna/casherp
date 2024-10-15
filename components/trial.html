@@ -1,21 +1,28 @@
 <template x-component="trial">
-    <div class="px-3" :class="$prop('bg')" x-data="$api.init()">
+    <div class="py-5 px-4 py-md-0 px-md-2" :class="$prop('bg')" x-data="$api.init()">
         <div class="d-md-flex d-grid justify-content-center align-items-center gap-5 col-md-10 col-12 mx-auto ">
             <div class="d-flex flex-column gap-4 text-center align-items-center justify-content-center col-md-6 col-12">
                 <span x-text="$prop('headline')"
-                    class="text-2xl font-medium capitalize fw-500 body-large-font-size text-grey-5 col-11"></span>
+                    class="text-2xl font-medium capitalize fw-500 fs-sm-18 lh-sm-28 body-large-font-size text-grey-5 col-11"></span>
                 <span x-text="$prop('description')"
-                    class="w-10/12 text-gray-800 leading-loose fw-400 title-medium-font-size text-grey-5"></span>
-                <span x-text="$prop('subheadline')" class="body-medium-font-size fw-500 text-grey-5"></span>
+                    class="w-10/12 text-gray-800 leading-loose fw-400 fs-sm-14 lh-sm-28 title-medium-font-size text-grey-5"></span>
+                <div class="position-relative col-md-5 justify-content-end px-5 d-md-none d-block ">
+                    <img :src="$prop('mainImage')" alt="" class="z-100 mt-4" style="width: 12rem;">
+                    <img :src="$prop('backgroundImage')" alt="" class="position-absolute"
+                        style="width: 13rem; right: 1rem; top: 0; ">
+                </div>
+                <span x-text="$prop('subheadline')"
+                    class="body-medium-font-size fs-sm-12 lh-sm-24 fw-500 text-grey-5"></span>
+
                 <div class="">
-                    <button id="start-trial-button"
+                    <button id=" start-trial-button"
                         class="btn btn-primary-custom text-capitalize bg-brand-2 px-md-3 p-2 rounded-3 d-flex gap-2 align-items-center body-small-font-size">
                         <span x-text="$prop('buttonText')"></span>
                         <img :src="$prop('buttonImage')" alt="">
                     </button>
                 </div>
             </div>
-            <div class="position-relative col-md-5 justify-content-end p-5">
+            <div class="position-relative col-md-5 justify-content-end p-5 d-none d-md-block">
                 <img :src="$prop('mainImage')" alt="" class="z-100 my-5">
                 <img :src="$prop('backgroundImage')" alt="" class="position-absolute end-0 top-0">
             </div>

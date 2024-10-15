@@ -1,23 +1,25 @@
 <template x-component="faq">
-    <div class="faq-container p-5" :class="$prop('bg-color')" x-data="$api.faqComponent()">
+    <div class="faq-container p-md-5 p-4" :class="$prop('bg-color')" x-data="$api.faqComponent()">
         <div class="col-md-10 col-12 mx-auto">
             <div class="d-flex flex-column gap-4">
                 <span
-                    class="p-2 px-3 bg-green-1 rounded-24 w-fit mx-auto fw-500  title-medium-font-size text-uppercase text-white"
+                    class="p-2 px-3 bg-green-1 rounded-24 w-fit mx-auto fw-500  title-medium-font-size fs-sm-16 lh-sm-24 text-uppercase text-white"
                     x-text="$prop('title')"></span>
-                <span class="title-large-font-size fw-500 col-md-10 col-12 mx-auto text-black lh-49"
+                <span class="title-large-font-size fw-500 col-md-10 col-12  d-none d-md-block mx-auto text-black lh-49"
                     x-text="$prop('description')"></span>
+                <span class="fs-sm-22 lh-sm-32 fw-500 col-md-10 col-12 text-center d-md-none d-block mx-auto text-black"
+                    x-text="$prop('mobile-description')"></span>
             </div>
-            <div class="btn-end my-5">
+            <div class="btn-end my-md-5">
                 <button @click="toggleAllFaqs"
-                    class="border-2 border-brand-2 text-brand-2 rounded-3 fw-600 body-small-font-size mx-auto bg-transparent p-1 px-2"
+                    class="border-2 border-brand-2 text-brand-2 rounded-3 d-none d-md-block fw-600 body-small-font-size mx-auto bg-transparent p-1 px-2"
                     x-text="expandedFaqs.length === faqs.length ? 'Collapse All' : 'Expand All'"></button>
             </div>
             <template x-for="(faq, index) in faqs" :key="index">
                 <div class="faq-item">
                     <div class="faq-question py-3 my-1 position-relative"
                         :class="expandedFaqs.includes(index) ? '' : 'border-bottom-grey-2'" @click="toggleFaq(index)">
-                        <span x-text="faq.question"></span>
+                        <span x-text="faq.question" class="fs-sm-16 lh-sm-28"></span>
                         <img src="./assests/images/Arrows 2.svg" alt="" class="position-absolute end-0"
                             :class="expandedFaqs.includes(index) ? 'rotate-180' : ''">
                     </div>

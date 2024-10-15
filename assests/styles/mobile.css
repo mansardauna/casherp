@@ -23,12 +23,22 @@
         letter-spacing: 0.25px;
     }
 
+    .w-full{
+        width: 100%;
+    }
     .logo{
         width: 80px;
     }
     .features-dropdown{
         right: 20px;
     }
+.hero{
+    height: 80vh ;
+}
+
+.hero-container{
+height: 870px ;
+}
     .hero-title, .hero-des{
         text-align: center;
     }
@@ -39,6 +49,10 @@
     .hero-des{
         font-size: 16px;
         line-height: 28px;
+    }
+
+    .fs-sm-12{
+        font-size: 12px;
     }
     .fs-sm-14{
         font-size: 14px;
@@ -52,8 +66,17 @@
     .fs-sm-22{
         font-size: 22px;
     }
+    .fs-sm-24{
+        font-size: 24px;
+    }
+    .fs-sm-28{
+        font-size: 28px;
+    }
     .lh-sm-24{
         line-height: 24px;
+    }
+    .lh-sm-26{
+        line-height: 26px;
     }
     .lh-sm-28{
         line-height: 28px;
@@ -61,8 +84,17 @@
     .lh-sm-32{
         line-height: 32px;
     }
+    .lh-sm-40{
+        line-height: 40px;
+    }
+    .lh-sm-58{
+        line-height: 58px;
+    }
     .tab-navigator{
         top: 10rem;
+    }
+    .text-center-sm{
+        text-align: center;
     }
 }
 .w-fit{

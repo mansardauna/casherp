@@ -48,8 +48,9 @@
         </div>
 
         <div class="" x-import="faq" x-data="utils()">
-            <vui-faq title="faq" description="Got Questions? We've Got Answers—Let’s Clear the Confusion!"
-                :items="faqsAssets" bg-color="bg-yellow-5" faqs="" buttonText="Expand All"></vui-faq>
+            <vui-faq mobile-description="Find quick answers to common questions" title="faq"
+                description="Got Questions? We've Got Answers—Let’s Clear the Confusion!" :items="faqsAssets"
+                bg-color="bg-yellow-5" faqs="" buttonText="Expand All"></vui-faq>
         </div>
         <div class="" x-import="testimonial" x-data="testimonialData()">
             <vui-testimonial :items="data.assets"></vui-testimonial>

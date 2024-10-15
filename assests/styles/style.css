@@ -78,10 +78,9 @@ input:focus {
 .border-brand-2 {
     border-color: var(--brand-2);
 }
-.f
 
 .blue-shadow {
-    box-shadow: 8px 8px 0px 0px #00D7FF;
+    box-shadow: 8px 8px 0px 0px var(--blue-shadow);
 }
 
 .yellow-shadow {
