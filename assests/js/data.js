@@ -131,6 +131,12 @@ function heroData() {
         img: "./assests/images/fleet-hero.png",
         bg: "bg-yellow-3",
       },
+      pricing: {
+        title: "Find the Perfect Plan for Your Needs",
+        description:
+          "Select a pricing plan that aligns with your goals. Explore our flexible plans designed for every stage of your journey.",
+        bg: "bg-brand",
+      },
     },
   };
 }
@@ -561,5 +567,98 @@ function testimonialData() {
           " Casherp has completely transformed how we manage our fleet. The real-time tracking and automated maintenance reminders have made a huge difference in our efficiency. We can now optimize our routes and keep our vehicles running smoothly, which has saved us both time and money. Highly recommend!",
       },
     },
+  };
+}
+
+function pricingData() {
+  return {
+    plans: [
+      {
+        id: "standard",
+        title: "Standard",
+        price: "$13",
+        period: "Monthly",
+        description:
+          "Get started with essential tools for managing your business",
+        features: [
+          "5 GB Storage",
+          "84 invoices (monthly)",
+          "4 Users",
+          "5 Contracts",
+          "Tasks",
+          "Leads",
+          "Projects",
+          "Track income & expenses",
+          "Credit Notes",
+          "Proposals",
+          "Unlimited Contacts",
+        ],
+        buttonText: "Choose",
+        bgColor: "bg-yellow-1",
+        buttonColor: "bg-brand-2",
+      },
+      {
+        id: "professional",
+        title: "Professional",
+        price: "$22",
+        period: "Monthly",
+        description:
+          "Unlock advanced features to boost productivity and efficiency",
+        features: [
+          "50 GB Storage",
+          "8,400 Invoices (monthly)",
+          "12 Users",
+          "50 Contracts",
+          "Tasks",
+          "Leads",
+          "Projects",
+          "Track income & expenses",
+          "Credit Notes",
+          "Proposals",
+          "Unlimited Contacts",
+          "Accounting",
+          "Purchasing",
+          "Assets",
+          "Inventory",
+          "HRM & Payroll",
+          "Recruitment",
+        ],
+        buttonText: "Choose",
+        bgColor: "bg-green-1",
+        buttonColor: "bg-brand-2",
+      },
+      {
+        id: "premium",
+        title: "Premium",
+        price: "$500",
+        period: "Yearly",
+        description:
+          "Experience the full power of our CRM with all features included",
+        features: [
+          "100 GB Storage",
+          "Unlimited Invoices",
+          "Unlimited Users",
+          "Unlimited Contracts",
+          "Tasks",
+          "Leads",
+          "Projects",
+          "Track income & expenses",
+          "Credit Notes",
+          "Proposals",
+          "Unlimited Contacts",
+          "Manufacturing (add on)",
+          "Accounting",
+          "Purchasing",
+          "Assets",
+          "Inventory",
+          "HRM & Payroll",
+          "Recruitment",
+          "Marketing Automation",
+        ],
+        buttonText: "Choose",
+        bgColor: "bg-orange",
+        buttonColor: "bg-brand-2",
+      },
+    ],
   };
 }

@@ -7,9 +7,8 @@
                 <span x-text="$prop('description')"
                     class="w-10/12 text-gray-800 leading-loose fw-400 fs-sm-14 lh-sm-28 title-medium-font-size text-grey-5"></span>
                 <div class="position-relative col-md-5 justify-content-end px-5 d-md-none d-block ">
-                    <img :src="$prop('mainImage')" alt="" class="z-100 mt-4" style="width: 12rem;">
-                    <img :src="$prop('backgroundImage')" alt="" class="position-absolute"
-                        style="width: 13rem; right: 1rem; top: 0; ">
+                    <img :src="$prop('mainImage')" alt="" class="z-100 trial-img">
+                    <img :src="$prop('backgroundImage')" alt="" class="position-absolute trial-bg-img">
                 </div>
                 <span x-text="$prop('subheadline')"
                     class="body-medium-font-size fs-sm-12 lh-sm-24 fw-500 text-grey-5"></span>
@@ -24,7 +23,7 @@
             </div>
             <div class="position-relative col-md-5 justify-content-end p-5 d-none d-md-block">
                 <img :src="$prop('mainImage')" alt="" class="z-100 my-5">
-                <img :src="$prop('backgroundImage')" alt="" class="position-absolute end-0 top-0">
+                <img :src="$prop('backgroundImage')" alt="" class="position-absolute end-0">
             </div>
         </div>
     </div>

@@ -23,11 +23,13 @@
     --yellow-shadow: #E3AA00;
     --purple: #E3ABED;
     --purple-2: #FED3F5;
+    --orange:#964B00;
     --deep-black: #09090A;
     --grey-1: #D3D3D3;
     --grey-2: #959595;
     --grey-4: #29292B;
     --grey-5: #222729;
+    --slate:#F7F7F7;
 
 }
 
@@ -106,7 +108,12 @@ input:focus {
     background: var(--grey-BG);
 }
 
-
+.bg-slate{
+    background: var(--slate);
+}
+.bg-orange{
+    background: var(--orange);
+}
 .border-bottom-grey-2 {
     border-bottom: 1px solid var(--grey-2);
 }

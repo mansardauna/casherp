@@ -19,15 +19,16 @@
 
         </div>
         <div class="d-flex justify-content-center align-items-center position-relative hero-image" :class="$prop('bg')">
-            <img :src="$prop('hero-img')" alt="" class=" d-none d-md-flex position-absolute ">
+            <img :src="$prop('hero-img')" alt="" class=" d-none d-md-flex position-absolute">
         </div>
-        <div class="bg-white hero-footer"></div>
+        <div class="bg-white hero-footer" x-show="heroFooter"></div>
     </div>
     <script>
         return {
             init() {
                 return {
-                    heroTitle: this.$prop('hero-image')
+                    heroTitle: this.$prop('hero-image'),
+                    heroFooter: this.$prop('heroFooter') || true,
                 }
             }
         }

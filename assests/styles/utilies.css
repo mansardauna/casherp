@@ -121,7 +121,9 @@
     font-size: 32px;
 
 }
-
+.fw-36{
+    font-size: 36px;
+}
 .text-justify {
     text-align: justify;
 }

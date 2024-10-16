@@ -22,7 +22,13 @@
         line-height: 28px;
         letter-spacing: 0.25px;
     }
-
+.trial-bg-img{
+    width: 13rem; right: 1rem; top: 0;
+}
+.trial-img{
+    width: 12rem;
+    margin-top: 4px;
+}
     .w-full{
         width: 100%;
     }
