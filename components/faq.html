@@ -18,6 +18,7 @@
             <template x-for="(faq, index) in faqs" :key="index">
                 <div class="faq-item">
                     <div class="faq-question py-3 my-1 position-relative"
+                        :class="expandedFaqs.includes(index) || index === faqs.length - 1 ? '' : 'border-bottom-grey-2'"
                         :class="expandedFaqs.includes(index) ? '' : 'border-bottom-grey-2'" @click="toggleFaq(index)">
                         <span x-text="faq.question" class="fs-sm-16 lh-sm-28"></span>
                         <img src="./assests/images/Arrows 2.svg" alt="" class="position-absolute end-0"

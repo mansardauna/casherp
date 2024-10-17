@@ -156,12 +156,10 @@
                 <div class="tab-content py-5 d-flex justify-content-center align-items-center" :class="tab.bg"
                     :id="'tab-' + index">
                     <div class="col-md-8 d-grid p-md-0 p-3 gap-3">
-                        <div class="gap-3">
-                            <span class="p-3 text-white fw-500 rounded-24" :class="tab.frameColor" x-text="tab.title">
-                            </span>
-                            <p x-text="tab.description" class="my-4 lh-36 fw-500 text-black col-10"></p>
-                        </div>
-                        <div class="d-md-flex d-grid gap-md-5 justify-content-cent align-items-center gap-3 ">
+                        <span class="p-3 text-white fw-500 rounded-24 w-fit" :class="tab.frameColor" x-text="tab.title">
+                        </span>
+                        <p x-text="tab.description" class=" lh-36 fw-500 text-black col-8"></p>
+                        <div class="d-md-flex d-grid gap-md-5 align-items-center gap-3 ">
                             <div class="p-4 tab-frame rounded-12" :class="tab.frameColor">
                                 <img :src="tab.img" :alt="tab.title" class="tab-img">
                             </div>
@@ -239,7 +237,7 @@
     <!-- trial -->
     <div class="" x-import="trial" x-data="trialComponent()">
         <vui-trial :headline="headline" :description="description" :subheadline="subheadline" :buttonText="buttonText"
-            :mainImage="mainImage" :backgroundImage="backgroundImage" :bg="bg"></vui-trial>
+            :buttonImage="buttonImage" :mainImage="mainImage" :backgroundImage="backgroundImage" :bg="bg"></vui-trial>
     </div>
 
     <!-- footer -->

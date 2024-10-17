@@ -604,7 +604,7 @@ function carouselComponent() {
         position: "Founder, KB Tech",
         bg: "bg-purple",
         content:
-          "“Since implementing their CRM solution, we have seen a remarkable improvement in our team's collaboration and productivity.”",
+          `“Since implementing their CRM solution, we have seen a remarkable improvement in our team's collaboration and <span class="text-blue-2"> productivity.</span>”`,
       },
       {
         image: "../assests/images/slide2.png",

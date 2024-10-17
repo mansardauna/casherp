@@ -7,8 +7,7 @@ function trialComponent() {
       "Try our platform free for 14 days and experience all its features",
     buttonText: "Start free trial",
     buttonImage: "./assests/images/Frame (10).svg",
-    mainImage: "./assests/images/Group.png",
-    backgroundImage: "./assests/images/trial.svg",
+    mainImage: "./assests/images/trial-index.png",
     bg: "bg-green-4",
   };
 }
@@ -476,27 +475,27 @@ function emailOptionData() {
   return {
     data: {
       invoicing: {
-        title: "Ready to make that money? Get on now!",
+        title: `Ready to <span class="bg-blue-5"> make</span> that money? Get on now!`,
         bg: "bg-purple-2",
       },
       accounting: {
-        title: "Get Set to Grow Your Wealth! Start today!",
+        title: `Get Set to <span class="bg-green-4">Grow </span>Your Wealth! Start today!`,
         bg: "bg-yellow-3",
       },
       hrManagement: {
-        title: "Prepare to Elevate Your Team! join the action!",
+        title: `Prepare to <span class="bg-blue-5">Elevate</span> Your Team! join the action!`,
         bg: "bg-purple-2",
       },
       assets: {
-        title: "Ready to Take Control of Your Assets? jump in now!",
+        title: `Ready to Take <span class="bg-blue-5">Control</span> of Your Assets? jump in now!`,
         bg: "bg-purple-2",
       },
       purchase: {
-        title: "Prepared to Master Your Procurement? act now!",
+        title: `Prepared to <span class="bg-green-4">Master</span> Your Procurement? act now!`,
         bg: "bg-yellow-3",
       },
       fleetManagement: {
-        title: "Excited to Enhance Your Fleet Management? don’t miss out",
+        title: `Excited to <span class="bg-blue-5">Enhance</span> Your Fleet Management? don’t miss out`,
         bg: "bg-purple-2",
       },
     },
@@ -513,8 +512,7 @@ function testimonialData() {
         position: "Founder, Creative Designs Co",
         bg: "bg-yellow-3",
         color: "fill-yellow-3",
-        content:
-          "I’ve been using the invoicing feature for a few months, and it has transformed my billing process! The customizable templates and automated reminders keep everything professional and on track. Plus, the one-click payment option is a game-changer for my clients. Highly recommend it!",
+        content: `I’ve been using the invoicing feature for a few months, and it has transformed my billing process! The customizable templates and automated reminders keep everything professional and on track. Plus, the one-click payment option is a <span class="text-green-1"> game-changer</span> for my clients. Highly recommend it!`,
       },
       accounting: {
         image: "../assests/images/jayden.svg",
