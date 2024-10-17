@@ -22,7 +22,7 @@ function trials() {
           "Experience everything our platform has to offer with a 14-day free trial",
         buttonText: "Start free trial",
         buttonImage: "./assests/images/Frame (10).svg",
-        mainImage: "./assests/images/invoice-trial.png",
+        mainImage: "./assests/images/invoice-trial 1.png",
         bg: "bg-green-4",
       },
       accounting: {
@@ -33,7 +33,7 @@ function trials() {
           "Experience everything our platform has to offer with a 14-day free trial",
         buttonText: "Start free trial",
         buttonImage: "./assests/images/Frame (10).svg",
-        mainImage: "./assests/images/trial-left.svg",
+        mainImage: "./assests/images/accounting-trial.png",
         bg: "bg-blue-5",
       },
       hrManagement: {
@@ -44,7 +44,7 @@ function trials() {
           "Experience everything our platform has to offer with a 14-day free trial",
         buttonText: "Start free trial",
         buttonImage: "./assests/images/Frame (10).svg",
-        mainImage: "./assests/images/trial-right.svg",
+        mainImage: "./assests/images/hr-management-trial.png",
         bg: "bg-yellow-3",
       },
       assets: {
@@ -55,7 +55,7 @@ function trials() {
           "Experience everything our platform has to offer with a 14-day free trial",
         buttonText: "Start free trial",
         buttonImage: "./assests/images/Frame (10).svg",
-        mainImage: "./assests/images/trial-right.svg",
+        mainImage: "./assests/images/assets-trial.png",
         bg: "bg-green-4",
       },
       purchase: {
@@ -66,7 +66,7 @@ function trials() {
           "Experience everything our platform has to offer with a 14-day free trial",
         buttonText: "Start free trial",
         buttonImage: "./assests/images/Frame (10).svg",
-        mainImage: "./assests/images/trial-right.svg",
+        mainImage: "./assests/images/purchase-trial.png",
         bg: "bg-blue-5",
       },
       fleetManagement: {
@@ -77,8 +77,19 @@ function trials() {
           "Experience everything our platform has to offer with a 14-day free trial",
         buttonText: "Start free trial",
         buttonImage: "./assests/images/Frame (10).svg",
-        mainImage: "./assests/images/trial-right.svg",
+        mainImage: "./assests/images/fleet-trial.png",
         bg: "bg-yellow-3",
+      },
+      file: {
+        headline: "Are You Struggling to Manage Your Files?",
+        description:
+          "Unlock the power of organized file sharing that simplifies access. With advanced features like permissions and notifications, you can ensure that everyone is on the same page and can work together seamlessly",
+        subheadline:
+          "Experience everything our platform has to offer with a 14-day free trial",
+        buttonText: "Start free trial",
+        buttonImage: "./assests/images/Frame (10).svg",
+        mainImage: "./assests/images/file-trial.png",
+        bg: "bg-green-4",
       },
     },
   };
@@ -135,6 +146,20 @@ function heroData() {
         description:
           "Select a pricing plan that aligns with your goals. Explore our flexible plans designed for every stage of your journey.",
         bg: "bg-brand",
+      },
+      file: {
+        title: "All Your Files, One Central Hub",
+        description:
+          "Store, access, and share files effortlessly, with advanced security features and real-time updates, ensuring your team always has exactly what they need, when they need it, no matter where they are",
+        bg: "bg-green-3",
+        img: "./assests/images/fileshare-hero.png",
+      },
+      file: {
+        title: "We Empower Businesses, One Solution at a Time!",
+        description:
+          "Our innovative solutions empower organizations to streamline operations, enhance productivity, and achieve sustainable growth",
+        bg: "bg-yellow-3",
+        img: "./assests/images/about.png",
       },
     },
   };
@@ -308,8 +333,8 @@ function featuresComponent() {
             icon: "./assests/images/tracking-icon.svg", // replace with actual path
           },
           {
-            label: "Maintenance",
-            title: "Maintenance",
+            label: "Collaboration",
+            title: "Collaboration",
             description:
               "Set up automatic maintenance schedules to prolong asset lifespans and minimize unexpected downtime. Prevent costly repairs and disruptions with proactive maintenance management.",
             icon: "./assests/images/maintenance-icon.svg", // replace with actual path
@@ -359,8 +384,8 @@ function featuresComponent() {
             icon: "./assests/images/tracking-icon.svg",
           },
           {
-            label: "Maintenance",
-            title: "Maintenance",
+            label: "Collaboration",
+            title: "Collaboration",
             description:
               "Automate maintenance schedules and reminders for all vehicles in your fleet, ensuring timely service and repairs that minimize downtime, enhance safety, and extend the lifespan of your assets.",
             icon: "./assests/images/maintenance-icon.svg",
@@ -452,6 +477,57 @@ function featuresComponent() {
         fill: "fill-green-1",
         checked: "bg-green-1",
       },
+      file: {
+        title: "Share. Collaborate. Secure. Manage Your Files!",
+        features: [
+          {
+            label: "Secure Uploads",
+            title: "Secure Uploads",
+            description:
+              "Easily upload files with advanced encryption technology, ensuring that your data stays fully protected from unauthorized access both during transfer and while stored, keeping your sensitive information safe",
+            icon: "./assests/images/tracking-icon.svg",
+          },
+          {
+            label: "Collaboration",
+            title: "Collaboration",
+            description:
+              "Work on documents with your team in real-time, enabling instant updates and edits from multiple users simultaneously, which eliminates delays, boosts productivity, and streamlines team workflows",
+            icon: "./assests/images/maintenance-icon.svg",
+          },
+          {
+            label: "Access Control",
+            title: "Access Control",
+            description:
+              "Customize permissions to manage who can view, edit, or share specific files, ensuring you maintain complete control over sensitive data while allowing the right individuals to access what they need",
+            icon: "./assests/images/fuel-management-icon.svg",
+          },
+          {
+            label: "Instant Sharing",
+            title: "Instant Sharing",
+            description:
+              "Share files instantly via secure links or email with just one click. This simplifies the process of sharing important documents and files, cutting down on delays and improving overall team efficiency",
+            icon: "./assests/images/driver-management-icon.svg",
+          },
+          {
+            label: "File Preview",
+            title: "File Preview",
+            description:
+              "Preview documents, images, and videos directly within the platform, allowing you to quickly review content without the need to download or open files in separate applications",
+            icon: "./assests/images/reporting-icon.svg",
+          },
+          {
+            label: "Automated Notifications",
+            title: "Automated Notifications",
+            description:
+              "Receive instant notifications whenever files are shared, updated, or accessed, keeping your team informed in real-time. This feature keeps everyone informed, improving communication and collaboration",
+            icon: "./assests/images/cost-analysis-icon.svg",
+          },
+        ],
+        bg: "bg-grey",
+        color: "text-blue-1",
+        fill: "fill-blue-1",
+        checked: "bg-blue-1",
+      },
     },
   };
 }
@@ -496,6 +572,10 @@ function emailOptionData() {
       },
       fleetManagement: {
         title: `Excited to <span class="bg-blue-5">Enhance</span> Your Fleet Management? don’t miss out`,
+        bg: "bg-purple-2",
+      },
+      file: {
+        title: `Eager to <span class="bg-blue-5">Simplify</span> Your File Management? Start Sharing Today!`,
         bg: "bg-purple-2",
       },
     },
@@ -564,6 +644,33 @@ function testimonialData() {
         content:
           " Casherp has completely transformed how we manage our fleet. The real-time tracking and automated maintenance reminders have made a huge difference in our efficiency. We can now optimize our routes and keep our vehicles running smoothly, which has saved us both time and money. Highly recommend!",
       },
+      pricing: {
+        image: "../assests/images/rey.svg",
+        alt: "Slide 1",
+        name: "Alisha Rey",
+        position: "Marketing Lead, Creative Agency",
+        bg: "bg-purple-2",
+        color: "fill-purple-2",
+        content: `The flexibility in Casherp's plans has been <span class="text-yellow-1"> fantastic</span> for us. We started with a basic plan and upgraded as our business grew. The value for money is outstanding, and their customer service is top-notch!`,
+      },
+      file: {
+        image: "../assests/images/Parker.svg",
+        alt: "Slide 1",
+        name: "Jessie Parker",
+        position: "Project Manager at InnovateTech",
+        bg: "bg-yellow-3",
+        color: "fill-yellow-3",
+        content: `Casherp's file sharing feature has transformed the way our team collaborates. We can easily share large files and manage access with just a few clicks. The real-time updates keep everyone on the same page, and the<span class="text-green-1"> security</span> gives us peace of mind. It's a <span class="text-yellow-1">game-changer</span> for our workflow!`,
+      },
+      affiliate: {
+        image: "../assests/images/affiliate-test.svg",
+        alt: "Slide 1",
+        name: "Tanwa Majek",
+        position: "Successful Affiliate",
+        bg: "bg-green-4",
+        color: "fill-green-4",
+        content: `I’ve been an affiliate for six months, and the <span class="text-orange"> results</span> <span class="text-blue-1"> are amazing!</span> The commission structure is generous, and the support team is always there to help. I’ve been able to earn a steady income by simply sharing my affiliate link with my audience.`,
+      },
     },
   };
 }
@@ -576,6 +683,7 @@ function pricingData() {
         title: "Standard",
         price: "$13",
         period: "Monthly",
+        duration: "Flat fee for 1 company",
         description:
           "Get started with essential tools for managing your business",
         features: [
@@ -593,13 +701,16 @@ function pricingData() {
         ],
         buttonText: "Choose",
         bgColor: "bg-yellow-1",
+        borderColor: "active-yellow",
         buttonColor: "bg-brand-2",
+        active: false,
       },
       {
         id: "professional",
         title: "Professional",
         price: "$22",
         period: "Monthly",
+        duration: "Flat fee for 1 company",
         description:
           "Unlock advanced features to boost productivity and efficiency",
         features: [
@@ -623,13 +734,16 @@ function pricingData() {
         ],
         buttonText: "Choose",
         bgColor: "bg-green-1",
+        borderColor: "active-green",
         buttonColor: "bg-brand-2",
+        active: true,
       },
       {
         id: "premium",
         title: "Premium",
         price: "$500",
         period: "Yearly",
+        duration: "Flat fee for 3 company",
         description:
           "Experience the full power of our CRM with all features included",
         features: [
@@ -655,7 +769,58 @@ function pricingData() {
         ],
         buttonText: "Choose",
         bgColor: "bg-orange",
+        borderColor: "active-orange",
         buttonColor: "bg-brand-2",
+        active: false,
+      },
+    ],
+    setActivePlan(id) {
+      this.plans.forEach((plan) => (plan.active = plan.id === id));
+    },
+  };
+}
+function teamData() {
+  return {
+    teamMembers: [
+      {
+        name: "Patrick Mungo",
+        role: "CEO & Co-Founder",
+        image: "../assests/images/patrick.png",
+      },
+      {
+        name: "Daniel Prince",
+        role: "Chief Operating Officer",
+        image: "../assests/images/prince.png",
+      },
+      {
+        name: "Shila Kumar",
+        role: "Chief Marketing Officer",
+        image: "../assests/images/shila.png",
+      },
+      {
+        name: "Jacob West",
+        role: "Lead Software Engineer",
+        image: "../assests/images/jacob.png",
+      },
+      {
+        name: "Tiana Mendez",
+        role: "Customer Success Manager",
+        image: "../assests/images/tiana.png",
+      },
+      {
+        name: "Esther Lance",
+        role: "Finance Director",
+        image: "../assests/images/esther.png",
+      },
+      {
+        name: "Sean Walter",
+        role: "Head of Product Development",
+        image: "../assests/images/sean.png",
+      },
+      {
+        name: "Henry Miles",
+        role: "Head of Sales",
+        image: "../assests/images/henry.png",
       },
     ],
   };

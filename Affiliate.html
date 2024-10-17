@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assests/styles/style.css">
+    <link rel="stylesheet" href="./assests/styles/utilies.css">
+    <script src="./assests/js/script.js"></script>
+    <script src="./assests/js/data.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@vimesh/ui"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+
+    <script>
+        $vui.config.importMap = {
+            "*": './components/${component}.html'
+        }
+    </script>
+</head>
+
+<body>
+    <div class="">
+        <div class="" x-import="top-nav">
+            <vui-top-nav></vui-top-nav>
+        </div>
+        <div class="d-grid gap-4 hero-bg position-relative bg-green-3" x-data="$api.init()" :class="">
+            <div class="d-flex col-11 flex-column  mx-auto justify-content-center position-relative mt-5 gap-4">
+                <span class="title-large-font-size-bold lh-72 fw-500 text-black text-center" x-text="">Earn More by
+                    Sharing Success!</span>
+                <span class=" title-medium-font-size lh-36 fw-400 smd:text-center text-black col-md-6 col-10 mx-auto"
+                    x-text>Join our affiliate program and turn your network into earnings. Share the benefits, and grow
+                    with us</span>
+                <img src="../assests/images/hero-background.svg" alt="" class="hero-background-svg end-0">
+
+                <img src="../assests/images/hero-background.svg" alt="" class="hero-background-svg start-0">
+
+                <div class="d-flex justify-content-center col-5 mx-auto mt-4">
+                    <button id="start-trial-button"
+                        class=" btn text-white text-capitalize bg-brand-2 px-5 py-2 py-md-2">join
+                        now</button>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-center align-items-center position-relative hero-image"
+                :class="$prop('bg')">
+                <img src="./assests/images/affiliate.png" alt="" class=" d-none d-md-flex position-absolute">
+            </div>
+            <div class="bg-white hero-footer"></div>
+        </div>
+        <div class="col-10 mx-auto my-5 py-5" x-data="{ showSection: 'whoWeAre' }">
+
+            <div class="row py-5 my-4 justify-content-between our-mission-border section-container ">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="bg-yellow-6 d-flex flex-column w-75 justify-content-center rounded-12 p-5">
+                        <div class="d-flex flex-column text-start w-fit mx-auto">
+                            <span class="fs-28 fw-500 lh-30">HOW IT WORKS</span>
+                            <li class="fs-18 lh-38 fw-500">Sign Up</li>
+                            <li class="fs-18 lh-38 fw-500">Get your unique referral link</li>
+                            <li class="fs-18 lh-38 fw-500">Start sharing</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <div class="">
+                        <p class="fs-18 lh-36 mt-2">Becoming an affiliate is simple. Sign up for free, get your unique
+                            referral link, and start sharing it with your network. Every time someone signs up or makes
+                            a purchase through your link, you earn a commission. Earn $5.00 on every referral's first
+                            payment.
+                            Minimum payout is $50.00 (when someone signs up using your link and makes their first
+                            payment, you earn $5.00). Once your earnings reach $50.00, you can request a payout. Track
+                            your progress and earnings through your personal affiliate dashboard</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Story Section -->
+            <div class="row section-container  mt-4 py-5">
+                <div class="col-md-6 d-flex justify-content-start">
+                    <div class="">
+                        <p class="fs-18 lh-36 mt-2">When you join our affiliate program, you’re partnering with a
+                            trusted brand. We offer generous commissions, timely payouts, and all the support you need
+                            to succeed. Plus, you get access to high-converting marketing materials to help boost your
+                            referrals.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end align-items-center">
+                    <div class="bg-blue-5 d-flex flex-column w-75 justify-content-center rounded-12 p-5">
+                        <div class="d-flex flex-column text-start w-fit mx-auto">
+                            <span class="fs-28 fw-500 lh-30">WHY JOIN US?</span>
+                            <li class="fs-18 lh-38 fw-500">Partnership
+                            </li>
+                            <li class="fs-18 lh-38 fw-500">Generous commissions</li>
+                            <li class="fs-18 lh-38 fw-500">Timely payouts</li>
+                            <li class="fs-18 lh-38 fw-500">Support</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-5 my-4 justify-content-between section-container ">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="bg-purple-2 d-flex flex-column w-75 justify-content-center rounded-12 p-5">
+                        <div class="d-flex flex-column text-start w-fit mx-auto">
+                            <span class="fs-28 fw-500 lh-30">AFFLIATE BENEFITS</span>
+                            <li class="fs-18 lh-38 fw-500">Unlimited earning potential</li>
+                            <li class="fs-18 lh-38 fw-500">Free promotional tools</li>
+                            <li class="fs-18 lh-38 fw-500">Community</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <div class="">
+                        <p class="fs-18 lh-36 mt-2">Enjoy unlimited earning potential, free promotional tools, and
+                            dedicated support. Our program allows you to monetize your audience with minimal effort,
+                            while we handle the rest. Plus, you'll be part of a growing community of like-minded
+                            partners</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 our-mission-border "></div>
+        </div>
+
+
+        <div class="" x-import="faq" x-data="utils()">
+            <vui-faq mobile-description="Find quick answers to common questions" title="faq"
+                description="Got Questions? We've Got Answers—Let’s Clear the Confusion!" bg-color="bg-grey"
+                :items="faqsAffiliate" buttonText="Expand All"></vui-faq>
+        </div>
+        <div class="" x-import="testimonial" x-data="testimonialData()">
+            <vui-testimonial :items="data.affiliate"></vui-testimonial>
+        </div>
+
+        <div class="bg-purple-2 p-5">
+            <div class="row p-4 w-fit mx-auto justify-content-center">
+                <div class="col-6 d-flex flex-column align-items-center justify-content-center gap-2">
+                    <span class="fs-28 fw-500 lh-49 text-uppercase">Excited to <span
+                            class="bg-blue-5">Boost</span></span>
+                    <span class="fs-28 fw-500 lh-49 text-uppercase">Your Earnings as an Affiliate?</span>
+                    <button id="start-trial-button"
+                        class=" btn text-white  mt-3 text-capitalize bg-brand-2 px-5 py-2 py-md-2">join
+                        now</button>
+                </div>
+                <div class="col-5">
+                    <img src="./assests/images/OBJECTS.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="" x-import="footer">
+            <vui-footer></vui-footer>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

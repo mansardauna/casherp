@@ -109,142 +109,142 @@ function utils() {
         question:
           "Why should we switch to cloud-based business management software compared to the traditional desktop software?",
         answer:
-          "Cloud-based software offers better scalability, accessibility, and reduces IT maintenance costs.",
+          "Cloud-based software offers better scalability, accessibility, and reduces IT maintenance costs.Cloud-based software provides you a low-cost, secure & mobile  software solutions. Compared to traditional software that requires it to install on a computer, cloud-based can be accessed from anywhere without any hardware dependency.",
       },
       {
         question:
           "Does Casherp offer specific features for HR, Payroll, Invoicing, Sales and Purchasing?",
         answer:
-          "Yes, Casherp includes comprehensive features for HR, Payroll, Invoicing, Sales, and Purchasing.",
+          "Casherp offers unique customization options that allow our clients to  tailor the system's features to their specific needs. This  cost-effective solution increases efficiency while allowing customers to avoid unnecessary costs. Customers can also integrate their ERP system with third-party solutions",
       },
       {
         question: "What type of customer support does Casherp offer?",
         answer:
-          "Casherp provides 24/7 customer support through chat, email, and phone.",
+          "Casherp provides 24/7 customer support through chat, email, and phone.Casherp's customer support team offers round the clock service. Our support services are available  across different modes like telephone, online chat, and email. We guarantee speedy responses too.",
       },
       {
         question:
           "Is there a way to try Casherp before making a purchase or committing to a contract?",
         answer:
-          "Yes, Casherp offers a free trial period for potential customers to test the software.",
+          "Yes, Casherp offers a free trial period for potential customers to test the software.If you are interested in taking  Casherp for a spin, you can take advantage of our free 30-day trial and  get a first-hand experience of our ERP features without having to make a purchase or commit to a contract. The trial period is a great way to decide if Casherp is the right solution for your needs.",
       },
       {
         question: "Does Casherp support any reporting or analytics tool?",
         answer:
-          "Casherp includes built-in reporting and analytics tools to help businesses make data-driven decisions.",
+          "Yes, Casherp offers an extensive range of reporting and analytics tools to help you gain insights into your business operations. Our intuitive dashboards and customizable reporting features enable you to drill down into specific areas of your business to uncover detailed  information about the financial and operational health of your  organization.",
       },
       {
         question:
           "What level of data security and privacy does Casherp provide?",
         answer:
-          "Casherp ensures high-level data security and privacy with encryption and regular security audits.",
+          "Cloud-based software provides you a low-cost, secure & mobile  software solutions. Compared to traditional software that requires it to install on a computer, cloud-based can be accessed from anywhere without any hardware dependency.",
       },
       {
         question:
           "What benefits does Casherp offers compared to other cloud-based ERP solution?",
         answer:
-          "Casherp offers competitive pricing, user-friendly interfaces, and extensive customization options.",
+          "Casherp takes the complexity out of cloud-based ERP solutions. It is easy to learn and use, and can be set up quickly. Clients receive dedicated support from our team if they have any issues or questions,  ensuring that their businesses run smoothly.",
       },
       {
         question:
           "How easy is it to integrate Casherp with other cloud-based software?",
         answer:
-          "Casherp is designed with robust APIs that facilitate easy integration with other cloud-based software.",
+          "Integrating Casherp with other software solutions is easy and  convenient. Our platform is designed to offer seamless support for  popular applications such as QuickBooks, Magento, and Microsoft  Dynamics, and is also built with powerful API integration capabilities.",
       },
       {
         question: "What type of scalability features does Casherp offer?",
         answer:
-          "Casherp supports scalability to accommodate growing business needs without compromising performance.",
+          "Casherp's scalability features enable businesses to issue updates and  upgrade their existing applications, all without changes being required  on the underlying infrastructure. This valuable scalability feature also ensures that data is securely stored and can easily be accessed across  the organization.",
       },
       {
         question:
           "Are there any additional hardware required or subscription charges?",
         answer:
-          "No additional hardware is required. Subscription charges are transparent and include all necessary features.",
+          "This is cloud-based software. You'll only need a device with an internet connection & chrome browser. It runs within the browser. No  additional hardware is required. But you can use some hardware like  barcode scanners, and printers for your convenience to speed up work.",
       },
     ],
     faqsInvoice: [
       {
         question: "How do I create an invoice?",
         answer:
-          "Creating an invoice is simple. Just navigate to the invoice section, fill out the required fields, and click 'Create'. You can customize the fields to suit your business needs.",
+          "Simply log into your account, navigate to the invoicing section, and choose a template. Fill in the necessary details, and you’re ready to send!",
       },
       {
         question: "Can I customize my invoice?",
         answer:
-          "Yes, you can customize your invoice to include your logo, specific terms, and other custom fields to meet your business requirements.",
+          "Yes! Our platform allows you to customize your invoices with your branding, including your logo, colors, and fonts.",
       },
       {
         question: "What payment methods can I include on my invoices?",
         answer:
-          "You can include various payment methods such as credit cards, bank transfers, and PayPal. The available options can be configured in the payment settings.",
+          "You can include various payment options, such as credit cards, bank transfers, and online payment gateways, making it easy for your clients to pay.",
       },
       {
         question: "How can I track the status of my invoices?",
         answer:
-          "You can track the status of your invoices in the invoice management section. Each invoice will display whether it is sent, viewed, paid, or overdue.",
+          "You can track your invoices in real-time to see if they’ve been sent, viewed, or paid. Notifications will keep you informed of any updates.",
       },
       {
         question: "Can I set up recurring invoices for regular clients?",
         answer:
-          "Absolutely. You can set up recurring invoices for regular clients by selecting the recurring option when creating an invoice. This will automatically send invoices at specified intervals.",
+          "Absolutely! You can easily set up recurring invoices to automate billing for clients with regular services.",
       },
       {
         question: "What should I do if a client doesn’t pay on time?",
         answer:
-          "If a client doesn’t pay on time, you can send them a reminder. You can also set up automatic reminders to be sent before and after the due date.",
+          "We accept all major credit cards, debit cards, and bank transfers.",
       },
       {
         question: "Is there a way to see my invoicing history?",
         answer:
-          "Yes, you can view your entire invoicing history in the invoice management section. This includes all sent, paid, and overdue invoices.",
+          "Yes! You can access a complete invoicing history, including paid and unpaid invoices, for easy tracking and reporting.",
       },
       {
         question: "Can I send invoices in multiple currencies?",
         answer:
-          "Yes, you can send invoices in multiple currencies. This feature allows you to bill clients in their preferred currency, ensuring smooth international transactions.",
+          "Yes, our invoicing system supports multi-currency transactions, allowing you to send invoices in your client’s preferred currency.",
       },
     ],
     faqsAccount: [
       {
         question: "How do I access my financial reports?",
         answer:
-          "You can access your financial reports through our user-friendly dashboard. Simply navigate to the 'Reports' section, where you can generate and view various financial reports with a few clicks.",
+          "You can easily access your financial reports by navigating to the reporting section of your accounting dashboard. All reports are available for viewing and downloading.",
       },
       {
         question: "Can I import my existing financial data?",
         answer:
-          "Yes, our platform allows you to import your existing financial data seamlessly. You can upload files in supported formats, and our system will integrate the data into your current setup without any hassle.",
+          "Yes, you can import your existing financial data from various formats, including CSV and Excel files, to ensure a smooth transition to our accounting system.",
       },
       {
         question: "Is my financial data secure?",
         answer:
-          "Absolutely. We prioritize the security of your financial data with advanced encryption, secure servers, and regular backups. Your data is protected against unauthorized access and breaches.",
+          "Absolutely! We prioritize your data security with end-to-end encryption and regular security audits to keep your financial information safe.",
       },
       {
         question: "What type of reports can I generate?",
         answer:
-          "You can generate a wide range of reports, including profit and loss statements, balance sheets, cash flow statements, expense reports, and custom reports tailored to your specific needs.",
+          "You can generate a variety of reports, including profit and loss statements, balance sheets, cash flow reports, and expense tracking summaries.",
       },
       {
         question: "Can I set budget for different departments?",
         answer:
-          "Yes, you can set and manage budgets for different departments. This feature helps you monitor spending, maintain financial discipline, and quickly identify variances to adjust your strategies accordingly.",
+          "Yes, our budgeting tools allow you to set and manage separate budgets for different departments or projects, making it easier to control spending.",
       },
       {
         question: "Is there customer support available?",
         answer:
-          "Yes, we offer dedicated customer support to assist you with any issues or questions you may have. Our support team is available via phone, email, and chat to ensure you get the help you need promptly.",
+          "Yes, we offer customer support through chat, email, and phone to assist you with any questions or issues you may encounter while using the accounting features.",
       },
       {
         question: "Can I track my expenses in real time?",
         answer:
-          "Yes, our platform provides real-time expense tracking. You can monitor and categorize all your business expenses as they occur, helping you stay on top of your financial health and identify areas for cost savings.",
+          "Yes, our accounting system allows you to track and categorize your expenses in real time, providing you with up-to-date insights into your spending habits.",
       },
       {
         question: "Do you offer multi-currency support?",
         answer:
-          "Yes, we offer multi-currency support, enabling you to handle international transactions seamlessly. Our system automatically tracks exchange rates and conversions, making it easy to manage global finances.",
+          "Yes, our accounting features include multi-currency support, allowing you to manage and track international transactions easily while automatically handling conversions.",
       },
     ],
     faqsHr: [
@@ -415,7 +415,102 @@ function utils() {
           "You can reduce fleet operating costs by using our system to optimize routes, automate maintenance schedules, manage fuel consumption, and analyze cost data. These features help identify savings opportunities and improve operational efficiency, leading to reduced expenses.",
       },
     ],
-
+    faqsPricing: [
+      {
+        question: "What pricing plans do you offer?",
+        answer:
+          "We offer Standard, Professional, and Premium pricing plans to suit various business needs. You can find more details about each plan on our pricing page.",
+      },
+      {
+        question: "Is there a free trial available?",
+        answer:
+          "Yes, we offer a 14-day free trial for all our plans. No credit card is required to sign up for the free trial.",
+      },
+      {
+        question: "Can I switch plans later?",
+        answer:
+          "Absolutely! You can upgrade or downgrade your plan at any time from your account settings. The changes will take effect immediately.",
+      },
+      {
+        question: "What payment methods do you accept?",
+        answer:
+          "We accept all major credit cards including Visa, MasterCard, American Express, and Discover. We also accept payments via PayPal.",
+      },
+      {
+        question: "What happens if I exceed my plan limits?",
+        answer:
+          "If you exceed your plan limits, you will be notified and given the option to upgrade your plan to accommodate your needs. We also offer flexible add-ons for extra storage and users.",
+      },
+      {
+        question: "Are there any setup fees?",
+        answer:
+          "No, there are no setup fees for any of our plans. You can sign up and start using our services without any additional charges.",
+      },
+    ],
+    faqsFile: [
+      {
+        question: "What is file sharing?",
+        answer:
+          "File sharing is the practice of distributing or providing access to digital files such as documents, images, videos, and other data. This can be done via the internet or a local network, allowing multiple users to access, modify, and share the same files.",
+      },
+      {
+        question: "How do I upload files?",
+        answer:
+          "To upload files, you typically need to click on the 'Upload' button or drag and drop your files into the designated area on the platform you're using. Follow the on-screen instructions to complete the upload process.",
+      },
+      {
+        question: "Is my data secure when sharing files?",
+        answer:
+          "Yes, your data is secure when sharing files, provided you use a reputable file-sharing service. These services often employ encryption, secure access protocols, and other security measures to protect your data from unauthorized access.",
+      },
+      {
+        question: "How do I set permissions for shared files?",
+        answer:
+          "To set permissions for shared files, go to the file or folder settings and look for an option to manage permissions or access. You can usually specify who can view, edit, or manage the files by adding their email addresses and assigning appropriate roles or permissions.",
+      },
+      {
+        question: "Can I track who accessed my files?",
+        answer:
+          "Yes, many file-sharing services provide activity logs or tracking features that allow you to see who accessed your files, when they accessed them, and what actions they performed (such as viewing, editing, or downloading).",
+      },
+      {
+        question: "What types of files can I share?",
+        answer:
+          "You can share various types of files including documents, spreadsheets, presentations, images, videos, audio files, and more. The specific types of files you can share may depend on the file-sharing service you're using.",
+      },
+      {
+        question: "How do I delete or revoke access to shared files?",
+        answer:
+          "To delete or revoke access to shared files, go to the file or folder settings and look for an option to remove access or delete the file. You can usually select the users whose access you want to revoke or simply delete the file to remove it entirely from the shared location.",
+      },
+      {
+        question: "Can I collaborate on files with my team?",
+        answer:
+          "Yes, most file-sharing services support collaboration features that allow multiple users to work on the same files simultaneously. You can share files with your team, set permissions, and use collaboration tools like comments, version history, and real-time editing to work together effectively.",
+      },
+    ],
+    faqsAffiliate: [
+      {
+        question: "How do I get paid?",
+        answer:
+          "You get paid via PayPal or bank transfer on a monthly basis, provided you meet the minimum payout threshold.",
+      },
+      {
+        question: "Is there a cost to join?",
+        answer:
+          "No, joining our affiliate program is completely free. There are no setup fees or hidden charges.",
+      },
+      {
+        question: "How can I track my earnings?",
+        answer:
+          "You can track your earnings in real-time through your affiliate dashboard, where you can see detailed reports on your commissions.",
+      },
+      {
+        question: "Are there any marketing tools provided?",
+        answer:
+          "Yes, we provide a variety of marketing tools including banners, text links, and email templates to help you promote our products effectively.",
+      },
+    ],
     feautureOpen: false,
     reasourcesOpen: false,
     hamburger: false,
@@ -463,18 +558,21 @@ function chooseData() {
     choose: [
       {
         digit: "4200+ ",
+        digitColor: "",
         label: "Users Active",
         description:
           "Our platform is trusted and actively used by over 4,200 professionals who rely on its powerful features to streamline their daily operations and grow their businesses",
       },
       {
         digit: "324+",
+        digitColor: "text-yellow-1",
         label: "Trusted By Companies",
         description:
           "Companies across various industries trust our platform to manage processes, optimize workflows, enhance productivity, and support sustainable growth",
       },
       {
         digit: "$320M+",
+        digitColor: "text-green-1",
         label: "Business Transactions",
         description:
           "With hundreds of thousands of successful transactions processed, our platform ensures reliable, secure financial management for businesses of all sizes",
@@ -603,8 +701,7 @@ function carouselComponent() {
         name: "Kira Boats",
         position: "Founder, KB Tech",
         bg: "bg-purple",
-        content:
-          `“Since implementing their CRM solution, we have seen a remarkable improvement in our team's collaboration and <span class="text-blue-2"> productivity.</span>”`,
+        content: `“Since implementing their CRM solution, we have seen a remarkable improvement in our team's collaboration and <span class="text-blue-2"> productivity.</span>”`,
       },
       {
         image: "../assests/images/slide2.png",
@@ -612,8 +709,7 @@ function carouselComponent() {
         name: "Sarah Watts",
         bg: "bg-green-4",
         position: "Business Owner",
-        content:
-          "“This app has transformed how we manage our operations. From customer relationships to finances, everything is streamlined and easy to track.”",
+        content: `“This app has  <span class="text-yellow-1">transformed</span> how we manage our operations. From customer relationships to finances, everything is <span class="text-yellow-1">streamlined</span> and easy to track.”`,
       },
       {
         image: "../assests/images/slide3.png",
@@ -621,8 +717,7 @@ function carouselComponent() {
         name: "Robert Kelvin",
         bg: "bg-blue-5",
         position: "HR Director, Sparks Tech",
-        content:
-          "“It’s like having multiple management tools in one place! We love how we can handle our HR, marketing, and inventory all from a single platform.”",
+        content: `“It’s like having <span class="text-green-1">multiple management</span> tools in one place! We love how we can handle our HR, marketing, and inventory all from a single platform.”`,
       },
       {
         image: "../assests/images/slide4.png",
@@ -630,8 +725,7 @@ function carouselComponent() {
         name: "Mike Dallas",
         bg: "bg-purple",
         position: "Sales Manager, Business Owner",
-        content:
-          "“Our company grew fast, and this app helped us keep up. The professional plan gave us the features we needed to stay organized and efficient.”",
+        content: `“Our company grew fast, and this app helped us keep up. The professional plan gave us the features we needed to stay <span class="text-blue-2">organized</span> and efficient.”`,
       },
       {
         image: "../assests/images/slide5.png",
@@ -639,8 +733,7 @@ function carouselComponent() {
         name: "Karen Taylor",
         bg: "bg-green-4",
         position: "Logistics Coordinator, Wave-Rider",
-        content:
-          "“Managing our fleet has never been easier. We can track vehicles in real-time and schedule maintenance without missing a beat.”",
+        content: `“Managing our fleet has never been easier. We can track vehicles in <span class="text-yellow-1">real-time</span> and schedule maintenance without missing a beat.”`,
       },
     ],
     nextSlide() {

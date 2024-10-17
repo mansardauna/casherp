@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assests/styles/style.css">
+    <link rel="stylesheet" href="./assests/styles/utilies.css">
+    <script src="./assests/js/script.js"></script>
+    <script src="./assests/js/data.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@vimesh/ui"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+
+    <script>
+        $vui.config.importMap = {
+            "*": './components/${component}.html'
+        }
+    </script>
+</head>
+
+<body>
+    <div class="">
+        <div class="" x-import="top-nav">
+            <vui-top-nav></vui-top-nav>
+        </div>
+        <div class="" x-import="hero" x-data="heroData()">
+            <vui-hero :hero-title="data.file.title" :hero-description="data.file.description" :hero-img="data.file.img"
+                :bg="data.file.bg"></vui-hero>
+        </div>
+
+        <div class="col-10 mx-auto my-5 py-5" x-data="{ showSection: 'whoWeAre' }">
+
+            <div class="row py-5 my-5 justify-content-between our-mission-border section-container ">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="bg-green-4 d-flex flex-column text-center w-75 justify-content-center rounded-12 p-5">
+                        <span class="fs-28 fw-500 lh-30">WHO WE ARE</span>
+                        <span class="fs-24 lh-30 fw-500"> Get To Know Us</span>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <div class="">
+                        <h2 class="fw-500 lh-36 fs-24">We are your partners in success and growth</h2>
+                        <p class="fs-18 lh-36 mt-2">Casherp is an all-in-one, cloud-based software designed for
+                            businesses
+                            to
+                            manage
+                            operations,
+                            projects, and everything in between, including invoicing, purchasing, HRM, CRM, project
+                            management, manufacturing, POS, and more. Casherp is a versatile Customer Relationship
+                            Management (CRM) software suitable for various companies, freelancers, and other users. Its
+                            clean and modern design helps businesses look more professional and improve performance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Story Section -->
+            <div class="row section-container  mt-5 py-5">
+                <div class="col-md-6 d-flex justify-content-start">
+                    <div class="">
+                        <h2 class="fw-500 lh-36 fs-24">We are your allies in transformation and achievement</h2>
+                        <p class="fs-18 lh-36 mt-2">Casherp was first developed in 2017 as a groundbreaking business
+                            management
+                            software aimed at
+                            streamlining company operations. It was founded by Patrick Mungo and is owned and managed by
+                            INFOBIZ COMPANY LIMITED, LLC, registered in Delaware, USA (EIN 30-1373923).</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end align-items-center">
+                    <div class="bg-yellow-6 d-flex flex-column text-center w-75 justify-content-center rounded-12 p-5">
+                        <span class="fs-28 fw-500 lh-30"> OUR STORY</span>
+                        <span class="fs-24 lh-30 fw-500"> Explore Casherp's Journey</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Mission Section -->
+            <div class="row  p-5 our-mission-border  align-items-center">
+                <div class="col-md-6 d-flex justify-content-start align-items-center">
+                    <img src="./assests/images/mission.png" alt="Profile Image" class="profile-img">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fs-32 fw-500 lh-72">Our Mission</h2>
+                    <p class="fs-18 lh-36 mt-2">Our mission is to deliver exceptional solutions that streamline business
+                        operations, enhance
+                        productivity, and foster lasting success. We are committed to supporting our clients at every
+                        step, ensuring they have the tools and resources they need to thrive in an ever-evolving
+                        landscape.</p>
+                </div>
+            </div>
+
+            <!-- Our Vision Section -->
+            <div class="row section-container align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fs-32 fw-500 lh-72">Our Vision</h2>
+                    <p class="fs-18 lh-36 mt-2">Our vision is to revolutionize the way businesses operate by providing
+                        innovative solutions that
+                        simplify processes and empower growth. We strive to create a future where every organization can
+                        thrive in a dynamic marketplace, achieving their goals with confidence and efficiency.</p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end align-items-center">
+                    <img src="./assests/images/vision.png" alt="Profile Image" class="profile-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-green-4 py-4 ">
+            <div class="my-md-2 col-10 mx-auto d-flex " x-data="chooseData()">
+                <template x-for="item in choose" :key="item.label">
+                    <div class="my-md-5 my-4">
+
+                        <div class="my-1 col-md-10">
+                            <span x-text="item.description"
+                                class="body-medium-font-size fw-400 text-grey-5 fs-sm-16 text-blue lh-sm-28 lh-32"></span>
+                        </div>
+                        <div class="d-flex col-3 gap-4 align-items-center">
+                            <span x-text="item.digit"
+                                class="title-large-font-size-bold text-blue-1 fs-sm-28 lh-sm-58 fw-700"
+                                :class="item.digitColor"></span>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+        <div class="py-4 col-10 mx-auto my-5" x-data="teamData">
+            <div class="text-center">
+                <h2 class="display-5 fs-28 lh-49 fw-500 ">Meet The Team</h2>
+                <p class="fs-18 lh-28 col-5 mx-auto fw-400">The People Behind The Vision: Dedicated To Your Success</p>
+            </div>
+            <div class="row">
+                <template x-for="member in teamMembers" :key="member.name">
+                    <div class="col-md-4 col-lg-3 team-member mt-4 text-center d-flex flex-column gap-1">
+                        <img :src="member.image" alt="Profile Image">
+                        <span class="fs-18 fw-500 lh-28" x-text="member.name"></span>
+                        <span class="body-medium-font-size fw-400" x-text="member.role"></span>
+                    </div>
+                </template>
+            </div>
+        </div>
+
+        <div class="  bg-yellow-6 p-4">
+            <div class="mx-auto p-5 d-flex flex-column align-items-center bg-yellow-6 ">
+                <h2 class="fw-500 fs-32 text-center col-5 text-uppercase mx-auto lh-49 mb-5">
+                    Join and <span class="bg-green-4"> Transform</span> Your business today
+                </h2>
+                <div class="d-flex mx-auto justify-content-center w-100">
+                    <input type="text" placeholder="Enter your email"
+                        class="centered-placeholder rounded-start col-5 rounded-end-0 p-2 border-0">
+                    <button id="start-trial-button"
+                        class="btn-primary-custom rounded-end rounded-start-0 text-capitalize bg-brand-2 px-md-4 px-2">Start
+                        free trial</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="" x-import="footer">
+            <vui-footer></vui-footer>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

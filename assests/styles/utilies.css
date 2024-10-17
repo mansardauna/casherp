@@ -111,9 +111,7 @@
 .text-xs {
     font-size: 12px;
 }
-.fs-32{
-    font-size: 32px;
-}
+
 
 /* font-size */
 .title-large-font-size {
@@ -121,9 +119,7 @@
     font-size: 32px;
 
 }
-.fw-36{
-    font-size: 36px;
-}
+
 .text-justify {
     text-align: justify;
 }
@@ -153,6 +149,24 @@
     font-size: 22px;
     text-align: center;
 
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-28{
+    font-size: 28px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.fs-32{
+    font-size: 32px;
+}
+.fs-36{
+    font-size: 36px;
 }
 
 .body-large-font-size-light {
@@ -299,4 +313,16 @@
 .quotation-flip{
     left: 70px;
     bottom: 50px;
+}
+.active-orange{
+    border-top: 3px solid var(--orange);
+}
+.active-yellow{
+    border-top: 3px solid var(--yellow-1);
+}
+.active-green{
+    border-top: 3px solid var(--green-1);
+}
+.profile-img{
+    width: 80%;
 }
