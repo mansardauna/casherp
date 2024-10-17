@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //   const data = [
 //     {
-//       img: "./assests/images/",
+//       img: "../assests/images/",
 //       title: "Management",
 //       description:
 //         "Oversee every aspect. Track and follow up with leads, sources, launch campaigns, proposals and lot more",
@@ -522,28 +522,28 @@ function cardData() {
   return {
     items: [
       {
-        img: "./assests/images/manage 1.svg",
+        img: "../assests/images/manage 1.svg",
         title: "Management",
         description:
           "Oversee every aspect. Track and follow up with leads, sources, launch campaigns, proposals and lot more",
         bg: "bg-blue-3 blue-shadow",
       },
       {
-        img: "./assests/images/invoice.svg",
+        img: "../assests/images/invoice.svg",
         title: "Invocing",
         description:
           "Generate, send, and track invoices with ease. Automate billing and keep your payments organized and on time",
         bg: "bg-green-5 green-shadow",
       },
       {
-        img: "./assests/images/lead 1.svg",
+        img: "../assests/images/lead 1.svg",
         title: "Accounting",
         description:
           "Track your income and expenses, generate reports easily and for free, with Casherp's accounting software",
         bg: "bg-yellow-1 yellow-shadow",
       },
       {
-        img: "./assests/images/marketing 1.svg",
+        img: "../assests/images/marketing 1.svg",
         title: "Marketing",
         description:
           "Engage customers. Create and track email campaigns, social media engagement, and other marketing initiatives",
@@ -592,7 +592,7 @@ function tabComponent() {
         href: "./invoice.html",
         description:
           "Easily create, send, and track invoices to ensure timely payments and maintain organized billing and financial records.",
-        img: "./assests/images/invoice.png",
+        img: "../assests/images/invoice.png",
         content:
           "Casherp is the ultimate HRM, CRM and project management solution for  businesses of all sizes. It simplifies your day-to-day operations with  powerful, integrated features such as payroll, invoicing, sales,  marketing, CRM, and purchasing.",
       },
@@ -603,7 +603,7 @@ function tabComponent() {
         frameColor: "bg-blue-3",
         description:
           "Take control and manage your money like a boss, streamline finances, boost efficiency, and keep your budget on track effortlessly",
-        img: "./assests/images/accounting-image.png",
+        img: "../assests/images/accounting-image.png",
         content:
           "Using this module helps in relieving the burden of manual data entry,  prevents common human errors, helps businesses and accountants when tax  time comes around. Casherp allows the user to look at in-depth reports of how their business’ finances are faring.",
       },
@@ -614,7 +614,7 @@ function tabComponent() {
         frameColor: "bg-green-1",
         description:
           "Streamline your hiring  processes, attract top talents and empower your team to find the right candidates effectively",
-        img: "./assests/images/hr-management.png",
+        img: "../assests/images/hr-management.png",
         content:
           "From posting your jobs to keeping applicants connected and engaged  throughout, Recruitment Module lets you manage your entire recruiting  process. Casherp's Recruitment Module automates and manages your organization's recruiting and staffing operations.",
       },
@@ -625,7 +625,7 @@ function tabComponent() {
         frameColor: "bg-yellow-7",
         description:
           "Track, evaluate, maximize the value of your assets efficiently, and enhance your organization's financial health",
-        img: "./assests/images/assests-image.png",
+        img: "../assests/images/assests-image.png",
         content:
           "Assets Management Module provides the ability of managing company's assets inside Casherp's dashboard. You will be able to separate your assets based on groups/locations/units and assign them to staff members. The module helps you gain insights, reduce risks, and make informed decisions",
       },
@@ -635,7 +635,7 @@ function tabComponent() {
         frameColor: "bg-blue-3",
         description:
           "Manage, and optimize your fleet with real-time insights and automation. Monitor performance, reduce costs, and streamline operations",
-        img: "./assests/images/fleet-image.png",
+        img: "../assests/images/fleet-image.png",
         content:
           "CashERP facilitates the centralized management of your vehicle and driver information through our robust and compliant Fleet Management Software. Stay ahead of issues with proactive fleet management that keeps your operations running smoothly and efficiently.",
       },

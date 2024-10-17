@@ -9,11 +9,11 @@
 
             <img src="../assests/images/hero-background.svg" alt="" class="hero-background-svg start-0">
 
-            <div class="d-flex justify-content-center col-5 mx-auto mt-4">
+            <div class="d-md-flex justify-content-center col-md-5 mx-auto mt-4">
                 <input type="text" placeholder="Enter your email"
-                    class="flex-grow-1 mx-md-0 mx-auto centered-placeholder rounded-start rounded-end-0 p-2 border-0">
+                    class="flex-grow-1 mx-md-0 mx-auto centered-placeholder rounded-start rounded-end-0 p-2 w-100 border-0">
                 <button id="start-trial-button"
-                    class="btn-primary-custom rounded-end rounded-start-0 text-capitalize bg-brand-2 px-4 py-2 py-md-0">Start
+                    class="btn-primary-custom rounded-end rounded-start-0 mt-2 mt-md-0 col-12 col-md-4 text-capitalize bg-brand-2 px-4 py-2 py-md-0">Start
                     free trial</button>
             </div>
 
@@ -21,7 +21,7 @@
         <div class="d-flex justify-content-center align-items-center position-relative hero-image" :class="$prop('bg')">
             <img :src="$prop('hero-img')" alt="" class=" d-none d-md-flex position-absolute">
         </div>
-        <div class="bg-white hero-footer" x-show="heroFooter"></div>
+        <div class="bg-white d-none d-md-block hero-footer" x-show="heroFooter"></div>
     </div>
     <script>
         return {

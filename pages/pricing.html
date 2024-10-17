@@ -8,10 +8,11 @@
     <title>pricing</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assests/styles/style.css">
-    <link rel="stylesheet" href="./assests/styles/utilies.css">
-    <script src="./assests/js/script.js"></script>
-    <script src="./assests/js/data.js"></script>
+    <link rel="stylesheet" href="../assests/styles/style.css">
+    <link rel="stylesheet" href="../assests/styles/utilies.css">
+    <link rel="stylesheet" href="../assests/styles/mobile.css">
+    <script src="../assests/js/script.js"></script>
+    <script src="../assests/js/data.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,7 @@
 
     <script>
         $vui.config.importMap = {
-            "*": './components/${component}.html'
+            "*": '../components/${component}.html'
         }
     </script>
 </head>
@@ -67,9 +68,9 @@
                             :class="plan.active ? `${plan.borderColor}` : ''" style="width: 378px;">
                             <template x-if="plan.id === 'standard'">
                                 <div class="position-absolute">
-                                    <img src="./assests/images/Vector (4).svg" alt="" class="position-relative"
+                                    <img src="../assests/images/Vector (4).svg" alt="" class="position-relative"
                                         style="top: -7rem; left: 6rem; transform: translateX(-50%); width: 40px;">
-                                    <img src="./assests/images/Vector (4).svg" alt="" class="position-relative"
+                                    <img src="../assests/images/Vector (4).svg" alt="" class="position-relative"
                                         style="top: -12rem; left: 10rem; transform: translateX(-50%); width: 40px;">
 
                                 </div>
@@ -94,7 +95,7 @@
                             <ul class="px-4 ">
                                 <template x-for="feature in plan.features" :key="feature">
                                     <li class="list-unstyled flex items-center mb-2">
-                                        <img src="./assests/images/mark-green.svg" alt="">
+                                        <img src="../assests/images/mark-green.svg" alt="">
                                         <span class="text-gray-700 body-xs-font-size lh-20 ml-2 fw-500"
                                             x-text="feature"></span>
                                     </li>

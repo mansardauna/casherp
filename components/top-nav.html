@@ -1,7 +1,7 @@
 <template x-component="top-nav">
     <div class="top-nav position-fixed bg-white top-0 w-100 py-3 border-bottom">
         <div class="d-flex mx-auto col-11 justify-content-between" x-data="utils()">
-            <img src="./assests/images/casherp logo 2.svg" alt="logo" class="logo" />
+            <img src="../assests/images/casherp logo 2.svg" alt="logo" class="logo" />
             <div class="d-flex ">
                 <div class="d-flex d-md-none gap-2">
                     <button id="start-trial-button "
@@ -17,7 +17,7 @@
                     <div class="d-flex gap-1 gap-md-5 align-items-center">
                         <button @click="feautureOpen=!feautureOpen" class="btn-tertiary-custom px-2 fw-500">
                             <span>Features</span>
-                            <img src="./assests/images/Arrows (1).svg" alt="" class=""
+                            <img src="../assests/images/Arrows (1).svg" alt="" class=""
                                 :class="feautureOpen ?'': 'rotate-180' " />
                         </button>
 
@@ -25,7 +25,7 @@
                             class="features-dropdown position-absolute bg-white col-md-7 col-11 rounded-3 px-4">
                             <div class="d-grid grid-2 gap-3 justify-content-between pt-3">
                                 <div class="body-medium-font-size fw-500 border-bottom">
-                                    <a href="../invoice.html">
+                                    <a href="../pages/invoice.html">
                                         <span class="body-medium-font-size fw-500 text-blue-1">Invoicing</span>
                                         <p class="feature-description text-grey-4 body-xs-font-size fw-400">
                                             Quick, Easy Billing
@@ -34,7 +34,7 @@
                                     </a>
                                 </div>
                                 <div class="body-medium-font-size fw-500 border-bottom">
-                                    <a href="../asset.html">
+                                    <a href="../pages/asset.html">
                                         <span class="feature-title text-blue-1">Assets Management</span>
                                         <p class="feature-description text-grey-4 body-xs-font-size fw-400">
                                             Optimize Asset Utilization
@@ -43,7 +43,7 @@
                                     </a>
                                 </div>
                                 <div class="body-medium-font-size fw-500 border-bottom">
-                                    <a href="../accounting.html">
+                                    <a href="../pages/accounting.html">
                                         <span class="feature-title text-blue-1">Accounting</span>
                                         <p class="feature-description text-grey-4 body-xs-font-size fw-400">
                                             Accurate Financial Tracking
@@ -52,7 +52,7 @@
                                     </a>
                                 </div>
                                 <div class="body-medium-font-size fw-500 border-bottom">
-                                    <a href="../purchase.html">
+                                    <a href="../pages/purchase.html">
                                         <span class="feature-title text-blue-1">Purchase Management</span>
                                         <p class="feature-description text-grey-4 body-xs-font-size fw-400">
                                             Fast, Secure Sharing
@@ -61,7 +61,7 @@
                                     </a>
                                 </div>
                                 <div class="body-medium-font-size fw-500 border-bottom">
-                                    <a href="../hr-management.html">
+                                    <a href="../pages/hr-management.html">
                                         <span class="feature-title text-blue-1">HR Management</span>
                                         <p class="feature-description text-grey-4 body-xs-font-size fw-400">
                                             Efficient Talent Acquisition
@@ -70,7 +70,7 @@
                                     </a>
                                 </div>
                                 <div class="body-medium-font-size fw-500 border-bottom">
-                                    <a href="../fleet-management.html">
+                                    <a href="../pages/fleet-management.html">
                                         <span class="feature-title text-blue-1">Fleet Management</span>
                                         <p class="feature-description text-grey-4 body-xs-font-size fw-400">
                                             Vehicles Management System
@@ -80,19 +80,20 @@
                             </div>
                         </div>
 
-                        <button class="btn-tertiary-custom px-2 fw-500"><a href="../pricing.html"> Pricing</a></button>
+                        <button class="btn-tertiary-custom px-2 fw-500"><a href="../pages/pricing.html">
+                                Pricing</a></button>
                         <button class="btn-tertiary-custom px-2 fw-500">Blog</button>
                         <div class="">
                             <button @click="reasourcesOpen=!reasourcesOpen" class="btn-tertiary-custom px-2 fw-500">
                                 <span>Reasources</span>
-                                <img src="./assests/images/Arrows (1).svg" alt="" class=""
+                                <img src="../assests/images/Arrows (1).svg" alt="" class=""
                                     :class="reasourcesOpen ?'': 'rotate-180' " />
                             </button>
 
                             <div x-show="reasourcesOpen" @click.away="reasourcesOpen=false"
                                 class="resources-dropdown rounded-3 bg-white position-absolute">
                                 <div class="resource-item p-2 px-3 border-top">
-                                    <span class="resource-title text-blue-1"><a href="../about.html"> About
+                                    <span class="resource-title text-blue-1"><a href="../pages/about.html"> About
                                             Us</a></span>
                                 </div>
 
@@ -100,7 +101,8 @@
                                     <span class="resource-title text-blue-1">Knowledge Base</span>
                                 </div>
                                 <div class="resource-item p-2 px-3 border-top">
-                                    <span class="resource-title text-blue-1"> <a href="../Affiliate.html"> Become an
+                                    <span class="resource-title text-blue-1"> <a href="../pages/Affiliate.html"> Become
+                                            an
                                             Affiliate</a></span>
                                 </div>
                             </div>

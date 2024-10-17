@@ -1,15 +1,15 @@
 <template x-component="testimonial">
     <div class="py-5" x-data="$api.init()">
-        <div class="d-flex w-100 align-items-center justify-content-center py-4 position-relative">
+        <div class="d-flex col-md-12 col-10 align-items-center justify-content-center py-4 position-relative">
             <div class="" x-import="quotation-flip">
                 <vui-quotation-flip :fill="items.color"></vui-quotation-flip>
             </div>
             <div class="d-flex position-relative px-5 col-md-10 col-12">
                 <div class="space-y-6">
-                    <div class="p-5 rounded-56 w-100 d-flex flex-column gap-4 align-items-center transition-transform justify-content-center position-relative"
+                    <div class="p-md-5 p-3 rounded-56 w-100 d-flex flex-column gap-4 align-items-center transition-transform justify-content-center position-relative"
                         :class="items.bg">
                         <span x-html="items.content"
-                            class="text-center col-11 text-grey-4 body-large-font-size-light fw-400 leading-relaxed"></span>
+                            class="text-center col-11 text-grey-4 fs-sm-16 body-large-font-size-light fw-400 leading-relaxed"></span>
                         <div class="d-flex flex-column align-items-center">
                             <img :src="items.image" :alt="items.alt" class="">
                             <span x-text="items.name" class="title-medium-font-size capitalize"></span>

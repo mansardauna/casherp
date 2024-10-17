@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR-management</title>
+    <title>purchase</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assests/styles/style.css">
-    <link rel="stylesheet" href="./assests/styles/utilies.css">
-    <script src="./assests/js/script.js"></script>
-    <script src="./assests/js/data.js"></script>
+    <link rel="stylesheet" href="../assests/styles/style.css">
+    <link rel="stylesheet" href="../assests/styles/utilies.css">
+    <link rel="stylesheet" href="../assests/styles/mobile.css">
+    <script src="../assests/js/script.js"></script>
+    <script src="../assests/js/data.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,7 @@
 
     <script>
         $vui.config.importMap = {
-            "*": './components/${component}.html'
+            "*": '../components/${component}.html'
         }
     </script>
 </head>
@@ -34,32 +35,33 @@
             <vui-top-nav></vui-top-nav>
         </div>
         <div class="" x-import="hero" x-data="heroData()">
-            <vui-hero :hero-title="data.hrManagement.title" :hero-description="data.hrManagement.description"
-                :hero-img="data.hrManagement.img" :bg="data.hrManagement.bg"></vui-hero>
+            <vui-hero :hero-title="data.purchase.title" :hero-description="data.purchase.description"
+                :hero-img="data.purchase.img" :bg="data.purchase.bg"></vui-hero>
         </div>
+
         <div class="" x-import="features" x-data="featuresComponent()">
-            <vui-features :fill="categories.hrManagement.fill" :color="categories.hrManagement.color"
-                :checkboxBg="categories.hrManagement.checked" :title="categories.hrManagement.title"
-                :bg="categories.hrManagement.bg" :features="categories.hrManagement.features"></vui-features>
+            <vui-features :fill="categories.purchase.fill" :color="categories.purchase.color"
+                :checkboxBg="categories.purchase.checked" :title="categories.purchase.title"
+                :bg="categories.purchase.bg" :features="categories.purchase.features"></vui-features>
         </div>
 
         <div class="" x-import="email-option" x-data="emailOptionData()">
-            <vui-email-option :title="data.hrManagement.title" :bg="data.hrManagement.bg"></vui-email-option>
+            <vui-email-option :title="data.purchase.title" :bg="data.purchase.bg"></vui-email-option>
         </div>
 
         <div class="" x-import="faq" x-data="utils()">
             <vui-faq mobile-description="Find quick answers to common questions" title="faq"
-                description="Got Questions? We've Got Answers—Let’s Clear the Confusion!" bg-color="bg-green-4"
-                :items="faqsHr" buttonText="Expand All"></vui-faq>
+                description="Got Questions? We've Got Answers—Let’s Clear the Confusion!" :items="faqsPurchase"
+                bg-color="bg-grey" faqs="" buttonText="Expand All"></vui-faq>
         </div>
         <div class="" x-import="testimonial" x-data="testimonialData()">
-            <vui-testimonial :items="data.hrManagement"></vui-testimonial>
+            <vui-testimonial :items="data.purchase"></vui-testimonial>
         </div>
         <div class="" x-import="trial" x-data="trials()">
-            <vui-trial :bg="data.hrManagement.bg" :headline="data.hrManagement.headline"
-                :description="data.hrManagement.description" :subheadline="data.hrManagement.subheadline"
-                :buttonImage="data.hrManagement.buttonImage" :buttonText="data.hrManagement.buttonText"
-                :mainImage="data.hrManagement.mainImage"></vui-trial>
+            <vui-trial :bg="data.purchase.bg" :headline="data.purchase.headline"
+                :description="data.purchase.description" :subheadline="data.purchase.subheadline"
+                :buttonImage="data.purchase.buttonImage" :buttonText="data.purchase.buttonText"
+                :mainImage="data.purchase.mainImage"></vui-trial>
         </div>
         <div class="" x-import="footer">
             <vui-footer></vui-footer>

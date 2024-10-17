@@ -1,7 +1,7 @@
 <template x-component="features">
-    <div class="p-5" :class="$prop('bg')" x-data="$api.init()">
+    <div class="p-md-5 p-3" :class="$prop('bg')" x-data="$api.init()">
         <h2 class="fw-500 fs-32 text-center lh-72 mb-5" x-text="$prop('title')"></h2>
-        <div class="d-flex justify-content-center gap-2 mb-5">
+        <div class="d-md-flex d-grid grid-2 justify-content-center gap-2 mb-5">
             <template x-for="(feature, index) in features" :key="index">
                 <div class="d-flex gap-2 align-items-center">
                     <div class="form-checkbox-wrapper" x-data="utils()">
@@ -16,7 +16,7 @@
                 </div>
             </template>
         </div>
-        <div class="features-grid gap-4 col-11 mx-auto">
+        <div class="features-grid gap-4 col-md-11 mx-auto">
             <template x-for="(feature, index) in features" :key="index">
                 <div class="p-4 bg-white rounded-12 shadow-md">
                     <div class="d-flex mb-3 align-items-center gap-2">
