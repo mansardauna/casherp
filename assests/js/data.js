@@ -276,7 +276,7 @@ function featuresComponent() {
             title: "Regulation Tracking",
             description:
               "Easily track certifications, contracts, and other critical documentation to stay compliant with local labor laws and industry regulations, ensuring your HR practices remain up to standard.",
-            icon: "../assests/images/regulation-tracking-icon.svg", // replace with actual path
+            icon: "../assests/images/tracking-icon.svg", // replace with actual path
           },
         ],
         bg: "bg-grey",
@@ -299,7 +299,7 @@ function featuresComponent() {
             title: "Expense Tracking",
             description:
               "Track and categorize all your business expenses easily, helping you monitor spending habits and identify areas for cost savings. Stay on top of your budget and ensure financial health.",
-            icon: "../assests/images/expense-tracking-icon.svg", // replace with actual path
+            icon: "../assests/images/account-tracking-icon.svg", // replace with actual path
           },
           {
             label: "Bank Reconciliation",
@@ -327,7 +327,7 @@ function featuresComponent() {
             title: "Multi-Currency",
             description:
               "Handle international transactions seamlessly with multi-currency support, automatically tracking exchange rates and conversions. Manage global finances effortlessly and expand your market reach.",
-            icon: "../assests/images/multi-currency-icon.svg", // replace with actual path
+            icon: "../assests/images/account-multi-currency-icon.svg", // replace with actual path
           },
         ],
         bg: "bg-green-4",
@@ -378,7 +378,7 @@ function featuresComponent() {
             title: "Integration",
             description:
               "Integrate asset management with your accounting systems to ensure accurate, synchronized financial data. Simplify budgeting, reporting, and tax preparation with seamless data integration.",
-            icon: "../assests/images/integration-icon.svg", // replace with actual path
+            icon: "../assests/images/payroll-integration-icon.svg", // replace with actual path
           },
         ],
         bg: "bg-grey",
@@ -445,7 +445,7 @@ function featuresComponent() {
             title: "Order Tracking",
             description:
               "Easily monitor all your purchase orders in real time, ensuring accurate records of order status, delivery timelines, and any potential delays to keep your operations running smoothly.",
-            icon: "../assests/images/order-tracking-icon.svg",
+            icon: "../assests/images/tracking-icon.svg",
           },
           {
             label: "Supplier Management",
@@ -459,7 +459,7 @@ function featuresComponent() {
             title: "Budgeting",
             description:
               "Set and manage budgets for each department to ensure spending stays within limits. This helps you allocate resources effectively and maintain financial control across your organization.",
-            icon: "../assests/images/budgeting-icon.svg",
+            icon: "../assests/images/auditing-icon.svg",
           },
           {
             label: "Requests",
@@ -945,5 +945,169 @@ function blogData() {
           "Remote work has moved from a trend to a business necessity. But how do you ensure your remote team...",
       },
     ],
+  };
+}
+
+function knowledge() {
+  return {
+    knowledgeData: [
+      {
+        category: "Estimates",
+        details:
+          "Create estimate within a minute, sent to your customers and wait to accept, add notes for better organization for your next actions, create reminders. Ability to auto convert the estimate to invoice after customer accept.",
+      },
+      {
+        category: "Proposals",
+        details:
+          "Create good looking proposals for leads or customers and increase sales. Receive notification when proposal is accepted/declined and auto send thank you email to your customer after accepting the proposal. Proposal overdue notice before X days available.",
+      },
+      {
+        category: "Online Payments",
+        details:
+          "Receive payments from Paypal, Stripe, Mollie, Authorize.net, 2Checkout, PayU Money and Braintree, we have implemented payment gateways that are available in most of the countries.",
+      },
+      {
+        category: "Projects",
+        details:
+          "Manage projects and track time spent on project for each staff member. Record project expenses and invoices and bill your clients faster. Professional Gantt Chart included for each project and staff member.",
+      },
+      {
+        category: "Leads",
+        details:
+          "Leads or potential clients are really important part to any company. Every company trying everyday to get new leads. Very often happend some potential client to call and ask for specific service that your company serve and then sometimes this is forgotten. With Casherp you will never forget your potential clients and you will be able to manage all of them in one place. Keep track of leads in one place and easily follow their progress. Ability to auto import leads from email, add notes, create proposals.",
+      },
+      {
+        category: "Web to Lead Form",
+        details:
+          "Create unlimited web to lead forms and inject in your landing page or website. This feature allows you to import leads into Casherp from form. Use web to lead forms to gather potential clients information, allow them to request quotes directly from your website.",
+      },
+      {
+        category: "Contracts",
+        details:
+          "You can add new contracts based on your clients. Adding contracts is very simple, you can set start date and end date and have clear view of all your company contracts in one place. You won't need anymore to search in your desk documents. Create PDF contracts and send to your customers from Casherp. Contract overdue reminders available.",
+      },
+      {
+        category: "Tickets",
+        details:
+          "Great support ticket system with autoresponse, private ticket staff notes, ticket assignments, attachments, predefined ticket replies, insert knowledge base link, ticket priorities, ticket statuses. Feature for auto importing tickets via Email Forwarder/IMAP method included. Let your customer reply and create new tickets via email, without accessing the client portal.",
+      },
+      {
+        category: "Departments",
+        details:
+          "Assign your staff to specific departments and ability to auto import tickets by department email.",
+      },
+      {
+        category: "Custom Fields",
+        details:
+          "Custom fields can store extra information for customers, leads, tickets, invoices, company, estimates and more.",
+      },
+      {
+        category: "Staff Reminders",
+        details:
+          "Setup staff reminders for staff member with ability to notify by email and built-in. Reminders are available for important features.",
+      },
+      {
+        category: "Events",
+        details:
+          "Create private or public events and stay organized with built-in notifications. Receive email alerts when an event is approaching, ensuring you never miss an important moment.",
+      },
+      {
+        category: "Email Templates",
+        details:
+          "Setup predefined email templates from text editor. Merge fields available and multi language options available.",
+      },
+      {
+        category: "Staff Roles & Permission",
+        details:
+          "You can give staff specific permissions on what they can do or can’t do. Role permissions can be overridden for each staff.",
+      },
+      {
+        category: "Goals Tracking",
+        details:
+          "Setup goals and tracking achievements. Use the Goals Tracking feature to keep sales goals in mind.",
+      },
+      {
+        category: "Personal To-Do",
+        details:
+          "Every staff member can have their own personal todo dashboard which will allow your staff member to easily organize their work.",
+      },
+      {
+        category: "Staff",
+        details:
+          "Manage all your staff members from one place with ease. Track attendance, performance, leave requests, and payroll, all from a centralized and user-friendly interface.",
+      },
+      {
+        category: "Company Newsfeed",
+        details:
+          "Share great company events, upload documents, easy employees communications.",
+      },
+      {
+        category: "Staff tasks",
+        details:
+          "Assign task to multiple employees, add task followers, task comments allowed, task attachments. Link tasks to many Casherp features and stay organized.",
+      },
+      {
+        category: "Recurring Tasks",
+        details: "Create tasks that will be auto created for a given period.",
+      },
+      {
+        category: "Surveys",
+        details:
+          "Create surveys with one click. Send to staff, leads, clients or manually created mail lists. Increase customer retention via built-in Surveys.",
+      },
+      {
+        category: "Reports",
+        details:
+          "Generate detailed and customizable reports to gain insights into your business performance. Analyze financial data, track key metrics, and make informed decisions with real-time, accurate reporting.",
+      },
+      {
+        category: "Media Library",
+        details:
+          "Upload files in media library. Each staff member that is not admin have their own folder for uploading files.",
+      },
+      {
+        category: "Activity Log",
+        details:
+          "Track all staff activity. Adding new items, creating, deleting.",
+      },
+      {
+        category: "Assets Management",
+        details:
+          "Assets Management Module for Casherp, is a module that provides the ability of managing company’s assets inside Casherp’s dashboard. You will be able to separate your assets based on groups/locations/units and assign them to staff members.",
+      },
+      {
+        category: "Manufacturing Management",
+        details:
+          "Manufacturing Management Module gives you the control you need over all aspects of production planning and materials management so that you can focus each day on increasing profits. Our flexible manufacturing management solution supports the entire spectrum of manufacturing styles, from high volume to engineer-to-order, and coordinates orders, equipment, facilities, inventory, and work-in-progress to minimize costs and maximize on-time delivery.",
+      },
+      {
+        category: "Recruitment Management",
+        details:
+          "Recruitment for Casherp, is a set of tools designed to automate and manage your organization’s recruiting and staffing operations. From posting your jobs to keeping applicants connected and engaged throughout, Recruitment Module lets you manage your entire recruiting process.",
+      },
+      {
+        category: "Inventory Management",
+        details:
+          "Inventory Management is a tool that allows you to track goods across your business’s supply chain. It optimizes the entire spectrum spanning from order placement with your vendor to order delivery to your customer, mapping the complete journey of a product.",
+      },
+      {
+        category: "MailFlow - Customers & Leads Newsletter",
+        details:
+          "MailFlow enables businesses to effectively engage with leads and customers by creating and sending personalized newsletters. With its comprehensive set of features and advanced filters, MailFlow empowers businesses to optimize their email marketing campaigns and enhance customer communication.",
+      },
+      {
+        category: "File Sharing & Transferring",
+        details:
+          "File Sharing is a versatile online file sharing platform designed to facilitate seamless sharing of multiple files among clients, partners, and colleagues. With File Sharing, you have the flexibility to send files either through email or via a shareable URL, allowing you to effortlessly collaborate and distribute content.",
+      },
+    ],
+    expandedFaqs: [],
+    toggleFaq(index) {
+      if (this.expandedFaqs.includes(index)) {
+        this.expandedFaqs = this.expandedFaqs.filter((i) => i !== index);
+      } else {
+        this.expandedFaqs.push(index);
+      }
+    },
   };
 }

@@ -35,13 +35,13 @@
             <vui-top-nav></vui-top-nav>
         </div>
         <div class="mb-5" x-data="heroData()">
-            <div class="d-grid gap-4 hero-bg position-relative bg-yellow-3 pb-5" :class="">
+            <div class="d-grid gap-4 hero-bg position-relative bg-brand pb-5" :class="">
                 <div
                     class="d-flex col-11 flex-column  mx-auto justify-content-center position-relative mt-5 pb-5 gap-4">
-                    <span class="title-large-font-size-bold lh-72 fw-500 text-black text-center">Privacy Policy</span>
-                    <span class="fs-18 lh-36 fw-400 text-center text-black col-md-7 col-10 mx-auto">We
-                        are committed to safeguarding your personal information and ensuring transparency in how we
-                        collect, use, and protect your data.</span>
+                    <span class="title-large-font-size-bold lh-72 fw-500 text-black text-center">Terms of Use</span>
+                    <span class="fs-18 lh-36 fw-400 text-center text-black col-md-7 col-10 mx-auto">We are committed to
+                        providing clear and fair terms to ensure a smooth experience. Understand the rules and
+                        responsibilities for using Casherp’s services</span>
                     <img src="../assests/images/hero-background.svg" alt="" class="hero-background-svg end-0">
 
                     <img src="../assests/images/hero-background.svg" alt="" class="hero-background-svg start-0">
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div class="col-10 my-4 mx-auto rounded-3 privacy-border p-5 fs-18 lh-32 ">
+        <div class="col-10 my-4 mx-auto rounded-3 terms-border p-5 fs-18 lh-32 ">
             <p>Welcome to Casherp ERP cloud software (hereafter referred to as Casherp). By using our service, you are
                 agreeing to be bound by the following terms and conditions (“Terms and Conditions”). Casherp reserves
                 the right to update or modify these Terms and Conditions at any time and without prior notice.</p>
@@ -221,6 +221,20 @@
                         under 18, please do not attempt to register an account or send any information about yourself to
                         us. If we become aware that we have collected information from a person under 18, we will delete
                         that information as soon as possible.</p>
+                </section>
+
+                <section id="cancellation" x-intersect:enter="setTab('cancellation')" class="space-y-4">
+                    <h2 class="fs-18 fw-500 lh-32">Account Cancellation</h2>
+                    <p class="fs-16 lh-32 fw-400">You may cancel your Casherp account at any time. You agree that you
+                        are responsible for the settlement of all fees and charges as of the cancellation date.
+                        Any cancellation or suspension of your account does not affect your obligation to pay any
+                        outstanding fees.</p>
+                </section>
+
+                <section id="disclaimer" x-intersect:enter="setTab('disclaimer')" class="space-y-4">
+                    <h2 class="fs-18 fw-500 lh-32"> Disclaimer of Warranties</h2>
+                    <p class="fs-16 lh-32 fw-400">You acknowledge that your use of Casherp’s Services is at your own
+                        risk. Casherp expressly disclaims any warranties for everyone.</p>
                 </section>
 
 
