@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>terms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assests/styles/style.css">
+    <link rel="stylesheet" href="../assests/styles/utilies.css">
+    <link rel="stylesheet" href="../assests/styles/mobile.css">
+    <script src="../assests/js/script.js"></script>
+    <script src="../assests/js/data.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@vimesh/ui"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+
+    <script>
+        $vui.config.importMap = {
+            "*": '../components/${component}.html'
+        }
+    </script>
+</head>
+
+<body>
+    <div class="">
+        <div class="" x-import="top-nav">
+            <vui-top-nav></vui-top-nav>
+        </div>
+        <div class="mb-5" x-data="heroData()">
+            <div class="d-grid gap-4 hero-bg position-relative bg-yellow-3 pb-5" :class="">
+                <div
+                    class="d-flex col-11 flex-column  mx-auto justify-content-center position-relative mt-5 pb-5 gap-4">
+                    <span class="title-large-font-size-bold lh-72 fw-500 text-black text-center">Privacy Policy</span>
+                    <span class="fs-18 lh-36 fw-400 text-center text-black col-md-7 col-10 mx-auto">We
+                        are committed to safeguarding your personal information and ensuring transparency in how we
+                        collect, use, and protect your data.</span>
+                    <img src="../assests/images/hero-background.svg" alt="" class="hero-background-svg end-0">
+
+                    <img src="../assests/images/hero-background.svg" alt="" class="hero-background-svg start-0">
+
+                    <div class="d-md-flex justify-content-center col-md-5 mx-auto fs-14">
+                        This Privacy Policy is effective as of July 20, 2023
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-10 my-4 mx-auto rounded-3 privacy-border p-5 fs-18 lh-32 ">
+            <p>Welcome to Casherp ERP cloud software (hereafter referred to as Casherp). By using our service, you are
+                agreeing to be bound by the following terms and conditions (“Terms and Conditions”). Casherp reserves
+                the right to update or modify these Terms and Conditions at any time and without prior notice.</p>
+            <p>These Terms and Conditions constitute a legally binding agreement between you and Casherp regarding your
+                use of Casherp services. Casherp encourages you to review the Terms and Conditions before using our
+                services. If you do not agree to these Terms and Conditions, please discontinue using Casherp and its
+                services.</p>
+        </div>
+
+        <div x-data="termsTabs()" class="d-md-flex my-5 py-5 col-md-10 col-11 mx-auto">
+            <!-- Tabs -->
+            <div class="col-5 bg-white ">
+                <div class="space-y-4 d-flex flex-column sticky-tab">
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
+                        :class="{ 'active-tab': selectedTab === 'use-of-services' }">
+                        <a href="#use-of-services">Use of Casherp Services</a>
+                    </span>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
+                        :class="{ 'active-tab': selectedTab === 'registration' }">
+                        <a href="#registration">Registration</a>
+                    </span>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
+                        :class="{ 'active-tab': selectedTab === 'modification' }">
+                        <a href="#modification">Modification of Terms and Conditions</a>
+                    </span>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
+                        :class="{ 'active-tab': selectedTab === 'contribution' }">
+                        <a href="#contribution">User Contributions</a>
+                    </span>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
+                        :class="{ 'active-tab': selectedTab === 'conduct' }">
+                        <a href="#conduct">User Conduct</a>
+                    </span>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
+                        :class="{ 'active-tab': selectedTab === 'fees' }">
+                        <a href="#fees"> Fees and Charges</a>
+                    </span>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
+                        :class="{ 'active-tab': selectedTab === 'payment' }">
+                        <a href="#payment">Payment Terms</a>
+                    </span>
+
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
+                        :class="{ 'active-tab': selectedTab === 'cancellation' }">
+                        <a href="#cancellation">Account Cancellation</a>
+                    </span>
+
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
+                        :class="{ 'active-tab': selectedTab === 'disclaimer' }">
+                        <a href="#disclaimer">Disclaimer of Warranties</a>
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="overflow-y-auto h-screen">
+                <section id="use-of-services" x-intersect:enter="setTab('use-of-services')">
+                    <div class="d-grid gap-3">
+                        <h2 class="fs-18 fw-500 lh-32">Use of Casherp Services</h2>
+                        <p class="fs-16 lh-32 fw-400">Casherp provides users with access to a wide variety of ERP cloud
+                            software that helps organisations to splify HR, Payroll, Invoicing, Sales and purchasing
+                            including automated software, tools, data feeds, information, and other materials
+                            (collectively,
+                            the “Services”). Subject to these Terms and Conditions, Casherp grants you a revocable,
+                            non-exclusive, non-transferable, limited right to access and use our Services.
+                            The Services may be accessed from any internet-enabled computers or devices located in
+                            different
+                            locations. You may not use Casherp’s Services for any illegal or unauthorized purpose. You
+                            must
+                            comply with all laws, rules and regulations in connection with your use of Casherp’s
+                            Services.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="registration" x-intersect:enter="setTab('registration')" class="space-y-4">
+                    <h2 class="fs-18 fw-500 lh-32">Registration</h2>
+                    <p class="fs-16 lh-32 fw-400">In order to use the Services, you must register as a Casherp user. You
+                        agree to provide accurate, current and complete information about yourself as may be prompted by
+                        Casherp’s registration form. We may contact you with offers from time to time, but you may opt
+                        out
+                        of receiving these offers.</p>
+
+                </section>
+
+                <section id="modification" x-intersect:enter="setTab('modification')" class="space-y-4">
+                    <h2 class="fs-18 fw-500 lh-32">Modification of Terms and Conditions</h2>
+                    <p class="fs-16 lh-32 fw-400">Casherp reserves the right to modify or revise these Terms and
+                        Conditions
+                        in our sole discretion. We may notify you of any modifications by posting them on our website or
+                        through other means such as e-mail. Any revised terms and conditions are effective upon the
+                        later of
+                        their publication or the stated Effective Date. Your continued use of Casherp’s Services after
+                        that
+                        point constitutes your acceptance of any changes.</p>
+                </section>
+
+                <section id="contribution" x-intersect:enter="setTab('contribution')" class="space-y-4">
+                    <h2 class="fs-18 fw-500 lh-32">User Contributions</h2>
+                    <p class="fs-16 lh-32 fw-400">Casherp may permit users to post, upload, publish, submit or transmit
+                        content through our website or mobile devices (“User Contributions”).
+                        Your User Contributions must not violate any third party’s intellectual property or proprietary
+                        rights. You may not post, upload, publish, submit or transmit any other material that: (i) is
+                        false,
+                        inaccurate or misleading; (ii) infringes any third party's copyright, patent, trademark, trade
+                        secret or other proprietary rights or rights of publicity or privacy; (iii) violates any law,
+                        statute, ordinance or regulation; or (iv) is, or may reasonably be considered to be, defamatory,
+                        libelous, hateful, racially or religiously biased or offensive, unlawfully threatening or
+                        unlawfully
+                        harassing to any individual, partnership or corporation.</p>
+                    <p class="fs-16 lh-32 fw-400">To exercise your rights, please contact us using the contact details
+                        below.
+                    </p>
+                </section>
+
+                <section id="conduct" x-intersect:enter="setTab('conduct')" class="space-y-4">
+                    <h2 class="fs-18 fw-500 lh-32">User conduct</h2>
+                    <p class="fs-16 lh-32 fw-400">By using and accessing Casherp’s Services, you agree not to engage in
+                        any activity, including posting or uploading any material, that:</p>
+                    <ul class="list-disc pl-5">
+                        <li>Is illegal, or intended to promote or commit an illegal act of any kind;</li>
+                        <li>Infringes on the rights of any third party, including but not limited to, intellectual
+                            property, privacy and/or publicity rights;</li>
+                        <li>Interferes with or disrupts the integrity or performance of the Services or any third-party
+                            websites or applications;</li>
+                        <li>Is fraudulent, deceptive, misleading or invasive of another’s privacy;</li>
+                        <li>Is vulgar, obscene, offensive or otherwise inappropriate;</li>
+                        <li>Is designed to collect or store personal data about other users;</li>
+                        <li>Is commercial in nature;</li>
+                        <li>Is designed to solicit funds, advertise or promote goods and services;</li>
+                        <li>Uses automated means, including spiders, robots, crawlers, data mining tools or the like to
+                            download data from the Services;</li>
+                        <li>Attempts to decompile or reverse engineer any software contained on Casherp’s website;</li>
+                        <li>Attempts to gain unauthorized access to the Services or any related systems or networks;
+                        </li>
+                        <li>Violates any applicable local, state, national or international law; or</li>
+                        <li>Creates liability for us or causes us to lose (in whole or in part) the services of our
+                            Internet Service Providers or other suppliers.</li>
+                    </ul>
+                    <p>Casherp reserves the right to take appropriate legal and/or technical action against any person
+                        who violates this section or any other applicable law.</p>
+
+                </section>
+
+                <section id="fees" x-intersect:enter="setTab('fees')" class="space-y-4">
+                    <h2 class="fs-18 fw-500 lh-32">fees and other technologies</h2>
+                    <p class="fs-16 lh-32 fw-400">We use fees and other tracking technologies to improve
+                        our
+                        services,
+                        provide
+                        features, and
+                        analyze our performance. We may also partner with third-party advertising networks in order to
+                        display tailored advertisements to you. This may involve collecting or sharing information with
+                        third-parties for targeted advertising purposes.</p>
+                </section>
+
+                <section id="payment" x-intersect:enter="setTab('payment')" class="space-y-4">
+                    <h2 class="fs-18 fw-500 lh-32">Children's privacy</h2>
+                    <p class="fs-16 lh-32 fw-400">We do not knowingly collect or solicit information from children under
+                        the
+                        age of
+                        18. If you are
+                        under 18, please do not attempt to register an account or send any information about yourself to
+                        us. If we become aware that we have collected information from a person under 18, we will delete
+                        that information as soon as possible.</p>
+                </section>
+
+
+            </div>
+        </div>
+
+        <div class="" x-import="footer">
+            <vui-footer></vui-footer>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
     --brand-2: #147AFD;
     --linear-3: linear-gradient(264.05deg, #0070FD 6.72%, #53B883 49.79%, #D8C256 94.57%);
     --text-blue: #02131C;
-    --blue-1: #161559;
+    --blue-1: #222729;
     --blue-2: #1F1E7E;
     --blue-3: #04697C;
     --blue-5: #ACCEF9;
@@ -28,6 +28,7 @@
     --deep-black: #09090A;
     --grey-1: #D3D3D3;
     --grey-2: #959595;
+    --grey-3:#455A64;
     --grey-4: #29292B;
     --grey-5: #222729;
     --slate:#F7F7F7;
@@ -229,7 +230,9 @@ input:focus {
 .text-yellow-1 {
     color: var(--yellow-1);
 }
-
+.text-grey-3{
+color: var(--grey-3);
+}
 .bg-yellow-3 {
     background-color: var(--yellow-3);
 }
@@ -249,6 +252,7 @@ input:focus {
 .fill-blue-5{
     fill: var(--blue-5);
 }
+
 .bg-yellow-4 {
     background-color: var(--yellow-4);
 }
@@ -344,8 +348,11 @@ box-shadow: 0px 1px 2px 0px #0000004D;
     top: 4.4em;
     z-index: 99;
 }
-
-
+.sticky-tab {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4.4em;
+}
 .nav-tab {
     width: Hug (152px)px;
     height: Hug (40px)px;
@@ -433,3 +440,6 @@ box-shadow: 0px 1px 2px 0px #0000004D;
     .form-checkbox:checked + .custom-checkbox::after {
         opacity: 1; /* Show checkmark when checked */
     }
+.active-tab{
+ border-bottom: 1px solid var(--grey-2);
+}

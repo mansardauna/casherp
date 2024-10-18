@@ -102,6 +102,23 @@ document.addEventListener("alpine:init", () => {
     },
   }));
 });
+function privacyTabs() {
+  return {
+    selectedTab: "information",
+    setTab(tab) {
+      this.selectedTab = tab;
+    },
+  };
+}
+function termsTabs() {
+  return {
+    selectedTab: "use-of-services",
+    setTab(tab) {
+      this.selectedTab = tab;
+    },
+  };
+}
+
 function utils() {
   return {
     faqsIndex: [

@@ -150,6 +150,12 @@
     text-align: center;
 
 }
+.fs-12{
+    font-size: 12px;
+}
+.fs-14{
+    font-size: 14px;
+}
 .fs-16{
     font-size: 16px;
 }
@@ -325,4 +331,51 @@
 }
 .profile-img{
     width: 80%;
+}
+.form-control{
+    border: 1px solid #A7A7A9;
+    border-radius: 10px;
+    padding: .6rem;
+}
+.form-check-label{
+    font-size: 14px;
+}
+.form-control::placeholder{
+    font-size: 14px;
+    color: #404045;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+.section-title{
+    background: var(--green-4);
+    font-size: 18px;
+    width: fit-content;
+    border-radius: 12px;
+}
+.post-date{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 5px;
+}
+.post-title{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 5px 0;
+}
+.post-des{
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.read-more{
+    border: 2px solid var(--brand-2);
+    border-radius: 12px;
+    align-items: center;
+    font-size: 14px;
+}
+.privacy-border{
+    border: 2px solid var(--green-1);
 }

@@ -133,7 +133,6 @@ function heroData() {
         img: "../assests/images/purchase-hero.png",
         bg: "bg-brand",
       },
-
       fleetManagement: {
         title: "Fleet Management Made Simple",
         description:
@@ -154,12 +153,26 @@ function heroData() {
         bg: "bg-green-3",
         img: "../assests/images/fileshare-hero.png",
       },
-      file: {
+      about: {
         title: "We Empower Businesses, One Solution at a Time!",
         description:
           "Our innovative solutions empower organizations to streamline operations, enhance productivity, and achieve sustainable growth",
         bg: "bg-yellow-3",
         img: "../assests/images/about.png",
+      },
+      blog: {
+        title: "Insights for Success: Explore Our Latest Blog Posts",
+        description:
+          "Subscribe to Stay Ahead with the Latest Tips, Trends, and Exclusive Content",
+        bg: "bg-green-3",
+        img: "../assests/images/about.png",
+      },
+
+      contact: {
+        title: "Get In Touch With Us",
+        description:
+          "Have questions or need assistance? Reach out to our team, and we’ll be happy to help you with any inquiries or support",
+        bg: "bg-green-3",
       },
     },
   };
@@ -671,6 +684,15 @@ function testimonialData() {
         color: "fill-green-4",
         content: `I’ve been an affiliate for six months, and the <span class="text-orange"> results</span> <span class="text-blue-1"> are amazing!</span> The commission structure is generous, and the support team is always there to help. I’ve been able to earn a steady income by simply sharing my affiliate link with my audience.`,
       },
+      contact: {
+        image: "../assests/images/slide1.png",
+        alt: "Slide 1",
+        name: "Kira Boats",
+        position: `Founder, KB Tech`,
+        bg: "bg-purple-2",
+        color: "fill-purple-2",
+        content: `“Since implementing their CRM solution, we have seen a remarkable improvement in our team's collaboration and <span class="text-blue-2"> productivity.</span>”`,
+      },
     },
   };
 }
@@ -821,6 +843,106 @@ function teamData() {
         name: "Henry Miles",
         role: "Head of Sales",
         image: "../assests/images/henry.png",
+      },
+    ],
+  };
+}
+
+function blogData() {
+  return {
+    trendingPost: {
+      image: "../assests/images/trending-1.png", // Replace with actual image URL
+      date: "15 Oct 2024",
+      title: "5 Ways Casherp Simplifies Invoicing for Small Businesses",
+      excerpt:
+        "Managing invoices can be a time-consuming, repetitive task that small business owners dread. From creating invoices to sending reminders and tracking payments...",
+    },
+    trendingSidePosts: [
+      {
+        image: "../assests/images/trending-2.png", // Replace with actual image URL
+        date: "09 Oct 2024",
+        title: "Boost Productivity with These 5 Time-Saving Tools",
+        excerpt:
+          "In a world where efficiency is everything, time is one of the most...",
+      },
+      {
+        image: "../assests/images/trending-4.png", // Replace with actual image URL
+        date: "23 Sept 2024",
+        title: "Why Asset Management Matters for Growing Businesses",
+        excerpt:
+          "Managing assets is critical for any growing business. From vehicles and...",
+      },
+      {
+        image: "../assests/images/trending-3.png", // Replace with actual image URL
+        date: "20 Sept 2024",
+        title: "The Power of Data: How Analytics Can Drive Business Growth",
+        excerpt:
+          "In today’s competitive marketplace, data-driven decisions are crucial for...",
+      },
+    ],
+    allPosts: [
+      {
+        image: "../assests/images/trending-1.png", // Replace with actual image URL
+        date: "15 Oct 2024",
+        title: "5 Ways Casherp Simplifies Invoicing for Small Businesses",
+        excerpt:
+          "Managing invoices can be a time-consuming, repetitive task that small business owners dread. From creating...",
+      },
+      {
+        image: "../assests/images/trending-2.png", // Replace with actual image URL
+        date: "09 Oct 2024",
+        title: "Boost Productivity with These 5 Time-Saving Tools",
+        excerpt:
+          "In today’s fast-paced business world, maximizing productivity is crucial. This post explores five...",
+      },
+      {
+        image: "../assests/images/trending-4.png", // Replace with actual image URL
+        date: "23 Sept 2024",
+        title: "Why Asset Management Matters for Growing Businesses",
+        excerpt:
+          "Managing assets is critical for any growing business. From vehicles and machinery to computers and office...",
+      },
+      {
+        image: "../assests/images/trending-3.png", // Replace with actual image URL
+        date: "20 Sept 2024",
+        title: "The Power of Data: How Analytics Can Drive Business Growth",
+        excerpt:
+          "In today’s competitive marketplace, data-driven decisions are crucial for success. Companies that...",
+      },
+      {
+        image: "../assests/images/trending-5.png", // Replace with actual image URL
+        date: "18 May 2024",
+        title: "The Importance of Payroll Integration in HR Management",
+        excerpt:
+          "HR management is about more than just managing people—it’s about managing their time, performance...",
+      },
+      {
+        image: "../assests/images/trending-6.png", // Replace with actual image URL
+        date: "30 Apr 2024",
+        title: "How to Build a Winning Remote Team: Strategies for Success",
+        excerpt:
+          "Remote work has moved from a trend to a business necessity. But how do you ensure your remote team...",
+      },
+      {
+        image: "../assests/images/trending-5.png", // Replace with actual image URL
+        date: "14 June 2024",
+        title: "Mastering Customer Relationships: A Guide to Building Loyalty",
+        excerpt:
+          "Loyal customers are the backbone of any successful business. Building and maintaining strong customer...",
+      },
+      {
+        image: "../assests/images/trending-6.png", // Replace with actual image URL
+        date: "18 May 2024",
+        title: "The Importance of Payroll Integration in HR Management",
+        excerpt:
+          "HR management is about more than just managing people—it’s about managing their time, performance...",
+      },
+      {
+        image: "../assests/images/trending-5.png", // Replace with actual image URL
+        date: "30 Apr 2024",
+        title: "How to Build a Winning Remote Team: Strategies for Success",
+        excerpt:
+          "Remote work has moved from a trend to a business necessity. But how do you ensure your remote team...",
       },
     ],
   };
