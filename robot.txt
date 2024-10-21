@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /profile/
+Disallow: /settings/
+Disallow: /api/
+Disallow: /terms-of-service/
+Disallow: /privacy-policy/
+
+# Allow specific resources
+Allow: /public/
+Allow: /assets/images/
+Allow: /assets/css/
+Allow: /assets/js/
+
+# Allow all pages under /component/
+Allow: /component/
+
+# Sitemap location
+Sitemap: https://casherp.vercel.app/sitemap.xml

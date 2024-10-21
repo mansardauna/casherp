@@ -87,10 +87,12 @@
 .lh-49 {
     line-height: 49px;
 }
-.lh-72{
+
+.lh-72 {
     line-height: 72px;
 
 }
+
 /* font-weight */
 .fw-400 {
     font-weight: 400;
@@ -150,28 +152,36 @@
     text-align: center;
 
 }
-.fs-12{
+
+.fs-12 {
     font-size: 12px;
 }
-.fs-14{
+
+.fs-14 {
     font-size: 14px;
 }
-.fs-16{
+
+.fs-16 {
     font-size: 16px;
 }
-.fs-18{
+
+.fs-18 {
     font-size: 18px;
 }
-.fs-28{
+
+.fs-28 {
     font-size: 28px;
 }
-.fs-24{
+
+.fs-24 {
     font-size: 24px;
 }
-.fs-32{
+
+.fs-32 {
     font-size: 32px;
 }
-.fs-36{
+
+.fs-36 {
     font-size: 36px;
 }
 
@@ -256,9 +266,11 @@
 .list-unstyled li {
     padding: 8px 0;
 }
-.features-dropdown{
+
+.features-dropdown {
     right: 30em;
 }
+
 .features-dropdown, .resources-dropdown {
     top: 3.6em;
 }
@@ -282,103 +294,124 @@
 .transition {
     transition: all 0.2s ease-out;
 }
-.invoice-hero{
+
+.invoice-hero {
     position: relative;
     top: 5rem;
 }
-.hero-footer{
+
+.hero-footer {
     height: 23em;
 }
 
-.hero-background-svg{
+.hero-background-svg {
     width: 150px;
     position: absolute;
     top: 2em;
 
 }
-.features-grid{
+
+.features-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.hero-bg{
+
+.hero-bg {
     margin-top: 4.4rem;
 }
-.hero-image{
+
+.hero-image {
     height: 8rem;
 }
 
-.hero-image img{
-    top:1rem;
+.hero-image img {
+    top: 1rem;
 }
+
 .flip-horizontal {
     transform: scaleX(-1);
 }
-.quotation{
+
+.quotation {
     top: 20px;
 }
-.quotation-flip{
+
+.quotation-flip {
     left: 70px;
     bottom: 50px;
 }
-.active-orange{
+
+.active-orange {
     border-top: 3px solid var(--orange);
 }
-.active-yellow{
+
+.active-yellow {
     border-top: 3px solid var(--yellow-1);
 }
-.active-green{
+
+.active-green {
     border-top: 3px solid var(--green-1);
 }
-.profile-img{
+
+.profile-img {
     width: 80%;
 }
-.form-control{
+
+.form-control {
     border: 1px solid #A7A7A9;
     border-radius: 10px;
     padding: .6rem;
 }
-.form-check-label{
+
+.form-check-label {
     font-size: 14px;
 }
-.form-control::placeholder{
+
+.form-control::placeholder {
     font-size: 14px;
     color: #404045;
     line-height: 20px;
     letter-spacing: 0.25px;
 }
 
-.section-title{
+.section-title {
     background: var(--green-4);
     font-size: 18px;
     width: fit-content;
     border-radius: 12px;
 }
-.post-date{
+
+.post-date {
     font-size: 12px;
     font-weight: 500;
     line-height: 30px;
     margin-top: 5px;
 }
-.post-title{
+
+.post-title {
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
     margin: 5px 0;
 }
-.post-des{
+
+.post-des {
     font-size: 15px;
     line-height: 26px;
     font-weight: 400;
 }
-.read-more{
+
+.read-more {
     border: 2px solid var(--brand-2);
     border-radius: 12px;
     align-items: center;
     font-size: 14px;
 }
-.privacy-border{
+
+.privacy-border {
     border: 2px solid var(--green-1);
 }
-.terms-border{
+
+.terms-border {
     border: 2px solid var(--purple-2);
 }

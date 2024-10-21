@@ -5,15 +5,19 @@
         width: 70%;
 
     }
-    .tab-content{
-    width: 100vw;
+
+    .tab-content {
+        width: 100vw;
     }
+
     .tab-frame {
         width: 100%;
     }
-    .tab-wrapper{
+
+    .tab-wrapper {
         height: fit-content;
     }
+
     .content-card {
         width: 350px;
         gap: 24px;
@@ -22,90 +26,117 @@
         line-height: 28px;
         letter-spacing: 0.25px;
     }
-.trial-bg-img{
-    width: 13rem; right: 1rem; top: 0;
-}
-.trial-img{
-    width: 12rem;
-    margin-top: 4px;
-}
-    .w-full{
+
+    .trial-bg-img {
+        width: 13rem;
+        right: 1rem;
+        top: 0;
+    }
+
+    .trial-img {
+        width: 12rem;
+        margin-top: 4px;
+    }
+
+    .w-full {
         width: 100%;
     }
-    .logo{
+
+    .logo {
         width: 80px;
     }
-    .features-dropdown{
+
+    .features-dropdown {
         right: 20px;
     }
-.hero{
-    height: 80vh ;
-}
 
-.hero-container{
-height: 870px ;
-}
-    .hero-title, .hero-des{
+    .hero {
+        height: 80vh;
+    }
+
+    .hero-container {
+        height: 870px;
+    }
+
+    .hero-title, .hero-des {
         text-align: center;
     }
-    .hero-title{
+
+    .hero-title {
         font-size: 32px;
         line-height: 44px;
     }
-    .hero-des{
+
+    .hero-des {
         font-size: 16px;
         line-height: 28px;
     }
 
-    .fs-sm-12{
+    .fs-sm-12 {
         font-size: 12px;
     }
-    .fs-sm-14{
+
+    .fs-sm-14 {
         font-size: 14px;
     }
-    .fs-sm-16{
+
+    .fs-sm-16 {
         font-size: 16px;
     }
-    .fs-sm-18{
+
+    .fs-sm-18 {
         font-size: 18px;
     }
-    .fs-sm-22{
+
+    .fs-sm-22 {
         font-size: 22px;
     }
-    .fs-sm-24{
+
+    .fs-sm-24 {
         font-size: 24px;
     }
-    .fs-sm-28{
+
+    .fs-sm-28 {
         font-size: 28px;
     }
-    .lh-sm-24{
+
+    .lh-sm-24 {
         line-height: 24px;
     }
-    .lh-sm-26{
+
+    .lh-sm-26 {
         line-height: 26px;
     }
-    .lh-sm-28{
+
+    .lh-sm-28 {
         line-height: 28px;
     }
-    .lh-sm-32{
+
+    .lh-sm-32 {
         line-height: 32px;
     }
-    .lh-sm-40{
+
+    .lh-sm-40 {
         line-height: 40px;
     }
-    .lh-sm-58{
+
+    .lh-sm-58 {
         line-height: 58px;
     }
-    .tab-navigator{
+
+    .tab-navigator {
         top: 10rem;
     }
-    .text-center-sm{
+
+    .text-center-sm {
         text-align: center;
     }
-    .features-grid{
+
+    .features-grid {
         grid-template-columns: 1fr;
     }
 }
-.w-fit{
+
+.w-fit {
     width: fit-content;
 }
