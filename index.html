@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Casherp | Comprehensive Business Finance Management</title>
     <meta name="description"
-        content="Casherp offers an all-in-one solution to manage your business finances efficiently. Discover features for invoicing, , and more. Start your free trial today.">
+        content="Casherp offers an all-in-one solution to manage your business finances efficiently. Discover features for invoicing, and more. Start your free trial today.">
     <meta name="keywords" content="business finance, finance management, invoicing, , Casherp">
     <meta name="author" content="Casherp">
 
@@ -55,7 +55,7 @@
     </div>
 
     <!-- hero -->
-    <headesection class="hero-container">
+    <header class="hero-container">
         <div class="hero d-md-flex p-md-5 p-2 py-5">
             <div class="col-md-11 justify-content-between mx-auto d-md-flex">
                 <div
@@ -87,190 +87,260 @@
                 </div>
             </div>
         </div>
-        </header>
-        <!-- all-in-one -->
-        <section class="my-md-5 py-5 d-flex flex-column gap-md-5 gap-3">
-            <h3 class="title-large-font-size fs-sm-18 lh-sm-32 fw-500 mt-4 col-md-5 col-11 mx-auto">All-in-One
-                Business
-                Hub: Manage
-                Everything,
-                Anytime</h3>
-            <h4h4 class="title-medium-font-size fw-sm-14 col-md-6 col-11 mx-auto fw-400">Casherp goes beyond customer
-                management—handle your
-                finances, assets,
-                inventory, sales, marketing, HR,
-                and more</h4h4>
-            <div class="d-md-flex col-md-10 justify-content-center mx-auto grid grid-2 gap-4" x-data="cardData()">
-                <template x-for="item in items" :key="item.title">
-                    <div class="d-flex flex-column align-items-center gap-4 text-white justify-content-center my-3 my-md-0"
-                        :class="item.bg" style="width: 302px;
+    </header>
+
+    <!-- all-in-one -->
+    <section class="my-md-5 py-5 d-flex flex-column gap-md-5 gap-3">
+        <h3 class="title-large-font-size fs-sm-18 lh-sm-32 fw-500 mt-4 col-md-5 col-11 mx-auto">All-in-One
+            Business
+            Hub: Manage
+            Everything,
+            Anytime</h3>
+        <h4h4 class="title-medium-font-size fw-sm-14 col-md-6 col-11 mx-auto fw-400">Casherp goes beyond customer
+            management—handle your
+            finances, assets,
+            inventory, sales, marketing, HR,
+            and more</h4h4>
+        <div class="d-md-flex col-md-10 justify-content-center mx-auto grid grid-2 gap-4" x-data="cardData()">
+            <template x-for="item in items" :key="item.title">
+                <div class="d-flex flex-column align-items-center gap-4 text-white justify-content-center my-3 my-md-0"
+                    :class="item.bg" style="width: 302px;
                     height: 302px;
                     padding: 45px 30px 45px 30px;
                     gap: 0px;
                     border-radius: 16px;
                     opacity: 0px;
                     ">
-                        <div class="p-2  bg-white rounded-pill">
-                            <img :src="item.img" class="card-img-top" :alt="item.title">
-                        </div>
-                        <div class="text-center">
-                            <h4 class="body-large-font-size fw-600" x-text="item.title"></h4>
-                            <p class="body-small-font-size lh-22 p-1 fw-400 mt-2" x-text="item.description"></p>
-                        </div>
+                    <div class="p-2  bg-white rounded-pill">
+                        <img :src="item.img" class="card-img-top" :alt="item.title">
                     </div>
-                </template>
-            </div>
-
-        </section>
-
-        <!-- why-choose-us -->
-        <section class="bg-green-4 d-flex gap-5 justify-content-center pt-5 ">
-            <img src="./assests/images/portrait-smiley.png" alt="portrait-smiley" class="d-none d-md-block">
-
-            <div class="p-md-0 p-3 my-md-5">
-                <h3 class="title-large-font-size text-uppercase mx-auto mx-md-0 w-fit fw-600 fs-sm-24">Why Choose
-                    US?</h3>
-                <div class="my-md-2 " x-data="chooseData()">
-                    <template x-for="item in choose" :key="item.label">
-                        <div class="col-md-11 my-md-5 my-4">
-                            <div class="d-flex col-3 gap-4 align-items-center">
-                                <h2 x-text="item.digit"
-                                    class="title-large-font-size-bold text-blue-1 fs-sm-28 lh-sm-58 fw-700"></h2>
-                                <h5 x-text="item.label"
-                                    class="heading-small-font-size text-blue fs-sm-18 lh-sm-26 fw-500"></h5>
-                            </div>
-                            <div class="my-1 col-md-10">
-                                <span x-text="item.description"
-                                    class="body-medium-font-size fw-400 fs-sm-16 text-blue lh-sm-28 lh-32"></span>
-                            </div>
-                        </div>
-                    </template>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- tabs -->
-        <section class="d-none d-md-block" x-data="tabComponent()" x-init="init()">
-            <div class="bg-purple py-4 sticky-tabs">
-                <div class="d-flex p-md-0 p-3 flex-column gap-4">
-                    <span class="p-2 px-3 bg-blue-3 rounded-16 w-fit mx-auto text-white fw-500">Features</span>
-                    <span class="title-large-font-size fw-500">What Makes Us Stand Out</span>
-                </div>
-                <div class="p-0 mt-4">
-                    <div class="tabs-container d-flex justify-content-center">
-                        <div class="d-md-flex d-grid grid-2 flex-row gap-3">
-                            <template x-for="(tab, index) in tabs" :key="index">
-                                <a class="nav-tab fw-500" :href="tab.href" x-on:click="scrollToTab(index)"
-                                    :class="{ 'active': activeTab === index }" x-text="tab.title"></a>
-                            </template>
-                        </div>
+                    <div class="text-center">
+                        <h4 class="body-large-font-size fw-600" x-text="item.title"></h4>
+                        <p class="body-small-font-size lh-22 p-1 fw-400 mt-2" x-text="item.description"></p>
                     </div>
                 </div>
-            </div>
-            <div class="tab-wrapper">
-                <template x-for="(tab, index) in tabs" :key="index">
-                    <div class="tab-content py-5 d-flex justify-content-center align-items-center" :class="tab.bg"
-                        :id="'tab-' + index">
-                        <div class="col-md-8 d-grid p-md-0 p-3 gap-3">
-                            <span class="p-3 text-white fw-500 rounded-24 w-fit" :class="tab.frameColor"
-                                x-text="tab.title">
-                            </span>
-                            <p x-text="tab.description" class=" lh-36 fw-500 text-black col-8"></p>
-                            <div class="d-md-flex d-grid gap-md-5 align-items-center gap-3 ">
-                                <div class="p-4 tab-frame rounded-12" :class="tab.frameColor">
-                                    <img :src="tab.img" :alt="tab.title" class="tab-img">
-                                </div>
-                                <div
-                                    class="rounded-12 body-small-font-size content-card my-md-4 bg-white p-3 fw-400 lh-28 py-4 d-flex flex-column gap-3">
-                                    <span x-text="tab.content"></span>
-                                    <button
-                                        class=" border- border-brand-2 text-brand-2 rounded-12 fw-600 body-small-font-size mx-auto bg-transparent px-2">Learn
-                                        more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </template>
-            </div>
-
-        </section>
-
-        <section class="d-block d-md-none" x-data="tabComponent()" x-init="init()">
-            <div class="tab-wrapper position-relative overflow-hidden">
-                <div class="d-flex" :style="{ transform: `translateX(-${activeTab * 100}%)` }">
-                    <template x-for="(tab, index) in tabs" :key="index">
-                        <div class="d-flex w-full py-4 flex-column flex-shrink-0" :class="tab.bg" :id="'tab-' + index"
-                            x-show="activeTab === index">
-                            <div class="d-flex p-md-0 p-3 flex-column gap-4">
-                                <h4 class="p-2 px-3 bg-blue-3 rounded-pill w-fit mx-auto fs-sm-16 text-white fw-500">
-                                    Features</h4>
-                                <h3 class="title-large-font-size fw-500 fs-sm-22 lh-sm-32">What Makes Us Stand
-                                    Out</h3>
-                            </div>
-                            <span class="p-2 px-3 text-white fw-500 rounded-pill fs-sm-14 lh-sm-24 w-fit mx-auto"
-                                :class="tab.frameColor" x-text="tab.title"></span>
-
-                            <div class="col-md-8 d-grid p-md-0 p-3 gap-3">
-                                <div class="">
-                                    <p x-text="tab.description"
-                                        class=" lh-36 fw-500 fs-sm-16 lh-sm-28 text-black col-md-10">
-                                    </p>
-                                </div>
-                                <div class="d-flex gap-2 justify-content-cent align-items-center">
-                                    <img :src="tab.img" :alt="tab.title" class="tab-img">
-                                    <div
-                                        class="rounded-12 body-small-font-size content-card my-md-4 fw-400 lh-28 py-4 d-flex flex-column">
-                                        <button
-                                            class="border-2  border-brand-2  text-brand-2 rounded-12 fw-600 body-small-font-size px-2 mx-auto bg-transparent">
-                                            Learn more
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </template>
-                </div>
-                <div class="d-flex justify-content-between position-absolute px-3 w-100 tab-navigator">
-                    <img @click="prevTab()" x-show="activeTab > 0" src="./assests/images/pointer.svg" alt=""
-                        class="rotate-180">
-                    <img @click="nextTab()" x-show="activeTab < 4" src="./assests/images/pointer.svg" alt="">
-
-                </div>
-            </div>
-        </section>
-
-        <!-- faq -->
-        <section class="" x-import="faq" x-data="utils()">
-            <vui-faq mobile-description="Find quick answers to common questions" title="faq" description="Find quick answers to common questions
-        and get the help you need to make the most of our features" bg-color="bg-yellow-5" buttonText="Expand All"
-                :items="faqsIndex"></vui-faq>
-        </section>
-
-        <!-- testimonial -->
-        <section class="" x-import="carousel">
-            <vui-carousel></vui-carousel>
-        </section>
-
-        <!-- trial -->
-        <section class="" x-import="trial" x-data="trialComponent()">
-            <vui-trial :headline="headline" :description="description" :subheadline="subheadline"
-                :buttonText="buttonText" :buttonImage="buttonImage" :mainImage="mainImage"
-                :backgroundImage="backgroundImage" :bg="bg"></vui-trial>
-        </section>
-
-        <!-- footer -->
-        <footer class="" x-import="footer">
-            <vui-footer></vui-footer>
-        </footer>
-
+            </template>
         </div>
 
+    </section>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- why-choose-us -->
+    <section class="bg-green-4 d-flex gap-5 justify-content-center pt-5 ">
+        <img src="./assests/images/portrait-smiley.png" alt="portrait-smiley" class="d-none d-md-block">
+
+        <div class="p-md-0 p-3 my-md-5">
+            <h3 class="title-large-font-size text-uppercase mx-auto mx-md-0 w-fit fw-600 fs-sm-24">Why Choose
+                US?</h3>
+            <div class="my-md-2 " x-data="chooseData()">
+                <template x-for="item in choose" :key="item.label">
+                    <div class="col-md-11 my-md-5 my-4">
+                        <div class="d-flex col-3 gap-4 align-items-center">
+                            <h2 x-text="item.digit"
+                                class="title-large-font-size-bold text-blue-1 fs-sm-28 lh-sm-58 fw-700"></h2>
+                            <h5 x-text="item.label" class="heading-small-font-size text-blue fs-sm-18 lh-sm-26 fw-500">
+                            </h5>
+                        </div>
+                        <div class="my-1 col-md-10">
+                            <span x-text="item.description"
+                                class="body-medium-font-size fw-400 fs-sm-16 text-blue lh-sm-28 lh-32"></span>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- tabs -->
+    <section class="d-none d-md-block" x-data="tabComponent()" x-init="init()">
+        <div class="bg-purple py-4 sticky-tabs">
+            <div class="d-flex p-md-0 p-3 flex-column gap-4">
+                <span class="p-2 px-3 bg-blue-3 rounded-16 w-fit mx-auto text-white fw-500">Features</span>
+                <span class="title-large-font-size fw-500">What Makes Us Stand Out</span>
+            </div>
+            <div class="p-0 mt-4">
+                <div class="tabs-container d-flex justify-content-center">
+                    <div class="d-md-flex d-grid grid-2 flex-row gap-3">
+                        <template x-for="(tab, index) in tabs" :key="index">
+                            <a class="nav-tab fw-500" :href="tab.href" x-on:click="scrollToTab(index)"
+                                :class="{ 'active': activeTab === index }" x-text="tab.title"></a>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-wrapper">
+            <template x-for="(tab, index) in tabs" :key="index">
+                <div class="tab-content py-5 d-flex justify-content-center align-items-center" :class="tab.bg"
+                    :id="'tab-' + index">
+                    <div class="col-md-8 d-grid p-md-0 p-3 gap-3">
+                        <span class="p-3 text-white fw-500 rounded-24 w-fit" :class="tab.frameColor" x-text="tab.title">
+                        </span>
+                        <p x-text="tab.description" class=" lh-36 fw-500 text-black col-8"></p>
+                        <div class="d-md-flex d-grid gap-md-5 align-items-center gap-3 ">
+                            <div class="p-4 tab-frame rounded-12" :class="tab.frameColor">
+                                <img :src="tab.img" :alt="tab.title" class="tab-img">
+                            </div>
+                            <div
+                                class="rounded-12 body-small-font-size content-card my-md-4 bg-white p-3 fw-400 lh-28 py-4 d-flex flex-column gap-3">
+                                <span x-text="tab.content"></span>
+                                <button
+                                    class=" border- border-brand-2 text-brand-2 rounded-12 fw-600 body-small-font-size mx-auto bg-transparent px-2">Learn
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </template>
+        </div>
+
+    </section>
+
+    <section class="d-block d-md-none" x-data="tabComponent()" x-init="init()">
+        <div class="tab-wrapper position-relative overflow-hidden">
+            <div class="d-flex" :style="{ transform: `translateX(-${activeTab * 100}%)` }">
+                <template x-for="(tab, index) in tabs" :key="index">
+                    <div class="d-flex w-full py-4 flex-column flex-shrink-0" :class="tab.bg" :id="'tab-' + index"
+                        x-show="activeTab === index">
+                        <div class="d-flex p-md-0 p-3 flex-column gap-4">
+                            <h4 class="p-2 px-3 bg-blue-3 rounded-pill w-fit mx-auto fs-sm-16 text-white fw-500">
+                                Features</h4>
+                            <h3 class="title-large-font-size fw-500 fs-sm-22 lh-sm-32">What Makes Us Stand
+                                Out</h3>
+                        </div>
+                        <span class="p-2 px-3 text-white fw-500 rounded-pill fs-sm-14 lh-sm-24 w-fit mx-auto"
+                            :class="tab.frameColor" x-text="tab.title"></span>
+
+                        <div class="col-md-8 d-grid p-md-0 p-3 gap-3">
+                            <div class="">
+                                <p x-text="tab.description"
+                                    class=" lh-36 fw-500 fs-sm-16 lh-sm-28 text-black col-md-10">
+                                </p>
+                            </div>
+                            <div class="d-flex gap-2 justify-content-cent align-items-center">
+                                <img :src="tab.img" :alt="tab.title" class="tab-img">
+                                <div
+                                    class="rounded-12 body-small-font-size content-card my-md-4 fw-400 lh-28 py-4 d-flex flex-column">
+                                    <button
+                                        class="border-2  border-brand-2  text-brand-2 rounded-12 fw-600 body-small-font-size px-2 mx-auto bg-transparent">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div class="d-flex justify-content-between position-absolute px-3 w-100 tab-navigator">
+                <img @click="prevTab()" x-show="activeTab > 0" src="./assests/images/pointer.svg" alt=""
+                    class="rotate-180">
+                <img @click="nextTab()" x-show="activeTab < 4" src="./assests/images/pointer.svg" alt="">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- faq -->
+    <section class="" x-import="faq" x-data="utils()">
+        <vui-faq mobile-description="Find quick answers to common questions" title="faq" description="Find quick answers to common questions
+        and get the help you need to make the most of our features" bg-color="bg-yellow-5" buttonText="Expand All"
+            :items="faqsIndex"></vui-faq>
+    </section>
+
+    <!-- testimonial -->
+    <section class="" x-import="carousel">
+        <vui-carousel></vui-carousel>
+    </section>
+
+    <!-- trial -->
+    <section class="" x-import="trial" x-data="trialComponent()">
+        <vui-trial :headline="headline" :description="description" :subheadline="subheadline" :buttonText="buttonText"
+            :buttonImage="buttonImage" :mainImage="mainImage" :backgroundImage="backgroundImage" :bg="bg"></vui-trial>
+    </section>
+
+    <!-- footer -->
+    <template x-component="footer">
+        <div class="footer">
+            <div class="col-10 mx-auto text-grey-4 text-xs">
+                <div class="d-md-flex justify-content-between">
+                    <div
+                        class="col-lg-4 col-md-5 d-grid d-md-block justify-content-center align-items-center gap-3 gap-md-0 ">
+                        <img src="../assests/images/casherp logo.svg" alt="logo" class="logo">
+                        <p class="body-xs-font-size lh-22 fw-400 my-4 d-none d-md-block text-white col-md-10">An
+                            All-In-One
+                            tools to manage
+                            people,
+                            projects, and everything in between. Invoicing, Purchasing, HRM, CRM, Project, Manufacturing
+                            &
+                            POS</p>
+                        <div class="d-flex gap-3">
+                            <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
+                                style="padding: .3rem;">
+                                <img src="../assests/images/facebook.svg" alt="">
+                            </div>
+                            <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
+                                style="padding: .3rem;">
+                                <img src="../assests/images/twitter.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-md-flex col-md-6 col-12 justify-content-between text-center-sm">
+                        <div class="mt-4 mt-md-0">
+                            <span class="text-white body-medium-font-size fw-500 fs-sm-14 ">Features</span>
+                            <div
+                                class="list-unstyled text-grey-1 lh-22 cursor-pointer body-small-font-size fw-500 fs-sm-12">
+                                <li><a href="../pages/accounting.html">Accounting</a></li>
+                                <li><a href="../pages/invoice.html">Invoicing</a></li>
+                                <li><a href="../pages/purchase.html">Purchase Management</a></li>
+                                <li><a href="../pages/hr-management.html">Recruitment Management</a></li>
+                                <li><a href="../pages/asset.html">Assets Management</a></li>
+                                <li><a href="../pages/fleet-management.html">Fleet Management</a></li>
+                                <li><a href="../pages/file-share.html">File Sharing</a></li>
+                                <li><a href="">Advisors</a></li>
+                            </div>
+                        </div>
+                        <div class="mt-4 mt-md-0">
+                            <span class="text-white body-medium-font-size fw-500 fs-sm-14">Casherp</span>
+                            <div class="list-unstyled text-grey-1 cursor-pointer body-small-font-size fw-500 fs-sm-12">
+                                <li><a href="../pages/about.html">About Us</a></li>
+                                <li><a href="../pages/contact.html">Contact Us</a></li>
+                                <li><a href="">Careers</a></li>
+                            </div>
+                        </div>
+                        <div class="mt-4 mt-md-0">
+                            <span class="text-white body-medium-font-size fw-500 fs-sm-14">Quick Links</span>
+                            <div class="list-unstyled text-grey-1 cursor-pointer body-small-font-size fw-500 fs-sm-12">
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../pages/pricing.html">Pricing</a></li>
+                                <li><a href="../pages/knowledge.html">FAQ</a></li>
+                                <li><a href="">How support works</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="row body-small-font-size fs-sm-12">
+                    <div class="col-md-9 text-center text-md-start  mb-3 mb-md-0">
+                        <p class="mb-0 text-grey-1">Copyright &copy; 2024 Casherp</p>
+                    </div>
+                    <div class="col-md-3 text-center text-md-end">
+                        <div class="d-md-flex d-block text-grey-1 mb-0 list-unstyled">
+                            <li class="mx-2"><a href="">Terms of Use</a></li>
+                            <li class="mx-2"><a href="">Privacy Policy</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
