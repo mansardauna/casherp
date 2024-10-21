@@ -1,7 +1,7 @@
 <template x-component="testimonial">
     <div class="py-5" x-data="$api.init()">
         <div class="d-flex col-md-12 col-10 align-items-center justify-content-center py-4 position-relative">
-            <div class="" x-import="quotation-flip">
+            <div x-import="quotation-flip">
                 <vui-quotation-flip :fill="items.color"></vui-quotation-flip>
             </div>
             <div class="d-flex position-relative px-5 col-md-10 col-12">
@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-            <div class="" x-import="quotation">
+            <div x-import="quotation">
                 <vui-quotation :fill="items.color"></vui-quotation>
             </div>
         </div>

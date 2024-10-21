@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Casherp | Comprehensive Business Finance Management</title>
+    <link rel="icon" href="./assests/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assests/images/favicon.ico" type="image/x-icon">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
     <meta name="description"
         content="Casherp offers an all-in-one solution to manage your business finances efficiently. Discover features for invoicing, and more. Start your free trial today.">
     <meta name="keywords" content="business finance, finance management, invoicing, , Casherp">
@@ -50,134 +56,131 @@
 <body>
 
     <!-- nav -->
-    <template x-component="top-nav">
-        <div class="top-nav position-fixed bg-white top-0 w-100 py-3 border-bottom">
-            <div class="d-flex mx-auto col-11 justify-content-between" x-data="utils()">
-                <img src="../assests/images/casherp logo 2.svg" alt="logo" class="logo" />
-                <div class="d-flex ">
-                    <div class="d-flex d-md-none gap-2">
+    <div class="top-nav position-fixed bg-white top-0 w-100 py-3 border-bottom">
+        <div class="d-flex mx-auto col-11 justify-content-between" x-data="utils()">
+            <img src="../assests/images/casherp logo 2.svg" alt="logo" class="logo" />
+            <div class="d-flex ">
+                <div class="d-flex d-md-none gap-2">
+                    <button id="start-trial-button "
+                        class="btn-primary-custom rounded-6 p-0 text-capitalize body-small-font-size fw-500 bg-brand-2 px-3">
+                        Start Free Trial
+                    </button>
+                    <button id="hamburger-btn" class="px-1 border-0 btn-secondary-custom" @click="hamburger=!hamburger">
+                        ☰
+                    </button>
+                </div>
+                <div class="d-md-flex position-relative nav-items gap-md-5"
+                    :class="{'d-none': !hamburger, 'position-absolute start-0 bg-white p-2  justify-content-center align-items-center mt-4 w-100 d-grid gap-3': hamburger && window.innerWidth < 768}">
+                    <div class="d-flex gap-1 gap-md-5 align-items-center">
+                        <button @click="feautureOpen=!feautureOpen" class="btn-tertiary-custom px-2 fw-500">
+                            <span>Features</span>
+                            <img src="../assests/images/Arrows (1).svg" alt="pointer-right" class="pointer"
+                                :class="feautureOpen ?'': 'rotate-180' " />
+                        </button>
+
+                        <div x-show="feautureOpen" @click.away="feautureOpen=false"
+                            class="features-dropdown position-absolute bg-white col-md-7 col-11 rounded-3 px-4">
+                            <div class="d-grid grid-2 gap-3 justify-content-between pt-3">
+                                <div class="body-medium-font-size fw-500 border-bottom">
+                                    <a href="../pages/invoice.html">
+                                        <span class="body-medium-font-size fw-500 text-blue-1">Invoicing</span>
+                                        <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                            Quick, Easy Billing
+                                        </p>
+                                        <div class="feature-divider"></div>
+                                    </a>
+                                </div>
+                                <div class="body-medium-font-size fw-500 border-bottom">
+                                    <a href="../pages/asset.html">
+                                        <span class="feature-title text-blue-1">Assets Management</span>
+                                        <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                            Optimize Asset Utilization
+                                        </p>
+                                        <div class="feature-divider"></div>
+                                    </a>
+                                </div>
+                                <div class="body-medium-font-size fw-500 border-bottom">
+                                    <a href="../pages/accounting.html">
+                                        <span class="feature-title text-blue-1">Accounting</span>
+                                        <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                            Accurate Financial Tracking
+                                        </p>
+                                        <div class="feature-divider"></div>
+                                    </a>
+                                </div>
+                                <div class="body-medium-font-size fw-500 border-bottom">
+                                    <a href="../pages/purchase.html">
+                                        <span class="feature-title text-blue-1">Purchase Management</span>
+                                        <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                            Fast, Secure Sharing
+                                        </p>
+                                        <div class="feature-divider"></div>
+                                    </a>
+                                </div>
+                                <div class="body-medium-font-size fw-500 border-bottom">
+                                    <a href="../pages/hr-management.html">
+                                        <span class="feature-title text-blue-1">HR Management</span>
+                                        <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                            Efficient Talent Acquisition
+                                        </p>
+                                        <div class="feature-divider"></div>
+                                    </a>
+                                </div>
+                                <div class="body-medium-font-size fw-500 border-bottom">
+                                    <a href="../pages/fleet-management.html">
+                                        <span class="feature-title text-blue-1">Fleet Management</span>
+                                        <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                            Vehicles Management System
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn-tertiary-custom px-2 fw-500"><a href="../pages/pricing.html">
+                                Pricing</a></button>
+                        <button class="btn-tertiary-custom px-2 fw-500"><a href="../pages/blog.html">
+                                Blog</a></button>
+                        <div class="">
+                            <button @click="reasourcesOpen=!reasourcesOpen" class="btn-tertiary-custom px-2 fw-500">
+                                <span>Reasources</span>
+                                <img src="../assests/images/Arrows (1).svg" alt="arrow" class=""
+                                    :class="reasourcesOpen ?'': 'rotate-180' " />
+                            </button>
+
+                            <div x-show="reasourcesOpen" @click.away="reasourcesOpen=false"
+                                class="resources-dropdown rounded-3 bg-white position-absolute">
+                                <div class="resource-item p-2 px-3 border-top">
+                                    <span class="resource-title text-blue-1"><a href="../pages/about.html"> About
+                                            Us</a></span>
+                                </div>
+
+                                <div class="resource-item p-2 px-3 border-top">
+                                    <span class="resource-title text-blue-1">Knowledge Base</span>
+                                </div>
+                                <div class="resource-item p-2 px-3 border-top">
+                                    <span class="resource-title text-blue-1"> <a href="../pages/Affiliate.html">
+                                            Become
+                                            an
+                                            Affiliate</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mx-auto gap-4 ml-md-2">
+                        <button id="login-button"
+                            class="rounded-6 border-2 text-brand-2 body-small-font-size fw-500 fs-sm-6 bg-transparent border-brand-2 p-0 px-3">
+                            Log In
+                        </button>
                         <button id="start-trial-button "
-                            class="btn-primary-custom rounded-6 p-0 text-capitalize body-small-font-size fw-500 bg-brand-2 px-3">
+                            class="btn-primary-custom rounded-6 d-md-block d-none p-0 text-capitalize body-small-font-size fw-500 bg-brand-2 px-3">
                             Start Free Trial
                         </button>
-                        <button id="hamburger-btn" class="px-1 border-0 btn-secondary-custom"
-                            @click="hamburger=!hamburger">
-                            ☰
-                        </button>
-                    </div>
-                    <div class="d-md-flex position-relative nav-items gap-md-5"
-                        :class="{'d-none': !hamburger, 'position-absolute start-0 bg-white p-2  justify-content-center align-items-center mt-4 w-100 d-grid gap-3': hamburger && window.innerWidth < 768}">
-                        <div class="d-flex gap-1 gap-md-5 align-items-center">
-                            <button @click="feautureOpen=!feautureOpen" class="btn-tertiary-custom px-2 fw-500">
-                                <span>Features</span>
-                                <img src="../assests/images/Arrows (1).svg" alt="" class=""
-                                    :class="feautureOpen ?'': 'rotate-180' " />
-                            </button>
-
-                            <div x-show="feautureOpen" @click.away="feautureOpen=false"
-                                class="features-dropdown position-absolute bg-white col-md-7 col-11 rounded-3 px-4">
-                                <div class="d-grid grid-2 gap-3 justify-content-between pt-3">
-                                    <div class="body-medium-font-size fw-500 border-bottom">
-                                        <a href="../pages/invoice.html">
-                                            <span class="body-medium-font-size fw-500 text-blue-1">Invoicing</span>
-                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                                Quick, Easy Billing
-                                            </p>
-                                            <div class="feature-divider"></div>
-                                        </a>
-                                    </div>
-                                    <div class="body-medium-font-size fw-500 border-bottom">
-                                        <a href="../pages/asset.html">
-                                            <span class="feature-title text-blue-1">Assets Management</span>
-                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                                Optimize Asset Utilization
-                                            </p>
-                                            <div class="feature-divider"></div>
-                                        </a>
-                                    </div>
-                                    <div class="body-medium-font-size fw-500 border-bottom">
-                                        <a href="../pages/accounting.html">
-                                            <span class="feature-title text-blue-1">Accounting</span>
-                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                                Accurate Financial Tracking
-                                            </p>
-                                            <div class="feature-divider"></div>
-                                        </a>
-                                    </div>
-                                    <div class="body-medium-font-size fw-500 border-bottom">
-                                        <a href="../pages/purchase.html">
-                                            <span class="feature-title text-blue-1">Purchase Management</span>
-                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                                Fast, Secure Sharing
-                                            </p>
-                                            <div class="feature-divider"></div>
-                                        </a>
-                                    </div>
-                                    <div class="body-medium-font-size fw-500 border-bottom">
-                                        <a href="../pages/hr-management.html">
-                                            <span class="feature-title text-blue-1">HR Management</span>
-                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                                Efficient Talent Acquisition
-                                            </p>
-                                            <div class="feature-divider"></div>
-                                        </a>
-                                    </div>
-                                    <div class="body-medium-font-size fw-500 border-bottom">
-                                        <a href="../pages/fleet-management.html">
-                                            <span class="feature-title text-blue-1">Fleet Management</span>
-                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                                Vehicles Management System
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button class="btn-tertiary-custom px-2 fw-500"><a href="../pages/pricing.html">
-                                    Pricing</a></button>
-                            <button class="btn-tertiary-custom px-2 fw-500"><a href="../pages/blog.html">
-                                    Blog</a></button>
-                            <div class="">
-                                <button @click="reasourcesOpen=!reasourcesOpen" class="btn-tertiary-custom px-2 fw-500">
-                                    <span>Reasources</span>
-                                    <img src="../assests/images/Arrows (1).svg" alt="" class=""
-                                        :class="reasourcesOpen ?'': 'rotate-180' " />
-                                </button>
-
-                                <div x-show="reasourcesOpen" @click.away="reasourcesOpen=false"
-                                    class="resources-dropdown rounded-3 bg-white position-absolute">
-                                    <div class="resource-item p-2 px-3 border-top">
-                                        <span class="resource-title text-blue-1"><a href="../pages/about.html"> About
-                                                Us</a></span>
-                                    </div>
-
-                                    <div class="resource-item p-2 px-3 border-top">
-                                        <span class="resource-title text-blue-1">Knowledge Base</span>
-                                    </div>
-                                    <div class="resource-item p-2 px-3 border-top">
-                                        <span class="resource-title text-blue-1"> <a href="../pages/Affiliate.html">
-                                                Become
-                                                an
-                                                Affiliate</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex mx-auto gap-4 ml-md-2">
-                            <button id="login-button"
-                                class="rounded-6 border-2 text-brand-2 body-small-font-size fw-500 fs-sm-6 bg-transparent border-brand-2 p-0 px-3">
-                                Log In
-                            </button>
-                            <button id="start-trial-button "
-                                class="btn-primary-custom rounded-6 d-md-block d-none p-0 text-capitalize body-small-font-size fw-500 bg-brand-2 px-3">
-                                Start Free Trial
-                            </button>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </template>
+    </div>
 
     <!-- hero -->
     <header class="hero-container">
@@ -206,9 +209,10 @@
 
                 <div
                     class="col-md-6 col-12 img-container d-flex justify-content-center align-items-center mt-4 mt-md-0">
-                    <img src="./assests/images/hero-mobile.png" alt="" class="d-flex d-md-none " style="width: 90vw;">
+                    <img src="./assests/images/hero-mobile.png" alt="hero-mobile" class="d-flex d-md-none "
+                        style="width: 90vw;">
 
-                    <img src="./assests/images/hero.png" alt="" class=" d-none d-md-flex">
+                    <img src="./assests/images/hero.png" alt="hero" class=" d-none d-md-flex">
                 </div>
             </div>
         </div>
@@ -358,9 +362,9 @@
                 </template>
             </div>
             <div class="d-flex justify-content-between position-absolute px-3 w-100 tab-navigator">
-                <img @click="prevTab()" x-show="activeTab > 0" src="./assests/images/pointer.svg" alt=""
+                <img @click="prevTab()" x-show="activeTab > 0" src="./assests/images/pointer.svg" alt="pointer"
                     class="rotate-180">
-                <img @click="nextTab()" x-show="activeTab < 4" src="./assests/images/pointer.svg" alt="">
+                <img @click="nextTab()" x-show="activeTab < 4" src="./assests/images/pointer.svg" alt="pointer">
 
             </div>
         </div>
@@ -381,7 +385,7 @@
     <!-- trial -->
     <section class="" x-import="trial" x-data="trialComponent()">
         <vui-trial :headline="headline" :description="description" :subheadline="subheadline" :buttonText="buttonText"
-            :buttonImage="buttonImage" :mainImage="mainImage" :backgroundImage="backgroundImage" :bg="bg"></vui-trial>
+            :buttonImage="buttonImage" :mainImage="mainImage" :bg="bg"></vui-trial>
     </section>
 
     <!-- footer -->
@@ -403,12 +407,12 @@
                             <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
                                 style="padding: .3rem;">
                                 <a href="www.facebook.com">
-                                    <img src="../assests/images/facebook.svg" alt=""></a>
+                                    <img src="../assests/images/facebook.svg" alt="facebook-icon"></a>
                             </div>
                             <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
                                 style="padding: .3rem;">
                                 <a href="www.x.com">
-                                    <img src="../assests/images/twitter.svg" alt="">
+                                    <img src="../assests/images/twitter.svg" alt="twitter-icon">
                                 </a>
                             </div>
                         </div>

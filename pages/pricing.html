@@ -60,9 +60,9 @@
                     <span
                         class=" title-medium-font-size lh-36 fw-400 smd:text-center text-black col-md-6 col-10 mx-auto"
                         x-text="data.pricing.description"></span>
-                    <img src="../assests/images/hero-background.svg" alt="" class="hero-background-svg end-0">
+                    <img src="../assests/images/hero-background.svg" alt="hero-bg" class="hero-background-svg end-0">
 
-                    <img src="../assests/images/hero-background.svg" alt="" class="hero-background-svg start-0">
+                    <img src="../assests/images/hero-background.svg" alt="hero-bg" class="hero-background-svg start-0">
 
                     <div class="d-flex col-5 mx-auto mt-4">
                         <input type="text" placeholder="Enter your email"
@@ -86,9 +86,9 @@
                             :class="plan.active ? `${plan.borderColor}` : ''" style="width: 378px;">
                             <template x-if="plan.id === 'standard'">
                                 <div class="position-absolute">
-                                    <img src="../assests/images/Vector (4).svg" alt="" class="position-relative"
+                                    <img src="../assests/images/Vector (4).svg" alt="vector" class="position-relative"
                                         style="top: -7rem; left: 6rem; transform: translateX(-50%); width: 40px;">
-                                    <img src="../assests/images/Vector (4).svg" alt="" class="position-relative"
+                                    <img src="../assests/images/Vector (4).svg" alt="vector" class="position-relative"
                                         style="top: -12rem; left: 10rem; transform: translateX(-50%); width: 40px;">
 
                                 </div>
@@ -113,7 +113,7 @@
                             <ul class="px-4 ">
                                 <template x-for="feature in plan.features" :key="feature">
                                     <li class="list-unstyled flex items-center mb-2">
-                                        <img src="../assests/images/mark-green.svg" alt="">
+                                        <img src="../assests/images/mark-green.svg" alt="mark">
                                         <span class="text-gray-700 body-xs-font-size lh-20 ml-2 fw-500"
                                             x-text="feature"></span>
                                     </li>

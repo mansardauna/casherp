@@ -8,7 +8,7 @@
                         <div @click="check=!check"
                             class="p-1 rounded-2 d-flex justify-content-center align-items-center "
                             :class="check ? $prop('checkboxBg'): 'bg-white border'">
-                            <img x-show="" src="../assests//images/mark.svg" alt="">
+                            <img src="../assests/images/mark.svg" alt="mark">
                         </div>
                     </div>
                     <span x-text="feature.label" class="ml-1 body-small-font-size px-2 py-1 bg-white rounded-pill"
@@ -20,7 +20,7 @@
             <template x-for="(feature, index) in features" :key="index">
                 <div class="p-4 bg-white rounded-12 shadow-md">
                     <div class="d-flex mb-3 align-items-center gap-2">
-                        <img :src="feature.icon" :alt="feature.title" class="w-8 h-8 mr-2" :class="category.fill">
+                        <img :src="feature.icon" :alt="feature.title" class="w-8 h-8 mr-2">
                         <span x-text="feature.title" class="body-large-font-size lh-32 fw-400"></span>
                     </div>
                     <p x-text="feature.description" class="body-medium-font-size fw-400 lh-32"></p>
