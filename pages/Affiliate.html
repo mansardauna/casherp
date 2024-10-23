@@ -37,279 +37,429 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <script src="https://unpkg.com/@vimesh/ui"></script>
     <script src="https://unpkg.com/alpinejs" defer></script>
 
-    <script>
-        $vui.config.importMap = {
-            "*": '../components/${component}.html'
-        }
-    </script>
+
 </head>
 
 <body>
     <div class="">
-        <div class="top-nav position-fixed bg-white top-0 w-100 py-3 border-bottom">
-            <div class="d-flex mx-auto col-11 justify-content-between">
-                <img src="../assests/images/casherp logo 2.svg" alt="logo" class="logo" />
-                <div class="d-flex ">
-                    <div class="d-flex d-md-none gap-2">
-                        <button id="start-trial-button"
-                            class="btn-primary-custom rounded-6 p-0 text-capitalize body-small-font-size fw-500 bg-brand-2 px-3">
-                            Start Free Trial
-                        </button>
-                        <button id="hamburger-btn" class="px-1 border-0 btn-secondary-custom" onclick="toggleNavbar()">
-                            ☰
-                        </button>
-                    </div>
-                    <div class="collapse d-md-flex position-relative nav-items gap-md-5" id="navbarResponsive">
-                        <div class="d-flex gap-1 gap-md-5 align-items-center">
-                            <div class="dropdown d-flex">
-                                <button class="btn-tertiary-custom px-2 fw-500"
-                                    onclick="toggleDropdown('featuresDropdown', 'featuresArrow')">
-                                    Features
-                                </button>
-                                <img src="../assests/images/arrow-down.svg" id="featuresArrow" alt="">
-                            </div>
-
-                            <div id="featuresDropdown"
-                                class="dropdown-menu position-absolute col-md-7 col-11 rounded-3 px-4"
-                                style="display: none;">
-                                <div class="d-grid grid-2 gap-3 justify-content-between pt-3">
-                                    <div class="body-medium-font-size fw-500 border-bottom">
-                                        <a href="../pages/invoice.html">
-                                            <span class="body-medium-font-size fw-500 text-blue-1">Invoicing</span>
-                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                                Quick, Easy Billing
-                                            </p>
-                                            <div class="feature-divider"></div>
-                                        </a>
-                                    </div>
-                                    <div class="body-medium-font-size fw-500 border-bottom">
-                                        <a href="../pages/asset.html">
-                                            <span class="feature-title text-blue-1">Assets Management</span>
-                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                                Optimize Asset Utilization
-                                            </p>
-                                            <div class="feature-divider"></div>
-                                        </a>
-                                    </div>
-                                    <div class="body-medium-font-size fw-500 border-bottom">
-                                        <a href="../pages/accounting.html">
-                                            <span class="feature-title text-blue-1">Accounting</span>
-                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                                Accurate Financial Tracking
-                                            </p>
-                                            <div class="feature-divider"></div>
-                                        </a>
-                                    </div>
-                                    <div class="body-medium-font-size fw-500 border-bottom">
-                                        <a href="../pages/purchase.html">
-                                            <span class="feature-title text-blue-1">Purchase Management</span>
-                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                                Fast, Secure Sharing
-                                            </p>
-                                            <div class="feature-divider"></div>
-                                        </a>
-                                    </div>
-                                    <div class="body-medium-font-size fw-500 border-bottom">
-                                        <a href="../pages/hr-management.html">
-                                            <span class="feature-title text-blue-1">HR Management</span>
-                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                                Efficient Talent Acquisition
-                                            </p>
-                                            <div class="feature-divider"></div>
-                                        </a>
-                                    </div>
-                                    <div class="body-medium-font-size fw-500 border-bottom">
-                                        <a href="../pages/fleet-management.html">
-                                            <span class="feature-title text-blue-1">Fleet Management</span>
-                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                                Vehicles Management System
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <button class="btn-tertiary-custom px-2 fw-500"><a
-                                    href="../pages/pricing.html">Pricing</a></button>
-                            <button class="btn-tertiary-custom px-2 fw-500"><a
-                                    href="../pages/blog.html">Blog</a></button>
-
-                            <div class="dropdown d-flex"
-                                onclick="toggleDropdown('resourcesDropdown', 'resourcesArrow')">
-                                <button class="btn-tertiary-custom px-2 fw-500">
-                                    Resources
-                                </button>
-                                <img src="../assests/images/arrow-down.svg" id="resourcesArrow" class="dropdown-icon"
-                                    alt="dropdown-icon">
-                            </div>
-                            <div id="resourcesDropdown" class="resources-dropdown rounded-3 bg-white position-absolute"
-                                style="display: none;">
-                                <div class="resource-item p-2 px-3 border-top">
-                                    <span class="resource-title text-blue-1"><a href="../pages/about.html"> About
-                                            Us</a></span>
-                                </div>
-
-                                <div class="resource-item p-2 px-3 border-top">
-                                    <span class="resource-title text-blue-1">Knowledge Base</span>
-                                </div>
-                                <div class="resource-item p-2 px-3 border-top">
-                                    <span class="resource-title text-blue-1"> <a href="../pages/Affiliate.html"> Become
-                                            an
-                                            Affiliate</a></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex mx-auto gap-4 ml-md-2">
-                            <button id="login-button"
-                                class="rounded-6 border-2 text-brand-2 body-small-font-size fw-500 fs-sm-6 bg-transparent border-brand-2 p-0 px-3">
-                                Log In
-                            </button>
+        <!-- top-nav -->
+        <header>
+            <div class="top-nav position-fixed bg-white top-0 w-100 py-3 border-bottom">
+                <div class="d-flex mx-auto col-11 justify-content-between">
+                    <img src="../assests/images/casherp logo 2.svg" alt="logo" class="logo" />
+                    <div class="d-flex ">
+                        <div class="d-flex d-md-none gap-2">
                             <button id="start-trial-button"
-                                class="btn-primary-custom rounded-6 d-md-block d-none p-0 text-capitalize body-small-font-size fw-500 bg-brand-2 px-3">
+                                class="btn-primary-custom rounded-6 p-0 text-capitalize body-small-font-size fw-500 bg-brand-2 px-3">
                                 Start Free Trial
                             </button>
+                            <button id="hamburger-btn" class="px-1 border-0 btn-secondary-custom"
+                                onclick="toggleNavbar()">
+                                ☰
+                            </button>
+                        </div>
+                        <div class="collapse d-md-flex position-relative nav-items gap-md-5" id="navbarResponsive">
+                            <div class="d-flex gap-1 gap-md-5 align-items-center">
+                                <div class="dropdown d-flex">
+                                    <button class="btn-tertiary-custom px-2 fw-500"
+                                        onclick="toggleDropdown('featuresDropdown', 'featuresArrow')">
+                                        Features
+                                    </button>
+                                    <img src="../assests/images/arrow-down.svg" id="featuresArrow" alt="icon">
+                                </div>
+
+                                <div id="featuresDropdown"
+                                    class="dropdown-menu position-absolute col-md-7 col-11 rounded-3 px-4"
+                                    style="display: none;">
+                                    <div class="d-grid grid-2 gap-3 justify-content-between pt-3">
+                                        <div class="body-medium-font-size fw-500 border-bottom">
+                                            <a href="../pages/invoice.html">
+                                                <span class="body-medium-font-size fw-500 text-blue-1">Invoicing</span>
+                                                <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                    Quick, Easy Billing
+                                                </p>
+                                                <div class="feature-divider"></div>
+                                            </a>
+                                        </div>
+                                        <div class="body-medium-font-size fw-500 border-bottom">
+                                            <a href="../pages/asset.html">
+                                                <span class="feature-title text-blue-1">Assets Management</span>
+                                                <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                    Optimize Asset Utilization
+                                                </p>
+                                                <div class="feature-divider"></div>
+                                            </a>
+                                        </div>
+                                        <div class="body-medium-font-size fw-500 border-bottom">
+                                            <a href="../pages/accounting.html">
+                                                <span class="feature-title text-blue-1">Accounting</span>
+                                                <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                    Accurate Financial Tracking
+                                                </p>
+                                                <div class="feature-divider"></div>
+                                            </a>
+                                        </div>
+                                        <div class="body-medium-font-size fw-500 border-bottom">
+                                            <a href="../pages/purchase.html">
+                                                <span class="feature-title text-blue-1">Purchase Management</span>
+                                                <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                    Fast, Secure Sharing
+                                                </p>
+                                                <div class="feature-divider"></div>
+                                            </a>
+                                        </div>
+                                        <div class="body-medium-font-size fw-500 border-bottom">
+                                            <a href="../pages/hr-management.html">
+                                                <span class="feature-title text-blue-1">HR Management</span>
+                                                <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                    Efficient Talent Acquisition
+                                                </p>
+                                                <div class="feature-divider"></div>
+                                            </a>
+                                        </div>
+                                        <div class="body-medium-font-size fw-500 border-bottom">
+                                            <a href="../pages/fleet-management.html">
+                                                <span class="feature-title text-blue-1">Fleet Management</span>
+                                                <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                    Vehicles Management System
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <button class="btn-tertiary-custom px-2 fw-500"><a
+                                        href="../pages/pricing.html">Pricing</a></button>
+                                <button class="btn-tertiary-custom px-2 fw-500"><a
+                                        href="../pages/blog.html">Blog</a></button>
+
+                                <div class="dropdown d-flex"
+                                    onclick="toggleDropdown('resourcesDropdown', 'resourcesArrow')">
+                                    <button class="btn-tertiary-custom px-2 fw-500">
+                                        Resources
+                                    </button>
+                                    <img src="../assests/images/arrow-down.svg" id="resourcesArrow"
+                                        class="dropdown-icon" alt="dropdown-icon">
+                                </div>
+                                <div id="resourcesDropdown"
+                                    class="resources-dropdown rounded-3 bg-white position-absolute"
+                                    style="display: none;">
+                                    <div class="resource-item p-2 px-3 border-top">
+                                        <span class="resource-title text-blue-1"><a href="../pages/about.html"> About
+                                                Us</a></span>
+                                    </div>
+
+                                    <div class="resource-item p-2 px-3 border-top">
+                                        <span class="resource-title text-blue-1">Knowledge Base</span>
+                                    </div>
+                                    <div class="resource-item p-2 px-3 border-top">
+                                        <span class="resource-title text-blue-1"> <a href="../pages/Affiliate.html">
+                                                Become
+                                                an
+                                                Affiliate</a></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mx-auto gap-4 ml-md-2">
+                                <button id="login-button"
+                                    class="rounded-6 border-2 text-brand-2 body-small-font-size fw-500 fs-sm-6 bg-transparent border-brand-2 p-0 px-3">
+                                    Log In
+                                </button>
+                                <button id="start-trial-button"
+                                    class="btn-primary-custom rounded-6 d-md-block d-none p-0 text-capitalize body-small-font-size fw-500 bg-brand-2 px-3">
+                                    Start Free Trial
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
 
-        <div class="d-grid gap-4 hero-bg position-relative bg-green-3" x-data="$api.init()" :class="">
-            <div class="d-flex col-11 flex-column  mx-auto justify-content-center position-relative mt-5 gap-4">
-                <span class="title-large-font-size-bold lh-72 fw-500 text-black text-center" x-text="">Earn More by
-                    Sharing Success!</span>
-                <span class=" title-medium-font-size lh-36 fw-400 smd:text-center text-black col-md-6 col-10 mx-auto"
-                    x-text>Join our affiliate program and turn your network into earnings. Share the benefits, and grow
-                    with us</span>
-                <img src="../assests/images/hero-background.svg" alt="hero-background"
-                    class="hero-background-svg end-0">
+        <!-- hero -->
+        <section>
+            <div class="d-grid gap-4 hero-bg position-relative bg-green-3">
+                <div class="d-flex col-11 flex-column  mx-auto justify-content-center position-relative mt-5 gap-4">
+                    <span class="title-large-font-size-bold lh-72 fw-500 text-black text-center">Earn More by
+                        Sharing Success!</span>
+                    <span
+                        class=" title-medium-font-size lh-36 fw-400 smd:text-center text-black col-md-6 col-10 mx-auto"
+                        x-text>Join our affiliate program and turn your network into earnings. Share the benefits, and
+                        grow
+                        with us</span>
+                    <img src="../assests/images/hero-background.svg" alt="hero-background"
+                        class="hero-background-svg end-0">
 
-                <img src="../assests/images/hero-background.svg" alt="hero-background"
-                    class="hero-background-svg start-0">
+                    <img src="../assests/images/hero-background.svg" alt="hero-background"
+                        class="hero-background-svg start-0">
 
-                <div class="d-flex justify-content-center col-5 mx-auto mt-4">
-                    <button id="start-trial-button"
-                        class=" btn text-white text-capitalize bg-brand-2 px-5 py-2 py-md-2">join
-                        now</button>
+                    <div class="d-flex justify-content-center col-5 mx-auto mt-4">
+                        <button id="start-trial-button"
+                            class=" btn text-white text-capitalize bg-brand-2 px-5 py-2 py-md-2">join
+                            now</button>
+                    </div>
+
                 </div>
-
+                <div class="d-flex justify-content-center align-items-center position-relative hero-image"
+                    :class="$prop('bg')">
+                    <img src="../assests/images/affiliate.png" alt="affiliate"
+                        class=" d-none d-md-flex position-absolute">
+                </div>
+                <div class="bg-white hero-footer"></div>
             </div>
-            <div class="d-flex justify-content-center align-items-center position-relative hero-image"
-                :class="$prop('bg')">
-                <img src="../assests/images/affiliate.png" alt="affiliate" class=" d-none d-md-flex position-absolute">
-            </div>
-            <div class="bg-white hero-footer"></div>
-        </div>
-        <div class="col-10 mx-auto my-5 py-5" x-data="{ showSection: 'whoWeAre' }">
+        </section>
 
-            <div class="row py-5 my-4 justify-content-between our-mission-border section-container ">
-                <div class="col-md-6 d-flex align-items-center">
-                    <div class="bg-yellow-6 d-flex flex-column w-75 justify-content-center rounded-12 p-5">
-                        <div class="d-flex flex-column text-start w-fit mx-auto">
-                            <span class="fs-28 fw-500 lh-30">HOW IT WORKS</span>
-                            <li class="fs-18 lh-38 fw-500">Sign Up</li>
-                            <li class="fs-18 lh-38 fw-500">Get your unique referral link</li>
-                            <li class="fs-18 lh-38 fw-500">Start sharing</li>
+        <!-- content -->
+        <section>
+            <div class="col-10 mx-auto my-5 py-5" x-data="{ showSection: 'whoWeAre' }">
+
+                <div class="row py-5 my-4 justify-content-between our-mission-border section-container ">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="bg-yellow-6 d-flex flex-column w-75 justify-content-center rounded-12 p-5">
+                            <div class="d-flex flex-column text-start w-fit mx-auto">
+                                <span class="fs-28 fw-500 lh-30">HOW IT WORKS</span>
+                                <li class="fs-18 lh-38 fw-500">Sign Up</li>
+                                <li class="fs-18 lh-38 fw-500">Get your unique referral link</li>
+                                <li class="fs-18 lh-38 fw-500">Start sharing</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <div class="">
+                            <p class="fs-18 lh-36 mt-2">Becoming an affiliate is simple. Sign up for free, get your
+                                unique
+                                referral link, and start sharing it with your network. Every time someone signs up or
+                                makes
+                                a purchase through your link, you earn a commission. Earn $5.00 on every referral's
+                                first
+                                payment.
+                                Minimum payout is $50.00 (when someone signs up using your link and makes their first
+                                payment, you earn $5.00). Once your earnings reach $50.00, you can request a payout.
+                                Track
+                                your progress and earnings through your personal affiliate dashboard</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 d-flex justify-content-end">
-                    <div class="">
-                        <p class="fs-18 lh-36 mt-2">Becoming an affiliate is simple. Sign up for free, get your unique
-                            referral link, and start sharing it with your network. Every time someone signs up or makes
-                            a purchase through your link, you earn a commission. Earn $5.00 on every referral's first
-                            payment.
-                            Minimum payout is $50.00 (when someone signs up using your link and makes their first
-                            payment, you earn $5.00). Once your earnings reach $50.00, you can request a payout. Track
-                            your progress and earnings through your personal affiliate dashboard</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Our Story Section -->
-            <div class="row section-container  mt-4 py-5">
-                <div class="col-md-6 d-flex justify-content-start">
-                    <div class="">
-                        <p class="fs-18 lh-36 mt-2">When you join our affiliate program, you’re partnering with a
-                            trusted brand. We offer generous commissions, timely payouts, and all the support you need
-                            to succeed. Plus, you get access to high-converting marketing materials to help boost your
-                            referrals.</p>
+                <!-- Our Story Section -->
+                <div class="row section-container  mt-4 py-5">
+                    <div class="col-md-6 d-flex justify-content-start">
+                        <div class="">
+                            <p class="fs-18 lh-36 mt-2">When you join our affiliate program, you’re partnering with a
+                                trusted brand. We offer generous commissions, timely payouts, and all the support you
+                                need
+                                to succeed. Plus, you get access to high-converting marketing materials to help boost
+                                your
+                                referrals.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end align-items-center">
+                        <div class="bg-blue-5 d-flex flex-column w-75 justify-content-center rounded-12 p-5">
+                            <div class="d-flex flex-column text-start w-fit mx-auto">
+                                <span class="fs-28 fw-500 lh-30">WHY JOIN US?</span>
+                                <li class="fs-18 lh-38 fw-500">Partnership
+                                </li>
+                                <li class="fs-18 lh-38 fw-500">Generous commissions</li>
+                                <li class="fs-18 lh-38 fw-500">Timely payouts</li>
+                                <li class="fs-18 lh-38 fw-500">Support</li>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 d-flex justify-content-end align-items-center">
-                    <div class="bg-blue-5 d-flex flex-column w-75 justify-content-center rounded-12 p-5">
-                        <div class="d-flex flex-column text-start w-fit mx-auto">
-                            <span class="fs-28 fw-500 lh-30">WHY JOIN US?</span>
-                            <li class="fs-18 lh-38 fw-500">Partnership
-                            </li>
-                            <li class="fs-18 lh-38 fw-500">Generous commissions</li>
-                            <li class="fs-18 lh-38 fw-500">Timely payouts</li>
-                            <li class="fs-18 lh-38 fw-500">Support</li>
+
+                <div class="row py-5 my-4 justify-content-between section-container ">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="bg-purple-2 d-flex flex-column w-75 justify-content-center rounded-12 p-5">
+                            <div class="d-flex flex-column text-start w-fit mx-auto">
+                                <span class="fs-28 fw-500 lh-30">AFFLIATE BENEFITS</span>
+                                <li class="fs-18 lh-38 fw-500">Unlimited earning potential</li>
+                                <li class="fs-18 lh-38 fw-500">Free promotional tools</li>
+                                <li class="fs-18 lh-38 fw-500">Community</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <div class="">
+                            <p class="fs-18 lh-36 mt-2">Enjoy unlimited earning potential, free promotional tools, and
+                                dedicated support. Our program allows you to monetize your audience with minimal effort,
+                                while we handle the rest. Plus, you'll be part of a growing community of like-minded
+                                partners</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 our-mission-border "></div>
+            </div>
+        </section>
+
+        <!-- faq -->
+        <section>
+            <div class="faq-container bg-grey p-md-5 p-4 bg-color">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="d-flex flex-column gap-4">
+                        <span
+                            class="p-2 px-3 bg-green-1 rounded-24 w-fit mx-auto fw-500 title-medium-font-size fs-sm-16 lh-sm-24 text-uppercase text-white">
+                            FAQ
+                        </span>
+                        <span
+                            class="title-large-font-size fw-500 col-md-10 col-12 d-none d-md-block mx-auto text-black lh-49">
+                            Got Questions? We've Got Answers—Let’s Clear the Confusion!
+                        </span>
+
+                    </div>
+                    <div class="btn-end my-md-5">
+                        <button onclick="toggleAllFaqs()"
+                            class="border-2 border-brand-2 text-brand-2 rounded-3 d-none d-md-block fw-600 body-small-font-size mx-auto bg-transparent p-1 px-2"
+                            id="expand">
+                            Expand All
+                        </button>
+                    </div>
+                    <div class="faq-section">
+                        <!-- FAQ Item 1 -->
+                        <div class="faq-item">
+                            <div class="faq-question py-3 my-1 position-relative border-bottom-grey-2"
+                                onclick="toggleFaq(0)">
+                                <span class="fs-sm-16 lh-sm-28">How do I get paid?</span>
+                                <img src="../assests/images/Arrows 2.svg" alt="arrow" id="arrow"
+                                    class="position-absolute end-0">
+                            </div>
+                            <div class="faq-answer p-2 text-blue body-medium-font-size" style="display: none;">
+                                You get paid via PayPal or bank transfer on a monthly basis, provided you meet the
+                                minimum payout threshold.
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="faq-item">
+                            <div class="faq-question py-3 my-1 position-relative border-bottom-grey-2"
+                                onclick="toggleFaq(1)">
+                                <span class="fs-sm-16 lh-sm-28">Is there a cost to join?</span>
+                                <img src="../assests/images/Arrows 2.svg" alt="arrow" id="arrow"
+                                    class="position-absolute end-0">
+                            </div>
+                            <div class="faq-answer p-2 text-blue body-medium-font-size" style="display: none">No,
+                                joining our affiliate program is completely free. There are no setup fees or hidden
+                                charges.
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="faq-item">
+                            <div class="faq-question py-3 my-1 position-relative border-bottom-grey-2"
+                                onclick="toggleFaq(2)">
+                                <span class="fs-sm-16 lh-sm-28">How can I track my earnings?</span>
+                                <img src="../assests/images/Arrows 2.svg" alt="arrow" id="arrow"
+                                    class="position-absolute end-0">
+                            </div>
+                            <div class="faq-answer p-2 text-blue body-medium-font-size" style="display: none;">
+                                You can track your earnings in real-time through your affiliate dashboard, where you can
+                                see detailed reports on your commissions.
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="faq-item">
+                            <div class="faq-question py-3 my-1 position-relative border-bottom-grey-2"
+                                onclick="toggleFaq(3)">
+                                <span class="fs-sm-16 lh-sm-28">Are there any marketing tools provided?</span>
+                                <img src="../assests/images/Arrows 2.svg" alt="arrow" id="arrow"
+                                    class="position-absolute end-0">
+                            </div>
+                            <div class="faq-answer p-2 text-blue body-medium-font-size" style="display: none;">
+                                Yes, we provide a variety of marketing tools including banners, text links, and email
+                                templates to help you promote our products effectively.
+                            </div>
+                        </div>
+
+                        <div class="btn-end my-md-5">
+                            <button onclick="toggleAllFaqs()"
+                                class="border-2 border-brand-2 text-brand-2 rounded-3 d-md-none d-block fw-600 body-small-font-size mx-auto bg-transparent p-1 px-2"
+                                id="expand">
+                                Expand All
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="row py-5 my-4 justify-content-between section-container ">
-                <div class="col-md-6 d-flex align-items-center">
-                    <div class="bg-purple-2 d-flex flex-column w-75 justify-content-center rounded-12 p-5">
-                        <div class="d-flex flex-column text-start w-fit mx-auto">
-                            <span class="fs-28 fw-500 lh-30">AFFLIATE BENEFITS</span>
-                            <li class="fs-18 lh-38 fw-500">Unlimited earning potential</li>
-                            <li class="fs-18 lh-38 fw-500">Free promotional tools</li>
-                            <li class="fs-18 lh-38 fw-500">Community</li>
+        <!-- testimonial -->
+        <section>
+            <div class="py-5">
+                <div class="d-flex col-md-12 col-10 align-items-center justify-content-center py-4 position-relative">
+                    <div>
+                        <div class="position-absolute quotation-flip">
+                            <svg width="50" height="50" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M48.1601 45.856C48.6561 45.856 49.1681 45.856 49.7601 45.776C50.4754 45.7184 51.159 45.4555 51.7286 45.019C52.2982 44.5824 52.7297 43.9907 52.9713 43.315C53.2128 42.6392 53.2542 41.9081 53.0905 41.2093C52.9267 40.5106 52.5648 39.874 52.0481 39.376C51.1162 38.5458 50.3834 37.5163 49.9042 36.364C49.425 35.2116 49.2117 33.9661 49.2801 32.72C51.8021 31.402 53.7719 29.2287 54.8363 26.5897C55.9007 23.9507 55.99 21.0188 55.0881 18.32C54.5138 16.6273 53.5428 15.0967 52.2561 13.856C50.6639 12.1985 48.6315 11.0304 46.3979 10.489C44.1642 9.94759 41.8225 10.0555 39.6481 10.8C37.2925 11.5925 35.2018 13.0205 33.6065 14.9263C32.0113 16.8321 30.9736 19.1417 30.6081 21.6C29.8205 26.0188 30.5122 30.5741 32.5761 34.56V34.688C37.5041 42.432 42.2081 45.856 48.1601 45.856ZM48.7521 41.84C45.2161 42.016 41.2321 40.816 36.0801 32.624C34.4627 29.4705 33.9018 25.8806 34.4801 22.384C34.7193 20.6194 35.4445 18.9561 36.5747 17.58C37.7049 16.204 39.1956 15.1694 40.8801 14.592C42.3453 14.0765 43.9289 13.9987 45.4376 14.368C46.9462 14.7374 48.3148 15.5379 49.3761 16.672C50.2121 17.4923 50.8378 18.5022 51.2001 19.616C51.8378 21.5395 51.7218 23.6334 50.8754 25.4747C50.0289 27.316 48.5153 28.7675 46.6401 29.536C46.3327 29.659 46.0607 29.8565 45.8485 30.1106C45.6363 30.3647 45.4904 30.6676 45.4241 30.992C45.0423 32.9344 45.1464 34.941 45.727 36.8335C46.3076 38.7261 47.3467 40.4458 48.7521 41.84ZM18.2561 45.856C18.7681 45.856 19.2641 45.856 19.8561 45.776C20.5714 45.7184 21.255 45.4555 21.8246 45.019C22.3942 44.5824 22.8257 43.9907 23.0673 43.315C23.3088 42.6392 23.3502 41.9081 23.1865 41.2093C23.0227 40.5106 22.6608 39.874 22.1441 39.376C21.2122 38.5458 20.4794 37.5163 20.0002 36.364C19.521 35.2116 19.3077 33.9661 19.3761 32.72C21.8958 31.3996 23.8636 29.226 24.9276 26.5878C25.9917 23.9496 26.0826 21.019 25.1841 18.32C24.6187 16.6344 23.6651 15.1052 22.4001 13.856C20.8041 12.1941 18.766 11.0235 16.5264 10.482C14.2868 9.9405 11.9391 10.0508 9.76011 10.8C7.40267 11.5893 5.31 13.0164 3.71428 14.9228C2.11855 16.8292 1.08218 19.1404 0.720112 21.6C-0.0675163 26.0188 0.62421 30.5741 2.68811 34.56C2.68521 34.6026 2.68521 34.6453 2.68811 34.688C7.60011 42.432 12.3201 45.856 18.2561 45.856ZM18.8641 41.84C15.3121 42.016 11.3441 40.816 6.17611 32.624C4.54543 29.4748 3.98382 25.8805 4.57611 22.384C4.56867 22.3309 4.56867 22.277 4.57611 22.224C4.82537 20.4817 5.55673 18.8438 6.68763 17.4952C7.81853 16.1466 9.30392 15.141 10.9761 14.592C12.4413 14.0765 14.0249 13.9987 15.5336 14.368C17.0422 14.7374 18.4108 15.5379 19.4721 16.672C20.2973 17.4923 20.9073 18.5035 21.2481 19.616C21.8858 21.5395 21.7698 23.6334 20.9234 25.4747C20.0769 27.316 18.5633 28.7675 16.6881 29.536C16.3845 29.6624 16.1164 29.8611 15.9073 30.1149C15.6981 30.3687 15.5542 30.6698 15.4881 30.992C15.1095 32.9383 15.2197 34.9482 15.8089 36.8415C16.3981 38.7347 17.4479 40.4522 18.8641 41.84Z"
+                                    class="fill-green-4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="d-flex position-relative px-5 col-md-10 col-12">
+                        <div class="space-y-6">
+                            <div
+                                class="p-md-5 p-3 rounded-56 w-100 d-flex flex-column gap-4 align-items-center transition-transform justify-content-center position-relative bg-green-4">
+                                <span
+                                    class="text-center col-11 text-grey-4 fs-sm-16 body-large-font-size-light fw-400 leading-relaxed">
+                                    I’ve been an affiliate for six months, and the <span class="text-orange">
+                                        results</span>
+                                    <span class="text-blue-1"> are amazing!</span> The commission structure is generous,
+                                    and
+                                    the support team is always there to help. I’ve been able to earn a steady income by
+                                    simply sharing my affiliate link with my audience.
+                                </span>
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="../assests/images/affiliate-test.svg" alt="Slide 1" class="">
+                                    <span class="title-medium-font-size capitalize">Tanwa Majek</span>
+                                    <span class="body-medium-font-size text-center">Successful Affiliate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="position-absolute quotation">
+                            <svg width="50" height="50" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.83989 45.856C7.34389 45.856 6.83189 45.856 6.23989 45.776C5.52455 45.7184 4.84105 45.4555 4.27144 45.019C3.70183 44.5824 3.27033 43.9907 3.02874 43.315C2.78716 42.6392 2.74575 41.9081 2.90951 41.2093C3.07326 40.5106 3.43521 39.874 3.95189 39.376C4.88378 38.5458 5.61658 37.5163 6.0958 36.364C6.57502 35.2116 6.78833 33.9661 6.71989 32.72C4.19795 31.402 2.2281 29.2287 1.16372 26.5897C0.0993303 23.9507 0.0100493 21.0188 0.91189 18.32C1.48616 16.6273 2.45721 15.0967 3.74389 13.856C5.33606 12.1985 7.36854 11.0304 9.60215 10.489C11.8358 9.94759 14.1775 10.0555 16.3519 10.8C18.7075 11.5925 20.7982 13.0205 22.3935 14.9263C23.9887 16.8321 25.0264 19.1417 25.3919 21.6C26.1795 26.0188 25.4878 30.5741 23.4239 34.56V34.688C18.4959 42.432 13.7919 45.856 7.83989 45.856ZM7.24789 41.84C10.7839 42.016 14.7679 40.816 19.9199 32.624C21.5373 29.4705 22.0982 25.8806 21.5199 22.384C21.2807 20.6194 20.5555 18.9561 19.4253 17.58C18.2951 16.204 16.8044 15.1694 15.1199 14.592C13.6547 14.0765 12.0711 13.9987 10.5624 14.368C9.05377 14.7374 7.68525 15.5379 6.62389 16.672C5.78792 17.4923 5.16222 18.5022 4.79989 19.616C4.16218 21.5395 4.27824 23.6334 5.12465 25.4747C5.97106 27.316 7.48471 28.7675 9.35989 29.536C9.66726 29.659 9.93926 29.8565 10.1515 30.1106C10.3637 30.3647 10.5096 30.6676 10.5759 30.992C10.9577 32.9344 10.8536 34.941 10.273 36.8335C9.69244 38.7261 8.65327 40.4458 7.24789 41.84ZM37.7439 45.856C37.2319 45.856 36.7359 45.856 36.1439 45.776C35.4286 45.7184 34.745 45.4555 34.1754 45.019C33.6058 44.5824 33.1743 43.9907 32.9327 43.315C32.6912 42.6392 32.6498 41.9081 32.8135 41.2093C32.9773 40.5106 33.3392 39.874 33.8559 39.376C34.7878 38.5458 35.5206 37.5163 35.9998 36.364C36.479 35.2116 36.6923 33.9661 36.6239 32.72C34.1042 31.3996 32.1364 29.226 31.0724 26.5878C30.0083 23.9496 29.9174 21.019 30.8159 18.32C31.3813 16.6344 32.3349 15.1052 33.5999 13.856C35.1959 12.1941 37.234 11.0235 39.4736 10.482C41.7132 9.9405 44.0609 10.0508 46.2399 10.8C48.5973 11.5893 50.69 13.0164 52.2857 14.9228C53.8814 16.8292 54.9178 19.1404 55.2799 21.6C56.0675 26.0188 55.3758 30.5741 53.3119 34.56C53.3148 34.6026 53.3148 34.6453 53.3119 34.688C48.3999 42.432 43.6799 45.856 37.7439 45.856ZM37.1359 41.84C40.6879 42.016 44.6559 40.816 49.8239 32.624C51.4546 29.4748 52.0162 25.8805 51.4239 22.384C51.4313 22.3309 51.4313 22.277 51.4239 22.224C51.1746 20.4817 50.4433 18.8438 49.3124 17.4952C48.1815 16.1466 46.6961 15.141 45.0239 14.592C43.5587 14.0765 41.9751 13.9987 40.4664 14.368C38.9578 14.7374 37.5892 15.5379 36.5279 16.672C35.7027 17.4923 35.0927 18.5035 34.7519 19.616C34.1142 21.5395 34.2302 23.6334 35.0766 25.4747C35.9231 27.316 37.4367 28.7675 39.3119 29.536C39.6155 29.6624 39.8836 29.8611 40.0927 30.1149C40.3019 30.3687 40.4458 30.6698 40.5119 30.992C40.8905 32.9383 40.7803 34.9482 40.1911 36.8415C39.6019 38.7347 38.5521 40.4522 37.1359 41.84Z"
+                                    class="fill-green-4" />
+                            </svg>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 d-flex justify-content-end">
-                    <div class="">
-                        <p class="fs-18 lh-36 mt-2">Enjoy unlimited earning potential, free promotional tools, and
-                            dedicated support. Our program allows you to monetize your audience with minimal effort,
-                            while we handle the rest. Plus, you'll be part of a growing community of like-minded
-                            partners</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-purple-2 p-5">
+                <div class="row p-4 w-fit mx-auto justify-content-center">
+                    <div class="col-7 d-flex flex-column align-items-center text-center justify-content-center gap-2">
+                        <span class="fs-28 fw-500 lh-49 text-uppercase">Excited to <span
+                                class="bg-blue-5">Boost</span></span>
+                        <span class="fs-28 fw-500 lh-49 text-uppercase">Your Earnings as an Affiliate?</span>
+                        <button id="start-trial-button"
+                            class=" btn text-white  mt-3 text-capitalize bg-brand-2 px-5 py-2 py-md-2">join
+                            now</button>
+                    </div>
+                    <div class="col-5">
+                        <img src="../assests/images/OBJECTS.png" alt="OBJECTS">
                     </div>
                 </div>
             </div>
-            <div class="col-12 our-mission-border "></div>
-        </div>
+        </section>
 
-
-        <div class="" x-import="faq" x-data="utils()">
-            <vui-faq mobile-description="Find quick answers to common questions" title="faq"
-                description="Got Questions? We've Got Answers—Let’s Clear the Confusion!" bg-color="bg-grey"
-                :items="faqsAffiliate" buttonText="Expand All"></vui-faq>
-        </div>
-        <div class="" x-import="testimonial" x-data="testimonialData()">
-            <vui-testimonial :items="data.affiliate"></vui-testimonial>
-        </div>
-
-        <div class="bg-purple-2 p-5">
-            <div class="row p-4 w-fit mx-auto justify-content-center">
-                <div class="col-6 d-flex flex-column align-items-center justify-content-center gap-2">
-                    <span class="fs-28 fw-500 lh-49 text-uppercase">Excited to <span
-                            class="bg-blue-5">Boost</span></span>
-                    <span class="fs-28 fw-500 lh-49 text-uppercase">Your Earnings as an Affiliate?</span>
-                    <button id="start-trial-button"
-                        class=" btn text-white  mt-3 text-capitalize bg-brand-2 px-5 py-2 py-md-2">join
-                        now</button>
-                </div>
-                <div class="col-5">
-                    <img src="../assests/images/OBJECTS.png" alt="OBJECTS">
-                </div>
-            </div>
-        </div>
-
+        <!-- footer -->
         <footer class="footer">
             <div class="col-10 mx-auto text-grey-4 text-xs">
                 <div class="d-md-flex justify-content-between">
                     <div
                         class="col-lg-4 col-md-5 d-grid d-md-block justify-content-center align-items-center gap-3 gap-md-0 ">
-                        <img src="./assests/images/casherp logo.svg" alt="logo" class="logo">
+                        <img src="../assests/images/casherp logo.svg" alt="logo" class="logo">
                         <p class="body-xs-font-size lh-22 fw-400 my-4 d-none d-md-block text-white col-md-10">An
                             All-In-One
                             tools to manage
@@ -321,12 +471,12 @@
                             <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
                                 style="padding: .3rem;">
                                 <a href="www.facebook.com">
-                                    <img src="./assests/images/facebook.svg" alt="facebook-icon"></a>
+                                    <img src="../assests/images/facebook.svg" alt="facebook-icon"></a>
                             </div>
                             <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
                                 style="padding: .3rem;">
                                 <a href="www.x.com">
-                                    <img src="./assests/images/twitter.svg" alt="twitter-icon">
+                                    <img src="../assests/images/twitter.svg" alt="twitter-icon">
                                 </a>
                             </div>
                         </div>

@@ -37,18 +37,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <script src="https://unpkg.com/@vimesh/ui"></script>
     <script src="https://unpkg.com/alpinejs" defer></script>
 
-    <script>
-        $vui.config.importMap = {
-            "*": '../components/${component}.html'
-        }
-    </script>
+
 </head>
 
 <body>
-    <div class="">
+
+    <header>
         <div class="top-nav position-fixed bg-white top-0 w-100 py-3 border-bottom">
             <div class="d-flex mx-auto col-11 justify-content-between">
                 <img src="../assests/images/casherp logo 2.svg" alt="logo" class="logo" />
@@ -69,7 +65,7 @@
                                     onclick="toggleDropdown('featuresDropdown', 'featuresArrow')">
                                     Features
                                 </button>
-                                <img src="../assests/images/arrow-down.svg" id="featuresArrow" alt="">
+                                <img src="../assests/images/arrow-down.svg" id="featuresArrow" alt="icon">
                             </div>
 
                             <div id="featuresDropdown"
@@ -178,8 +174,10 @@
                 </div>
             </div>
         </div>
+    </header>
 
-        <div class="mb-5" x-data="heroData()">
+    <section>
+        <div class="mb-5">
             <div class="d-grid gap-4 hero-bg position-relative bg-yellow-3 pb-5" :class="">
                 <div
                     class="d-flex col-11 flex-column  mx-auto justify-content-center position-relative mt-5 pb-5 gap-4">
@@ -198,7 +196,9 @@
                 </div>
             </div>
         </div>
+    </section>
 
+    <section>
         <div class="col-10 my-4 mx-auto rounded-3 privacy-border p-5 fs-18 lh-32 ">
             <p>This Privacy Policy applies to Casherp, a cloud-based ERP software owned and operated by Infobiz Company
                 Limited. This Privacy Policy describes the types of information that we gather from users of the Casherp
@@ -210,7 +210,9 @@
                 can exercise control over it. We understand that this is essential for the long-term trust that users
                 must have when using our services.</p>
         </div>
+    </section>
 
+    <section>
         <div x-data="privacyTabs()" class="d-md-flex my-5 py-5 col-md-10 col-11 mx-auto">
             <!-- Tabs -->
             <div class="col-5 bg-white ">
@@ -425,86 +427,86 @@
                 </section>
             </div>
         </div>
+    </section>
 
-        <footer class="footer">
-            <div class="col-10 mx-auto text-grey-4 text-xs">
-                <div class="d-md-flex justify-content-between">
-                    <div
-                        class="col-lg-4 col-md-5 d-grid d-md-block justify-content-center align-items-center gap-3 gap-md-0 ">
-                        <img src="./assests/images/casherp logo.svg" alt="logo" class="logo">
-                        <p class="body-xs-font-size lh-22 fw-400 my-4 d-none d-md-block text-white col-md-10">An
-                            All-In-One
-                            tools to manage
-                            people,
-                            projects, and everything in between. Invoicing, Purchasing, HRM, CRM, Project, Manufacturing
-                            &
-                            POS</p>
-                        <div class="d-flex gap-3">
-                            <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
-                                style="padding: .3rem;">
-                                <a href="www.facebook.com">
-                                    <img src="./assests/images/facebook.svg" alt="facebook-icon"></a>
-                            </div>
-                            <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
-                                style="padding: .3rem;">
-                                <a href="www.x.com">
-                                    <img src="./assests/images/twitter.svg" alt="twitter-icon">
-                                </a>
-                            </div>
+    <footer class="footer">
+        <div class="col-10 mx-auto text-grey-4 text-xs">
+            <div class="d-md-flex justify-content-between">
+                <div
+                    class="col-lg-4 col-md-5 d-grid d-md-block justify-content-center align-items-center gap-3 gap-md-0 ">
+                    <img src="./assests/images/casherp logo.svg" alt="logo" class="logo">
+                    <p class="body-xs-font-size lh-22 fw-400 my-4 d-none d-md-block text-white col-md-10">An
+                        All-In-One
+                        tools to manage
+                        people,
+                        projects, and everything in between. Invoicing, Purchasing, HRM, CRM, Project, Manufacturing
+                        &
+                        POS</p>
+                    <div class="d-flex gap-3">
+                        <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
+                            style="padding: .3rem;">
+                            <a href="www.facebook.com">
+                                <img src="./assests/images/facebook.svg" alt="facebook-icon"></a>
                         </div>
-                    </div>
-                    <div class="d-md-flex col-md-6 col-12 justify-content-between text-center-sm">
-                        <div class="mt-4 mt-md-0">
-                            <span class="text-white body-medium-font-size fw-500 fs-sm-14 ">Features</span>
-                            <div
-                                class="list-unstyled text-grey-1 lh-22 cursor-pointer body-small-font-size fw-500 fs-sm-12">
-                                <li><a href="../pages/accounting.html">Accounting</a></li>
-                                <li><a href="../pages/invoice.html">Invoicing</a></li>
-                                <li><a href="../pages/purchase.html">Purchase Management</a></li>
-                                <li><a href="../pages/hr-management.html">Recruitment Management</a></li>
-                                <li><a href="../pages/asset.html">Assets Management</a></li>
-                                <li><a href="../pages/fleet-management.html">Fleet Management</a></li>
-                                <li><a href="../pages/file-share.html">File Sharing</a></li>
-                                <li><a href="">Advisors</a></li>
-                            </div>
-                        </div>
-                        <div class="mt-4 mt-md-0">
-                            <span class="text-white body-medium-font-size fw-500 fs-sm-14">Casherp</span>
-                            <div class="list-unstyled text-grey-1 cursor-pointer body-small-font-size fw-500 fs-sm-12">
-                                <li><a href="../pages/about.html">About Us</a></li>
-                                <li><a href="../pages/contact.html">Contact Us</a></li>
-                                <li><a href="">Careers</a></li>
-                            </div>
-                        </div>
-                        <div class="mt-4 mt-md-0">
-                            <span class="text-white body-medium-font-size fw-500 fs-sm-14">Quick Links</span>
-                            <div class="list-unstyled text-grey-1 cursor-pointer body-small-font-size fw-500 fs-sm-12">
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="../pages/pricing.html">Pricing</a></li>
-                                <li><a href="../pages/knowledge.html">FAQ</a></li>
-                                <li><a href="">How support works</a></li>
-                            </div>
+                        <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
+                            style="padding: .3rem;">
+                            <a href="www.x.com">
+                                <img src="./assests/images/twitter.svg" alt="twitter-icon">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="line"></div>
-                <div class="row body-small-font-size fs-sm-12">
-                    <div class="col-md-9 text-center text-md-start  mb-3 mb-md-0">
-                        <p class="mb-0 text-grey-1">Copyright &copy; 2024 Casherp</p>
+                <div class="d-md-flex col-md-6 col-12 justify-content-between text-center-sm">
+                    <div class="mt-4 mt-md-0">
+                        <span class="text-white body-medium-font-size fw-500 fs-sm-14 ">Features</span>
+                        <div
+                            class="list-unstyled text-grey-1 lh-22 cursor-pointer body-small-font-size fw-500 fs-sm-12">
+                            <li><a href="../pages/accounting.html">Accounting</a></li>
+                            <li><a href="../pages/invoice.html">Invoicing</a></li>
+                            <li><a href="../pages/purchase.html">Purchase Management</a></li>
+                            <li><a href="../pages/hr-management.html">Recruitment Management</a></li>
+                            <li><a href="../pages/asset.html">Assets Management</a></li>
+                            <li><a href="../pages/fleet-management.html">Fleet Management</a></li>
+                            <li><a href="../pages/file-share.html">File Sharing</a></li>
+                            <li><a href="">Advisors</a></li>
+                        </div>
                     </div>
-                    <div class="col-md-3 text-center text-md-end">
-                        <div class="d-md-flex d-block text-grey-1 mb-0 list-unstyled">
-                            <li class="mx-2"><a href="">Terms of Use</a></li>
-                            <li class="mx-2"><a href="">Privacy Policy</a></li>
+                    <div class="mt-4 mt-md-0">
+                        <span class="text-white body-medium-font-size fw-500 fs-sm-14">Casherp</span>
+                        <div class="list-unstyled text-grey-1 cursor-pointer body-small-font-size fw-500 fs-sm-12">
+                            <li><a href="../pages/about.html">About Us</a></li>
+                            <li><a href="../pages/contact.html">Contact Us</a></li>
+                            <li><a href="">Careers</a></li>
+                        </div>
+                    </div>
+                    <div class="mt-4 mt-md-0">
+                        <span class="text-white body-medium-font-size fw-500 fs-sm-14">Quick Links</span>
+                        <div class="list-unstyled text-grey-1 cursor-pointer body-small-font-size fw-500 fs-sm-12">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../pages/pricing.html">Pricing</a></li>
+                            <li><a href="../pages/knowledge.html">FAQ</a></li>
+                            <li><a href="">How support works</a></li>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+            <div class="line"></div>
+            <div class="row body-small-font-size fs-sm-12">
+                <div class="col-md-9 text-center text-md-start  mb-3 mb-md-0">
+                    <p class="mb-0 text-grey-1">Copyright &copy; 2024 Casherp</p>
+                </div>
+                <div class="col-md-3 text-center text-md-end">
+                    <div class="d-md-flex d-block text-grey-1 mb-0 list-unstyled">
+                        <li class="mx-2"><a href="">Terms of Use</a></li>
+                        <li class="mx-2"><a href="">Privacy Policy</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>

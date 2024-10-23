@@ -44,14 +44,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <script src="https://unpkg.com/@vimesh/ui"></script>
     <script src="https://unpkg.com/alpinejs" defer></script>
 
-    <script>
-        $vui.config.importMap = {
-            "*": '../components/${component}.html'
-        }
-    </script>
+
 </head>
 
 <body>
@@ -77,7 +72,7 @@
                                 onclick="toggleDropdown('featuresDropdown', 'featuresArrow')">
                                 Features
                             </button>
-                            <img src="./assests/images/arrow-down.svg" id="featuresArrow" alt="">
+                            <img src="./assests/images/arrow-down.svg" id="featuresArrow" alt="icon">
                         </div>
 
                         <div id="featuresDropdown"
@@ -491,7 +486,7 @@
     </section>
 
     <!-- faq -->
-    <section class="" x-import="faq" x-data="utils()">
+    <section class="">
         <div class="faq-container bg-yellow-5 p-md-5 p-4 bg-color">
             <div class="col-md-10 col-12 mx-auto">
                 <div class="d-flex flex-column gap-4">

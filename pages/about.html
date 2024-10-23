@@ -37,18 +37,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <script src="https://unpkg.com/@vimesh/ui"></script>
     <script src="https://unpkg.com/alpinejs" defer></script>
 
-    <script>
-        $vui.config.importMap = {
-            "*": '../components/${component}.html'
-        }
-    </script>
+
 </head>
 
 <body>
-    <div class="">
+    <header>
         <div class="top-nav position-fixed bg-white top-0 w-100 py-3 border-bottom">
             <div class="d-flex mx-auto col-11 justify-content-between">
                 <img src="../assests/images/casherp logo 2.svg" alt="logo" class="logo" />
@@ -69,7 +64,7 @@
                                     onclick="toggleDropdown('featuresDropdown', 'featuresArrow')">
                                     Features
                                 </button>
-                                <img src="../assests/images/arrow-down.svg" id="featuresArrow" alt="">
+                                <img src="../assests/images/arrow-down.svg" id="featuresArrow" alt="icon">
                             </div>
 
                             <div id="featuresDropdown"
@@ -178,7 +173,9 @@
                 </div>
             </div>
         </div>
+    </header>
 
+    <section>
         <div class="d-grid gap-4 hero-bg position-relative bg-yellow-3">
             <div class="d-flex col-11 flex-column  mx-auto justify-content-center position-relative mt-5 gap-4">
                 <h1 class="title-large-font-size-bold lh-72 fw-500 text-black text-center">We Empower Businesses, One
@@ -207,212 +204,230 @@
             </div>
             <div class="bg-white d-none d-md-block hero-footer"></div>
         </div>
+        <section>
 
-        <div class="col-10 mx-auto my-5 py-5" x-data="{ showSection: 'whoWeAre' }">
+            <section>
+                <div class="col-10 mx-auto my-5 py-5" x-data="{ showSection: 'whoWeAre' }">
 
-            <div class="row py-5 my-5 justify-content-between our-mission-border section-container ">
-                <div class="col-md-6 d-flex align-items-center">
-                    <div class="bg-green-4 d-flex flex-column text-center w-75 justify-content-center rounded-12 p-5">
-                        <span class="fs-28 fw-500 lh-30">WHO WE ARE</span>
-                        <span class="fs-24 lh-30 fw-500"> Get To Know Us</span>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex justify-content-end">
-                    <div class="">
-                        <h2 class="fw-500 lh-36 fs-24">We are your partners in success and growth</h2>
-                        <p class="fs-18 lh-36 mt-2">Casherp is an all-in-one, cloud-based software designed for
-                            businesses
-                            to
-                            manage
-                            operations,
-                            projects, and everything in between, including invoicing, purchasing, HRM, CRM, project
-                            management, manufacturing, POS, and more. Casherp is a versatile Customer Relationship
-                            Management (CRM) software suitable for various companies, freelancers, and other users. Its
-                            clean and modern design helps businesses look more professional and improve performance.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Our Story Section -->
-            <div class="row section-container  mt-5 py-5">
-                <div class="col-md-6 d-flex justify-content-start">
-                    <div class="">
-                        <h2 class="fw-500 lh-36 fs-24">We are your allies in transformation and achievement</h2>
-                        <p class="fs-18 lh-36 mt-2">Casherp was first developed in 2017 as a groundbreaking business
-                            management
-                            software aimed at
-                            streamlining company operations. It was founded by Patrick Mungo and is owned and managed by
-                            INFOBIZ COMPANY LIMITED, LLC, registered in Delaware, USA (EIN 30-1373923).</p>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex justify-content-end align-items-center">
-                    <div class="bg-yellow-6 d-flex flex-column text-center w-75 justify-content-center rounded-12 p-5">
-                        <span class="fs-28 fw-500 lh-30"> OUR STORY</span>
-                        <span class="fs-24 lh-30 fw-500"> Explore Casherp's Journey</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Our Mission Section -->
-            <div class="row  p-5 our-mission-border  align-items-center">
-                <div class="col-md-6 d-flex justify-content-start align-items-center">
-                    <img src="../assests/images/mission.png" alt="Profile Image" class="profile-img">
-                </div>
-                <div class="col-md-6">
-                    <h2 class="fs-32 fw-500 lh-72">Our Mission</h2>
-                    <p class="fs-18 lh-36 mt-2">Our mission is to deliver exceptional solutions that streamline business
-                        operations, enhance
-                        productivity, and foster lasting success. We are committed to supporting our clients at every
-                        step, ensuring they have the tools and resources they need to thrive in an ever-evolving
-                        landscape.</p>
-                </div>
-            </div>
-
-            <!-- Our Vision Section -->
-            <div class="row section-container align-items-center">
-                <div class="col-md-6">
-                    <h2 class="fs-32 fw-500 lh-72">Our Vision</h2>
-                    <p class="fs-18 lh-36 mt-2">Our vision is to revolutionize the way businesses operate by providing
-                        innovative solutions that
-                        simplify processes and empower growth. We strive to create a future where every organization can
-                        thrive in a dynamic marketplace, achieving their goals with confidence and efficiency.</p>
-                </div>
-                <div class="col-md-6 d-flex justify-content-end align-items-center">
-                    <img src="../assests/images/vision.png" alt="Profile Image" class="profile-img">
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-green-4 py-4 ">
-            <div class="my-md-2 col-10 mx-auto d-flex " x-data="chooseData()">
-                <template x-for="item in choose" :key="item.label">
-                    <div class="my-md-5 my-4">
-
-                        <div class="my-1 col-md-10">
-                            <span x-text="item.description"
-                                class="body-medium-font-size fw-400 text-grey-5 fs-sm-16 text-blue lh-sm-28 lh-32"></span>
-                        </div>
-                        <div class="d-flex col-3 gap-4 align-items-center">
-                            <span x-text="item.digit"
-                                class="title-large-font-size-bold text-blue-1 fs-sm-28 lh-sm-58 fw-700"
-                                :class="item.digitColor"></span>
-                        </div>
-                    </div>
-                </template>
-            </div>
-        </div>
-        <div class="py-4 col-10 mx-auto my-5" x-data="teamData">
-            <div class="text-center">
-                <h2 class="display-5 fs-28 lh-49 fw-500 ">Meet The Team</h2>
-                <p class="fs-18 lh-28 col-5 mx-auto fw-400">The People Behind The Vision: Dedicated To Your Success</p>
-            </div>
-            <div class="row">
-                <template x-for="member in teamMembers" :key="member.name">
-                    <div class="col-md-4 col-lg-3 team-member mt-4 text-center d-flex flex-column gap-1">
-                        <img :src="member.image" alt="Profile Image">
-                        <span class="fs-18 fw-500 lh-28" x-text="member.name"></span>
-                        <span class="body-medium-font-size fw-400" x-text="member.role"></span>
-                    </div>
-                </template>
-            </div>
-        </div>
-
-        <div class="  bg-yellow-6 p-4">
-            <div class="mx-auto p-5 d-flex flex-column align-items-center bg-yellow-6 ">
-                <h2 class="fw-500 fs-32 text-center col-5 text-uppercase mx-auto lh-49 mb-5">
-                    Join and <span class="bg-green-4"> Transform</span> Your business today
-                </h2>
-                <div class="d-md-flex  mx-auto justify-content-center w-75">
-                    <input type="text" placeholder="Enter your email"
-                        class="centered-placeholder rounded-start col-md-5 rounded-end-0 p-2 border-0">
-                    <button id="start-trial-button"
-                        class="btn-primary-custom rounded-end rounded-start-0  mt-2 mt-md-0 text-capitalize bg-brand-2 py-2 py-md-0 px-md-4 px-2">Start
-                        free trial</button>
-                </div>
-            </div>
-        </div>
-
-        <footer class="footer">
-            <div class="col-10 mx-auto text-grey-4 text-xs">
-                <div class="d-md-flex justify-content-between">
-                    <div
-                        class="col-lg-4 col-md-5 d-grid d-md-block justify-content-center align-items-center gap-3 gap-md-0 ">
-                        <img src="./assests/images/casherp logo.svg" alt="logo" class="logo">
-                        <p class="body-xs-font-size lh-22 fw-400 my-4 d-none d-md-block text-white col-md-10">An
-                            All-In-One
-                            tools to manage
-                            people,
-                            projects, and everything in between. Invoicing, Purchasing, HRM, CRM, Project, Manufacturing
-                            &
-                            POS</p>
-                        <div class="d-flex gap-3">
-                            <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
-                                style="padding: .3rem;">
-                                <a href="www.facebook.com">
-                                    <img src="./assests/images/facebook.svg" alt="facebook-icon"></a>
-                            </div>
-                            <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
-                                style="padding: .3rem;">
-                                <a href="www.x.com">
-                                    <img src="./assests/images/twitter.svg" alt="twitter-icon">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-md-flex col-md-6 col-12 justify-content-between text-center-sm">
-                        <div class="mt-4 mt-md-0">
-                            <span class="text-white body-medium-font-size fw-500 fs-sm-14 ">Features</span>
+                    <div class="row py-5 my-5 justify-content-between our-mission-border section-container ">
+                        <div class="col-md-6 d-flex align-items-center">
                             <div
-                                class="list-unstyled text-grey-1 lh-22 cursor-pointer body-small-font-size fw-500 fs-sm-12">
-                                <li><a href="../pages/accounting.html">Accounting</a></li>
-                                <li><a href="../pages/invoice.html">Invoicing</a></li>
-                                <li><a href="../pages/purchase.html">Purchase Management</a></li>
-                                <li><a href="../pages/hr-management.html">Recruitment Management</a></li>
-                                <li><a href="../pages/asset.html">Assets Management</a></li>
-                                <li><a href="../pages/fleet-management.html">Fleet Management</a></li>
-                                <li><a href="../pages/file-share.html">File Sharing</a></li>
-                                <li><a href="">Advisors</a></li>
+                                class="bg-green-4 d-flex flex-column text-center w-75 justify-content-center rounded-12 p-5">
+                                <span class="fs-28 fw-500 lh-30">WHO WE ARE</span>
+                                <span class="fs-24 lh-30 fw-500"> Get To Know Us</span>
                             </div>
                         </div>
-                        <div class="mt-4 mt-md-0">
-                            <span class="text-white body-medium-font-size fw-500 fs-sm-14">Casherp</span>
-                            <div class="list-unstyled text-grey-1 cursor-pointer body-small-font-size fw-500 fs-sm-12">
-                                <li><a href="../pages/about.html">About Us</a></li>
-                                <li><a href="../pages/contact.html">Contact Us</a></li>
-                                <li><a href="">Careers</a></li>
+                        <div class="col-md-6 d-flex justify-content-end">
+                            <div class="">
+                                <h2 class="fw-500 lh-36 fs-24">We are your partners in success and growth</h2>
+                                <p class="fs-18 lh-36 mt-2">Casherp is an all-in-one, cloud-based software designed for
+                                    businesses
+                                    to
+                                    manage
+                                    operations,
+                                    projects, and everything in between, including invoicing, purchasing, HRM, CRM,
+                                    project
+                                    management, manufacturing, POS, and more. Casherp is a versatile Customer
+                                    Relationship
+                                    Management (CRM) software suitable for various companies, freelancers, and other
+                                    users. Its
+                                    clean and modern design helps businesses look more professional and improve
+                                    performance.</p>
                             </div>
                         </div>
-                        <div class="mt-4 mt-md-0">
-                            <span class="text-white body-medium-font-size fw-500 fs-sm-14">Quick Links</span>
-                            <div class="list-unstyled text-grey-1 cursor-pointer body-small-font-size fw-500 fs-sm-12">
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="../pages/pricing.html">Pricing</a></li>
-                                <li><a href="../pages/knowledge.html">FAQ</a></li>
-                                <li><a href="">How support works</a></li>
+                    </div>
+
+                    <!-- Our Story Section -->
+                    <div class="row section-container  mt-5 py-5">
+                        <div class="col-md-6 d-flex justify-content-start">
+                            <div class="">
+                                <h2 class="fw-500 lh-36 fs-24">We are your allies in transformation and achievement</h2>
+                                <p class="fs-18 lh-36 mt-2">Casherp was first developed in 2017 as a groundbreaking
+                                    business
+                                    management
+                                    software aimed at
+                                    streamlining company operations. It was founded by Patrick Mungo and is owned and
+                                    managed by
+                                    INFOBIZ COMPANY LIMITED, LLC, registered in Delaware, USA (EIN 30-1373923).</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-end align-items-center">
+                            <div
+                                class="bg-yellow-6 d-flex flex-column text-center w-75 justify-content-center rounded-12 p-5">
+                                <span class="fs-28 fw-500 lh-30"> OUR STORY</span>
+                                <span class="fs-24 lh-30 fw-500"> Explore Casherp's Journey</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Our Mission Section -->
+                    <div class="row  p-5 our-mission-border  align-items-center">
+                        <div class="col-md-6 d-flex justify-content-start align-items-center">
+                            <img src="../assests/images/mission.png" alt="Profile Image" class="profile-img">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="fs-32 fw-500 lh-72">Our Mission</h2>
+                            <p class="fs-18 lh-36 mt-2">Our mission is to deliver exceptional solutions that streamline
+                                business
+                                operations, enhance
+                                productivity, and foster lasting success. We are committed to supporting our clients at
+                                every
+                                step, ensuring they have the tools and resources they need to thrive in an ever-evolving
+                                landscape.</p>
+                        </div>
+                    </div>
+
+                    <!-- Our Vision Section -->
+                    <div class="row section-container align-items-center">
+                        <div class="col-md-6">
+                            <h2 class="fs-32 fw-500 lh-72">Our Vision</h2>
+                            <p class="fs-18 lh-36 mt-2">Our vision is to revolutionize the way businesses operate by
+                                providing
+                                innovative solutions that
+                                simplify processes and empower growth. We strive to create a future where every
+                                organization can
+                                thrive in a dynamic marketplace, achieving their goals with confidence and efficiency.
+                            </p>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-end align-items-center">
+                            <img src="../assests/images/vision.png" alt="Profile Image" class="profile-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="bg-green-4 py-4 ">
+                    <div class="my-md-2 col-10 mx-auto d-flex " x-data="chooseData()">
+                        <template x-for="item in choose" :key="item.label">
+                            <div class="my-md-5 my-4">
+
+                                <div class="my-1 col-md-10">
+                                    <span x-text="item.description"
+                                        class="body-medium-font-size fw-400 text-grey-5 fs-sm-16 text-blue lh-sm-28 lh-32"></span>
+                                </div>
+                                <div class="d-flex col-3 gap-4 align-items-center">
+                                    <span x-text="item.digit"
+                                        class="title-large-font-size-bold text-blue-1 fs-sm-28 lh-sm-58 fw-700"
+                                        :class="item.digitColor"></span>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="py-4 col-10 mx-auto my-5">
+                    <div class="text-center">
+                        <h2 class="display-5 fs-28 lh-49 fw-500">Meet The Team</h2>
+                        <p class="fs-18 lh-28 col-5 mx-auto fw-400">The People Behind The Vision: Dedicated To Your
+                            Success</p>
+                    </div>
+                    <div class="row" id="team-container"></div> <!-- Team members will be rendered here -->
+                </div>
+            </section>
+
+            <section>
+                <div class="  bg-yellow-6 p-4">
+                    <div class="mx-auto p-5 d-flex flex-column align-items-center bg-yellow-6 ">
+                        <h2 class="fw-500 fs-32 text-center col-5 text-uppercase mx-auto lh-49 mb-5">
+                            Join and <span class="bg-green-4"> Transform</span> Your business today
+                        </h2>
+                        <div class="d-md-flex  mx-auto justify-content-center w-75">
+                            <input type="text" placeholder="Enter your email"
+                                class="centered-placeholder rounded-start col-md-5 rounded-end-0 p-2 border-0">
+                            <button id="start-trial-button"
+                                class="btn-primary-custom rounded-end rounded-start-0  mt-2 mt-md-0 text-capitalize bg-brand-2 py-2 py-md-0 px-md-4 px-2">Start
+                                free trial</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="col-10 mx-auto text-grey-4 text-xs">
+                    <div class="d-md-flex justify-content-between">
+                        <div
+                            class="col-lg-4 col-md-5 d-grid d-md-block justify-content-center align-items-center gap-3 gap-md-0 ">
+                            <img src="../assests/images/casherp logo.svg" alt="logo" class="logo">
+                            <p class="body-xs-font-size lh-22 fw-400 my-4 d-none d-md-block text-white col-md-10">An
+                                All-In-One
+                                tools to manage
+                                people,
+                                projects, and everything in between. Invoicing, Purchasing, HRM, CRM, Project,
+                                Manufacturing
+                                &
+                                POS</p>
+                            <div class="d-flex gap-3">
+                                <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
+                                    style="padding: .3rem;">
+                                    <a href="www.facebook.com">
+                                        <img src="../assests/images/facebook.svg" alt="facebook-icon"></a>
+                                </div>
+                                <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
+                                    style="padding: .3rem;">
+                                    <a href="www.x.com">
+                                        <img src="../assests/images/twitter.svg" alt="twitter-icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-md-flex col-md-6 col-12 justify-content-between text-center-sm">
+                            <div class="mt-4 mt-md-0">
+                                <span class="text-white body-medium-font-size fw-500 fs-sm-14 ">Features</span>
+                                <div
+                                    class="list-unstyled text-grey-1 lh-22 cursor-pointer body-small-font-size fw-500 fs-sm-12">
+                                    <li><a href="../pages/accounting.html">Accounting</a></li>
+                                    <li><a href="../pages/invoice.html">Invoicing</a></li>
+                                    <li><a href="../pages/purchase.html">Purchase Management</a></li>
+                                    <li><a href="../pages/hr-management.html">Recruitment Management</a></li>
+                                    <li><a href="../pages/asset.html">Assets Management</a></li>
+                                    <li><a href="../pages/fleet-management.html">Fleet Management</a></li>
+                                    <li><a href="../pages/file-share.html">File Sharing</a></li>
+                                    <li><a href="">Advisors</a></li>
+                                </div>
+                            </div>
+                            <div class="mt-4 mt-md-0">
+                                <span class="text-white body-medium-font-size fw-500 fs-sm-14">Casherp</span>
+                                <div
+                                    class="list-unstyled text-grey-1 cursor-pointer body-small-font-size fw-500 fs-sm-12">
+                                    <li><a href="../pages/about.html">About Us</a></li>
+                                    <li><a href="../pages/contact.html">Contact Us</a></li>
+                                    <li><a href="">Careers</a></li>
+                                </div>
+                            </div>
+                            <div class="mt-4 mt-md-0">
+                                <span class="text-white body-medium-font-size fw-500 fs-sm-14">Quick Links</span>
+                                <div
+                                    class="list-unstyled text-grey-1 cursor-pointer body-small-font-size fw-500 fs-sm-12">
+                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a href="../pages/pricing.html">Pricing</a></li>
+                                    <li><a href="../pages/knowledge.html">FAQ</a></li>
+                                    <li><a href="">How support works</a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row body-small-font-size fs-sm-12">
+                        <div class="col-md-9 text-center text-md-start  mb-3 mb-md-0">
+                            <p class="mb-0 text-grey-1">Copyright &copy; 2024 Casherp</p>
+                        </div>
+                        <div class="col-md-3 text-center text-md-end">
+                            <div class="d-md-flex d-block text-grey-1 mb-0 list-unstyled">
+                                <li class="mx-2"><a href="">Terms of Use</a></li>
+                                <li class="mx-2"><a href="">Privacy Policy</a></li>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="line"></div>
-                <div class="row body-small-font-size fs-sm-12">
-                    <div class="col-md-9 text-center text-md-start  mb-3 mb-md-0">
-                        <p class="mb-0 text-grey-1">Copyright &copy; 2024 Casherp</p>
-                    </div>
-                    <div class="col-md-3 text-center text-md-end">
-                        <div class="d-md-flex d-block text-grey-1 mb-0 list-unstyled">
-                            <li class="mx-2"><a href="">Terms of Use</a></li>
-                            <li class="mx-2"><a href="">Privacy Policy</a></li>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+            </footer>
 
 
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
