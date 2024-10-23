@@ -765,3 +765,72 @@ function carouselComponent() {
     },
   };
 }
+
+function toggleFaq(index) {
+  const answer = document.querySelectorAll(".faq-answer")[index];
+  const arrow = document.querySelectorAll(".faq-question img")[index];
+
+  // Toggle the display of the answer
+  const isOpen = answer.style.display === "block";
+  answer.style.display = isOpen ? "none" : "block";
+
+  // Rotate the arrow
+  arrow.style.transform = isOpen ? "rotate(0deg)" : "rotate(180deg)";
+}
+
+function toggleAllFaqs() {
+  const answers = document.querySelectorAll(".faq-answer");
+  const arrows = document.querySelectorAll(".faq-question img");
+  const toggleAllBtn = document.getElementById("expand");
+
+  // Check if all answers are open
+  const allOpen = Array.from(answers).every(
+    (answer) => answer.style.display === "block"
+  );
+
+  // Toggle all answers and arrow rotations
+  answers.forEach((answer, index) => {
+    answer.style.display = allOpen ? "none" : "block";
+    // Rotate each arrow based on the new state
+    arrows[index].style.transform = allOpen ? "rotate(0deg)" : "rotate(180deg)";
+  });
+
+  // Change button text based on the current state
+  toggleAllBtn.innerHTML = allOpen ? "Expand All" : "Collapse All";
+}
+
+function toggleNavbar() {
+  const navbar = document.getElementById("navbarResponsive");
+  navbar.classList.toggle("collapse");
+}
+
+function toggleDropdown(dropdownId, imgId) {
+  const dropdown = document.getElementById(dropdownId);
+  const img = document.getElementById(imgId);
+
+  // Toggle dropdown visibility
+  const isDisplayed = dropdown.style.display === "block";
+  dropdown.style.display = isDisplayed ? "none" : "block";
+
+  // Rotate the image based on dropdown state
+  img.style.transform = isDisplayed ? "rotate(0deg)" : "rotate(180deg)";
+}
+
+// Close dropdowns when clicking outside
+window.onclick = function (event) {
+  if (
+    !event.target.matches(".btn-tertiary-custom") &&
+    !event.target.matches(".dropdown")
+  ) {
+    const dropdowns = document.querySelectorAll(".dropdown-menu");
+    dropdowns.forEach((dropdown) => {
+      dropdown.style.display = "none";
+    });
+
+    // Reset rotation for all dropdown images when closed
+    const imgs = document.querySelectorAll(".dropdown-icon");
+    imgs.forEach((img) => {
+      img.style.transform = "rotate(0deg)";
+    });
+  }
+};

@@ -98,80 +98,9 @@ function trials() {
 function heroData() {
   return {
     data: {
-      invoice: {
-        title: "Effortless Invoicing, Seamless Payments",
-        description:
-          "With Casherp, create, send, and track invoices in minutes. Get paid faster with automated reminders, detailed reports, and secure payment processing—all in one easy-to-use platform",
-        img: "../assests/images/invoicing-hero.png",
-        bg: "bg-green-3",
-      },
-      accounting: {
-        title: "Master Your Finances Like a Pro",
-        description:
-          "Track, manage, and optimize your financial health effortlessly with Casherp’s intuitive accounting tools, designed to provide you with clear insights, streamline your workflows, and simplify your reporting",
-        img: "../assests/images/accounting-hero.png",
-        bg: "bg-brand",
-      },
-      hrManagement: {
-        title: "Manage Your Team with Ease",
-        description:
-          "With Casherp, streamline HR tasks, track employee performance, handle onboarding, and simplify payroll—all in one seamless platform designed to help you manage your workforce effortlessly",
-        img: "../assests/images/hr-management-hero.png",
-        bg: "bg-yellow-3",
-      },
-      assets: {
-        title: "Take Control of Your Assets With Ease",
-        description:
-          "Track, manage, and optimize all your assets seamlessly in one comprehensive platform, giving you full control, greater visibility, and the tools to maximize efficiency and resource allocation",
-        img: "../assests/images/assets-hero.png",
-        bg: "bg-green-3",
-      },
-      purchase: {
-        title: "Unlock the Full Potential of Your Procurement",
-        description:
-          "Streamline your purchasing process with our intuitive tools designed to enhance efficiency, effectively manage supplier relationships, and optimize your budget for maximum profitability and growth",
-        img: "../assests/images/purchase-hero.png",
-        bg: "bg-brand",
-      },
-      fleetManagement: {
-        title: "Fleet Management Made Simple",
-        description:
-          "Transform your fleet into a powerful asset with our comprehensive management solutions, designed to optimize routes, enhance safety, and improve overall performance",
-        img: "../assests/images/fleet-hero.png",
-        bg: "bg-yellow-3",
-      },
-      pricing: {
-        title: "Find the Perfect Plan for Your Needs",
-        description:
-          "Select a pricing plan that aligns with your goals. Explore our flexible plans designed for every stage of your journey.",
-        bg: "bg-brand",
-      },
-      file: {
-        title: "All Your Files, One Central Hub",
-        description:
-          "Store, access, and share files effortlessly, with advanced security features and real-time updates, ensuring your team always has exactly what they need, when they need it, no matter where they are",
-        bg: "bg-green-3",
-        img: "../assests/images/fileshare-hero.png",
-      },
-      about: {
-        title: "We Empower Businesses, One Solution at a Time!",
-        description:
-          "Our innovative solutions empower organizations to streamline operations, enhance productivity, and achieve sustainable growth",
-        bg: "bg-yellow-3",
-        img: "../assests/images/about.png",
-      },
-      blog: {
-        title: "Insights for Success: Explore Our Latest Blog Posts",
-        description:
-          "Subscribe to Stay Ahead with the Latest Tips, Trends, and Exclusive Content",
-        bg: "bg-green-3",
-        img: "../assests/images/about.png",
-      },
-
       contact: {
         title: "Get In Touch With Us",
-        description:
-          "Have questions or need assistance? Reach out to our team, and we’ll be happy to help you with any inquiries or support",
+        description: "",
         bg: "bg-green-3",
       },
     },

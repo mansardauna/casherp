@@ -49,13 +49,166 @@
 
 <body>
     <div class="">
-        <div class="" x-import="top-nav">
-            <vui-top-nav></vui-top-nav>
+        <div class="top-nav position-fixed bg-white top-0 w-100 py-3 border-bottom">
+            <div class="d-flex mx-auto col-11 justify-content-between">
+                <img src="../assests/images/casherp logo 2.svg" alt="logo" class="logo" />
+                <div class="d-flex ">
+                    <div class="d-flex d-md-none gap-2">
+                        <button id="start-trial-button"
+                            class="btn-primary-custom rounded-6 p-0 text-capitalize body-small-font-size fw-500 bg-brand-2 px-3">
+                            Start Free Trial
+                        </button>
+                        <button id="hamburger-btn" class="px-1 border-0 btn-secondary-custom" onclick="toggleNavbar()">
+                            ☰
+                        </button>
+                    </div>
+                    <div class="collapse d-md-flex position-relative nav-items gap-md-5" id="navbarResponsive">
+                        <div class="d-flex gap-1 gap-md-5 align-items-center">
+                            <div class="dropdown d-flex">
+                                <button class="btn-tertiary-custom px-2 fw-500"
+                                    onclick="toggleDropdown('featuresDropdown', 'featuresArrow')">
+                                    Features
+                                </button>
+                                <img src="../assests/images/arrow-down.svg" id="featuresArrow" alt="">
+                            </div>
+
+                            <div id="featuresDropdown"
+                                class="dropdown-menu position-absolute col-md-7 col-11 rounded-3 px-4"
+                                style="display: none;">
+                                <div class="d-grid grid-2 gap-3 justify-content-between pt-3">
+                                    <div class="body-medium-font-size fw-500 border-bottom">
+                                        <a href="../pages/invoice.html">
+                                            <span class="body-medium-font-size fw-500 text-blue-1">Invoicing</span>
+                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                Quick, Easy Billing
+                                            </p>
+                                            <div class="feature-divider"></div>
+                                        </a>
+                                    </div>
+                                    <div class="body-medium-font-size fw-500 border-bottom">
+                                        <a href="../pages/asset.html">
+                                            <span class="feature-title text-blue-1">Assets Management</span>
+                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                Optimize Asset Utilization
+                                            </p>
+                                            <div class="feature-divider"></div>
+                                        </a>
+                                    </div>
+                                    <div class="body-medium-font-size fw-500 border-bottom">
+                                        <a href="../pages/accounting.html">
+                                            <span class="feature-title text-blue-1">Accounting</span>
+                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                Accurate Financial Tracking
+                                            </p>
+                                            <div class="feature-divider"></div>
+                                        </a>
+                                    </div>
+                                    <div class="body-medium-font-size fw-500 border-bottom">
+                                        <a href="../pages/purchase.html">
+                                            <span class="feature-title text-blue-1">Purchase Management</span>
+                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                Fast, Secure Sharing
+                                            </p>
+                                            <div class="feature-divider"></div>
+                                        </a>
+                                    </div>
+                                    <div class="body-medium-font-size fw-500 border-bottom">
+                                        <a href="../pages/hr-management.html">
+                                            <span class="feature-title text-blue-1">HR Management</span>
+                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                Efficient Talent Acquisition
+                                            </p>
+                                            <div class="feature-divider"></div>
+                                        </a>
+                                    </div>
+                                    <div class="body-medium-font-size fw-500 border-bottom">
+                                        <a href="../pages/fleet-management.html">
+                                            <span class="feature-title text-blue-1">Fleet Management</span>
+                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                Vehicles Management System
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <button class="btn-tertiary-custom px-2 fw-500"><a
+                                    href="../pages/pricing.html">Pricing</a></button>
+                            <button class="btn-tertiary-custom px-2 fw-500"><a
+                                    href="../pages/blog.html">Blog</a></button>
+
+                            <div class="dropdown d-flex"
+                                onclick="toggleDropdown('resourcesDropdown', 'resourcesArrow')">
+                                <button class="btn-tertiary-custom px-2 fw-500">
+                                    Resources
+                                </button>
+                                <img src="../assests/images/arrow-down.svg" id="resourcesArrow" class="dropdown-icon"
+                                    alt="dropdown-icon">
+                            </div>
+                            <div id="resourcesDropdown" class="resources-dropdown rounded-3 bg-white position-absolute"
+                                style="display: none;">
+                                <div class="resource-item p-2 px-3 border-top">
+                                    <span class="resource-title text-blue-1"><a href="../pages/about.html"> About
+                                            Us</a></span>
+                                </div>
+
+                                <div class="resource-item p-2 px-3 border-top">
+                                    <span class="resource-title text-blue-1">Knowledge Base</span>
+                                </div>
+                                <div class="resource-item p-2 px-3 border-top">
+                                    <span class="resource-title text-blue-1"> <a href="../pages/Affiliate.html"> Become
+                                            an
+                                            Affiliate</a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mx-auto gap-4 ml-md-2">
+                            <button id="login-button"
+                                class="rounded-6 border-2 text-brand-2 body-small-font-size fw-500 fs-sm-6 bg-transparent border-brand-2 p-0 px-3">
+                                Log In
+                            </button>
+                            <button id="start-trial-button"
+                                class="btn-primary-custom rounded-6 d-md-block d-none p-0 text-capitalize body-small-font-size fw-500 bg-brand-2 px-3">
+                                Start Free Trial
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="" x-import="hero" x-data="heroData()">
-            <vui-hero :hero-title="data.accounting.title" :hero-description="data.accounting.description"
-                :hero-img="data.accounting.img" :bg="data.accounting.bg"></vui-hero>
+
+        <div class="d-grid gap-4 hero-bg position-relative bg-brand">
+            <div class="d-flex col-11 flex-column  mx-auto justify-content-center position-relative mt-5 gap-4">
+                <h1 class="title-large-font-size-bold lh-72 fw-500 text-black text-center">Master Your Finances Like
+                    a Pro</h1>
+                <h2 class=" title-medium-font-size lh-36 fw-400 smd:text-center text-black col-md-6 col-10 mx-auto">
+                    Track, manage, and optimize your financial health effortlessly with Casherp’s intuitive
+                    accounting tools, designed to provide you with clear insights, streamline your workflows, and
+                    simplify your reporting</h2>
+                <img src="../assests/images/hero-background.svg" alt="hero-background"
+                    class="hero-background-svg end-0">
+
+                <img src="../assests/images/hero-background.svg" alt="hero-background"
+                    class="hero-background-svg start-0">
+
+                <div class="d-md-flex justify-content-center col-md-5 mx-auto mt-4">
+                    <input type="text" placeholder="Enter your email"
+                        class="flex-grow-1 mx-md-0 mx-auto centered-placeholder rounded-start rounded-end-0 p-2 w-100 border-0">
+                    <button id="start-trial-button"
+                        class="btn-primary-custom rounded-end rounded-start-0 mt-2 mt-md-0 col-12 col-md-4 text-capitalize bg-brand-2 px-4 py-2 py-md-0">Start
+                        free trial</button>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-center align-items-center position-relative hero-image" class="bg-brand">
+                <img src="../assests/images/accounting-hero.png" alt="hero-img"
+                    class="d-none d-md-flex position-absolute">
+            </div>
+            <div class="bg-white d-none d-md-block hero-footer"></div>
         </div>
+
         <div class="" x-import="features" x-data="featuresComponent()">
             <vui-features :fill="categories.accounting.fill" :color="categories.accounting.color"
                 :checkboxBg="categories.accounting.checked" :title="categories.accounting.title"
@@ -80,9 +233,82 @@
                 :subheadline="data.accounting.subheadline" :buttonText="data.accounting.buttonText"
                 :mainImage="data.accounting.mainImage"></vui-trial>
         </div>
-        <div class="" x-import="footer">
-            <vui-footer></vui-footer>
-        </div>
+        <footer class="footer">
+            <div class="col-10 mx-auto text-grey-4 text-xs">
+                <div class="d-md-flex justify-content-between">
+                    <div
+                        class="col-lg-4 col-md-5 d-grid d-md-block justify-content-center align-items-center gap-3 gap-md-0 ">
+                        <img src="../assests/images/casherp logo.svg" alt="logo" class="logo">
+                        <p class="body-xs-font-size lh-22 fw-400 my-4 d-none d-md-block text-white col-md-10">An
+                            All-In-One
+                            tools to manage
+                            people,
+                            projects, and everything in between. Invoicing, Purchasing, HRM, CRM, Project, Manufacturing
+                            &
+                            POS</p>
+                        <div class="d-flex gap-3">
+                            <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
+                                style="padding: .3rem;">
+                                <a href="www.facebook.com">
+                                    <img src="../assests/images/facebook.svg" alt="facebook-icon"></a>
+                            </div>
+                            <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
+                                style="padding: .3rem;">
+                                <a href="www.x.com">
+                                    <img src="../assests/images/twitter.svg" alt="twitter-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-md-flex col-md-6 col-12 justify-content-between text-center-sm">
+                        <div class="mt-4 mt-md-0">
+                            <span class="text-white body-medium-font-size fw-500 fs-sm-14 ">Features</span>
+                            <div
+                                class="list-unstyled text-grey-1 lh-22 cursor-pointer body-small-font-size fw-500 fs-sm-12">
+                                <li><a href="../pages/accounting.html">Accounting</a></li>
+                                <li><a href="../pages/invoice.html">Invoicing</a></li>
+                                <li><a href="../pages/purchase.html">Purchase Management</a></li>
+                                <li><a href="../pages/hr-management.html">Recruitment Management</a></li>
+                                <li><a href="../pages/asset.html">Assets Management</a></li>
+                                <li><a href="../pages/fleet-management.html">Fleet Management</a></li>
+                                <li><a href="../pages/file-share.html">File Sharing</a></li>
+                                <li><a href="">Advisors</a></li>
+                            </div>
+                        </div>
+                        <div class="mt-4 mt-md-0">
+                            <span class="text-white body-medium-font-size fw-500 fs-sm-14">Casherp</span>
+                            <div class="list-unstyled text-grey-1 cursor-pointer body-small-font-size fw-500 fs-sm-12">
+                                <li><a href="../pages/about.html">About Us</a></li>
+                                <li><a href="../pages/contact.html">Contact Us</a></li>
+                                <li><a href="">Careers</a></li>
+                            </div>
+                        </div>
+                        <div class="mt-4 mt-md-0">
+                            <span class="text-white body-medium-font-size fw-500 fs-sm-14">Quick Links</span>
+                            <div class="list-unstyled text-grey-1 cursor-pointer body-small-font-size fw-500 fs-sm-12">
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../pages/pricing.html">Pricing</a></li>
+                                <li><a href="../pages/knowledge.html">FAQ</a></li>
+                                <li><a href="">How support works</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="row body-small-font-size fs-sm-12">
+                    <div class="col-md-9 text-center text-md-start  mb-3 mb-md-0">
+                        <p class="mb-0 text-grey-1">Copyright &copy; 2024 Casherp</p>
+                    </div>
+                    <div class="col-md-3 text-center text-md-end">
+                        <div class="d-md-flex d-block text-grey-1 mb-0 list-unstyled">
+                            <li class="mx-2"><a href="">Terms of Use</a></li>
+                            <li class="mx-2"><a href="">Privacy Policy</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
 
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
