@@ -52,136 +52,140 @@
 <body>
 
     <!-- nav -->
-    <div class="top-nav position-fixed bg-white top-0 w-100 py-3 border-bottom">
-        <div class="d-flex mx-auto col-11 justify-content-between">
-            <img src="./assests/images/casherp logo 2.svg" alt="logo" class="logo" />
-            <div class="d-flex ">
-                <div class="d-flex d-md-none gap-2">
-                    <button id="start-trial-button"
-                        class="btn-primary-custom rounded-6 p-0 text-capitalize body-small-font-size fw-500 bg-brand-2 px-3">
-                        Start Free Trial
-                    </button>
-                    <button id="hamburger-btn" class="px-1 border-0 btn-secondary-custom" onclick="toggleNavbar()">
-                        ☰
-                    </button>
-                </div>
-                <div class="collapse d-md-flex position-relative nav-items gap-md-5" id="navbarResponsive">
-                    <div class="d-flex gap-1 gap-md-5 align-items-center">
-                        <div class="dropdown d-flex">
-                            <button class="btn-tertiary-custom px-2 fw-500"
-                                onclick="toggleDropdown('featuresDropdown', 'featuresArrow')">
-                                Features
-                            </button>
-                            <img src="./assests/images/arrow-down.svg" id="featuresArrow" alt="icon">
-                        </div>
-
-                        <div id="featuresDropdown"
-                            class="dropdown-menu position-absolute col-md-7 col-11 rounded-3 px-4"
-                            style="display: none;">
-                            <div class="d-grid grid-2 gap-3 justify-content-between pt-3">
-                                <div class="body-medium-font-size fw-500 border-bottom">
-                                    <a href="../pages/invoice.html">
-                                        <span class="body-medium-font-size fw-500 text-blue-1">Invoicing</span>
-                                        <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                            Quick, Easy Billing
-                                        </p>
-                                        <div class="feature-divider"></div>
-                                    </a>
-                                </div>
-                                <div class="body-medium-font-size fw-500 border-bottom">
-                                    <a href="../pages/asset.html">
-                                        <span class="feature-title text-blue-1">Assets Management</span>
-                                        <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                            Optimize Asset Utilization
-                                        </p>
-                                        <div class="feature-divider"></div>
-                                    </a>
-                                </div>
-                                <div class="body-medium-font-size fw-500 border-bottom">
-                                    <a href="../pages/accounting.html">
-                                        <span class="feature-title text-blue-1">Accounting</span>
-                                        <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                            Accurate Financial Tracking
-                                        </p>
-                                        <div class="feature-divider"></div>
-                                    </a>
-                                </div>
-                                <div class="body-medium-font-size fw-500 border-bottom">
-                                    <a href="../pages/purchase.html">
-                                        <span class="feature-title text-blue-1">Purchase Management</span>
-                                        <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                            Fast, Secure Sharing
-                                        </p>
-                                        <div class="feature-divider"></div>
-                                    </a>
-                                </div>
-                                <div class="body-medium-font-size fw-500 border-bottom">
-                                    <a href="../pages/hr-management.html">
-                                        <span class="feature-title text-blue-1">HR Management</span>
-                                        <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                            Efficient Talent Acquisition
-                                        </p>
-                                        <div class="feature-divider"></div>
-                                    </a>
-                                </div>
-                                <div class="body-medium-font-size fw-500 border-bottom">
-                                    <a href="../pages/fleet-management.html">
-                                        <span class="feature-title text-blue-1">Fleet Management</span>
-                                        <p class="feature-description text-grey-4 body-xs-font-size fw-400">
-                                            Vehicles Management System
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <button class="btn-tertiary-custom px-2 fw-500"><a
-                                href="../pages/pricing.html">Pricing</a></button>
-                        <button class="btn-tertiary-custom px-2 fw-500"><a href="../pages/blog.html">Blog</a></button>
-
-                        <div class="dropdown d-flex" onclick="toggleDropdown('resourcesDropdown', 'resourcesArrow')">
-                            <button class="btn-tertiary-custom px-2 fw-500">
-                                Resources
-                            </button>
-                            <img src="./assests/images/arrow-down.svg" id="resourcesArrow" class="dropdown-icon"
-                                alt="dropdown-icon">
-                        </div>
-                        <div id="resourcesDropdown" class="resources-dropdown rounded-3 bg-white position-absolute"
-                            style="display: none;">
-                            <div class="resource-item p-2 px-3 border-top">
-                                <span class="resource-title text-blue-1"><a href="../pages/about.html"> About
-                                        Us</a></span>
-                            </div>
-
-                            <div class="resource-item p-2 px-3 border-top">
-                                <span class="resource-title text-blue-1">Knowledge Base</span>
-                            </div>
-                            <div class="resource-item p-2 px-3 border-top">
-                                <span class="resource-title text-blue-1"> <a href="../pages/Affiliate.html"> Become
-                                        an
-                                        Affiliate</a></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex mx-auto gap-4 ml-md-2">
-                        <button id="login-button"
-                            class="rounded-6 border-2 text-brand-2 body-small-font-size fw-500 fs-sm-6 bg-transparent border-brand-2 p-0 px-3">
-                            Log In
-                        </button>
+    <header>
+        <div class="top-nav position-fixed bg-white top-0 w-100 py-3 border-bottom">
+            <div class="d-flex mx-auto col-11 justify-content-between">
+                <img src="./assests/images/casherp logo 2.svg" alt="logo" class="logo" />
+                <div class="d-flex ">
+                    <div class="d-flex d-md-none gap-2">
                         <button id="start-trial-button"
-                            class="btn-primary-custom rounded-6 d-md-block d-none p-0 text-capitalize body-small-font-size fw-500 bg-brand-2 px-3">
+                            class="btn-primary-custom rounded-6 p-0 text-capitalize body-small-font-size fw-500 bg-brand-2 px-3">
                             Start Free Trial
                         </button>
+                        <button id="hamburger-btn" class="px-1 border-0 btn-secondary-custom" onclick="toggleNavbar()">
+                            ☰
+                        </button>
+                    </div>
+                    <div class="collapse d-md-flex position-relative nav-items gap-md-5" id="navbarResponsive">
+                        <div class="d-flex gap-1 gap-md-5 align-items-center">
+                            <div class="dropdown d-flex">
+                                <button class="btn-tertiary-custom px-2 fw-500"
+                                    onclick="toggleDropdown('featuresDropdown', 'featuresArrow')">
+                                    Features
+                                </button>
+                                <img src="./assests/images/arrow-down.svg" id="featuresArrow" alt="icon">
+                            </div>
+
+                            <div id="featuresDropdown"
+                                class="dropdown-menu position-absolute col-md-7 col-11 rounded-3 px-4"
+                                style="display: none;">
+                                <div class="d-grid grid-2 gap-3 justify-content-between pt-3">
+                                    <div class="body-medium-font-size fw-500 border-bottom">
+                                        <a href="../pages/invoice.html">
+                                            <span class="body-medium-font-size fw-500 text-blue-1">Invoicing</span>
+                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                Quick, Easy Billing
+                                            </p>
+                                            <div class="feature-divider"></div>
+                                        </a>
+                                    </div>
+                                    <div class="body-medium-font-size fw-500 border-bottom">
+                                        <a href="../pages/asset.html">
+                                            <span class="feature-title text-blue-1">Assets Management</span>
+                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                Optimize Asset Utilization
+                                            </p>
+                                            <div class="feature-divider"></div>
+                                        </a>
+                                    </div>
+                                    <div class="body-medium-font-size fw-500 border-bottom">
+                                        <a href="../pages/accounting.html">
+                                            <span class="feature-title text-blue-1">Accounting</span>
+                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                Accurate Financial Tracking
+                                            </p>
+                                            <div class="feature-divider"></div>
+                                        </a>
+                                    </div>
+                                    <div class="body-medium-font-size fw-500 border-bottom">
+                                        <a href="../pages/purchase.html">
+                                            <span class="feature-title text-blue-1">Purchase Management</span>
+                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                Fast, Secure Sharing
+                                            </p>
+                                            <div class="feature-divider"></div>
+                                        </a>
+                                    </div>
+                                    <div class="body-medium-font-size fw-500 border-bottom">
+                                        <a href="../pages/hr-management.html">
+                                            <span class="feature-title text-blue-1">HR Management</span>
+                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                Efficient Talent Acquisition
+                                            </p>
+                                            <div class="feature-divider"></div>
+                                        </a>
+                                    </div>
+                                    <div class="body-medium-font-size fw-500 border-bottom">
+                                        <a href="../pages/fleet-management.html">
+                                            <span class="feature-title text-blue-1">Fleet Management</span>
+                                            <p class="feature-description text-grey-4 body-xs-font-size fw-400">
+                                                Vehicles Management System
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <button class="btn-tertiary-custom px-2 fw-500"><a
+                                    href="../pages/pricing.html">Pricing</a></button>
+                            <button class="btn-tertiary-custom px-2 fw-500"><a
+                                    href="../pages/blog.html">Blog</a></button>
+
+                            <div class="dropdown d-flex"
+                                onclick="toggleDropdown('resourcesDropdown', 'resourcesArrow')">
+                                <button class="btn-tertiary-custom px-2 fw-500">
+                                    Resources
+                                </button>
+                                <img src="./assests/images/arrow-down.svg" id="resourcesArrow" class="dropdown-icon"
+                                    alt="dropdown-icon">
+                            </div>
+                            <div id="resourcesDropdown" class="resources-dropdown rounded-3 bg-white position-absolute"
+                                style="display: none;">
+                                <div class="resource-item p-2 px-3 border-top">
+                                    <span class="resource-title text-blue-1"><a href="../pages/about.html"> About
+                                            Us</a></span>
+                                </div>
+
+                                <div class="resource-item p-2 px-3 border-top">
+                                    <span class="resource-title text-blue-1">Knowledge Base</span>
+                                </div>
+                                <div class="resource-item p-2 px-3 border-top">
+                                    <span class="resource-title text-blue-1"> <a href="../pages/affiliate.html"> Become
+                                            an
+                                            Affiliate</a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mx-auto gap-4 ml-md-2">
+                            <button id="login-button"
+                                class="rounded-6 border-2 text-brand-2 body-small-font-size fw-500 fs-sm-6 bg-transparent border-brand-2 p-0 px-3">
+                                Log In
+                            </button>
+                            <button id="start-trial-button"
+                                class="btn-primary-custom rounded-6 d-md-block d-none p-0 text-capitalize body-small-font-size fw-500 bg-brand-2 px-3">
+                                Start Free Trial
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
     <!-- hero -->
-    <header class="hero-container">
+    <section class="hero-container">
         <div class="hero d-md-flex p-md-5 p-2 py-5">
             <div class="col-md-11 justify-content-between mx-auto d-md-flex">
                 <div
@@ -214,7 +218,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- all-in-one -->
     <section class="my-md-5 py-5 d-flex flex-column gap-md-5 gap-3">
@@ -228,25 +232,54 @@
             finances, assets,
             inventory, sales, marketing, HR,
             and more</h4>
-        <div class="d-md-flex col-md-10 justify-content-center mx-auto grid grid-2 gap-4" x-data="cardData()">
-            <template x-for="item in items" :key="item.title">
-                <div class="d-flex flex-column align-items-center gap-4 text-white justify-content-center my-3 my-md-0"
-                    :class="item.bg" style="width: 302px;
-                    height: 302px;
-                    padding: 45px 30px 45px 30px;
-                    gap: 0px;
-                    border-radius: 16px;
-                    opacity: 0px;
-                    ">
-                    <div class="p-2  bg-white rounded-pill">
-                        <img :src="item.img" class="card-img-top" :alt="item.title">
-                    </div>
-                    <div class="text-center">
-                        <h4 class="body-large-font-size fw-600" x-text="item.title"></h4>
-                        <p class="body-small-font-size lh-22 p-1 fw-400 mt-2" x-text="item.description"></p>
-                    </div>
+        <div class="d-md-flex col-md-10 justify-content-center mx-auto grid grid-2 gap-4">
+            <div class="d-flex flex-column align-items-center gap-4 text-white justify-content-center my-3 my-md-0 bg-blue-3 blue-shadow"
+                style="width: 302px; height: 302px; padding: 45px 30px 45px 30px; gap: 0px; border-radius: 16px;">
+                <div class="p-2 bg-white rounded-pill">
+                    <img src="./assests/images/manage 1.svg" class="card-img-top" alt="Management">
                 </div>
-            </template>
+                <div class="text-center">
+                    <h4 class="body-large-font-size fw-600">Management</h4>
+                    <p class="body-small-font-size lh-22 p-1 fw-400 mt-2">Oversee every aspect. Track and follow up with
+                        leads, sources, launch campaigns, proposals and lot more</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column align-items-center gap-4 text-white justify-content-center my-3 my-md-0 bg-green-5 green-shadow"
+                style="width: 302px; height: 302px; padding: 45px 30px 45px 30px; gap: 0px; border-radius: 16px;">
+                <div class="p-2 bg-white rounded-pill">
+                    <img src="../assests/images/invoice.svg" class="card-img-top" alt="Invoicing">
+                </div>
+                <div class="text-center">
+                    <h4 class="body-large-font-size fw-600">Invoicing</h4>
+                    <p class="body-small-font-size lh-22 p-1 fw-400 mt-2">Generate, send, and track invoices with ease.
+                        Automate billing and keep your payments organized and on time</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column align-items-center gap-4 text-white justify-content-center my-3 my-md-0 bg-yellow-1 yellow-shadow"
+                style="width: 302px; height: 302px; padding: 45px 30px 45px 30px; gap: 0px; border-radius: 16px;">
+                <div class="p-2 bg-white rounded-pill">
+                    <img src="../assests/images/lead 1.svg" class="card-img-top" alt="Accounting">
+                </div>
+                <div class="text-center">
+                    <h4 class="body-large-font-size fw-600">Accounting</h4>
+                    <p class="body-small-font-size lh-22 p-1 fw-400 mt-2">Track your income and expenses, generate
+                        reports easily and for free, with Casherp's accounting software</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column align-items-center gap-4 text-white justify-content-center my-3 my-md-0 bg-green-1 green-shadow"
+                style="width: 302px; height: 302px; padding: 45px 30px 45px 30px; gap: 0px; border-radius: 16px;">
+                <div class="p-2 bg-white rounded-pill">
+                    <img src="../assests/images/marketing 1.svg" class="card-img-top" alt="Marketing">
+                </div>
+                <div class="text-center">
+                    <h4 class="body-large-font-size fw-600">Marketing</h4>
+                    <p class="body-small-font-size lh-22 p-1 fw-400 mt-2">Engage customers. Create and track email
+                        campaigns, social media engagement, and other marketing initiatives</p>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -258,21 +291,45 @@
         <div class="p-md-0 p-3 my-md-5">
             <h3 class="title-large-font-size text-uppercase mx-auto mx-md-0 w-fit fw-600 fs-sm-24">Why Choose
                 US?</h3>
-            <div class="my-md-2 " x-data="chooseData()">
-                <template x-for="item in choose" :key="item.label">
-                    <div class="col-md-11 my-md-5 my-4">
-                        <div class="d-flex col-3 gap-4 align-items-center">
-                            <h2 x-text="item.digit"
-                                class="title-large-font-size-bold text-blue-1 fs-sm-28 lh-sm-58 fw-700"></h2>
-                            <h5 x-text="item.label" class="heading-small-font-size text-blue fs-sm-18 lh-sm-26 fw-500">
-                            </h5>
-                        </div>
-                        <div class="my-1 col-md-10">
-                            <span x-text="item.description"
-                                class="body-medium-font-size fw-400 fs-sm-16 text-blue lh-sm-28 lh-32"></span>
-                        </div>
+            <div class="my-md-2">
+                <div class="col-md-11 my-md-5 my-4">
+                    <div class="d-flex col-3 gap-4 align-items-center">
+                        <h2 class="title-large-font-size-bold text-blue-1 fs-sm-28 lh-sm-58 fw-700">4200+ </h2>
+                        <h5 class="heading-small-font-size text-blue-1 fs-sm-18 lh-sm-26 fw-500">Users Active</h5>
                     </div>
-                </template>
+                    <div class="my-1 col-md-10">
+                        <span class="body-medium-font-size fw-400 fs-sm-16 text-blue-1 lh-sm-28 lh-32">
+                            Our platform is trusted and actively used by over 4,200 professionals who rely on its
+                            powerful features to streamline their daily operations and grow their businesses
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-11 my-md-5 my-4">
+                    <div class="d-flex col-3 gap-4 align-items-center">
+                        <h2 class="title-large-font-size-bold text-blue-1 fs-sm-28 lh-sm-58 fw-700">324+</h2>
+                        <h5 class="heading-small-font-size text-blue-1 fs-sm-18 lh-sm-26 fw-500">Trusted By Companies
+                        </h5>
+                    </div>
+                    <div class="my-1 col-md-10">
+                        <span class="body-medium-font-size fw-400 fs-sm-16 text-blue-1 lh-sm-28 lh-32">
+                            Companies across various industries trust our platform to manage processes, optimize
+                            workflows, enhance productivity, and support sustainable growth
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-11 my-md-5 my-4">
+                    <div class="d-flex col-3 gap-4 align-items-center">
+                        <h2 class="title-large-font-size-bold text-blue-1 fs-sm-28 lh-sm-58 fw-700">$320M+</h2>
+                        <h5 class="heading-small-font-size text-blue-1 fs-sm-18 lh-sm-26 fw-500">Business Transactions
+                        </h5>
+                    </div>
+                    <div class="my-1 col-md-10">
+                        <span class="body-medium-font-size fw-400 fs-sm-16 text-blue-1 lh-sm-28 lh-32">
+                            With hundreds of thousands of successful transactions processed, our platform ensures
+                            reliable, secure financial management for businesses of all sizes
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -440,49 +497,214 @@
         </div>
     </section>
 
+    <!-- Mobile Tab -->
+    <section class="d-block d-md-none" id="tab-section">
+        <div class="bg-purple py-4 sticky-tabs">
+            <div class="d-flex p-md-0 p-3 flex-column gap-4">
+                <span class="p-2 px-3 bg-blue-3 rounded-16 w-fit mx-auto text-white fw-500">Features</span>
+                <span class="title-large-font-size fw-500">What Makes Us Stand Out</span>
+            </div>
+            <div class="p-0 mt-4">
+                <div class="tabs-container d-flex justify-content-center">
+                    <div class="d-md-flex d-grid grid-2 flex-row gap-3">
+                        <span class="nav-tab fw-500" data-target="#content-0">Invoicing</span>
+                        <span class="nav-tab fw-500" data-tab="#content-1">Accounting</span>
+                        <span class="nav-tab fw-500" data-tab="#content-2">Recruitment Management</span>
+                        <span class="nav-tab fw-500" data-tab="#content-3">Assets Management</span>
+                        <span class="nav-tab fw-500" data-tab="#content-4">Fleet Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <section class="d-block d-md-none">
-        <div class="tab-wrapper position-relative overflow-hidden">
-            <div class="d-flex" :style="{ transform: `translateX(-${activeTab * 100}%)` }">
-                <template x-for="(tab, index) in tabs" :key="index">
-                    <div class="d-flex w-full py-4 flex-column flex-shrink-0" :class="tab.bg" :id="'tab-' + index"
-                        x-show="activeTab === index">
-                        <div class="d-flex p-md-0 p-3 flex-column gap-4">
-                            <h4 class="p-2 px-3 bg-blue-3 rounded-pill w-fit mx-auto fs-sm-16 text-white fw-500">
-                                Features</h4>
-                            <h3 class="title-large-font-size fw-500 fs-sm-22 lh-sm-32">What Makes Us Stand
-                                Out</h3>
-                        </div>
-                        <span class="p-2 px-3 text-white fw-500 rounded-pill fs-sm-14 lh-sm-24 w-fit mx-auto"
-                            :class="tab.frameColor" x-text="tab.title"></span>
+        <div class="">
+            <div class="position-relative w-100" id="tabs-content">
+                <div class="d-flex justify-content-between position-absolute px-3 w-100" style="top: 2rem;">
+                    <img onclick="prevTabMobile()" src="./assests/images/pointer.svg" alt="pointer" class="rotate-180">
+                    <img onclick="nextTabMobile()" src="./assests/images/pointer.svg" alt="pointer">
+                </div>
 
-                        <div class="col-md-8 d-grid p-md-0 p-3 gap-3">
-                            <div class="">
-                                <p x-text="tab.description"
-                                    class=" lh-36 fw-500 fs-sm-16 lh-sm-28 text-black col-md-10">
-                                </p>
+                <!-- Invoicing Tab -->
+                <div class="tab-mobile py-5  justify-content-center align-items-center bg-yellow-6" id="content-0">
+                    <div class="col-md-8 d-grid p-md-0 p-3 gap-3">
+                        <span class="p-3 text-white fw-500 rounded-24 w-fit bg-yellow-7">Invoicing</span>
+                        <p class="lh-36 fw-500 text-black col-8">
+                            Easily create, send, and track invoices to ensure timely payments and maintain organized
+                            billing
+                            and financial records.
+                        </p>
+                        <div class="d-md-flex d-grid gap-md-5 align-items-center gap-3">
+                            <div class="p-4 tab-frame rounded-12 bg-yellow-7">
+                                <img src="./assests/images/invoice.png" alt="Invoicing" class="tab-img">
                             </div>
-                            <div class="d-flex gap-2 justify-content-cent align-items-center">
-                                <img :src="tab.img" :alt="tab.title" class="tab-img">
-                                <div
-                                    class="rounded-12 body-small-font-size content-card my-md-4 fw-400 lh-28 py-4 d-flex flex-column">
-                                    <button
-                                        class="border-2  border-brand-2  text-brand-2 rounded-12 fw-600 body-small-font-size px-2 mx-auto bg-transparent">
-                                        Learn more
-                                    </button>
-                                </div>
+                            <div
+                                class="rounded-12 body-small-font-size content-card my-md-4 bg-white p-3 fw-400 lh-28 py-4 d-flex flex-column gap-3">
+                                <span>
+                                    Casherp is the ultimate HRM, CRM and project management solution for businesses of
+                                    all
+                                    sizes. It simplifies your day-to-day operations with powerful, integrated features
+                                    such
+                                    as payroll, invoicing, sales, marketing, CRM, and purchasing.
+                                </span>
+                                <button
+                                    class="border-border-brand-2 text-brand-2 rounded-12 fw-600 body-small-font-size mx-auto bg-transparent px-2">Learn
+                                    more</button>
                             </div>
                         </div>
                     </div>
-                </template>
-            </div>
-            <div class="d-flex justify-content-between position-absolute px-3 w-100 tab-navigator">
-                <img @click="prevTab()" x-show="activeTab > 0" src="./assests/images/pointer.svg" alt="pointer"
-                    class="rotate-180">
-                <img @click="nextTab()" x-show="activeTab < 4" src="./assests/images/pointer.svg" alt="pointer">
+                </div>
 
+                <!-- Accounting Tab -->
+                <div class="tab-mobile py-5  justify-content-center align-items-center bg-grey" id="content-1"
+                    style="display: none;">
+                    <div class="col-md-8 d-grid p-md-0 p-3 gap-3">
+                        <span class="p-3 text-white fw-500 rounded-24 w-fit bg-blue-3">Accounting</span>
+                        <p class="lh-36 fw-500 text-black col-8">
+                            Take control and manage your money like a boss, streamline finances, boost efficiency, and
+                            keep
+                            your budget on track effortlessly.
+                        </p>
+                        <div class="d-md-flex d-grid gap-md-5 align-items-center gap-3">
+                            <div class="p-4 tab-frame rounded-12 bg-blue-3">
+                                <img src="./assests/images/accounting-image.png" alt="Accounting" class="tab-img">
+                            </div>
+                            <div
+                                class="rounded-12 body-small-font-size content-card my-md-4 bg-white p-3 fw-400 lh-28 py-4 d-flex flex-column gap-3">
+                                <span>
+                                    Using this module helps in relieving the burden of manual data entry, prevents
+                                    common
+                                    human errors, helps businesses and accountants when tax time comes around. Casherp
+                                    allows the user to look at in-depth reports of how their business’ finances are
+                                    faring.
+                                </span>
+                                <button
+                                    class="border-border-brand-2 text-brand-2 rounded-12 fw-600 body-small-font-size mx-auto bg-transparent px-2">Learn
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recruitment Management Tab -->
+                <div class="tab-mobile py-5  justify-content-center align-items-center bg-green-4" id="content-2"
+                    style="display: none;">
+                    <div class="col-md-8 d-grid p-md-0 p-3 gap-3">
+                        <span class="p-3 text-white fw-500 rounded-24 w-fit bg-green-1">Recruitment Management</span>
+                        <p class="lh-36 fw-500 text-black col-8">
+                            Streamline your hiring processes, attract top talents and empower your team to find the
+                            right
+                            candidates effectively.
+                        </p>
+                        <div class="d-md-flex d-grid gap-md-5 align-items-center gap-3">
+                            <div class="p-4 tab-frame rounded-12 bg-green-1">
+                                <img src="./assests/images/hr-management.png" alt="Recruitment Management"
+                                    class="tab-img">
+                            </div>
+                            <div
+                                class="rounded-12 body-small-font-size content-card my-md-4 bg-white p-3 fw-400 lh-28 py-4 d-flex flex-column gap-3">
+                                <span>
+                                    From posting your jobs to keeping applicants connected and engaged throughout,
+                                    Recruitment Module lets you manage your entire recruiting process. Casherp's
+                                    Recruitment
+                                    Module automates and manages your organization's recruiting and staffing operations.
+                                </span>
+                                <button
+                                    class="border-border-brand-2 text-brand-2 rounded-12 fw-600 body-small-font-size mx-auto bg-transparent px-2">Learn
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assets Management Tab -->
+                <div class="tab-mobile py-5  justify-content-center align-items-center bg-yellow-6" id="content-3"
+                    style="display: none;">
+                    <div class="col-md-8 d-grid p-md-0 p-3 gap-3">
+                        <span class="p-3 text-white fw-500 rounded-24 w-fit bg-yellow-7">Assets Management</span>
+                        <p class="lh-36 fw-500 text-black col-8">
+                            Track, evaluate, maximize the value of your assets efficiently, and enhance your
+                            organization's
+                            financial health.
+                        </p>
+                        <div class="d-md-flex d-grid gap-md-5 align-items-center gap-3">
+                            <div class="p-4 tab-frame rounded-12 bg-yellow-7">
+                                <img src="./assests/images/assests-image.png" alt="Assets Management" class="tab-img">
+                            </div>
+                            <div
+                                class="rounded-12 body-small-font-size content-card my-md-4 bg-white p-3 fw-400 lh-28 py-4 d-flex flex-column gap-3">
+                                <span>
+                                    Assets Management Module provides the ability of managing company's assets inside
+                                    Casherp's dashboard. You will be able to separate your assets based on
+                                    groups/locations/units and assign them to staff members. The module helps you gain
+                                    insights, reduce risks, and make informed decisions.
+                                </span>
+                                <button
+                                    class="border-border-brand-2 text-brand-2 rounded-12 fw-600 body-small-font-size mx-auto bg-transparent px-2">Learn
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fleet Management Tab -->
+                <div class="tab-mobile py-5  justify-content-center align-items-center bg-grey" id="content-4"
+                    style="display: none;">
+                    <div class="col-md-8 d-grid p-md-0 p-3 gap-3">
+                        <span class="p-3 text-white fw-500 rounded-24 w-fit bg-blue-3">Fleet Management</span>
+                        <p class="lh-36 fw-500 text-black col-8">
+                            Manage, and optimize your fleet with real-time insights and automation. Monitor performance
+                            and
+                            lower costs.
+                        </p>
+                        <div class="d-md-flex d-grid gap-md-5 align-items-center gap-3">
+                            <div class="p-4 tab-frame rounded-12 bg-blue-3">
+                                <img src="./assests/images/fleet-image.png" alt="Fleet Management" class="tab-img">
+                            </div>
+                            <div
+                                class="rounded-12 body-small-font-size content-card my-md-4 bg-white p-3 fw-400 lh-28 py-4 d-flex flex-column gap-3">
+                                <span>
+                                    This module helps to keep the drivers organized and informed, track the fleet's
+                                    expenses
+                                    and performance, as well as follow the fuel levels, the odometer readings, the fuel
+                                    consumption, and how much a specific vehicle costs the company per mile.
+                                </span>
+                                <button
+                                    class="border-border-brand-2 text-brand-2 rounded-12 fw-600 body-small-font-size mx-auto bg-transparent px-2">Learn
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <script>
+            let activeTabMobile = 0;
+            const tabs = document.querySelectorAll('.tab-mobile');
+
+            function showTab(index) {
+                tabs.forEach((tab, i) => {
+                    tab.style.display = i === index ? 'block' : 'none';
+                });
+            }
+
+            function prevTabMobile() {
+                activeTabMobile = (activeTabMobile === 0) ? tabs.length - 1 : activeTabMobile - 1;
+                showTab(activeTabMobile);
+            }
+
+            function nextTabMobile() {
+                activeTabMobile = (activeTabMobile === tabs.length - 1) ? 0 : activeTabMobile + 1;
+                showTab(activeTabMobile);
+            }
+
+            // Initialize by showing the first tab
+            showTab(activeTabMobile);
+
+            document.getElementById('prevButton').addEventListener('click', prevTabMobile);
+            document.getElementById('nextButton').addEventListener('click', nextTabMobile);
+        </script>
+
     </section>
 
     <!-- faq -->
@@ -912,8 +1134,8 @@
                 </div>
                 <div class="col-md-3 text-center text-md-end">
                     <div class="d-md-flex d-block text-grey-1 mb-0 list-unstyled">
-                        <li class="mx-2"><a href="">Terms of Use</a></li>
-                        <li class="mx-2"><a href="">Privacy Policy</a></li>
+                        <li class="mx-2"><a href="../pages/terms.html">Terms of Use</a></li>
+                        <li class="mx-2"><a href="../pages/privacy.html">Privacy Policy</a></li>
                     </div>
                 </div>
             </div>
@@ -921,7 +1143,6 @@
     </footer>
 
 
-    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

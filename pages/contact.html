@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="../assests/styles/utilies.css">
     <link rel="stylesheet" href="../assests/styles/mobile.css">
     <script src="../assests/js/script.js"></script>
-    <script src="../assests/js/data.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -152,7 +151,7 @@
                                     <span class="resource-title text-blue-1">Knowledge Base</span>
                                 </div>
                                 <div class="resource-item p-2 px-3 border-top">
-                                    <span class="resource-title text-blue-1"> <a href="../pages/Affiliate.html"> Become
+                                    <span class="resource-title text-blue-1"> <a href="../pages/affiliate.html"> Become
                                             an
                                             Affiliate</a></span>
                                 </div>
@@ -271,32 +270,30 @@
                 <div class="col-md-5">
                     <div class="">
                         <div class="">
-                            <form
-                                x-data="{ firstName: '', lastName: '', email: '', companyName: '', phoneNumber: '', message: '' }"
-                                class="d-flex flex-column gap-3">
+                            <form class="d-flex flex-column gap-3">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label class="py-1" for="firstName">First Name <span
                                                 class="text-danger">*</span></label>
-                                        <input type="text" class="form-control" id="firstName" x-model="firstName"
+                                        <input type="text" class="form-control" id="firstName" model="firstName"
                                             placeholder="Enter your first name" required>
                                     </div>
                                     <div class="col-md-6">
                                         <label class="py-1" for="lastName">Last Name <span
                                                 class="text-danger">*</span></label>
                                         <input type="text" class="form-control" id="lastName"
-                                            placeholder="Enter your last name" x-model="lastName" required>
+                                            placeholder="Enter your last name" model="lastName" required>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label class="py-1" for="email">Email <span class="text-danger">*</span></label>
                                     <input type="email" class="form-control" id="email" placeholder="Enter your email"
-                                        x-model="email" required>
+                                        model="email" required>
                                 </div>
                                 <div class="mb-3">
                                     <label class="py-1" for="companyName">Company Name</label>
                                     <input type="text" class="form-control" id="companyName"
-                                        placeholder="Enter your company name" x-model="companyName">
+                                        placeholder="Enter your company name" model="companyName">
                                 </div>
                                 <div class="mb-3">
                                     <label class="py-1" for="phoneNumber">Phone Number</label>
@@ -305,7 +302,7 @@
                                             <img src="../assests/images/country.svg" alt="country">
                                         </div>
                                         <input type="tel" class="" style="border: none; outline: none;" id="phoneNumber"
-                                            placeholder="( +234 )" x-model=" phoneNumber">
+                                            placeholder="( +234 )" model=" phoneNumber">
                                     </div>
 
                                 </div>
@@ -313,7 +310,7 @@
                                     <label class="py-1" for="message">Message</label>
                                     <textarea class="form-control" id="message"
                                         placeholder="What would you like to talk about" rows="3"
-                                        x-model="message"></textarea>
+                                        model="message"></textarea>
                                 </div>
                                 <div class="form-check align-items-center my-3">
                                     <input type="checkbox" class="form-check-input" id="privacyPolicy" required>
@@ -480,8 +477,8 @@
                 </div>
                 <div class="col-md-3 text-center text-md-end">
                     <div class="d-md-flex d-block text-grey-1 mb-0 list-unstyled">
-                        <li class="mx-2"><a href="">Terms of Use</a></li>
-                        <li class="mx-2"><a href="">Privacy Policy</a></li>
+                        <li class="mx-2"><a href="../pages/terms.html">Terms of Use</a></li>
+                        <li class="mx-2"><a href="../pages/privacy.html">Privacy Policy</a></li>
                     </div>
                 </div>
             </div>

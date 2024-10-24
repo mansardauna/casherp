@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="../assests/styles/utilies.css">
     <link rel="stylesheet" href="../assests/styles/mobile.css">
     <script src="../assests/js/script.js"></script>
-    <script src="../assests/js/data.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -152,7 +151,7 @@
                                     <span class="resource-title text-blue-1">Knowledge Base</span>
                                 </div>
                                 <div class="resource-item p-2 px-3 border-top">
-                                    <span class="resource-title text-blue-1"> <a href="../pages/Affiliate.html"> Become
+                                    <span class="resource-title text-blue-1"> <a href="../pages/affiliate.html"> Become
                                             an
                                             Affiliate</a></span>
                                 </div>
@@ -206,22 +205,374 @@
     </section>
 
     <section>
-        <div class="" x-data="knowledge()">
+        <div class="">
             <div class="col-10 mx-auto p-4 pb-5 mb-5">
-                <template x-for="(faq, index) in knowledgeData" :key="index">
-                    <div class="faq-item">
-                        <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12 "
-                            :class="expandedFaqs.includes(index) || index === knowledgeData.length - 1 ? '' : ''"
-                            :class="expandedFaqs.includes(index) ? '' : ''" @click="toggleFaq(index)">
-                            <span x-text="faq.category" class="fs-sm-16 col-10 lh-sm-28"></span>
-                            <img src="../assests/images/Arrows 2.svg" alt="arrow" class=""
-                                :class="expandedFaqs.includes(index) ? 'rotate-180' : ''">
-                        </div>
-                        <div class="faq-answer p-2 text-blue body-medium-font-size"
-                            x-show="expandedFaqs.includes(index)" x-transition x-text="faq.details"></div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(0)">
+                        <span class="fs-sm-16 lh-sm-28">Estimates</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
                     </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size" style="display: none;">
+                        Create estimates within a minute, send to your customers and wait for acceptance. Add notes for
+                        better organization for your next actions, create reminders, and auto-convert the estimate to an
+                        invoice after the customer accepts.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(1)">
+                        <span class="fs-sm-16 lh-sm-28">Proposals</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size" style="display: none;">
+                        Create good looking proposals for leads or customers and increase sales. Receive notification
+                        when proposal is accepted/declined and auto send thank you email to your customer after
+                        accepting the proposal. Proposal overdue notice before X days available.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(2)">
+                        <span class="fs-sm-16 lh-sm-28">Online Payments</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size" style="display: none;">
+                        Receive payments from Paypal, Stripe, Mollie, Authorize.net, 2Checkout, PayU Money and
+                        Braintree, we have implemented payment gateways that are available in most of the countries.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(3)">
+                        <span class="fs-sm-16 lh-sm-28">Projects</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size" style="display: none;">
+                        Manage projects and track time spent on project for each staff member. Record project expenses
+                        and invoices and bill your clients faster. Professional Gantt Chart included for each project
+                        and staff member.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(4)">
+                        <span class="fs-sm-16 lh-sm-28">Leads</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size" style="display: none;">
+                        Leads or potential clients are really important part to any company. Every company trying
+                        everyday to get new leads. Very often happend some potential client to call and ask for specific
+                        service that your company serve and then sometimes this is forgotten. With Casherp you will
+                        never forget your potential clients and you will be able to manage all of them in one place.
+                        Keep track of leads in one place and easily follow their progress. Ability to auto import leads
+                        from email, add notes, create proposals.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(5)">
+                        <span class="fs-sm-16 lh-sm-28">Web to Lead Form</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size" style="display: none;">
+                        Create unlimited web to lead forms and inject in your landing page or website. This feature
+                        allows you to import leads into Casherp from form. Use web to lead forms to gather potential
+                        clients information, allow them to request quotes directly from your website.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(6)">
+                        <span class="fs-sm-16 lh-sm-28">Contracts</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size" style="display: none;">
+                        You can add new contracts based on your clients. Adding contracts is very simple, you can set
+                        start date and end date and have clear view of all your company contracts in one place. You
+                        won't need anymore to search in your desk documents. Create PDF contracts and send to your
+                        customers from Casherp. Contract overdue reminders available.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(7)">
+                        <span class="fs-sm-16 lh-sm-28">Tickets</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size" style="display: none;">
+                        Great support ticket system with autoresponse, private ticket staff notes, ticket assignments,
+                        attachments, predefined ticket replies, insert knowledge base link, ticket priorities, ticket
+                        statuses. Feature for auto importing tickets via Email Forwarder/IMAP method included. Let your
+                        customer reply and create new tickets via email, without accessing the client portal.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(8)">
+                        <span class="fs-sm-16 lh-sm-28">Departments</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size" style="display: none;">
+                        Assign your staff to specific departments and ability to auto import tickets by department
+                        email.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(9)">
+                        <span class="fs-sm-16 lh-sm-28 des">Custom Fields</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Custom fields can store extra information for customers, leads, tickets, invoices, company,
+                        estimates and more.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(10)">
+                        <span class="fs-sm-16 lh-sm-28 des">Staff Reminders</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Setup staff reminders for staff member with ability to notify by email and built-in. Reminders
+                        are available for important features.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(11)">
+                        <span class="fs-sm-16 lh-sm-28 des">Events</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Create private or public events and stay organized with built-in notifications. Receive email
+                        alerts when an event is approaching, ensuring you never miss an important moment.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(12)">
+                        <span class="fs-sm-16 lh-sm-28 des">Email Templates</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Setup predefined email templates from text editor. Merge fields available and multi language
+                        options available.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(13)">
+                        <span class="fs-sm-16 lh-sm-28 des">Staff Roles & Permission</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        You can give staff specific permissions on what they can do or can’t do. Role permissions can be
+                        overridden for each staff.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(14)">
+                        <span class="fs-sm-16 lh-sm-28 des">Goals Tracking</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Setup goals and tracking achievements. Use the Goals Tracking feature to keep sales goals in
+                        mind.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(15)">
+                        <span class="fs-sm-16 lh-sm-28 des">Personal To-Do</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Every staff member can have their own personal todo dashboard which will allow your staff member
+                        to easily organize their work.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(16)">
+                        <span class="fs-sm-16 lh-sm-28 des">Staff</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Manage all your staff members from one place with ease. Track attendance, performance, leave
+                        requests, and payroll, all from a centralized and user-friendly interface.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(17)">
+                        <span class="fs-sm-16 lh-sm-28 des">Company Newsfeed</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Share great company events, upload documents, easy employees communications.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(18)">
+                        <span class="fs-sm-16 lh-sm-28 des">Staff tasks</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Assign task to multiple employees, add task followers, task comments allowed, task attachments.
+                        Link tasks to many Casherp features and stay organized.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(19)">
+                        <span class="fs-sm-16 lh-sm-28 des">Recurring Tasks</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Create tasks that will be auto created for a given period.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(20)">
+                        <span class="fs-sm-16 lh-sm-28 des">Surveys</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Create surveys with one click. Send to staff, leads, clients or manually created mail lists.
+                        Increase customer retention via built-in Surveys.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(21)">
+                        <span class="fs-sm-16 lh-sm-28 des">Reports</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Generate detailed and customizable reports to gain insights into your business performance.
+                        Analyze financial data, track key metrics, and make informed decisions with real-time, accurate
+                        reporting.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(22)">
+                        <span class="fs-sm-16 lh-sm-28 des">Media Library</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Upload all your files in one place for easy access and sharing. Media Library allows for easy
+                        categorization and management of documents, images, and other resources.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(23)">
+                        <span class="fs-sm-16 lh-sm-28 des">Staff Member Group</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Create staff member groups for better organization and communication. Assign tasks, send
+                        updates, and manage responsibilities effectively within your team.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(24)">
+                        <span class="fs-sm-16 lh-sm-28 des">Activity Logs</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Track all actions taken by staff and users within the platform. Maintain a comprehensive log of
+                        activities to ensure accountability and transparency.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(25)">
+                        <span class="fs-sm-16 lh-sm-28 des">System Notifications</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Receive alerts for important updates, tasks, and reminders. System notifications keep you
+                        informed and ensure you stay on track with your responsibilities.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(26)">
+                        <span class="fs-sm-16 lh-sm-28 des">Custom Reports</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Build tailored reports that focus on the metrics that matter most to your business. Customize
+                        fields, filters, and data presentation to suit your unique requirements.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(27)">
+                        <span class="fs-sm-16 lh-sm-28 des">Quick Add Feature</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Easily add new customers, leads, or tasks with a simple quick add feature. Streamline your
+                        workflow and improve productivity with fast input options.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(28)">
+                        <span class="fs-sm-16 lh-sm-28 des">Multi-User Support</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Collaborate effectively with multiple users on the same platform. Enable team access to share
+                        information and work together seamlessly on tasks.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question p-3 my-1 position-relative d-flex justify-content-between bg-grey mt-3 rounded-12"
+                        onclick="toggleFaq(29)">
+                        <span class="fs-sm-16 lh-sm-28 des">Audit Trails</span>
+                        <img src="../assests/images/Arrows 2.svg" alt="arrow" class="">
+                    </div>
+                    <div class="faq-answer p-2 text-blue body-medium-font-size details" style="display: none;">
+                        Maintain a secure record of all changes and updates within the system. Audit trails ensure
+                        compliance and enable thorough reviews of operational processes.
+                    </div>
+                </div>
+
+
             </div>
-            </template>
         </div>
     </section>
 
@@ -230,7 +581,7 @@
             <div class="d-md-flex justify-content-between">
                 <div
                     class="col-lg-4 col-md-5 d-grid d-md-block justify-content-center align-items-center gap-3 gap-md-0 ">
-                    <img src="./assests/images/casherp logo.svg" alt="logo" class="logo">
+                    <img src="../assests/images/casherp logo.svg" alt="logo" class="logo">
                     <p class="body-xs-font-size lh-22 fw-400 my-4 d-none d-md-block text-white col-md-10">An
                         All-In-One
                         tools to manage
@@ -242,12 +593,12 @@
                         <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
                             style="padding: .3rem;">
                             <a href="www.facebook.com">
-                                <img src="./assests/images/facebook.svg" alt="facebook-icon"></a>
+                                <img src="../assests/images/facebook.svg" alt="facebook-icon"></a>
                         </div>
                         <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
                             style="padding: .3rem;">
                             <a href="www.x.com">
-                                <img src="./assests/images/twitter.svg" alt="twitter-icon">
+                                <img src="../assests/images/twitter.svg" alt="twitter-icon">
                             </a>
                         </div>
                     </div>
@@ -293,8 +644,8 @@
                 </div>
                 <div class="col-md-3 text-center text-md-end">
                     <div class="d-md-flex d-block text-grey-1 mb-0 list-unstyled">
-                        <li class="mx-2"><a href="">Terms of Use</a></li>
-                        <li class="mx-2"><a href="">Privacy Policy</a></li>
+                        <li class="mx-2"><a href="../pages/terms.html">Terms of Use</a></li>
+                        <li class="mx-2"><a href="../pages/privacy.html">Privacy Policy</a></li>
                     </div>
                 </div>
             </div>

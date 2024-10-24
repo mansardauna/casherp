@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="../assests/styles/utilies.css">
     <link rel="stylesheet" href="../assests/styles/mobile.css">
     <script src="../assests/js/script.js"></script>
-    <script src="../assests/js/data.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -152,7 +151,7 @@
                                     <span class="resource-title text-blue-1">Knowledge Base</span>
                                 </div>
                                 <div class="resource-item p-2 px-3 border-top">
-                                    <span class="resource-title text-blue-1"> <a href="../pages/Affiliate.html"> Become
+                                    <span class="resource-title text-blue-1"> <a href="../pages/affiliate.html"> Become
                                             an
                                             Affiliate</a></span>
                                 </div>
@@ -212,7 +211,7 @@
             <h2 class="fw-500 fs-32 text-center lh-72 mb-5">Track. Control. Optimize. Master Your Assets!</h2>
             <div class="d-md-flex d-grid grid-2 justify-content-center gap-2 mb-5">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="form-checkbox-wrapper" x-data="{ check: false }">
+                    <div class="form-checkbox-wrapper" onclick="toggleCheckbox(this)">
                         <div @click="check=!check"
                             class="p-1 rounded-2 d-flex justify-content-center align-items-center  bg-blue-1">
                             <img src="../assests/images/mark.svg" alt="mark">
@@ -222,7 +221,7 @@
                         class="ml-1 body-small-font-size px-2 py-1 bg-white rounded-pill text-blue-1 text-blue-1">FTracking</span>
                 </div>
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="form-checkbox-wrapper" x-data="{ check: false }">
+                    <div class="form-checkbox-wrapper" onclick="toggleCheckbox(this)">
                         <div @click="check=!check"
                             class="p-1 rounded-2 d-flex justify-content-center align-items-center bg-blue-1 border">
                             <img src="../assests/images/mark.svg" alt="mark">
@@ -232,7 +231,7 @@
                         class="ml-1 body-small-font-size px-2 py-1 bg-white rounded-pill text-blue-1">Collaboration</span>
                 </div>
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="form-checkbox-wrapper" x-data="{ check: false }">
+                    <div class="form-checkbox-wrapper" onclick="toggleCheckbox(this)">
                         <div @click="check=!check"
                             class="p-1 rounded-2 d-flex justify-content-center align-items-center bg-blue-1 border">
                             <img src="../assests/images/mark.svg" alt="mark">
@@ -241,7 +240,7 @@
                     <span class="ml-1 body-small-font-size px-2 py-1 bg-white rounded-pill text-blue-1">Auditing</span>
                 </div>
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="form-checkbox-wrapper" x-data="{ check: false }">
+                    <div class="form-checkbox-wrapper" onclick="toggleCheckbox(this)">
                         <div @click="check=!check"
                             class="p-1 rounded-2 d-flex justify-content-center align-items-center bg-blue-1 border">
                             <img src="../assests/images/mark.svg" alt="mark">
@@ -250,7 +249,7 @@
                     <span class="ml-1 body-small-font-size px-2 py-1 bg-white rounded-pill text-blue-1">Reporting</span>
                 </div>
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="form-checkbox-wrapper" x-data="{ check: false }">
+                    <div class="form-checkbox-wrapper" onclick="toggleCheckbox(this)">
                         <div @click="check=!check"
                             class="p-1 rounded-2 d-flex justify-content-center align-items-center bg-blue-1 border">
                             <img src="../assests/images/mark.svg" alt="mark">
@@ -259,7 +258,7 @@
                     <span class="ml-1 body-small-font-size px-2 py-1 bg-white rounded-pill text-blue-1">Lifecycle</span>
                 </div>
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="form-checkbox-wrapper" x-data="{ check: false }">
+                    <div class="form-checkbox-wrapper" onclick="toggleCheckbox(this)">
                         <div @click="check=!check"
                             class="p-1 rounded-2 d-flex justify-content-center align-items-center bg-blue-1 border">
                             <img src="../assests/images/mark.svg" alt="mark">
@@ -665,8 +664,8 @@
                 </div>
                 <div class="col-md-3 text-center text-md-end">
                     <div class="d-md-flex d-block text-grey-1 mb-0 list-unstyled">
-                        <li class="mx-2"><a href="">Terms of Use</a></li>
-                        <li class="mx-2"><a href="">Privacy Policy</a></li>
+                        <li class="mx-2"><a href="../pages/terms.html">Terms of Use</a></li>
+                        <li class="mx-2"><a href="../pages/privacy.html">Privacy Policy</a></li>
                     </div>
                 </div>
             </div>

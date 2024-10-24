@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="../assests/styles/utilies.css">
     <link rel="stylesheet" href="../assests/styles/mobile.css">
     <script src="../assests/js/script.js"></script>
-    <script src="../assests/js/data.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -152,7 +151,7 @@
                                     <span class="resource-title text-blue-1">Knowledge Base</span>
                                 </div>
                                 <div class="resource-item p-2 px-3 border-top">
-                                    <span class="resource-title text-blue-1"> <a href="../pages/Affiliate.html"> Become
+                                    <span class="resource-title text-blue-1"> <a href="../pages/affiliate.html"> Become
                                             an
                                             Affiliate</a></span>
                                 </div>
@@ -202,34 +201,58 @@
     </section>
 
     <section>
-        <div class=" col-11 mx-auto pb-5" x-data="blogData">
+        <div class="col-11 mx-auto pb-5">
             <!-- Trending Section -->
             <div class="trending pb-5">
                 <h2 class="section-title px-3 py-2">Trending</h2>
                 <div class="row mt-4 mb-5">
                     <div class="col-md-6">
                         <div class="post">
-                            <img :src="trendingPost.image" alt="Trending Post" class="w-100">
-                            <div class="post-date" x-text="trendingPost.date"></div>
-                            <div class="post-title" x-text="trendingPost.title"></div>
-                            <p x-text="trendingPost.excerpt"></p>
+                            <img src="../assests/images/trending-1.png" alt="Trending Post" class="w-100">
+                            <div class="post-date">15 Oct 2024</div>
+                            <div class="post-title">5 Ways Casherp Simplifies Invoicing for Small Businesses</div>
+                            <p>Managing invoices can be a time-consuming, repetitive task that small business owners
+                                dread. From creating invoices to sending reminders and tracking payments...</p>
                             <a href="#" class="btn read-more">Read More →</a>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <template x-for="post in trendingSidePosts" :key="post.title">
-                            <div class="row mb-4">
-                                <div class="col-md-5">
-                                    <img :src="post.image" class="w-100" alt="Side Post" style="height: 100%;">
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="post-date" x-text="post.date"></div>
-                                    <div class="post-title" x-text="post.title"></div>
-                                    <p x-text="post.excerpt" class="post-des"></p>
-                                    <a href="#" class="btn read-more">Read More →</a>
-                                </div>
+                        <div class="row mb-4">
+                            <div class="col-md-5">
+                                <img src="../assests/images/trending-2.png" class="w-100" alt="Side Post"
+                                    style="height: 100%;">
                             </div>
-                        </template>
+                            <div class="col-md-7">
+                                <div class="post-date">09 Oct 2024</div>
+                                <div class="post-title">Boost Productivity with These 5 Time-Saving Tools</div>
+                                <p>In a world where efficiency is everything, time is one of the most...</p>
+                                <a href="#" class="btn read-more">Read More →</a>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-5">
+                                <img src="../assests/images/trending-4.png" class="w-100" alt="Side Post"
+                                    style="height: 100%;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="post-date">23 Sept 2024</div>
+                                <div class="post-title">Why Asset Management Matters for Growing Businesses</div>
+                                <p>Managing assets is critical for any growing business. From vehicles and...</p>
+                                <a href="#" class="btn read-more">Read More →</a>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-5">
+                                <img src="../assests/images/trending-3.png" class="w-100" alt="Side Post"
+                                    style="height: 100%;">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="post-date">20 Sept 2024</div>
+                                <div class="post-title">The Power of Data: How Analytics Can Drive Business Growth</div>
+                                <p>In today’s competitive marketplace, data-driven decisions are crucial for...</p>
+                                <a href="#" class="btn read-more">Read More →</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -238,26 +261,90 @@
             <div class="all-posts our-mission-border py-5">
                 <h2 class="section-title px-3 py-2 mt-4">All Posts</h2>
                 <div class="row">
-                    <template x-for="blog in allPosts" :key="index">
-                        <div class="col-md-4 mt-4 post">
-                            <img :src="blog.image" alt="Post Image" class="w-100 " style="height: 60%;">
-                            <div class="post-date" x-text="blog.date"></div>
-                            <div class="post-title" x-text="blog.title"></div>
-                            <p x-text="blog.excerpt" class="post-des"></p>
-                            <a href="#" class="btn read-more">Read More →</a>
-                        </div>
-                    </template>
+                    <div class="col-md-4 mt-4 post">
+                        <img src="../assests/images/trending-1.png" alt="Post Image" class="w-100" style="height: 60%;">
+                        <div class="post-date">15 Oct 2024</div>
+                        <div class="post-title">5 Ways Casherp Simplifies Invoicing for Small Businesses</div>
+                        <p>Managing invoices can be a time-consuming, repetitive task that small business owners dread.
+                            From creating...</p>
+                        <a href="#" class="btn read-more">Read More →</a>
+                    </div>
+                    <div class="col-md-4 mt-4 post">
+                        <img src="../assests/images/trending-2.png" alt="Post Image" class="w-100" style="height: 60%;">
+                        <div class="post-date">09 Oct 2024</div>
+                        <div class="post-title">Boost Productivity with These 5 Time-Saving Tools</div>
+                        <p>In today’s fast-paced business world, maximizing productivity is crucial. This post explores
+                            five...</p>
+                        <a href="#" class="btn read-more">Read More →</a>
+                    </div>
+                    <div class="col-md-4 mt-4 post">
+                        <img src="../assests/images/trending-4.png" alt="Post Image" class="w-100" style="height: 60%;">
+                        <div class="post-date">23 Sept 2024</div>
+                        <div class="post-title">Why Asset Management Matters for Growing Businesses</div>
+                        <p>Managing assets is critical for any growing business. From vehicles and machinery to
+                            computers and office...</p>
+                        <a href="#" class="btn read-more">Read More →</a>
+                    </div>
+                    <div class="col-md-4 mt-4 post">
+                        <img src="../assests/images/trending-3.png" alt="Post Image" class="w-100" style="height: 60%;">
+                        <div class="post-date">20 Sept 2024</div>
+                        <div class="post-title">The Power of Data: How Analytics Can Drive Business Growth</div>
+                        <p>In today’s competitive marketplace, data-driven decisions are crucial for success. Companies
+                            that...</p>
+                        <a href="#" class="btn read-more">Read More →</a>
+                    </div>
+                    <div class="col-md-4 mt-4 post">
+                        <img src="../assests/images/trending-5.png" alt="Post Image" class="w-100" style="height: 60%;">
+                        <div class="post-date">18 May 2024</div>
+                        <div class="post-title">The Importance of Payroll Integration in HR Management</div>
+                        <p>HR management is about more than just managing people—it’s about managing their time,
+                            performance...</p>
+                        <a href="#" class="btn read-more">Read More →</a>
+                    </div>
+                    <div class="col-md-4 mt-4 post">
+                        <img src="../assests/images/trending-6.png" alt="Post Image" class="w-100" style="height: 60%;">
+                        <div class="post-date">30 Apr 2024</div>
+                        <div class="post-title">How to Build a Winning Remote Team: Strategies for Success</div>
+                        <p>Remote work has moved from a trend to a business necessity. But how do you ensure your remote
+                            team...</p>
+                        <a href="#" class="btn read-more">Read More →</a>
+                    </div>
+                    <div class="col-md-4 mt-4 post">
+                        <img src="../assests/images/trending-5.png" alt="Post Image" class="w-100" style="height: 60%;">
+                        <div class="post-date">14 June 2024</div>
+                        <div class="post-title">Mastering Customer Relationships: A Guide to Building Loyalty</div>
+                        <p>Loyal customers are the backbone of any successful business. Building and maintaining strong
+                            customer...</p>
+                        <a href="#" class="btn read-more">Read More →</a>
+                    </div>
+                    <div class="col-md-4 mt-4 post">
+                        <img src="../assests/images/trending-6.png" alt="Post Image" class="w-100" style="height: 60%;">
+                        <div class="post-date">18 May 2024</div>
+                        <div class="post-title">The Importance of Payroll Integration in HR Management</div>
+                        <p>HR management is about more than just managing people—it’s about managing their time,
+                            performance...</p>
+                        <a href="#" class="btn read-more">Read More →</a>
+                    </div>
+                    <div class="col-md-4 mt-4 post">
+                        <img src="../assests/images/trending-5.png" alt="Post Image" class="w-100" style="height: 60%;">
+                        <div class="post-date">30 Apr 2024</div>
+                        <div class="post-title">How to Build a Winning Remote Team: Strategies for Success</div>
+                        <p>Remote work has moved from a trend to a business necessity. But how do you ensure your remote
+                            team...</p>
+                        <a href="#" class="btn read-more">Read More →</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <footer class="footer">
         <div class="col-10 mx-auto text-grey-4 text-xs">
             <div class="d-md-flex justify-content-between">
                 <div
                     class="col-lg-4 col-md-5 d-grid d-md-block justify-content-center align-items-center gap-3 gap-md-0 ">
-                    <img src="./assests/images/casherp logo.svg" alt="logo" class="logo">
+                    <img src="../assests/images/casherp logo.svg" alt="logo" class="logo">
                     <p class="body-xs-font-size lh-22 fw-400 my-4 d-none d-md-block text-white col-md-10">An
                         All-In-One
                         tools to manage
@@ -269,12 +356,12 @@
                         <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
                             style="padding: .3rem;">
                             <a href="www.facebook.com">
-                                <img src="./assests/images/facebook.svg" alt="facebook-icon"></a>
+                                <img src="../assests/images/facebook.svg" alt="facebook-icon"></a>
                         </div>
                         <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
                             style="padding: .3rem;">
                             <a href="www.x.com">
-                                <img src="./assests/images/twitter.svg" alt="twitter-icon">
+                                <img src="../assests/images/twitter.svg" alt="twitter-icon">
                             </a>
                         </div>
                     </div>
@@ -320,8 +407,8 @@
                 </div>
                 <div class="col-md-3 text-center text-md-end">
                     <div class="d-md-flex d-block text-grey-1 mb-0 list-unstyled">
-                        <li class="mx-2"><a href="">Terms of Use</a></li>
-                        <li class="mx-2"><a href="">Privacy Policy</a></li>
+                        <li class="mx-2"><a href="../pages/terms.html">Terms of Use</a></li>
+                        <li class="mx-2"><a href="../pages/privacy.html">Privacy Policy</a></li>
                     </div>
                 </div>
             </div>

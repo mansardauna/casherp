@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="../assests/styles/utilies.css">
     <link rel="stylesheet" href="../assests/styles/mobile.css">
     <script src="../assests/js/script.js"></script>
-    <script src="../assests/js/data.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -153,7 +152,7 @@
                                     <span class="resource-title text-blue-1">Knowledge Base</span>
                                 </div>
                                 <div class="resource-item p-2 px-3 border-top">
-                                    <span class="resource-title text-blue-1"> <a href="../pages/Affiliate.html"> Become
+                                    <span class="resource-title text-blue-1"> <a href="../pages/affiliate.html"> Become
                                             an
                                             Affiliate</a></span>
                                 </div>
@@ -213,228 +212,161 @@
     </section>
 
     <section>
-        <div x-data="privacyTabs()" class="d-md-flex my-5 py-5 col-md-10 col-11 mx-auto">
+        <div class="d-md-flex my-5 py-5 col-md-10 col-11 mx-auto">
             <!-- Tabs -->
-            <div class="col-5 bg-white ">
+            <div class="col-5 bg-white">
                 <div class="space-y-4 d-flex flex-column sticky-tab">
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'information' }">
-                        <a href="#information">The
-                            type of information we collect</a>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-target="information">
+                        <a href="#information">The type of information we collect</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'usage' }">
-                        <a href="#usage">How we use your
-                            information</a>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-target="usage">
+                        <a href="#usage">How we use your information</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'sharing' }">
-                        <a href="#sharing">Sharing and
-                            disclosure of your information</a>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-target="sharing">
+                        <a href="#sharing">Sharing and disclosure of your information</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'control' }">
-                        <a href="#control">Your
-                            control over your data</a>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-target="control">
+                        <a href="#control">Your control over your data</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'retention' }">
-                        <a href="#retention">Data
-                            retention</a>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-target="retention">
+                        <a href="#retention">Data retention</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'cookies' }">
-                        <a href="#cookies"> Cookies and
-                            other technologies</a>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-target="cookies">
+                        <a href="#cookies">Cookies and other technologies</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'children' }">
-                        <a href="#children">Children's
-                            privacy</a>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-target="children">
+                        <a href="#children">Children's privacy</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'security' }">
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-target="security">
                         <a href="#security">Security</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'transfer' }">
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-target="transfer">
                         <a href="#transfer">International transfer</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'changes' }">
-                        <a href="#changes">Changes
-                            to
-                            this Privacy Policy</a>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-target="changes">
+                        <a href="#changes">Changes to this Privacy Policy</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'contact' }">
-                        <a href="#contact">Contact
-                            us</a>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-target="contact">
+                        <a href="#contact">Contact us</a>
                     </span>
                 </div>
             </div>
 
             <!-- Content -->
             <div class="overflow-y-auto h-screen">
-                <section id="information" x-intersect:enter="setTab('information')" class="d-grid gap-3">
+                <section id="information" class="d-grid gap-3 tab-content-privacy">
                     <h2 class="fs-18 fw-500 lh-32">The type of information we collect</h2>
                     <p class="fs-16 lh-32 fw-400">We collect three types of information from our users:</p>
                     <div class="d-flex gap-2 flex-column">
-                        <span class="fs-16 lh-32 fw-400"><strong> Personal Information:</strong> Personal information is
-                            data
-                            that can be used to
-                            identify or contact a single person. We might collect personal information such as your
-                            name, address, phone number, email address, username, job title, and other contact
-                            information.
-                        </span>
+                        <span class="fs-16 lh-32 fw-400"><strong>Personal Information:</strong> Personal information is
+                            data that can be used to identify or contact a single person. We might collect personal
+                            information such as your name, address, phone number, email address, username, job title,
+                            and other contact information.</span>
                         <span class="fs-16 lh-32 fw-400"><strong>Usage Data:</strong> We collect usage data to help us
-                            understand how our users use
-                            our service, and identify trends and areas for improvement. This includes data such
-                            as
-                            the
-                            features you access, how often you access them, how long you use them, what device
-                            you
-                            use,
-                            and other usage analytics.</span>
-                        <span class="fs-16 lh-32 fw-400"><strong>Transaction Data:</strong> We collect transaction
-                            data as part
-                            of completing any
-                            payment transactions through Casherp, such as the payment amount and currency,
-                            items
-                            purchased, and payment method.</span>
+                            understand how our users use our service, and identify trends and areas for improvement.
+                            This includes data such as the features you access, how often you access them, how long you
+                            use them, what device you use, and other usage analytics.</span>
+                        <span class="fs-16 lh-32 fw-400"><strong>Transaction Data:</strong> We collect transaction data
+                            as part of completing any payment transactions through Casherp, such as the payment amount
+                            and currency, items purchased, and payment method.</span>
                     </div>
                 </section>
 
-                <section id="usage" x-intersect:enter="setTab('usage')" class="space-y-4">
+                <section id="usage" class="tab-content-privacy space-y-4">
                     <h2 class="fs-18 fw-500 lh-32">How we use your information</h2>
                     <p class="fs-16 lh-32 fw-400">We use the data we collect to provide you with the best possible user
-                        experience.
-                        This may
-                        include providing customer support; developing new products and services; personalizing features
-                        and content based on usage; and managing your accounts.</p>
+                        experience. This may include providing customer support; developing new products and services;
+                        personalizing features and content based on usage; and managing your accounts.</p>
                     <p class="fs-16 lh-32 fw-400">We also use this data to create insights and analytics about our
-                        customers,
-                        so that
-                        we can
-                        improve our services and better meet our users' needs.</p>
+                        customers, so that we can improve our services and better meet our users' needs.</p>
                     <p class="fs-16 lh-32 fw-400">We may also use collected information for marketing and communication
-                        purposes. For
-                        example, we
-                        may send emails with updates about our services or invitations to certain events. All of this
-                        communications will be conducted in accordance with applicable laws. The data we collect from
-                        you may also be used for other purposes, which we will notify you about at the time of
-                        collection or when required by law.</p>
+                        purposes. For example, we may send emails with updates about our services or invitations to
+                        certain events. All of this communications will be conducted in accordance with applicable laws.
+                        The data we collect from you may also be used for other purposes, which we will notify you about
+                        at the time of collection or when required by law.</p>
                 </section>
 
-                <section id="sharing" x-intersect:enter="setTab('sharing')" class="space-y-4">
+                <section id="sharing" class="tab-content-privacy space-y-4">
                     <h2 class="fs-18 fw-500 lh-32">Sharing and disclosure of your information</h2>
                     <p class="fs-16 lh-32 fw-400">We may share your data with our authorized third-party service
-                        providers,
-                        such as
-                        marketing
-                        partners and payment processors, to provide necessary services. These third-parties are required
-                        to keep your data private and secure. We may also disclose your information when legally
-                        required or in order to protect our rights or those of others.</p>
+                        providers, such as marketing partners and payment processors, to provide necessary services.
+                        These third-parties are required to keep your data private and secure. We may also disclose your
+                        information when legally required or in order to protect our rights or those of others.</p>
                 </section>
 
-                <section id="control" x-intersect:enter="setTab('control')" class="space-y-4">
+                <section id="control" class="tab-content-privacy space-y-4">
                     <h2 class="fs-18 fw-500 lh-32">Your control over your data</h2>
                     <p class="fs-16 lh-32 fw-400">You have control over your data. You have the right to access, update,
-                        or
-                        delete
-                        your data at any
-                        time. You may also opt out of certain uses of your data, such as marketing communications.</p>
+                        or delete your data at any time. You may also opt out of certain uses of your data, such as
+                        marketing communications.</p>
                     <p class="fs-16 lh-32 fw-400">To exercise your rights, please contact us using the contact details
-                        below.
+                        below.</p>
+                </section>
+
+                <section id="retention" class="tab-content-privacy space-y-4">
+                    <h2 class="fs-18 fw-500 lh-32">Data retention</h2>
+                    <p class="fs-16 lh-32 fw-400">We strive to keep data up to date and accurate, and we will retain
+                        your data for as long as necessary to provide our services. We may retain your data even after
+                        you have cancelled your account in order to comply with our legal obligations, resolve disputes,
+                        and to enforce our agreements.</p>
+                </section>
+
+                <section id="cookies" class="tab-content-privacy space-y-4">
+                    <h2 class="fs-18 fw-500 lh-32">Cookies and other technologies</h2>
+                    <p class="fs-16 lh-32 fw-400">We use cookies and other tracking technologies to improve our
+                        services, provide features, and analyze our performance. We may also partner with third-party
+                        advertising networks in order to display tailored advertisements to you. This may involve
+                        collecting or sharing information with third-parties for targeted advertising purposes.</p>
+                </section>
+
+                <section id="children" class="tab-content-privacy space-y-4">
+                    <h2 class="fs-18 fw-500 lh-32">Children's privacy</h2>
+                    <p class="fs-16 lh-32 fw-400">We do not knowingly collect or solicit information from children under
+                        the age of 18. If you are under 18, please do not attempt to register an account or send any
+                        information about yourself to us. If we become aware that we have collected information from a
+                        person under 18, we will delete that information as soon as possible.</p>
+                </section>
+
+                <section id="security" class="tab-content-privacy space-y-4">
+                    <h2 class="fs-18 fw-500 lh-32">Security</h2>
+                    <p class="fs-16 lh-32 fw-400">We have implemented appropriate technical and organizational measures
+                        designed to protect your information from unauthorized access, use, alteration, or disclosure.
+                        We also use encryption when transferring personal or sensitive data.</p>
+                    <p class="fs-16 lh-32 fw-400">We will notify you of any security breach of your data under data
+                        protection law, and respond quickly to any such breach.</p>
+                </section>
+
+                <section id="transfer" class="tab-content-privacy space-y-4">
+                    <h2 class="fs-18 fw-500 lh-32">International transfer</h2>
+                    <p class="fs-16 lh-32 fw-400">Your information may be transferred to and processed in countries
+                        other than your own. If we transfer your data internationally, we will ensure that it is treated
+                        securely and in accordance with this Privacy Policy.</p>
+                </section>
+
+                <section id="changes" class="tab-content-privacy space-y-4">
+                    <h2 class="fs-18 fw-500 lh-32">Changes to this Privacy Policy</h2>
+                    <p class="fs-16 lh-32 fw-400">We may update this Privacy Policy from time to time. If we make
+                        material changes to our policies, we will notify you by email or through a notice on our site.
                     </p>
                 </section>
 
-                <section id="retention" x-intersect:enter="setTab('retention')" class="space-y-4">
-                    <h2 class="fs-18 fw-500 lh-32">Data retention</h2>
-                    <p class="fs-16 lh-32 fw-400">We strive to keep data up to date and accurate, and we will retain
-                        your data
-                        for as
-                        long as
-                        necessary to provide our services. We may retain your data even after you have cancelled your
-                        account in order to comply with our legal obligations, resolve disputes, and to enforce our
-                        agreements.</p>
-                </section>
-
-                <section id="cookies" x-intersect:enter="setTab('cookies')" class="space-y-4">
-                    <h2 class="fs-18 fw-500 lh-32">Cookies and other technologies</h2>
-                    <p class="fs-16 lh-32 fw-400">We use cookies and other tracking technologies to improve our
-                        services,
-                        provide
-                        features, and
-                        analyze our performance. We may also partner with third-party advertising networks in order to
-                        display tailored advertisements to you. This may involve collecting or sharing information with
-                        third-parties for targeted advertising purposes.</p>
-                </section>
-
-                <section id="children" x-intersect:enter="setTab('children')" class="space-y-4">
-                    <h2 class="fs-18 fw-500 lh-32">Children's privacy</h2>
-                    <p class="fs-16 lh-32 fw-400">We do not knowingly collect or solicit information from children under
-                        the
-                        age of
-                        18. If you are
-                        under 18, please do not attempt to register an account or send any information about yourself to
-                        us. If we become aware that we have collected information from a person under 18, we will delete
-                        that information as soon as possible.</p>
-                </section>
-
-                <section id="security" x-intersect:enter="setTab('security')" class="space-y-4">
-                    <h2 class="fs-18 fw-500 lh-32">Security</h2>
-                    <p class="fs-16 lh-32 fw-400">We have implemented appropriate technical and organizational measures
-                        designed to
-                        protect your
-                        information from unauthorized access, use, alteration, or disclosure. We also use encryption
-                        when transferring personal or sensitive data.</p>
-                    <p class="fs-16 lh-32 fw-400">We will notify you of any security breach of your data under data
-                        protection
-                        law,
-                        and respond
-                        quickly to any such breach.</p>
-                </section>
-
-                <section id="transfer" x-intersect:enter="setTab('transfer')" class="space-y-4">
-                    <h2 class="fs-18 fw-500 lh-32">International transfer</h2>
-                    <p class="fs-16 lh-32 fw-400">We may transfer your data to our service providers in other countries,
-                        such
-                        as the
-                        United States,
-                        in order to provide our services. We will take appropriate measures to ensure that your data is
-                        adequately protected in such countries in accordance with applicable data protection
-                        legislation.</p>
-                </section>
-
-                <section id="changes" x-intersect:enter="setTab('changes')" class="space-y-4">
-                    <h2 class="fs-18 fw-500 lh-32">Changes to this Privacy Policy</h2>
-                    <p class="fs-16 lh-32 fw-400">We may update this privacy policy from time to time. We will notify
-                        you of
-                        any
-                        changes by posting
-                        the new privacy policy on our website. You are advised to review this privacy policy
-                        periodically for any changes. Changes to this privacy policy are effective when they are posted
-                        on this page.</p>
-                </section>
-
-                <section id="contact" x-intersect:enter="setTab('contact')" class="space-y-4">
+                <section id="contact" class="tab-content-privacy space-y-4">
                     <h2 class="fs-18 fw-500 lh-32">Contact us</h2>
-                    <p class="fs-16 lh-32 fw-400">If you have any questions about this privacy policy, please contact
-                        us:</p>
-                    <p class="fs-16 lh-32 fw-400">Email: support@casherp.com</p>
-                    <p class="fs-16 lh-32 fw-400">Address: 123 Main Street, Anytown, USA</p>
+                    <p class="fs-16 lh-32 fw-400">If you have any questions about this Privacy Policy, please contact us
+                        at:</p>
+                    <p class="fs-16 lh-32 fw-400">Email: privacy@example.com</p>
                 </section>
             </div>
         </div>
     </section>
+
 
     <footer class="footer">
         <div class="col-10 mx-auto text-grey-4 text-xs">
             <div class="d-md-flex justify-content-between">
                 <div
                     class="col-lg-4 col-md-5 d-grid d-md-block justify-content-center align-items-center gap-3 gap-md-0 ">
-                    <img src="./assests/images/casherp logo.svg" alt="logo" class="logo">
+                    <img src="../assests/images/casherp logo.svg" alt="logo" class="logo">
                     <p class="body-xs-font-size lh-22 fw-400 my-4 d-none d-md-block text-white col-md-10">An
                         All-In-One
                         tools to manage
@@ -446,12 +378,12 @@
                         <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
                             style="padding: .3rem;">
                             <a href="www.facebook.com">
-                                <img src="./assests/images/facebook.svg" alt="facebook-icon"></a>
+                                <img src="../assests/images/facebook.svg" alt="facebook-icon"></a>
                         </div>
                         <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
                             style="padding: .3rem;">
                             <a href="www.x.com">
-                                <img src="./assests/images/twitter.svg" alt="twitter-icon">
+                                <img src="../assests/images/twitter.svg" alt="twitter-icon">
                             </a>
                         </div>
                     </div>
@@ -497,8 +429,8 @@
                 </div>
                 <div class="col-md-3 text-center text-md-end">
                     <div class="d-md-flex d-block text-grey-1 mb-0 list-unstyled">
-                        <li class="mx-2"><a href="">Terms of Use</a></li>
-                        <li class="mx-2"><a href="">Privacy Policy</a></li>
+                        <li class="mx-2"><a href="../pages/terms.html">Terms of Use</a></li>
+                        <li class="mx-2"><a href="../pages/privacy.html">Privacy Policy</a></li>
                     </div>
                 </div>
             </div>
@@ -507,7 +439,72 @@
 
 
 
+    <script>// Get all tabs and contents
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.tab-content-privacy');
 
+        // Function to show the selected tab content and hide others
+        function showContent(targetId) {
+            // Hide all contents
+            contents.forEach(content => {
+                content.style.display = 'block'; // Hide other contents
+            });
+
+            // Show the selected content
+            const selectedContent = document.getElementById(targetId);
+            if (selectedContent) {
+                selectedContent.style.display = 'block'; // Ensure the selected content is displayed
+            }
+
+            // Remove active class from all tabs and add it to the clicked tab
+            tabs.forEach(tab => tab.classList.remove('active-tab'));
+            const activeTab = Array.from(tabs).find(tab => tab.getAttribute('data-target') === targetId);
+            if (activeTab) {
+                activeTab.classList.add('active-tab');
+            }
+        }
+
+        // Attach click event listener to each tab
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetId = tab.getAttribute('data-target');
+                showContent(targetId);
+            });
+        });
+
+        // Create IntersectionObserver to track which content is in view
+        const observerOptions = {
+            root: null, // Use the viewport as the container
+            threshold: 0.5 // Trigger when at least 50% of the section is visible
+        };
+
+        const observerCallback = (entries) => {
+            entries.forEach(entry => {
+                const tabId = entry.target.id;
+                const tab = Array.from(tabs).find(tab => tab.getAttribute('data-target') === tabId);
+
+                if (entry.isIntersecting) {
+                    // If the content is in view, activate the corresponding tab
+                    tabs.forEach(t => t.classList.remove('active-tab'));
+                    if (tab) {
+                        tab.classList.add('active-tab');
+                    }
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        // Observe each content section
+        contents.forEach(content => {
+            observer.observe(content);
+        });
+
+        // Optional: Activate the first tab on page load
+        if (tabs.length > 0) {
+            tabs[0].click(); // Simulate a click on the first tab
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

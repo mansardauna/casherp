@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="../assests/styles/utilies.css">
     <link rel="stylesheet" href="../assests/styles/mobile.css">
     <script src="../assests/js/script.js"></script>
-    <script src="../assests/js/data.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -152,7 +151,7 @@
                                     <span class="resource-title text-blue-1">Knowledge Base</span>
                                 </div>
                                 <div class="resource-item p-2 px-3 border-top">
-                                    <span class="resource-title text-blue-1"> <a href="../pages/Affiliate.html"> Become
+                                    <span class="resource-title text-blue-1"> <a href="../pages/affiliate.html"> Become
                                             an
                                             Affiliate</a></span>
                                 </div>
@@ -208,61 +207,48 @@
                 services.</p>
         </div>
     </section>
-
     <section>
-        <div x-data="termsTabs()" class="d-md-flex my-5 py-5 col-md-10 col-11 mx-auto">
+        <div class="d-md-flex my-5 py-5 col-md-10 col-11 mx-auto">
             <!-- Tabs -->
             <div class="col-5 bg-white ">
                 <div class="space-y-4 d-flex flex-column sticky-tab">
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'use-of-services' }">
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-tab="use-of-services">
                         <a href="#use-of-services">Use of Casherp Services</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'registration' }">
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-tab="registration">
                         <a href="#registration">Registration</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'modification' }">
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-tab="modification">
                         <a href="#modification">Modification of Terms and Conditions</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'contribution' }">
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-tab="contribution">
                         <a href="#contribution">User Contributions</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'conduct' }">
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-tab="conduct">
                         <a href="#conduct">User Conduct</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'fees' }">
-                        <a href="#fees"> Fees and Charges</a>
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-tab="fees">
+                        <a href="#fees">Fees and Charges</a>
                     </span>
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'payment' }">
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-tab="payment">
                         <a href="#payment">Payment Terms</a>
                     </span>
-
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'cancellation' }">
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-tab="cancellation">
                         <a href="#cancellation">Account Cancellation</a>
                     </span>
-
-                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1"
-                        :class="{ 'active-tab': selectedTab === 'disclaimer' }">
+                    <span class="py-3 my-2 w-fit fs-18 lh-32 fw-500 text-blue-1 tab" data-tab="disclaimer">
                         <a href="#disclaimer">Disclaimer of Warranties</a>
                     </span>
-
                 </div>
             </div>
 
             <!-- Content -->
             <div class="overflow-y-auto h-screen">
-                <section id="use-of-services" x-intersect:enter="setTab('use-of-services')">
+                <section id="use-of-services" class="tab-content">
                     <div class="d-grid gap-3">
                         <h2 class="fs-18 fw-500 lh-32">Use of Casherp Services</h2>
                         <p class="fs-16 lh-32 fw-400">Casherp provides users with access to a wide variety of ERP cloud
-                            software that helps organisations to splify HR, Payroll, Invoicing, Sales and purchasing
+                            software that helps organisations to simplify HR, Payroll, Invoicing, Sales and purchasing
                             including automated software, tools, data feeds, information, and other materials
                             (collectively,
                             the “Services”). Subject to these Terms and Conditions, Casherp grants you a revocable,
@@ -277,17 +263,16 @@
                     </div>
                 </section>
 
-                <section id="registration" x-intersect:enter="setTab('registration')" class="space-y-4">
+                <section id="registration" class="tab-content">
                     <h2 class="fs-18 fw-500 lh-32">Registration</h2>
                     <p class="fs-16 lh-32 fw-400">In order to use the Services, you must register as a Casherp user. You
                         agree to provide accurate, current and complete information about yourself as may be prompted by
                         Casherp’s registration form. We may contact you with offers from time to time, but you may opt
                         out
                         of receiving these offers.</p>
-
                 </section>
 
-                <section id="modification" x-intersect:enter="setTab('modification')" class="space-y-4">
+                <section id="modification" class="tab-content">
                     <h2 class="fs-18 fw-500 lh-32">Modification of Terms and Conditions</h2>
                     <p class="fs-16 lh-32 fw-400">Casherp reserves the right to modify or revise these Terms and
                         Conditions
@@ -299,7 +284,7 @@
                         point constitutes your acceptance of any changes.</p>
                 </section>
 
-                <section id="contribution" x-intersect:enter="setTab('contribution')" class="space-y-4">
+                <section id="contribution" class="tab-content">
                     <h2 class="fs-18 fw-500 lh-32">User Contributions</h2>
                     <p class="fs-16 lh-32 fw-400">Casherp may permit users to post, upload, publish, submit or transmit
                         content through our website or mobile devices (“User Contributions”).
@@ -317,8 +302,8 @@
                     </p>
                 </section>
 
-                <section id="conduct" x-intersect:enter="setTab('conduct')" class="space-y-4">
-                    <h2 class="fs-18 fw-500 lh-32">User conduct</h2>
+                <section id="conduct" class="tab-content">
+                    <h2 class="fs-18 fw-500 lh-32">User Conduct</h2>
                     <p class="fs-16 lh-32 fw-400">By using and accessing Casherp’s Services, you agree not to engage in
                         any activity, including posting or uploading any material, that:</p>
                     <ul class="list-disc pl-5">
@@ -343,57 +328,84 @@
                     </ul>
                     <p>Casherp reserves the right to take appropriate legal and/or technical action against any person
                         who violates this section or any other applicable law.</p>
-
                 </section>
 
-                <section id="fees" x-intersect:enter="setTab('fees')" class="space-y-4">
-                    <h2 class="fs-18 fw-500 lh-32">fees and other technologies</h2>
-                    <p class="fs-16 lh-32 fw-400">We use fees and other tracking technologies to improve
-                        our
+                <section id="fees" class="tab-content">
+                    <h2 class="fs-18 fw-500 lh-32">Fees and Other Technologies</h2>
+                    <p class="fs-16 lh-32 fw-400">We use fees and other tracking technologies to improve our
                         services,
                         provide
-                        features, and
-                        analyze our performance. We may also partner with third-party advertising networks in order to
-                        display tailored advertisements to you. This may involve collecting or sharing information with
+                        features, and analyze our performance. We may also partner with third-party advertising networks
+                        in
+                        order to display tailored advertisements to you. This may involve collecting or sharing
+                        information with
                         third-parties for targeted advertising purposes.</p>
                 </section>
 
-                <section id="payment" x-intersect:enter="setTab('payment')" class="space-y-4">
-                    <h2 class="fs-18 fw-500 lh-32">Children's privacy</h2>
+                <section id="payment" class="tab-content">
+                    <h2 class="fs-18 fw-500 lh-32">Children's Privacy</h2>
                     <p class="fs-16 lh-32 fw-400">We do not knowingly collect or solicit information from children under
                         the
                         age of
                         18. If you are
-                        under 18, please do not attempt to register an account or send any information about yourself to
-                        us. If we become aware that we have collected information from a person under 18, we will delete
-                        that information as soon as possible.</p>
+                        under 18, please do not attempt to register for the Services or send us any personal
+                        information.
+                        If we
+                        learn that we have collected personal information from a child under age 18 without verification
+                        of
+                        parental consent, we will delete that information as quickly as possible. If you believe we
+                        might
+                        have
+                        any information from or about a child under 18, please contact us at
+                        <a href="mailto:info@casherp.com">info@casherp.com</a>.
+                    </p>
                 </section>
 
-                <section id="cancellation" x-intersect:enter="setTab('cancellation')" class="space-y-4">
+                <section id="cancellation" class="tab-content">
                     <h2 class="fs-18 fw-500 lh-32">Account Cancellation</h2>
-                    <p class="fs-16 lh-32 fw-400">You may cancel your Casherp account at any time. You agree that you
-                        are responsible for the settlement of all fees and charges as of the cancellation date.
-                        Any cancellation or suspension of your account does not affect your obligation to pay any
-                        outstanding fees.</p>
+                    <p class="fs-16 lh-32 fw-400">You can cancel your account with us at any time. To do so, please
+                        contact
+                        our customer support team via the contact details provided below. Note that upon cancellation,
+                        we
+                        may
+                        retain certain information as required by law or as necessary to fulfill your requests.</p>
                 </section>
 
-                <section id="disclaimer" x-intersect:enter="setTab('disclaimer')" class="space-y-4">
-                    <h2 class="fs-18 fw-500 lh-32"> Disclaimer of Warranties</h2>
-                    <p class="fs-16 lh-32 fw-400">You acknowledge that your use of Casherp’s Services is at your own
-                        risk. Casherp expressly disclaims any warranties for everyone.</p>
+                <section id="disclaimer" class="tab-content">
+                    <h2 class="fs-18 fw-500 lh-32">Disclaimer of Warranties</h2>
+                    <p class="fs-16 lh-32 fw-400">You understand and agree that the use of Casherp’s Services is at your
+                        own
+                        risk. The Services are provided on an "as is" and "as available" basis without any warranties of
+                        any
+                        kind. Casherp disclaims all warranties, whether express or implied, including, but not limited
+                        to,
+                        the
+                        implied warranties of merchantability, fitness for a particular purpose, non-infringement and
+                        title.
+                        Casherp does not guarantee that the Services will be uninterrupted, timely, secure, or
+                        error-free.
+                        In
+                        addition, Casherp does not warrant the accuracy, reliability or completeness of any information
+                        obtained
+                        through the Services. Any material downloaded or otherwise obtained through the use of the
+                        Services is
+                        done at your own discretion and risk, and you will be solely responsible for any damage to your
+                        computer
+                        system or loss of data that results from the download of any such material.</p>
                 </section>
-
-
             </div>
         </div>
     </section>
+
+
+
 
     <footer class="footer">
         <div class="col-10 mx-auto text-grey-4 text-xs">
             <div class="d-md-flex justify-content-between">
                 <div
                     class="col-lg-4 col-md-5 d-grid d-md-block justify-content-center align-items-center gap-3 gap-md-0 ">
-                    <img src="./assests/images/casherp logo.svg" alt="logo" class="logo">
+                    <img src="../assests/images/casherp logo.svg" alt="logo" class="logo">
                     <p class="body-xs-font-size lh-22 fw-400 my-4 d-none d-md-block text-white col-md-10">An
                         All-In-One
                         tools to manage
@@ -405,12 +417,12 @@
                         <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
                             style="padding: .3rem;">
                             <a href="www.facebook.com">
-                                <img src="./assests/images/facebook.svg" alt="facebook-icon"></a>
+                                <img src="../assests/images/facebook.svg" alt="facebook-icon"></a>
                         </div>
                         <div class="bg-white d-flex justify-content-center align-items-center rounded-pill"
                             style="padding: .3rem;">
                             <a href="www.x.com">
-                                <img src="./assests/images/twitter.svg" alt="twitter-icon">
+                                <img src="../assests/images/twitter.svg" alt="twitter-icon">
                             </a>
                         </div>
                     </div>
@@ -456,8 +468,8 @@
                 </div>
                 <div class="col-md-3 text-center text-md-end">
                     <div class="d-md-flex d-block text-grey-1 mb-0 list-unstyled">
-                        <li class="mx-2"><a href="">Terms of Use</a></li>
-                        <li class="mx-2"><a href="">Privacy Policy</a></li>
+                        <li class="mx-2"><a href="../pages/terms.html">Terms of Use</a></li>
+                        <li class="mx-2"><a href="../pages/privacy.html">Privacy Policy</a></li>
                     </div>
                 </div>
             </div>
@@ -465,6 +477,72 @@
     </footer>
 
 
+    <script>// Get all tabs and contents
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.tab-content');
+
+        // Function to show the selected tab content and hide others
+        function showContent(targetId) {
+            // Hide all contents
+            contents.forEach(content => {
+                content.style.display = 'block'; // Hide other contents
+            });
+
+            // Show the selected content
+            const selectedContent = document.getElementById(targetId);
+            if (selectedContent) {
+                selectedContent.style.display = 'block'; // Ensure the selected content is displayed
+            }
+
+            // Remove active class from all tabs and add it to the clicked tab
+            tabs.forEach(tab => tab.classList.remove('active-tab'));
+            const activeTab = Array.from(tabs).find(tab => tab.getAttribute('data-target') === targetId);
+            if (activeTab) {
+                activeTab.classList.add('active-tab');
+            }
+        }
+
+        // Attach click event listener to each tab
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetId = tab.getAttribute('data-target');
+                showContent(targetId);
+            });
+        });
+
+        // Create IntersectionObserver to track which content is in view
+        const observerOptions = {
+            root: null, // Use the viewport as the container
+            threshold: 0.5 // Trigger when at least 50% of the section is visible
+        };
+
+        const observerCallback = (entries) => {
+            entries.forEach(entry => {
+                const tabId = entry.target.id;
+                const tab = Array.from(tabs).find(tab => tab.getAttribute('data-target') === tabId);
+
+                if (entry.isIntersecting) {
+                    // If the content is in view, activate the corresponding tab
+                    tabs.forEach(t => t.classList.remove('active-tab'));
+                    if (tab) {
+                        tab.classList.add('active-tab');
+                    }
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        // Observe each content section
+        contents.forEach(content => {
+            observer.observe(content);
+        });
+
+        // Optional: Activate the first tab on page load
+        if (tabs.length > 0) {
+            tabs[0].click(); // Simulate a click on the first tab
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
